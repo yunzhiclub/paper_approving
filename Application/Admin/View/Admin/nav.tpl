@@ -7,7 +7,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="http://www.yunzhiclub.com">洛克酒店后台管理系统</a>
+        <a class="navbar-brand" href="http://www.yunzhiclub.com">河北工业大学材料科学与工程学院论文送审系统</a>
     </div>
     <!-- /.navbar-header -->
     <ul class="nav navbar-top-links navbar-right">
