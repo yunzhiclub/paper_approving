@@ -1,1 +1,0 @@
-<?php if (!defined('THINK_PATH')) exit();?><a href="<?php echo U('index');?>">返回...</a>
