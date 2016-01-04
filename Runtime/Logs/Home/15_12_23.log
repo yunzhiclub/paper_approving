@@ -1,0 +1,1791 @@
+[ 2015-12-23T08:10:07+08:00 ] 127.0.0.1 /ethan-wechat/Public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002035s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002128s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./../Application/Home/View/Index/indexFullTime.tpl): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./../Application/Home/View/Index/indexPayError.tpl): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.128457s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.128559s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006699s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006785s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006951s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007053s ]
+
+[ 2015-12-23T08:10:07+08:00 ] 127.0.0.1 /ethan-wechat/Public/index.php/Index/indexApp.js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000672s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007082s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007168s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
+
+[ 2015-12-23T08:10:09+08:00 ] 127.0.0.1 /ethan-wechat/Public/templates/indexPayError.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+ERR: 无法加载控制器:Templates
+
+[ 2015-12-23T12:27:34+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/img/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+
+[ 2015-12-23T13:21:56+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678f5a831f5a.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+
+[ 2015-12-23T13:21:56+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678e2ecc068d.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+
+[ 2015-12-23T13:21:56+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678e2ecc068d@2x.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+
+[ 2015-12-23T13:21:56+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678f5a831f5a@2x.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+
+[ 2015-12-23T13:22:10+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678e2ecc068d.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+
+[ 2015-12-23T13:22:11+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678e2ecc068d@2x.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+
+[ 2015-12-23T13:22:21+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678e2ecc068d@2x.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+
+[ 2015-12-23T13:22:21+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678f5a831f5a@2x.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+
+[ 2015-12-23T13:22:23+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678f5a831f5a.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+
+[ 2015-12-23T13:22:23+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678f5a831f5a@2x.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+
+[ 2015-12-23T13:22:24+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678e2ecc068d@2x.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+
+[ 2015-12-23T13:22:24+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678f5a831f5a@2x.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001730s ]
+
+[ 2015-12-23T13:22:26+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678e46498cb8.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+
+[ 2015-12-23T13:22:27+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678e46498cb8@2x.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+
+[ 2015-12-23T13:22:31+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678e46498cb8.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+
+[ 2015-12-23T13:22:31+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678e46498cb8@2x.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+
+[ 2015-12-23T13:22:32+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678e46498cb8@2x.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+
+[ 2015-12-23T13:22:34+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678e46498cb8.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+
+[ 2015-12-23T13:22:34+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678e46498cb8@2x.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+
+[ 2015-12-23T13:22:42+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678e46498cb8@2x.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+
+[ 2015-12-23T13:22:45+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678e46498cb8.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+
+[ 2015-12-23T13:22:45+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678e46498cb8@2x.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+
+[ 2015-12-23T13:22:46+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678e46498cb8@2x.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+
+[ 2015-12-23T13:23:02+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678e46498cb8.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+
+[ 2015-12-23T13:23:03+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678e46498cb8@2x.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+
+[ 2015-12-23T13:23:24+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678e46498cb8@2x.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+
+[ 2015-12-23T13:54:10+08:00 ] 127.0.0.1 /ethan-wechat/Public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./../Application/Home/View/Index/indexFullTime.tpl): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./../Application/Home/View/Index/indexPayError.tpl): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047409s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047542s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000517s ]
+
+[ 2015-12-23T13:54:10+08:00 ] 127.0.0.1 /ethan-wechat/Public/index.php/Index/indexApp.js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008497s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008650s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000746s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001043s ]
+
+[ 2015-12-23T13:54:42+08:00 ] 127.0.0.1 /ethan-wechat/Public/img/1@2x.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+
+[ 2015-12-23T13:54:42+08:00 ] 127.0.0.1 /ethan-wechat/Public/img/1@2x.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+
+[ 2015-12-23T13:54:42+08:00 ] 127.0.0.1 /ethan-wechat/Public/img/1@2x.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+
+[ 2015-12-23T13:54:42+08:00 ] 127.0.0.1 /ethan-wechat/Public/img/1@2x.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+
+[ 2015-12-23T13:54:42+08:00 ] 127.0.0.1 /ethan-wechat/Public/img/1@2x.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000709s ]
+
+[ 2015-12-23T13:54:42+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/img/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+
+[ 2015-12-23T13:54:42+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/img/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+
+[ 2015-12-23T14:05:14+08:00 ] 127.0.0.1 /Ethan-wechat/Public/img/1@2x.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+
+[ 2015-12-23T14:05:14+08:00 ] 127.0.0.1 /Ethan-wechat/Public/img/1@2x.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000124s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+
+[ 2015-12-23T14:05:14+08:00 ] 127.0.0.1 /Ethan-wechat/Public/img/1@2x.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001085s ]
+
+[ 2015-12-23T14:05:15+08:00 ] 127.0.0.1 /Ethan-wechat/Public/img/1@2x.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000736s ]
+
+[ 2015-12-23T14:05:15+08:00 ] 127.0.0.1 /Ethan-wechat/Public/img/1@2x.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+
+[ 2015-12-23T14:05:15+08:00 ] 127.0.0.1 /Ethan-wechat/Public/Admin/img/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000672s ]
+
+[ 2015-12-23T14:05:15+08:00 ] 127.0.0.1 /Ethan-wechat/Public/Admin/img/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+
+[ 2015-12-23T14:05:32+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/56790c227059e.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+
+[ 2015-12-23T14:05:32+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/56790c227059e@2x.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+
+[ 2015-12-23T14:37:39+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678ef0ae21d8.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+
+[ 2015-12-23T14:38:06+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678ef0ae21d8.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+
+[ 2015-12-23T14:38:11+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678ef0ae21d8.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+
+[ 2015-12-23T14:44:43+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678ef0ae21d8.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+
+[ 2015-12-23T14:45:52+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678ef0ae21d8.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+
+[ 2015-12-23T14:46:51+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678ef0ae21d8.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+
+[ 2015-12-23T14:46:59+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678b64446f51.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+
+[ 2015-12-23T14:47:01+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678ef0ae21d8.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+
+[ 2015-12-23T14:48:36+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678ef0ae21d8.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+
+[ 2015-12-23T14:48:40+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678b3a6c2887.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+
+[ 2015-12-23T14:48:40+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678b5da0c9e0.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+
+[ 2015-12-23T14:48:41+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678b64446f51.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+
+[ 2015-12-23T14:48:42+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678b3a6c2887.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+
+[ 2015-12-23T14:48:42+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678b5da0c9e0.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+
+[ 2015-12-23T14:48:45+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678b5da0c9e0.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+
+[ 2015-12-23T14:48:45+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678b3a6c2887.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000581s ]
+
+[ 2015-12-23T14:51:20+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678b3a6c2887.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+
+[ 2015-12-23T14:51:20+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678b5da0c9e0.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+
+[ 2015-12-23T14:51:22+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678b3a6c2887.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+
+[ 2015-12-23T14:51:22+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678b5da0c9e0.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+
+[ 2015-12-23T14:51:46+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678b3a6c2887.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+
+[ 2015-12-23T14:51:46+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678b5da0c9e0.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+
+[ 2015-12-23T14:52:23+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678b3a6c2887.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000637s ]
+
+[ 2015-12-23T14:52:23+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678b5da0c9e0.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+
+[ 2015-12-23T14:54:09+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678b3a6c2887.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+
+[ 2015-12-23T14:54:09+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678b5da0c9e0.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+
+[ 2015-12-23T14:54:19+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678b3a6c2887.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+
+[ 2015-12-23T14:54:19+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678b5da0c9e0.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+
+[ 2015-12-23T14:54:44+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678b3a6c2887.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+
+[ 2015-12-23T15:01:26+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/datatables-responsive/css/dataTables.responsive.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000688s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:03:31+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/datatables-responsive/css/dataTables.responsive.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000195s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:07+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/normalize.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000978s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001228s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:07+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/print.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:08+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/dist/css/bootstrap.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:08+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/glyphicons.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:08+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/scaffolding.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000792s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:08+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/vendor-prefixes.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:08+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/tab-focus.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000577s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:08+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/image.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000655s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:08+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/type.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000857s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:08+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/text-emphasis.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000970s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:08+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/background-variant.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:08+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/text-overflow.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:08+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/code.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000878s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:08+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/grid.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001078s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:08+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/grid.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000811s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:09+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/grid-framework.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001104s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:09+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/tables.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:09+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/table-row.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:09+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/forms.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:09+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/forms.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000999s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:09+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/buttons.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:09+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/buttons.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:09+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/opacity.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000736s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000858s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001051s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:09+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/component-animations.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000744s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:09+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/dropdowns.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:09+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/nav-divider.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:10+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/reset-filter.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000453s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:10+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/button-groups.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000801s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:10+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/border-radius.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:10+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/input-groups.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:10+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/navs.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:10+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/navbar.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:10+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/nav-vertical-align.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000467s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:11+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/utilities.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001006s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:11+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/breadcrumbs.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000793s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:11+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/pagination.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000849s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:11+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/pagination.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:11+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/pager.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000770s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:12+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/labels.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:12+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/labels.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:12+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/badges.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:12+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/jumbotron.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000921s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001118s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:12+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/thumbnails.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000763s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:13+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/alerts.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000788s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001076s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:13+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/alerts.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001431s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:13+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/progress-bars.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000700s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:13+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/gradients.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:13+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/progress-bar.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000937s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:13+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/media.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000688s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001195s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:13+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/list-group.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000692s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:14+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/list-group.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:14+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/panels.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001033s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:14+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/panels.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:14+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/responsive-embed.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000861s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:14+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/wells.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000747s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000801s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:14+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/close.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001062s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:15+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/modals.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:15+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/tooltip.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001187s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:15+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/reset-text.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:15+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/popovers.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001050s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:15+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/carousel.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:15+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/clearfix.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001433s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:16+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/center-block.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001207s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:16+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/hide-text.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001176s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001511s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:16+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/responsive-utilities.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:13:16+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/responsive-visibility.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:02+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/normalize.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:02+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/print.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:02+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/dist/css/bootstrap.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:02+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/glyphicons.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:02+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/scaffolding.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:02+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/vendor-prefixes.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000388s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:02+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/tab-focus.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000566s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:02+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/image.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:02+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/type.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:02+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/text-emphasis.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:02+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/background-variant.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:03+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/text-overflow.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:03+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/code.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:03+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/grid.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:03+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/grid.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:03+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/grid-framework.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:03+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/tables.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:03+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/table-row.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:03+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/forms.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:03+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/forms.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:03+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/buttons.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:03+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/buttons.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:03+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/opacity.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:03+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/component-animations.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000355s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:03+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/dropdowns.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:03+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/nav-divider.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:03+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/reset-filter.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:04+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/button-groups.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:04+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/border-radius.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:04+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/input-groups.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:04+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/navs.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:04+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/navbar.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:04+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/nav-vertical-align.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:04+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/utilities.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:04+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/breadcrumbs.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:04+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/pagination.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:04+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/pagination.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:05+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/pager.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:05+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/labels.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:05+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/labels.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:05+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/badges.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:05+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/jumbotron.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:05+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/thumbnails.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:05+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/alerts.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:05+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/alerts.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:05+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/progress-bars.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:05+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/gradients.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:06+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/progress-bar.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:06+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/media.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:06+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/list-group.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:06+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/list-group.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:06+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/panels.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:06+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/panels.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:06+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/responsive-embed.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000472s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:06+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/wells.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:06+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/close.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:06+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/modals.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:06+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/tooltip.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:07+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/reset-text.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:07+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/popovers.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:07+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/carousel.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:07+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/clearfix.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:07+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/center-block.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:07+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/hide-text.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:07+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/responsive-utilities.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:15:07+08:00 ] 127.0.0.1 /ethan-wechat/Public/Admin/bower_components/bootstrap/dist/css/less/mixins/responsive-visibility.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-23T15:33:58+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678b5da0c9e0.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+
+[ 2015-12-23T15:33:58+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678b3a6c2887.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+
+[ 2015-12-23T15:33:59+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678ef0ae21d8.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000668s ]
+
+[ 2015-12-23T15:34:01+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678b3a6c2887.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+
+[ 2015-12-23T15:34:01+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678b5da0c9e0.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+
+[ 2015-12-23T15:34:02+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678b64446f51.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+
+[ 2015-12-23T15:34:04+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/56790c227059e.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+
+[ 2015-12-23T15:34:07+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678b5da0c9e0.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+
+[ 2015-12-23T15:34:07+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678b3a6c2887.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+
+[ 2015-12-23T15:34:08+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/56790c227059e.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+
+[ 2015-12-23T15:35:46+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678ef0ae21d8.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+
+[ 2015-12-23T15:35:49+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/56790c227059e.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+
+[ 2015-12-23T15:40:23+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678b64446f51.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+
+[ 2015-12-23T15:40:26+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/56790c227059e.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+
+[ 2015-12-23T15:47:13+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678b64446f51.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+
+[ 2015-12-23T15:47:17+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678b64446f51.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+
+[ 2015-12-23T15:47:20+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678b64446f51.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+
+[ 2015-12-23T15:47:25+08:00 ] 127.0.0.1 /Ethan-Wechat/Public/Uploads/image/20151222/5678ef0ae21d8.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+
+[ 2015-12-23T15:53:56+08:00 ] 127.0.0.1 /ethan-wechat/Public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001915s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002284s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./../Application/Home/View/Index/indexFullTime.tpl): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./../Application/Home/View/Index/indexPayError.tpl): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000274s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000462s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072365s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072462s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000872s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001661s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001801s ]
+
+[ 2015-12-23T15:53:56+08:00 ] 127.0.0.1 /ethan-wechat/Public/index.php/Index/indexApp.js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012160s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012324s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000947s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001158s ]
+

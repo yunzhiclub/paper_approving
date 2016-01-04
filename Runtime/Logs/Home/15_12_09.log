@@ -1,0 +1,52 @@
+[ 2015-12-09T11:16:42+08:00 ] 127.0.0.1 /Ethan-wechat/Public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002219s ]
+SQL: SHOW COLUMNS FROM `ethan_custom_menu` [ RunTime:0.0276s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ethan_custom_menu` WHERE `title` LIKE '%%' LIMIT 1   [ RunTime:0.0361s ]
+SQL: SELECT * FROM `ethan_custom_menu` WHERE `title` LIKE '%%' ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.0377s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001335s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001510s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033680s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033851s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007309s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007449s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Common/functions.php:850) /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Think/View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Common/functions.php:850) /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Think/View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Common/functions.php:850) /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Think/View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006848s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006958s ]
+
+[ 2015-12-09T13:52:51+08:00 ] 127.0.0.1 /Ethan-wechat/Public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001776s ]
+SQL: SHOW COLUMNS FROM `ethan_custom_menu` [ RunTime:0.0149s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ethan_custom_menu` WHERE `title` LIKE '%%' LIMIT 1   [ RunTime:0.0129s ]
+SQL: SELECT * FROM `ethan_custom_menu` WHERE `title` LIKE '%%' ORDER BY `id` desc LIMIT 0,20   [ RunTime:0.0132s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011026s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011143s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001032s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001151s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Common/functions.php:850) /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Think/View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Common/functions.php:850) /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Think/View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Common/functions.php:850) /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Think/View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001680s ]
+

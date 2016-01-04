@@ -1,0 +1,2317 @@
+[ 2015-12-10T09:33:12+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php?c=Ueditor&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+
+[ 2015-12-10T09:34:06+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php?c=Ueditor&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+NOTIC: [2] file_get_contents(./../Application/Ueditor/Conf/ueditor.json): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 29 行.
+NOTIC: [8] Undefined index: action /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 31 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000279s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+
+[ 2015-12-10T09:38:54+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php?c=Ueditor&a=index&action=config&&noCache=1449711534616
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+NOTIC: [2] file_get_contents(./../Application/Ueditor/Conf/ueditor.json): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 29 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000503s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000631s ]
+
+[ 2015-12-10T09:39:16+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php?c=Ueditor&a=index&action=config&&noCache=1449711556484
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+NOTIC: [2] file_get_contents(./../Application/Ueditor/Conf/ueditor.json): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 29 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000351s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000426s ]
+
+[ 2015-12-10T09:40:17+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php?c=Ueditor&a=index&action=&start=0&noCache=1449711617155
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+NOTIC: [2] file_get_contents(./../Application/Ueditor/Conf/ueditor.json): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 29 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000320s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000393s ]
+
+[ 2015-12-10T09:41:44+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php?c=Ueditor&a=index&action=&start=0&noCache=1449711704043
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+NOTIC: [2] file_get_contents(./../Application/Ueditor/Conf/ueditor.json): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 29 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000718s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000966s ]
+
+[ 2015-12-10T10:05:21+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php?c=Ueditor&a=index&action=config&&noCache=1449713121038
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+NOTIC: [2] file_get_contents(./../Application/Ueditor/Conf/ueditor.json): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 29 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000444s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000555s ]
+
+[ 2015-12-10T10:05:59+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php?c=Ueditor&a=index&action=config&&noCache=1449713159792
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+NOTIC: [2] file_get_contents(./../Application/Ueditor/Conf/ueditor.json): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 29 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000598s ]
+
+[ 2015-12-10T10:14:55+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php?c=Ueditor&a=index&action=config&&noCache=1449713695612
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+NOTIC: [2] file_get_contents(./../Application/Ueditor/Conf/ueditor.json): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 29 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000639s ]
+
+[ 2015-12-10T10:23:53+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index?action=config&&noCache=1449714233894
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+NOTIC: [2] file_get_contents(./../Application/Ueditor/Conf/ueditor.json): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 29 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000614s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000751s ]
+
+[ 2015-12-10T10:24:03+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index?action=&start=0&noCache=1449714243848
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000683s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+NOTIC: [2] file_get_contents(./../Application/Ueditor/Conf/ueditor.json): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 29 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000375s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000475s ]
+
+[ 2015-12-10T10:24:15+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index?action=&start=0&noCache=1449714243848
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000689s ]
+NOTIC: [2] file_get_contents(./../Application/Ueditor/Conf/ueditor.json): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 29 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000646s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000780s ]
+
+[ 2015-12-10T10:32:45+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index?action=config&&noCache=1449714765037
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000711s ]
+NOTIC: [2] file_get_contents(./../Application/Ueditor/Conf/ueditor.json): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 29 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000585s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000722s ]
+
+[ 2015-12-10T10:36:20+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor?action=config&&noCache=1449714980661
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+NOTIC: [2] file_get_contents(./../Application/Ueditor/Conf/ueditor.json): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 29 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000522s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000648s ]
+
+[ 2015-12-10T10:36:30+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor?action=config&&noCache=1449714980661
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+NOTIC: [2] file_get_contents(./../Application/Ueditor/Conf/ueditor.json): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 29 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000685s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000856s ]
+
+[ 2015-12-10T10:36:41+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor?action=config&&noCache=1449714980661
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+NOTIC: [2] file_get_contents(./../Application/Ueditor/Conf/ueditor.json): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 29 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000279s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+
+[ 2015-12-10T10:37:12+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor?action=config&&noCache=1449714980661
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+
+[ 2015-12-10T10:37:29+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor?action=config&&noCache=1449714980661
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+NOTIC: [2] file_get_contents(./../Application/Ueditor/Conf/ueditor.json): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 29 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000288s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000359s ]
+
+[ 2015-12-10T10:37:37+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/action=config&&noCache=1449714980661
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+ERR: Method Yunzhi\Controller\UeditorController::__call() does not exist
+
+[ 2015-12-10T10:37:53+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/action/config&&noCache=1449714980661
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+ERR: Method Yunzhi\Controller\UeditorController::__call() does not exist
+
+[ 2015-12-10T10:38:24+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/action
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+ERR: Method Yunzhi\Controller\UeditorController::__call() does not exist
+
+[ 2015-12-10T10:38:47+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+NOTIC: [2] file_get_contents(./../Application/Ueditor/Conf/ueditor.json): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 29 行.
+NOTIC: [8] Undefined index: action /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 31 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000290s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000355s ]
+
+[ 2015-12-10T10:38:58+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+NOTIC: [2] file_get_contents(./../Application/Ueditor/Conf/ueditor.json): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 29 行.
+NOTIC: [8] Undefined index: action /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 31 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000425s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000530s ]
+
+[ 2015-12-10T10:39:07+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+
+[ 2015-12-10T10:39:15+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor?action=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+
+[ 2015-12-10T10:39:18+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor?action=config
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+
+[ 2015-12-10T10:39:20+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor?action=config
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000567s ]
+
+[ 2015-12-10T10:39:26+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor?action=config
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+
+[ 2015-12-10T10:39:29+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor?action=config
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+
+[ 2015-12-10T10:40:14+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/configaction=config
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+ERR: Method Yunzhi\Controller\UeditorController::__call() does not exist
+
+[ 2015-12-10T10:40:19+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/config
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001877s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001995s ]
+
+[ 2015-12-10T10:40:25+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/config?action=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000398s ]
+
+[ 2015-12-10T10:40:41+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/config?action=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000693s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000864s ]
+
+[ 2015-12-10T10:41:09+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/config?action=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000487s ]
+
+[ 2015-12-10T10:41:13+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+
+[ 2015-12-10T10:41:45+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor.html?action=config
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+
+[ 2015-12-10T10:42:01+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor.html?action=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+
+[ 2015-12-10T10:43:05+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449715385646
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000617s ]
+
+[ 2015-12-10T10:46:21+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449715581196
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000805s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000981s ]
+
+[ 2015-12-10T10:46:35+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=listfile&start=0&size=20&noCache=1449715595403
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000386s ]
+
+[ 2015-12-10T10:46:52+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449715581196
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000480s ]
+
+[ 2015-12-10T10:47:25+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 351 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000849s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000980s ]
+
+[ 2015-12-10T10:48:37+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000642s ]
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 351 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000562s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000726s ]
+
+[ 2015-12-10T10:49:00+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 351 行.
+NOTIC: [8] Undefined index: upfile /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000548s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000663s ]
+
+[ 2015-12-10T10:53:17+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 351 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001100s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001334s ]
+
+[ 2015-12-10T10:54:31+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 352 行.
+NOTIC: [8] Undefined index: upfile /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 155 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000335s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000413s ]
+
+[ 2015-12-10T10:59:03+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 352 行.
+NOTIC: [8] Undefined index: upfile /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 155 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000302s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000374s ]
+
+[ 2015-12-10T11:02:46+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006713s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000232s ]
+NOTIC: [2] Illegal string offset 'filePathFormat' /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 75 行.
+NOTIC: [2] Illegal string offset 'fileMaxSize' /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 76 行.
+NOTIC: [2] Illegal string offset 'fileAllowFiles' /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 77 行.
+NOTIC: [2] Illegal string offset 'fileFieldName' /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 80 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 362 行.
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 355 行.
+NOTIC: [8] Undefined index: / /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 158 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000394s ]
+
+[ 2015-12-10T11:03:17+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007103s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007187s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000216s ]
+NOTIC: [2] Illegal string offset 'filePathFormat' /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 75 行.
+NOTIC: [2] Illegal string offset 'fileMaxSize' /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 76 行.
+NOTIC: [2] Illegal string offset 'fileAllowFiles' /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 77 行.
+NOTIC: [2] Illegal string offset 'fileFieldName' /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 80 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 362 行.
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 355 行.
+NOTIC: [8] Undefined index: / /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 158 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000602s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000706s ]
+
+[ 2015-12-10T11:03:59+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005097s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005174s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000187s ]
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 355 行.
+NOTIC: [8] Undefined index: upfile /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 158 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
+
+[ 2015-12-10T11:04:40+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004534s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004610s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000187s ]
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 355 行.
+NOTIC: [8] Undefined index: upfile /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 158 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000335s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000404s ]
+
+[ 2015-12-10T11:11:27+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001865s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012581s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012671s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000945s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001030s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 362 行.
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 355 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 158 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001786s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001876s ]
+
+[ 2015-12-10T11:11:59+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+
+[ 2015-12-10T11:12:07+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005219s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005293s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000190s ]
+NOTIC: [2] Illegal string offset 'filePathFormat' /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 75 行.
+NOTIC: [2] Illegal string offset 'fileMaxSize' /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 76 行.
+NOTIC: [2] Illegal string offset 'fileAllowFiles' /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 77 行.
+NOTIC: [2] Illegal string offset 'fileFieldName' /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 80 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 362 行.
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 355 行.
+NOTIC: [8] Undefined index: { /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 158 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000326s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000398s ]
+
+[ 2015-12-10T11:12:44+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000466s ]
+
+[ 2015-12-10T11:12:57+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004797s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004881s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000136s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+
+[ 2015-12-10T11:13:21+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004568s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004643s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000186s ]
+
+[ 2015-12-10T11:13:52+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005712s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005802s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000131s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+
+[ 2015-12-10T11:14:33+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000331s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004701s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004774s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000188s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 362 行.
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 355 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 158 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000385s ]
+
+[ 2015-12-10T11:14:48+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005996s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006077s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000204s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 362 行.
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 355 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 158 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000337s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000434s ]
+
+[ 2015-12-10T11:14:59+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005197s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005285s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000213s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 362 行.
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 355 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 158 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000299s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000391s ]
+
+[ 2015-12-10T11:15:00+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005119s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005198s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000210s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 362 行.
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 355 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 158 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000280s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000345s ]
+
+[ 2015-12-10T11:15:31+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005983s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006065s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000202s ]
+NOTIC: [8] Undefined variable: config /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Controller/UeditorController.class.php 第 13 行.
+NOTIC: [8] Undefined variable: config /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Controller/UeditorController.class.php 第 14 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 362 行.
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 355 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 158 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000356s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000427s ]
+
+[ 2015-12-10T11:16:26+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005223s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005301s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000136s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000197s ]
+NOTIC: [8] Undefined variable: config /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Controller/UeditorController.class.php 第 13 行.
+NOTIC: [8] Undefined variable: config /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Controller/UeditorController.class.php 第 14 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 362 行.
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 355 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 158 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000299s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000367s ]
+
+[ 2015-12-10T11:16:27+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000348s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005522s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005596s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000190s ]
+NOTIC: [8] Undefined variable: config /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Controller/UeditorController.class.php 第 13 行.
+NOTIC: [8] Undefined variable: config /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Controller/UeditorController.class.php 第 14 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 362 行.
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 355 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 158 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000278s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+
+[ 2015-12-10T11:16:55+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004844s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000137s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000196s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 362 行.
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 355 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 158 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000292s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000358s ]
+
+[ 2015-12-10T11:16:59+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005769s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005852s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 362 行.
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 355 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 158 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000278s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+
+[ 2015-12-10T11:18:25+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005749s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005824s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000189s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 362 行.
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 355 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 158 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000430s ]
+
+[ 2015-12-10T11:18:26+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004762s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004837s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 362 行.
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 355 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 158 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000285s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000353s ]
+
+[ 2015-12-10T11:18:45+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005289s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005366s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000194s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 362 行.
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 355 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 158 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000398s ]
+
+[ 2015-12-10T11:18:47+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000680s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005305s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005387s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000197s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 362 行.
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 355 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 158 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000368s ]
+
+[ 2015-12-10T11:19:37+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005452s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005537s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000234s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 362 行.
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 355 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 158 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000369s ]
+
+[ 2015-12-10T11:19:39+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000665s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004669s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004749s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 362 行.
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 355 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 158 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000287s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000356s ]
+
+[ 2015-12-10T11:21:28+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004876s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004957s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+NOTIC: [2] file_get_contents(./../Application/Yunzhi/Conf/ueditor.json): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 362 行.
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 355 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 158 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000291s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000358s ]
+
+[ 2015-12-10T11:22:46+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004889s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000208s ]
+NOTIC: [2] file_get_contents(./../Application/Yunzhi/Conf/ueditor.json): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 362 行.
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 355 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 158 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000292s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000359s ]
+
+[ 2015-12-10T11:22:47+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005024s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000190s ]
+NOTIC: [2] file_get_contents(./../Application/Yunzhi/Conf/ueditor.json): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 362 行.
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 355 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 158 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000283s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000349s ]
+
+[ 2015-12-10T11:23:10+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004974s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005077s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000235s ]
+NOTIC: [2] file_get_contents(./../Application/Yunzhi/Conf/ueditor.json): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 362 行.
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 355 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 158 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000366s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000445s ]
+
+[ 2015-12-10T11:23:51+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004887s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004965s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000131s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+NOTIC: [2] file_get_contents(./../Application/Yunzhi/Conf/ueditor.json): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 362 行.
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 355 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 158 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000289s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000356s ]
+
+[ 2015-12-10T11:23:53+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004820s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004896s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000126s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+NOTIC: [2] file_get_contents(./../Application/Yunzhi/Conf/ueditor.json): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 362 行.
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 355 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 158 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000362s ]
+
+[ 2015-12-10T11:24:48+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004928s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000240s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.002238s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002144s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000406s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.002387s ]
+NOTIC: [2] file_get_contents(./../Application/Yunzhi/Conf/ueditor.json): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 362 行.
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 355 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 158 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000296s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000366s ]
+
+[ 2015-12-10T11:25:02+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005522s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005606s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000131s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000190s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.002119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001622s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000361s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.001858s ]
+NOTIC: [2] file_get_contents(./../Application/Yunzhi/Conf/ueditor.json): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 362 行.
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 355 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 158 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000592s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000760s ]
+
+[ 2015-12-10T11:25:03+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000327s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004642s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004716s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000185s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.001994s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001572s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000334s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.001787s ]
+NOTIC: [2] file_get_contents(./../Application/Yunzhi/Conf/ueditor.json): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 362 行.
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 355 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 158 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000361s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000430s ]
+
+[ 2015-12-10T11:26:08+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005328s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000131s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000189s ]
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 355 行.
+NOTIC: [8] Undefined index: upfile /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 158 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000387s ]
+
+[ 2015-12-10T11:26:53+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005230s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005371s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000184s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000511s ]
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 355 行.
+NOTIC: [8] Undefined index: upfile /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 158 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000326s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000400s ]
+
+[ 2015-12-10T11:29:28+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449718168546
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008764s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008900s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000848s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001043s ]
+
+[ 2015-12-10T11:29:44+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000846s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001551s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012639s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012741s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001164s ]
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 355 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002182s ]
+
+[ 2015-12-10T11:31:10+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001783s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012305s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012389s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001189s ]
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 354 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001639s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001806s ]
+
+[ 2015-12-10T11:31:44+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001631s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000370s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013110s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013194s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000842s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000921s ]
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 355 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001623s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001720s ]
+
+[ 2015-12-10T11:32:16+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001783s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011615s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011748s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000746s ]
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 355 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000877s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000971s ]
+
+[ 2015-12-10T11:33:00+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449718380806
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007280s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007414s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000840s ]
+
+[ 2015-12-10T11:33:21+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001653s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013196s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013296s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000838s ]
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 355 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001643s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001739s ]
+
+[ 2015-12-10T11:38:39+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadimage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001492s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012415s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012562s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001019s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001133s ]
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 355 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001500s ]
+
+[ 2015-12-10T11:39:06+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=listimage&start=0&size=20&noCache=1449718746826
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007887s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000443s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000595s ]
+
+[ 2015-12-10T11:39:08+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=listimage&start=0&size=20&noCache=1449718748466
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007677s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007758s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000136s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000375s ]
+
+[ 2015-12-10T11:39:10+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=listimage&start=0&size=20&noCache=1449718750233
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006399s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006533s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000374s ]
+
+[ 2015-12-10T11:39:12+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=listimage&start=0&size=20&noCache=1449718752297
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007491s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007597s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000126s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000665s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000839s ]
+
+[ 2015-12-10T11:39:14+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=listimage&start=0&size=20&noCache=1449718754441
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000281s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006224s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006305s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000418s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000520s ]
+
+[ 2015-12-10T11:39:18+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=listimage&start=0&size=20&noCache=1449718758538
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000663s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007196s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007274s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000126s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000287s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000358s ]
+
+[ 2015-12-10T11:39:20+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=listimage&start=0&size=20&noCache=1449718760834
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007061s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007166s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000361s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000453s ]
+
+[ 2015-12-10T11:39:22+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=listimage&start=0&size=20&noCache=1449718762034
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007031s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000384s ]
+
+[ 2015-12-10T11:39:26+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=listimage&start=0&size=20&noCache=1449718765978
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005026s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000917s ]
+
+[ 2015-12-10T11:39:27+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=listimage&start=0&size=20&noCache=1449718767010
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010207s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000554s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000677s ]
+
+[ 2015-12-10T11:39:28+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=listimage&start=0&size=20&noCache=1449718768466
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000746s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006120s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000136s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000418s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000530s ]
+
+[ 2015-12-10T11:40:59+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449718859381
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000688s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009218s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009366s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000448s ]
+
+[ 2015-12-10T12:07:42+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449720126096
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005575s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005657s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000136s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000412s ]
+
+[ 2015-12-10T12:07:50+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449720470620
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000626s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008859s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009021s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000760s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000997s ]
+
+[ 2015-12-10T12:08:03+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001822s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013068s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013162s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000951s ]
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 352 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001543s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001638s ]
+
+[ 2015-12-10T12:08:37+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449720517536
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008693s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008844s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000928s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001068s ]
+
+[ 2015-12-10T12:08:47+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007945s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008062s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000528s ]
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 352 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000446s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000539s ]
+
+[ 2015-12-10T12:08:57+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000992s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006297s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006416s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000438s ]
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 352 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000443s ]
+
+[ 2015-12-10T12:10:19+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000665s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008822s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008961s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000598s ]
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 352 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000330s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000400s ]
+
+[ 2015-12-10T12:15:46+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449720946510
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000915s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009537s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009690s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000537s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000693s ]
+
+[ 2015-12-10T12:17:22+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449721042006
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008629s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008773s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000541s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000695s ]
+
+[ 2015-12-10T16:22:00+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449735720004
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000567s ]
+NOTIC: [8] Undefined variable: config /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Controller/UeditorController.class.php 第 14 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000334s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000425s ]
+
+[ 2015-12-10T16:22:35+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+NOTIC: [8] Undefined variable: config /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Controller/UeditorController.class.php 第 14 行.
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 352 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000908s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001097s ]
+
+[ 2015-12-10T16:22:48+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449735768749
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000736s ]
+NOTIC: [8] Undefined variable: config /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Controller/UeditorController.class.php 第 14 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000921s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001090s ]
+
+[ 2015-12-10T16:23:08+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=uploadfile&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000754s ]
+NOTIC: [8] Undefined variable: config /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Controller/UeditorController.class.php 第 14 行.
+NOTIC: [8] Undefined property: Org\Util\Ueditor::$uid /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php 第 352 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000691s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000835s ]
+
+[ 2015-12-10T16:29:03+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449736143051
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+NOTIC: [8] Undefined variable: config /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Controller/UeditorController.class.php 第 10 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000607s ]
+
+[ 2015-12-10T16:30:03+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449736203892
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+NOTIC: [8] Undefined variable: config /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Controller/UeditorController.class.php 第 10 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000367s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000458s ]
+
+[ 2015-12-10T16:50:00+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449737400788
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000949s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000681s ]
+NOTIC: [8] Undefined variable: config /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Controller/UeditorController.class.php 第 10 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000568s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000716s ]
+
+[ 2015-12-10T16:50:11+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449737411060
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+NOTIC: [8] Undefined variable: config /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Controller/UeditorController.class.php 第 10 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000780s ]
+
+[ 2015-12-10T16:50:12+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449737411990
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001009s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+NOTIC: [8] Undefined variable: config /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Controller/UeditorController.class.php 第 10 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001188s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001485s ]
+
+[ 2015-12-10T16:50:25+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449737424991
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+NOTIC: [8] Undefined variable: config /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Controller/UeditorController.class.php 第 10 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001023s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001282s ]
+
+[ 2015-12-10T16:51:31+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449737491044
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+NOTIC: [8] Undefined variable: config /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Controller/UeditorController.class.php 第 10 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000320s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000405s ]
+
+[ 2015-12-10T16:51:47+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449737507668
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000650s ]
+NOTIC: [8] Undefined variable: config /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Controller/UeditorController.class.php 第 10 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000540s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000685s ]
+
+[ 2015-12-10T16:53:54+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449737634961
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000684s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+NOTIC: [8] Undefined variable: config /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Controller/UeditorController.class.php 第 10 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000455s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000582s ]
+
+[ 2015-12-10T16:54:08+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449737648328
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004505s ]
+NOTIC: [8] Undefined variable: config /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Controller/UeditorController.class.php 第 10 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000574s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000716s ]
+
+[ 2015-12-10T17:02:15+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449738135236
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+NOTIC: [8] Undefined variable: config /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Controller/UeditorController.class.php 第 10 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000747s ]
+
+[ 2015-12-10T17:09:17+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449738557195
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+NOTIC: [8] Undefined variable: config /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Controller/UeditorController.class.php 第 10 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000609s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000763s ]
+
+[ 2015-12-10T17:10:12+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449738612927
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000752s ]
+NOTIC: [8] Undefined variable: config /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Controller/UeditorController.class.php 第 10 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000606s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000758s ]
+
+[ 2015-12-10T17:11:03+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449738663023
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+NOTIC: [8] Undefined variable: config /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Controller/UeditorController.class.php 第 10 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000635s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000787s ]
+
+[ 2015-12-10T17:11:56+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449738716691
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+NOTIC: [8] Undefined variable: config /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Controller/UeditorController.class.php 第 10 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000674s ]
+
+[ 2015-12-10T17:15:23+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449738923316
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000817s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000933s ]
+NOTIC: [8] Undefined variable: config /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Controller/UeditorController.class.php 第 10 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000637s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000808s ]
+
+[ 2015-12-10T17:16:07+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449738967896
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000957s ]
+NOTIC: [8] Undefined variable: config /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Controller/UeditorController.class.php 第 10 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000590s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000732s ]
+
+[ 2015-12-10T17:16:10+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449738970974
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+NOTIC: [8] Undefined variable: config /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Controller/UeditorController.class.php 第 10 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000486s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000625s ]
+
+[ 2015-12-10T17:16:21+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449738981161
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000931s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001076s ]
+NOTIC: [8] Undefined variable: config /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Controller/UeditorController.class.php 第 10 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000732s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000895s ]
+
+[ 2015-12-10T17:16:32+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449738992359
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000795s ]
+NOTIC: [8] Undefined variable: config /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Controller/UeditorController.class.php 第 10 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000672s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000910s ]
+
+[ 2015-12-10T17:22:06+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449739326061
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000663s ]
+NOTIC: [8] Undefined variable: config /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Controller/UeditorController.class.php 第 10 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000561s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000705s ]
+
+[ 2015-12-10T18:47:50+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449744470708
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000112s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000938s ]
+NOTIC: [8] Undefined variable: config /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Controller/UeditorController.class.php 第 10 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000570s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000708s ]
+
+[ 2015-12-10T18:47:52+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449744472197
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+NOTIC: [8] Undefined variable: config /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Controller/UeditorController.class.php 第 10 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000603s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000750s ]
+
+[ 2015-12-10T18:47:58+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449744478507
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+NOTIC: [8] Undefined variable: config /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Controller/UeditorController.class.php 第 10 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000652s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000817s ]
+
+[ 2015-12-10T18:48:07+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449744487182
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+NOTIC: [8] Undefined variable: config /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Controller/UeditorController.class.php 第 10 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001186s ]
+
+[ 2015-12-10T18:59:33+08:00 ] 127.0.0.1 /Ethan-wechat/Public/yunzhi.php/Ueditor/index.html?action=config&&noCache=1449745173150
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000802s ]
+NOTIC: [8] Undefined variable: config /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Controller/UeditorController.class.php 第 10 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000598s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000748s ]
+

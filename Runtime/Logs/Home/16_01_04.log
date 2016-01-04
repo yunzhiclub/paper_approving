@@ -1,0 +1,22 @@
+[ 2016-01-04T09:03:27+08:00 ] 127.0.0.1 /ethan-wechat/Public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000988s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./../Application/Home/View/Index/indexFullTime.tpl): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./../Application/Home/View/Index/indexPayError.tpl): failed to open stream: No such file or directory /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000360s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.165815s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.165917s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000540s ]
+
