@@ -14,11 +14,17 @@ class Ueditor{
 	
 	private $outputArray; //要输出的数组数据 
 	private $st;
+	protected $result;	//附件上传的结果 
 	
 	private $rootpath = '/Uploads';
         //private $confPath = ;
 	
-	public function __construct($uid = '', $configFile = ''){
+	/**
+	 * 构造函数
+	 * @param int $uid    用户ID
+	 * @param array  $CONFIG 配置信息
+	 */
+	public function __construct($uid = '', $CONFIG = array()){
 		//uid 为空则导入当前会话uid
 		//if(''===$uid) $this->uid = session('uid');
 		    	/* 检查是否合法上传 */
@@ -29,12 +35,12 @@ class Ueditor{
 		//导入设置
 		//由导入改为直接传值，解决了不同的URL的路径问题。
 		//$CONFIG = json_decode(preg_replace("/\/\*[\s\S]+?\*\//", "", file_get_contents(CONF_PATH."ueditor.json")), true);
-		$CONFIG = json_decode(preg_replace("/\/\*[\s\S]+?\*\//", "", file_get_contents($configFile)), true);
+		// $CONFIG = json_decode(preg_replace("/\/\*[\s\S]+?\*\//", "", file_get_contents($configFile)), true);
 		$action = htmlspecialchars($_GET['action']);
 		
 		switch($action){
 			case 'config':
-		        $result = json_encode($CONFIG);
+		        $result = $CONFIG;
 		        break;
 		        
 		    case 'uploadimage':
@@ -110,14 +116,40 @@ class Ueditor{
 				break;
 				
 			default:
-		        $result = json_encode(array(
+		        $result = array(
 		            'state'=> 'wrong require'
-		        ));
+		        );
 		        break;
 			
 		}
 		
-		if (isset($_GET["callback"])) {
+		$this->result = $result;
+
+	}
+	
+	/**
+	 * 返回结果 
+	 * @return array 
+	 */
+	public function getResult()
+	{
+		return $this->result;
+	}
+	/**
+	 * 
+	 * 输出结果
+	 * @param data 数组数据
+	 * @return 组合后json格式的结果
+	 */
+	public function output(){
+		// Make sure file is not cached (as it happens for example on iOS devices)
+        // header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
+        // header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
+        // header("Cache-Control: no-store, no-cache, must-revalidate");
+        // header("Cache-Control: post-check=0, pre-check=0", false);
+        // header("Pragma: no-cache");
+        $result = json_encode($this->result);
+        if (isset($_GET["callback"])) {
 			if (preg_match("/^[\w_]+$/", $_GET["callback"])) {
 				$this->output = htmlspecialchars($_GET["callback"]) . '(' . $result . ')';
 			} else {
@@ -128,22 +160,6 @@ class Ueditor{
 		} else {
 			$this->output = $result;
 		}
-	}
-	
-	
-	/**
-	 * 
-	 * 输出结果
-	 * @param data 数组数据
-	 * @return 组合后json格式的结果
-	 */
-	public function output(){
-		// Make sure file is not cached (as it happens for example on iOS devices)
-        header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
-        header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
-        header("Cache-Control: no-store, no-cache, must-revalidate");
-        header("Cache-Control: post-check=0, pre-check=0", false);
-        header("Pragma: no-cache");
 		return $this->output;
 	}
 
@@ -178,16 +194,17 @@ class Ueditor{
 			);
 		}else{
 			$data = array(
-				'state'=>"SUCCESS",
-				'url'=>\Vin\FileStorage::getPath($rootpath,$info['savepath'].$info['savename']),
-				'title'=>$info['savename'],
-				'original'=>$info['name'],
-				'type'=>'.' . $info['ext'],
-				'size'=>$info['size'],
+				'state'		=> "SUCCESS",
+				'url'		=> \Vin\FileStorage::getPath($rootpath,$info['savepath'].$info['savename']),
+				'title'		=> $info['savename'],
+				'original'	=> $info['name'],
+				'type'		=> $info['type'],
+				'size'		=> $info['size'],
 			);
+			$data = array_merge($data, $info);
 		}
 		$this->outputArray = $data;
-		return json_encode($data);
+		return $data;
 	}
 	
 	/**
@@ -203,7 +220,7 @@ class Ueditor{
         
         if(strlen($img)>$config['maxSize']){
         	$data['states'] = 'too large';
-        	return json_encode($data);
+        	return $data;
         }
         
         $rootpath = $this->rootpath;
@@ -227,7 +244,7 @@ class Ueditor{
         		'state'=>'cant write',
         	);
         }
-        return json_encode($data);
+        return $data;
 	}
 	
 	/**
@@ -245,12 +262,12 @@ class Ueditor{
 		$files = \Vin\FileStorage::listFile($rootpath,$path, $allowFiles);
 		//return $files;
 		if (!count($files)) {
-		    return json_encode(array(
+		    return array(
 		        "state" => "no match file",
 		        "list" => array(),
 		        "start" => $start,
 		        "total" => count($files)
-		    ));
+		    );
 		}
 		
 		/* 获取指定范围的列表 */
@@ -264,12 +281,12 @@ class Ueditor{
 		//}
 		
 		/* 返回数据 */
-		$result = json_encode(array(
+		$result = array(
 		    "state" => "SUCCESS",
 		    "list" => $list,
 		    "start" => $start,
 		    "total" => count($files)
-		));
+		);
 		
 		return $result;
 	}
@@ -294,13 +311,13 @@ class Ueditor{
 	        //http开头验证
 	        if (strpos($imgUrl, "http") !== 0) {
 	            $data = array('state'=>'不是http链接');
-	            return json_encode($data);
+	            return $data;
 	        }
 	        //格式验证(扩展名验证和Content-Type验证)
 	        $fileType = strtolower(strrchr($imgUrl, '.'));
 	        if (!in_array($fileType, $config['allowFiles']) || stristr($heads['Content-Type'], "image")) {
 	            $data = array("state"=>"错误文件格式");
-	            return json_encode($data);
+	            return $data;
 	        }
 	        
 	         //打开输出缓冲区并获取远程图片
@@ -318,7 +335,7 @@ class Ueditor{
 	        $path = $this->getFullPath($config['pathFormat']);
 			if(strlen($img)>$config['maxSize']){
 	        	$data['states'] = 'too large';
-	        	return json_encode($data);
+	        	return $data;
 	        }
 	        
 	        $rootpath = $this->rootpath;
@@ -343,10 +360,10 @@ class Ueditor{
 		}
 		
 		/* 返回抓取数据 */
-		return json_encode(array(
+		return array(
 		    'state'=> count($list) ? 'SUCCESS':'ERROR',
 		    'list'=> $list
-		));
+		);
 	}
 
 	/**

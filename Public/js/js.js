@@ -61,7 +61,7 @@ var dataInit = function(){
   * @param {[string]} fileId 用以存附件的字符串   
   * @param {string}  dom DOM的追加位置
   */
- var addHtml = function(file, data, response, fileId) {
+ var addHtml = function(file, data, response, fileId, type) {
      if (fileId === undefined) {
          fileId = "file";
      }
@@ -71,13 +71,28 @@ var dataInit = function(){
          fileArray = fileValue.split(",");
      }
      var jsonData = JSON.parse(data);
+     //返回数据成功,则按上传类型追加。
+     //失败。则提示失败原因
      if (jsonData.state === 'SUCCESS') {
-         $("#" + fileId + "_img ul").append('<li><a href="'+jsonData.url+'" target="_blank"><img src="' + jsonData.url + '" class="img-rounded" /></a><button type="button" data-url="' + jsonData.url + '" data-file="' + fileId + '" class="uploaderDelete btn btn-danger btn-xs"><i class="fa fa-times"></i></button></li>');
+        if (type == "image")
+        {
+            $("#" + fileId + "_img ul").append('<li><a href="'+jsonData.url+'" target="_blank"><img src="' + jsonData.url + '" class="img-rounded" /></a><button type="button" data-url="' + jsonData.url + '" data-file="' + fileId + '" class="uploaderDelete btn btn-danger btn-xs"><i class="fa fa-times"></i></button></li>');
+        }
+        else
+        {
+            console.log(jsonData);
+            $("#" + fileId + "_table").append('<tr><td><a target="_blank" href="' + jsonData.url + '">' + jsonData.name + '</a></td><td>' + jsonData.size/1000 + 'KB</td></tr>');
+        }
+        fileArray.push(jsonData.url);
+        $("#" + fileId).val(fileArray.join(","));
+        uploaderDeleteClick();
+     }
+     else
+     {
+        alert(jsonData.state);
      }
 
-     fileArray.push(jsonData.url);
-     $("#" + fileId).val(fileArray.join(","));
-     uploaderDeleteClick();
+
  }
 
 /**
@@ -86,9 +101,11 @@ var dataInit = function(){
  * @param  {string} id       操作的DOM关键字
  * @param  {sting} btnClass 按钮额外的CLASS
  * @param  {string} btnText  按钮显示文字
+ * @param  bool debug 是否启用debug调试
+ * @param  string type 附件上传类型（file 或 image）
  * @return {void}          [description]
  */
- var uploader = function(ROOT, id, btnClass, btnText) {
+ var uploader = function(ROOT, id, btnClass, btnText, debug, type) {
      if (id === undefined) {
          id = "file";
      }
@@ -106,14 +123,14 @@ var dataInit = function(){
          'buttonText': btnText,
          'buttonClass': btnClass,
          'fileObjName': 'yunzhifile',
+         'debug': debug,
          'swf': ROOT + '/lib/uploadify/uploadify.swf',
-         'uploader': ROOT + '/yunzhi.php/ueditor/index?action=uploadimage',
-         'debug': false,
+         'uploader': ROOT + '/yunzhi.php/Attachment/upload?action=upload' + type,
          'onUploadError': function(file, errorCode, errorMsg, errorString) {
              alert('The file ' + file.name + ' could not be uploaded: ' + errorString);
          },
          'onUploadSuccess': function(file, data, response) {
-             addHtml(file, data, response, id);
+             addHtml(file, data, response, id, type);
          },
      });
  };

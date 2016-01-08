@@ -26,6 +26,12 @@ function my_json_encode($type, $p)
 }
 
 
+/**
+ * 判断是否大于0
+ * @param  intt $num 
+ * @return 是true 否false
+ * panjie
+ */
 function moreThanZero($num)
 {
     $num = (int)$num;
@@ -84,7 +90,7 @@ function get_default($value ,$type = "int")
  */
 function get_user_id()
 {   
-    $userId = session('user_id');
+    $userId = session("userId");
     if(isset($userId)){
         return $userId;
     }else{

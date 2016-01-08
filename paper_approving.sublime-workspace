@@ -1,0 +1,2075 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Cu",
+				"CustomerL"
+			],
+			[
+				"getLis",
+				"getListById"
+			],
+			[
+				"Use",
+				"UserL"
+			],
+			[
+				"Order",
+				"OrderL"
+			],
+			[
+				"Ord",
+				"OrderL"
+			],
+			[
+				"Orl",
+				"OrderLogic"
+			],
+			[
+				"Sale",
+				"SaleL"
+			],
+			[
+				"unse",
+				"unset"
+			],
+			[
+				"sale",
+				"sales"
+			],
+			[
+				"cu",
+				"Customer"
+			],
+			[
+				"to",
+				"totalCount"
+			],
+			[
+				"end",
+				"endTime"
+			],
+			[
+				"lis2",
+				"lists2"
+			],
+			[
+				"map",
+				"maps"
+			],
+			[
+				"ma",
+				"maps"
+			],
+			[
+				"begin",
+				"beginTime"
+			],
+			[
+				"ac",
+				"activity"
+			],
+			[
+				"fil",
+				"fileds"
+			],
+			[
+				"field",
+				"fields"
+			],
+			[
+				"act",
+				"ActivityL"
+			],
+			[
+				"Ac",
+				"ActivityL"
+			],
+			[
+				"In",
+				"IntroductionL"
+			],
+			[
+				"Eva",
+				"EvaluationCustomL"
+			],
+			[
+				"getSli",
+				"getSlideMapUrl"
+			],
+			[
+				"be",
+				"beginTime"
+			],
+			[
+				"for",
+				"formData"
+			],
+			[
+				"co",
+				"console"
+			],
+			[
+				"get",
+				"getCounts"
+			],
+			[
+				"Ro",
+				"RoomL"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"ass",
+				"assign"
+			],
+			[
+				"pri",
+				"print_r"
+			],
+			[
+				"preg",
+				"preg_match"
+			],
+			[
+				"exp",
+				"explode"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"uploaderd",
+				"uploaderDeletes"
+			],
+			[
+				"par",
+				"parseStr"
+			],
+			[
+				"con",
+				"content"
+			],
+			[
+				"pa",
+				"param	@param"
+			],
+			[
+				"file",
+				"fileId"
+			],
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"key",
+				"keywords"
+			],
+			[
+				"dow",
+				"down_page"
+			],
+			[
+				"_style",
+				"_styleSbadmin2"
+			],
+			[
+				"Cons",
+				"ConstructModel"
+			],
+			[
+				"Con",
+				"ConstructModel"
+			],
+			[
+				"value",
+				"values"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"form",
+				"formid"
+			],
+			[
+				"ue",
+				"ueditorid"
+			],
+			[
+				"ued",
+				"ueditor"
+			],
+			[
+				"json",
+				"json_decode"
+			],
+			[
+				"res",
+				"resetCommand"
+			],
+			[
+				"fi",
+				"field"
+			],
+			[
+				"fied",
+				"fields"
+			],
+			[
+				"fa",
+				"factroyTestFactory"
+			],
+			[
+				"facr",
+				"factroyTest"
+			],
+			[
+				"temp",
+				"templates"
+			],
+			[
+				"template",
+				"templateUrl"
+			],
+			[
+				"ion-check",
+				"ionic-checkbox	ionic-checkbox"
+			],
+			[
+				"ion-refre",
+				"ionic-refresher	ionic-refresher"
+			],
+			[
+				"Statue",
+				"statusbar〔variable〕"
+			],
+			[
+				"m",
+				"module	AngularJS"
+			],
+			[
+				"rati",
+				"$ratios〔variable〕"
+			],
+			[
+				"work",
+				"$workflowLogId〔variable〕"
+			],
+			[
+				"Work",
+				"WorkflowLogLogic"
+			],
+			[
+				"chain",
+				"$chainId〔variable〕"
+			],
+			[
+				"workflow",
+				"workflowId"
+			],
+			[
+				"wor",
+				"$workflowLog〔variable〕"
+			],
+			[
+				"worl",
+				"$workflowLogId〔variable〕"
+			],
+			[
+				"ng-cl",
+				"ng-click	AngularJS"
+			],
+			[
+				"modal",
+				"modalInt"
+			],
+			[
+				"$s",
+				"$scope	AngularJS"
+			],
+			[
+				"defin",
+				"defined〔function〕"
+			],
+			[
+				"expa",
+				"expanders"
+			],
+			[
+				"expan",
+				"expander"
+			],
+			[
+				"controller",
+				"controller	AngularJS"
+			],
+			[
+				"tr",
+				"try	Wrap in try { … } catch (…) { … }"
+			],
+			[
+				"publi",
+				"published"
+			],
+			[
+				"pub",
+				"$published〔variable〕"
+			],
+			[
+				"lis",
+				"$listDirn〔variable〕"
+			],
+			[
+				"list",
+				"$listDirn〔variable〕"
+			],
+			[
+				"JH",
+				"JHtml::_"
+			],
+			[
+				"getuser",
+				"getUserStateFromRequest〔function〕"
+			],
+			[
+				"impl",
+				"implode〔function〕"
+			],
+			[
+				"JModel",
+				"JModelItem〔class〕"
+			],
+			[
+				"COM",
+				"COM_HELLOWORLD_HELLOWORLD_FIELD_GREETING_DESC"
+			],
+			[
+				"COM_HEL",
+				"COM_HELLOWORLD_HELLOWORLD_FIELD_GREETING_LABEL"
+			],
+			[
+				"fiel",
+				"field"
+			],
+			[
+				"red",
+				"redirect()"
+			],
+			[
+				"getA",
+				"getApplication〔function〕"
+			],
+			[
+				"JFac",
+				"JFactory〔class〕"
+			],
+			[
+				"JController",
+				"JControllerLegacy〔class〕"
+			],
+			[
+				"depr",
+				"departmentPosts"
+			],
+			[
+				"ex",
+				"$examineId〔variable〕"
+			],
+			[
+				"Chain",
+				"ChainModel〔namespace〕"
+			],
+			[
+				"order",
+				"orderBy"
+			],
+			[
+				"dataMod",
+				"datamodelId"
+			],
+			[
+				"proje",
+				"$projectId〔variable〕"
+			],
+			[
+				"project",
+				"projectId"
+			],
+			[
+				"user",
+				"$usersPercent〔variable〕"
+			],
+			[
+				"pr",
+				"projects"
+			],
+			[
+				"sum",
+				"$sumPercent〔variable〕"
+			],
+			[
+				"type",
+				"$typeName〔variable〕"
+			],
+			[
+				"soc",
+				"$score〔variable〕"
+			],
+			[
+				"stat",
+				"$status〔variable〕"
+			],
+			[
+				"Wor",
+				"$WorkflowL〔variable〕"
+			],
+			[
+				"userN",
+				"$userName〔variable〕"
+			],
+			[
+				"proj",
+				"projectCategory"
+			],
+			[
+				"W",
+				"Widget"
+			],
+			[
+				"Pro",
+				"$ProjectL〔variable〕"
+			],
+			[
+				"cyc",
+				"cycleid"
+			],
+			[
+				"cycl",
+				"cycleId"
+			],
+			[
+				"fie",
+				"field()"
+			],
+			[
+				"Cyc",
+				"$CycleL〔variable〕"
+			],
+			[
+				"thin",
+				"Think\\Think〔class〕"
+			],
+			[
+				"Cycl",
+				"CycleL"
+			],
+			[
+				"Data",
+				"DataModel"
+			],
+			[
+				"dataModel",
+				"dataModelDetailRoots"
+			],
+			[
+				"datam",
+				"$dataModelId〔variable〕"
+			],
+			[
+				"Dat",
+				"$DataModelL〔variable〕"
+			],
+			[
+				"data",
+				"$dataModelDetail〔variable〕"
+			],
+			[
+				"DataModel",
+				"DataModelDetail"
+			],
+			[
+				"projectId",
+				"$projectId〔variable〕"
+			],
+			[
+				"ProjectDetai",
+				"ProjectDetailLogic"
+			],
+			[
+				"Porj",
+				"ProjectCategoryLogic〔namespace〕"
+			],
+			[
+				"getListbyp",
+				"getListsByProjectCategoryId"
+			],
+			[
+				"Por",
+				"ProjectCategoryRatioLogic〔namespace〕"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Application/Home/Controller/IndexController.class.php",
+			"settings":
+			{
+				"buffer_size": 799,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Application/Admin/View/Index/index.tpl",
+			"settings":
+			{
+				"buffer_size": 393,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Application/Yunzhi/Controller/WebuploaderController.class.php",
+			"settings":
+			{
+				"buffer_size": 448,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Public/js/js.js",
+			"settings":
+			{
+				"buffer_size": 8129,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix",
+				"name": "Xdebug Context",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix",
+				"name": "Xdebug Watch",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix",
+				"name": "Xdebug Stack",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "=> /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Sale/Logic/SaleLogic.class.php\n	|+| 21\n=> /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Model/YunzhiModel.class.php\n	|+| 157\n=> /Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Yunzhi/Controller/WebuploaderController.class.php\n	|+| 16\n",
+			"settings":
+			{
+				"buffer_size": 342,
+				"line_ending": "Unix",
+				"name": "Xdebug Breakpoint",
+				"read_only": true,
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 347.0,
+		"last_filter": "inst",
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"pageage",
+				"Package Control: Remove Package"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instap",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"instl",
+				"Package Control: Install Local Dependency"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"expand",
+				"Emmet: Expand Abbreviation"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"reni",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"renin",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"clo",
+				"File: Close All"
+			],
+			[
+				"close a",
+				"File: Close All"
+			],
+			[
+				"cloas",
+				"File: Close All"
+			],
+			[
+				"close al",
+				"File: Close All"
+			],
+			[
+				"closea",
+				"File: Close All"
+			],
+			[
+				"ren",
+				"ANF: Rename File"
+			],
+			[
+				"clear",
+				"Bookmarks: Clear All"
+			],
+			[
+				"close",
+				"File: Close All"
+			],
+			[
+				"toggle ",
+				"BracketHighlighter: Toggle Global Enable"
+			],
+			[
+				"togl",
+				"Toggle Block Comment"
+			],
+			[
+				"toglle",
+				"Toggle Block Comment"
+			],
+			[
+				"tog",
+				"View: Toggle Side Bar"
+			],
+			[
+				"xdeubg",
+				"Xdebug: Restore Layout"
+			],
+			[
+				"stop",
+				"Xdebug: Stop Debugging"
+			],
+			[
+				"start",
+				"Xdebug: Start Debugging"
+			],
+			[
+				"cl",
+				"Xdebug: Stop Debugging (Close Windows)"
+			],
+			[
+				"add",
+				"Xdebug: Add/Remove Breakpoint"
+			],
+			[
+				"xd",
+				"Xdebug: Start Debugging"
+			],
+			[
+				"dex",
+				"Xdebug: Set Watch Expression"
+			],
+			[
+				"break",
+				"Xdebug: Add/Remove Breakpoint"
+			],
+			[
+				"save as",
+				"Project: Save As"
+			],
+			[
+				"save",
+				"Project: Save As"
+			],
+			[
+				"renam",
+				"ANF: Rename File"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"rename",
+				"ANF: Rename File"
+			],
+			[
+				"closeall",
+				"File: Close All"
+			],
+			[
+				"intsall",
+				"Package Control: Install Package"
+			],
+			[
+				"git:",
+				"Git: Push"
+			],
+			[
+				"git:com",
+				"Git: Commit"
+			],
+			[
+				"setting us",
+				"Preferences: Settings - User"
+			],
+			[
+				"clos",
+				"File: Close All"
+			],
+			[
+				"search",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"setting",
+				"Preferences: Settings - Default"
+			],
+			[
+				"siderb",
+				"View: Toggle Side Bar"
+			],
+			[
+				"debug",
+				"Xdebug: Stop Debugging (Close Windows)"
+			],
+			[
+				"xdebug",
+				"Xdebug: Start Debugging"
+			],
+			[
+				"install package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 218.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Admin",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Admin/Controller",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Admin/View",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Admin/View/Index",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Config",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Config/Logic",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Home",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Yunzhi",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Yunzhi/Controller",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Public",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Public/uploads",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Public/uploads/ueditor",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Public/uploads/ueditor/file"
+	],
+	"file_history":
+	[
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/ThinkPHP/Library/Think/Template/TagLib/Html.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Common/Conf/config.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/Controller/AdminController.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/Model/Order/DetailModel.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Order/Logic/OrderLogic.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Customer/Logic/CustomerLogic.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Customer/Model/CustomerModel.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/Controller/CustomerController.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Order/detail.tpl",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Model/YunzhiModel.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/Controller/OrderController.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/User/Logic/UserLogic.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/Controller/UserController.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/Controller/SaleController.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Sale/Logic/SaleLogic.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Common/Common/function.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Order/index.tpl",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/CustomMenu/Logic/CustomMenuLogic.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Order/Model/OrderModel.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/Model/Order/IndexModel.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Common/Conf/config.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Runtime/Cache/Admin/9f59059f085c157c968074f47f7c816f.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Order/index.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Sale/edit.tpl",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Order",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Sale/edit.js.tpl",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Sale/index.tpl",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/Controller/RoomController.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Room/Logic/RoomLogic.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Admin/nav.tpl",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Api/Controller/CustomerController.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Admin/View/Base/head.tpl",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Book/Logic/BookLogic.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Book/Model/BookModel.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Api/Controller/RoomController.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Think/Model.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Room/Model/RoomModel.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Api/Controller/ActivityController.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Activity/Logic/ActivityLogic.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Introduction/Logic/IntroductionLogic.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Introduction/Model/IntroductionModel.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Api/Controller/IntroductionController.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Activity/Model/ActivityModel.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/EvaluationCustom/Logic/EvaluationCustomLogic.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/EvaluationCustom/Model/EvaluationCustomModel.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Api/Controller/SlideShowController.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Api/Controller/EvaluationController.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Think/Model/ViewModel.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/SlideShow/Logic/SlideShowLogic.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/SlideShow/Model/SlideShowModel.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Common/functions.php",
+		"/Users/panjie/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/Model/Sale/EditModel.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Base/footer.tpl",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Public/js/js.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Base/head.tpl",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Sale/editjs.tpl",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Room/edit.tpl",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Sale/Model/SaleModel.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Think/App.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/Controller/IndexController.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ethan-wechat.sublime-project",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Room/index.tpl",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Think/Template/TagLib/Html.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/Conf/tags.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Runtime/Cache/Admin/1d6971d4fa5409efaabfe5f6beac0677.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Behavior/CheckLangBehavior.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Room/add.tpl",
+		"/Users/panjie/Library/Application Support/Sublime Text 3/Packages/User/input.sublime-snippet",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/.gitignore",
+		"/Users/panjie/Library/Application Support/Sublime Text 3/Packages/User/edit.sublime-snippet",
+		"/Users/panjie/Library/Application Support/Sublime Text 3/Packages/User/untitled",
+		"/Users/panjie/Library/Application Support/Sublime Text 3/Packages/User/sbadmin2",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Index/index.tpl",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/Controller/TemplateController.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Menu/index.tpl",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Menu/index.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Public/css/style.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Runtime/Cache/Admin/17095ad3c583a6e7b9e3d14df62ee45b.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Controller/WebuploaderController.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Controller/UeditorController.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Org/Util/Ueditor.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Think/Controller.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Public/lib/uploadify/jquery.uploadify.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/ThinkPHP.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Public/lib/uploadify/jquery.uploadify.min.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Base/index.tpl",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/ThinkPHP/Library/Think/Page.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Base/body.tpl",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Template/icons.tpl",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/Controller/MenuController.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Menu/Model/MenuModel.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/Controller/SlideShowController.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Public/Admin/css/style.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Public/Admin/css/css.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/Model/Admin/ConstructModel.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Menu/Logic/MenuLogic.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Template/index.tpl",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Template/nav.tpl",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Template/table.tpl",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Common/Conf/admin.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Template/tables.tpl",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Base/header.tpl",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Base/nav.tpl",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Menu/add.tpl",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Public/Admin/font/fontawesome-webfont-0.eot",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Admin/left.tpl",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Template/left.tpl",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Base/left.tpl",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/Controller/CustomMenuController.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/chuhang/1/caikaihui/3-2.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/webuploader/examples/image-upload/index.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/webuploader/examples/image-upload/index.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/webuploader/server/fileupload.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Public/lib/ueditor/ueditor.function.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Conf/ueditor.json",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Common/Conf/yunzhi.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Common/Conf/home.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/View/Ueditor/config.tpl",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Common/Conf/api.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Ueditor",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/View",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Conf/config.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Public/yunzhi.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Git/index.tpl",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Public/admin.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/Controller/GitController.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Public/api.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 108.0,
+		"where_history":
+		[
+			"/Applications/XAMPP/xamppfiles/htdocs",
+			"/Applications/XAMPP/xamppfiles/htdocs/joomla/administrator/components",
+			"/Applications/XAMPP/xamppfiles/htdocs/joomla/administrator",
+			"/Applications/XAMPP/xamppfiles/htdocs/callme119"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"button",
+			"parameter",
+			">\n",
+			"}\">\n",
+			"think",
+			"</div>\n                        <div class=\"col-xs-12\">",
+			"取消订单",
+			";&",
+			">\n",
+			"</label>",
+			":</label>",
+			"<label>",
+			"label",
+			"3",
+			"Order",
+			"getP",
+			"fenTo",
+			"fTo	",
+			"data",
+			"room",
+			"room_id",
+			"ave",
+			"sales",
+			"room_id",
+			";\n",
+			"ini",
+			"init",
+			"begin_time",
+			"begin",
+			"房型",
+			"begin",
+			"book",
+			"books",
+			"Book",
+			"book",
+			"Book",
+			"book",
+			"Book",
+			"ethan_wechat",
+			"datas",
+			"return",
+			"Sale",
+			"		\n",
+			"();\n",
+			"			\n",
+			"Logic",
+			"		\n",
+			"                               \n",
+			";\n",
+			">\n",
+			"		$",
+			"Room",
+			"room",
+			"Room",
+			"room",
+			"RoomL",
+			"rooms",
+			"RoomL",
+			"Room",
+			" \n",
+			"num",
+			"center",
+			"SlideShow",
+			"slideshow",
+			"SlideShow",
+			"slideshow",
+			"SlideShow",
+			"slideshow",
+			"SlideShow",
+			"slideshow",
+			"SlideShow",
+			"slideshow",
+			"SlideShow",
+			"slideshow",
+			"SlideShow",
+			"slideshow",
+			"SlideShow",
+			"slideshow",
+			"SlideShow",
+			"Room",
+			"slideshow",
+			"SlideShow",
+			"}",
+			"SlideShow",
+			"slideshow",
+			"SlideShow",
+			"slideshow",
+			"SlideShow",
+			"slideshow",
+			"SlideShow",
+			"slideshow",
+			"SlideShow",
+			"slideshow",
+			"SlideShow",
+			"slideshow",
+			"SlideShow",
+			"slideshow",
+			"SlideShow",
+			"slideshow",
+			"SlideShow",
+			"  // $parseStr = '<input type=\"text\" id=\"file\" name=\"file\" value=\"' . $value . '\" />';\n        // $parseStr .= '<ul class=\"' . $class . '\" id=\"' . $name .'_img\">';\n\n        // $parseStr .= '<?php $lists = explode(\",\", $' . $value . '); foreach($lists as $key =>$value) : ' ;\n        // $parseStr .=  \"<li>\";          \n        // $parseStr .=  \"<img src='$value' class='img-rounded' />\";\n        // $parseStr .=  '<button type=\"button\" class=\"uploaderDelete btn btn-danger btn-xs\">删除</button>';\n        // $parseStr .= '</li>';\n        // $parseStr .= \"<?php endforeach; ?>\";\n        // $parseStr .='<div class=",
+			" \n",
+			"fileId",
+			"p",
+			"delAttachment",
+			"jsonData",
+			"j.height",
+			"uploadify-button",
+			"uploadify-button-text",
+			"height",
+			"height: ",
+			"height:50",
+			"height",
+			"50",
+			"30",
+			"height",
+			"style=",
+			"style",
+			"stle",
+			">\n",
+			"yunzhi",
+			"filePicker2",
+			"webuploader-pick",
+			"webuploader-pick\\",
+			"$upload",
+			"filePicker2",
+			"选择图片",
+			"开始上传"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Application/Home/Controller/IndexController.class.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 799,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								129,
+								129
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Application/Admin/View/Index/index.tpl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 393,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								393,
+								393
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Application/Yunzhi/Controller/WebuploaderController.class.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 448,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								330,
+								330
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Public/js/js.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8129,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								548,
+								548
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"default_dir": "/Applications/XAMPP/xamppfiles/htdocs/paper_approving",
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"default_dir": "/Applications/XAMPP/xamppfiles/htdocs/paper_approving",
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 6,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"default_dir": "/Applications/XAMPP/xamppfiles/htdocs/paper_approving",
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 342,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								342,
+								342
+							]
+						],
+						"settings":
+						{
+							"default_dir": "/Applications/XAMPP/xamppfiles/htdocs/paper_approving",
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 35.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				2,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.7,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 154.0
+	},
+	"output.xdebug":
+	{
+		"height": 154.0
+	},
+	"pinned_build_system": "",
+	"project": "paper_approving.sublime-project",
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"js.js",
+				"Public/js/js.js"
+			],
+			[
+				"html.cl",
+				"ThinkPHP/Library/Think/Template/TagLib/Html.class.php"
+			],
+			[
+				"config",
+				"Application/Common/Conf/config.php"
+			],
+			[
+				"yunz",
+				"Application/Yunzhi/Model/YunzhiModel.class.php"
+			],
+			[
+				"adminc",
+				"Application/Admin/Controller/AdminController.class.php"
+			],
+			[
+				"yunzim",
+				"Application/Yunzhi/Model/YunzhiModel.class.php"
+			],
+			[
+				"yunzhi",
+				"Application/Yunzhi/Model/YunzhiModel.class.php"
+			],
+			[
+				"func",
+				"Application/Common/Common/function.php"
+			],
+			[
+				"yuhzhim",
+				"Application/Yunzhi/Model/YunzhiModel.class.php"
+			],
+			[
+				"9f59059f085c157c968074f47f7c816f",
+				"Runtime/Cache/Admin/9f59059f085c157c968074f47f7c816f.php"
+			],
+			[
+				"9f59059f085c157c968074f47f7c816f.php",
+				"Runtime/Cache/Admin/9f59059f085c157c968074f47f7c816f.php"
+			],
+			[
+				"yunzhim",
+				"Application/Yunzhi/Model/YunzhiModel.class.php"
+			],
+			[
+				"yunzhm",
+				"Application/Yunzhi/Model/YunzhiModel.class.php"
+			],
+			[
+				"usermo",
+				"Application/Customer/Model/CustomerModel.class.php"
+			],
+			[
+				"orderm",
+				"Application/Order/Model/OrderModel.class.php"
+			],
+			[
+				"function",
+				"Application/Common/Common/function.php"
+			],
+			[
+				"roomc",
+				"Application/Admin/Controller/RoomController.class.php"
+			],
+			[
+				"roomcon",
+				"Application/Admin/Controller/RoomController.class.php"
+			],
+			[
+				"saleco",
+				"Application/Admin/Controller/SaleController.class.php"
+			],
+			[
+				"head",
+				"Application/Admin/View/Base/head.tpl"
+			],
+			[
+				"conf",
+				"Application/Common/Conf/config.php"
+			],
+			[
+				"yu",
+				"Application/Yunzhi/Model/YunzhiModel.class.php"
+			],
+			[
+				"viewmo",
+				"ThinkPHP/Library/Think/Model/ViewModel.class.php"
+			],
+			[
+				"roommod",
+				"Application/Room/Model/RoomModel.class.php"
+			],
+			[
+				"1d6971d4fa5409efaabfe5f6beac0677",
+				"Runtime/Cache/Admin/1d6971d4fa5409efaabfe5f6beac0677.php"
+			],
+			[
+				"check",
+				"ThinkPHP/Library/Behavior/CheckLangBehavior.class.php"
+			],
+			[
+				"model",
+				"ThinkPHP/Library/Think/Model.class.php"
+			],
+			[
+				"yunzh",
+				"Application/Yunzhi/Model/YunzhiModel.class.php"
+			],
+			[
+				"html.",
+				"ThinkPHP/Library/Think/Template/TagLib/Html.class.php"
+			],
+			[
+				"html",
+				"ThinkPHP/Library/Think/Template/TagLib/Html.class.php"
+			],
+			[
+				"htm",
+				"ThinkPHP/Library/Think/Template/TagLib/Html.class.php"
+			],
+			[
+				"17095ad3c583a6e7b9e3d14df62ee45b",
+				"Runtime/Cache/Admin/17095ad3c583a6e7b9e3d14df62ee45b.php"
+			],
+			[
+				"html.c",
+				"ThinkPHP/Library/Think/Template/TagLib/Html.class.php"
+			],
+			[
+				"contro",
+				"ThinkPHP/Library/Think/Controller.class.php"
+			],
+			[
+				"think",
+				"ThinkPHP/ThinkPHP.php"
+			],
+			[
+				"yunzhimo",
+				"Application/Yunzhi/Model/YunzhiModel.class.php"
+			],
+			[
+				"page",
+				"ThinkPHP/Library/Think/Page.class.php"
+			],
+			[
+				"html.php",
+				"ThinkPHP/Library/Think/Template/TagLib/Html.class.php"
+			],
+			[
+				"admin.",
+				"Public/admin.php"
+			],
+			[
+				"page.cl",
+				"ThinkPHP/Library/Think/Page.class.php"
+			],
+			[
+				"controller",
+				"ThinkPHP/Library/Think/Controller.class.php"
+			],
+			[
+				"public",
+				"Public/index.php"
+			],
+			[
+				"scorelogic.class.php",
+				"Application/Score/Logic/ScoreLogic.class.php"
+			],
+			[
+				"scientificresearch/indexcon",
+				"Application/ScientificResearch/Controller/IndexController.class.php"
+			],
+			[
+				"scientificresearch/ind",
+				"Application/DataManage/View/ScientificResearch/index.html"
+			],
+			[
+				"projectcategory/scientificresearch",
+				"Application/ProjectCategory/Controller/ScientificResearchController.class.php"
+			],
+			[
+				"exception",
+				"ThinkPHP/Library/Think/Exception.class.php"
+			],
+			[
+				"helloworld/view.html.php",
+				"administrator/components/com_helloworld/views/helloworld/view.html.php"
+			],
+			[
+				"com_helloworld/default",
+				"administrator/components/com_helloworld/views/helloworlds/tmpl/default.php"
+			],
+			[
+				"views/helloworld/view.html.php",
+				"administrator/components/com_helloworld/views/helloworld/view.html.php"
+			],
+			[
+				"",
+				"libraries/joomla/factory.php"
+			],
+			[
+				"user/post",
+				"Application/User/Controller/PostController.class.php"
+			],
+			[
+				"/scientificresearch/add.html",
+				"Application/ScientificResearch/View/Index/addJs.html"
+			],
+			[
+				"scientificresearch/indexc",
+				"Application/ScientificResearch/Controller/IndexController.class.php"
+			],
+			[
+				"myjob/index/taskdetail",
+				"Application/Myjob/View/Index/taskdetail.html"
+			],
+			[
+				"myjob/indexcon",
+				"Application/Myjob/Controller/IndexController.class.php"
+			],
+			[
+				"myjob/index",
+				"Application/Myjob/View/Index/taskdetail.html"
+			],
+			[
+				"datamanage/scientificresearch",
+				"Application/DataManage/Controller/ScientificResearchController.class.php"
+			],
+			[
+				"task/logic/userlogic.class.php",
+				"Application/Task/Logic/UserLogic.class.php"
+			],
+			[
+				"b25221df0d9d287f8e4c48a14f225144.php",
+				"Runtime/Cache/Examine/b25221df0d9d287f8e4c48a14f225144.php"
+			],
+			[
+				"/b25221df0d9d287f8e4c48a14f225144.php",
+				"Runtime/Cache/Examine/b25221df0d9d287f8e4c48a14f225144.php"
+			],
+			[
+				"config.php",
+				"Application/Common/Conf/config.php"
+			],
+			[
+				"examine/index/",
+				"Application/Examine/View/Index/examinelist.html"
+			],
+			[
+				"user/index/index.html",
+				"Application/User/View/Index/index.html"
+			],
+			[
+				"/scientificresearch/index",
+				"Application/DataManage/View/ScientificResearch/index.html"
+			],
+			[
+				"scientificresearch/controller/indexcontroller.class.php",
+				"Application/ScientificResearch/Controller/IndexController.class.php"
+			],
+			[
+				"myjob/controller/indexcontroller.class.php",
+				"Application/Myjob/Controller/IndexController.class.php"
+			],
+			[
+				"projectcategory/controller/indexcontroller.class.php",
+				"Application/ProjectCategory/Controller/IndexController.class.php"
+			],
+			[
+				"scientificresearch/index.html",
+				"Application/ScientificResearch/View/Index/index.html"
+			],
+			[
+				"scientificresearch/index",
+				"Application/DataManage/View/ScientificResearch/index.html"
+			],
+			[
+				"confi",
+				"Application/Common/Conf/config.php"
+			],
+			[
+				"examine/index",
+				"Application/Examine/Controller/IndexController.class.php"
+			],
+			[
+				"fun",
+				"Application/Common/Common/function.php"
+			],
+			[
+				"projectcategoryratio/logic/projectcategoryratiologic.class.php",
+				"Application/ProjectCategoryRatio/Logic/ProjectCategoryRatioLogic.class.php"
+			],
+			[
+				"model.class.php",
+				"ThinkPHP/Library/Think/Model.class.php"
+			],
+			[
+				"projectcategoryratiowidget.class.php",
+				"Application/ProjectCategoryRatio/Widget/ProjectCategoryRatioWidget.class.php"
+			],
+			[
+				"detail",
+				"Application/DataManage/View/Index/detail.html"
+			],
+			[
+				"/datamanage/indexcon",
+				"Application/DataManage/Controller/IndexController.class.php"
+			],
+			[
+				"/datamanage/scientificresearch",
+				"Application/DataManage/Controller/ScientificResearchController.class.php"
+			],
+			[
+				"dataman/index",
+				"Application/DataManage/View/Index/index.html"
+			],
+			[
+				"tasklog",
+				"Application/Task/Logic/TaskLogic.class.php"
+			],
+			[
+				"e64e",
+				"Runtime/Cache/Task/e64e4d4fdc6cef0a117b039420ac9e45.php"
+			],
+			[
+				"bas",
+				"Application/Task/Controller/BaseTeachingController.class.php"
+			],
+			[
+				"datamodel/index.html",
+				"Application/DataModel/View/Index/index.html"
+			],
+			[
+				"sceires/wid",
+				"Application/ScientificResearch/Widget/ProjectWidget.class.php"
+			],
+			[
+				"datamode/deta",
+				"Application/DataModel/View/Index/detail.html"
+			],
+			[
+				"5889",
+				"Runtime/Cache/DataModel/5889dabe1a830dd42ec68dd37861c25c.php"
+			],
+			[
+				"datamodel/edit",
+				"Application/DataModel/View/Index/detail.html"
+			],
+			[
+				"scipara/index",
+				"Application/ScientificParameter/Controller/IndexController.class.php"
+			],
+			[
+				"scipar/index.html",
+				"Application/ScientificParameter/View/Index/index.html"
+			],
+			[
+				"scientifi/indexcon",
+				"Application/ScientificResearch/Controller/IndexController.class.php"
+			],
+			[
+				"scientifi/detail",
+				"Application/ScientificResearch/View/Index/detail.html"
+			],
+			[
+				"projectdetaillogic",
+				"Application/ProjectDetail/Logic/ProjectDetailLogic.class.php"
+			],
+			[
+				"projectwi",
+				"Application/ScientificResearch/Widget/ProjectWidget.class.php"
+			],
+			[
+				"scientificres/index.html",
+				"Application/ScientificResearch/View/Index/index.html"
+			],
+			[
+				"scienfires/index.htl",
+				"Application/ScientificResearch/Model/index.html"
+			],
+			[
+				"scientifipar/add.html",
+				"Application/ScientificParameter/View/Index/add.html"
+			],
+			[
+				"projectcategoryratiomodel",
+				"Application/ProjectCategoryRatio/Model/ProjectCategoryRatioModel.class.php"
+			],
+			[
+				"addjs.",
+				"Application/ScientificParameter/View/Index/addJs.html"
+			],
+			[
+				"scientificp/add.",
+				"Application/ScientificParameter/View/Index/add.html"
+			],
+			[
+				"scientific/indexcon",
+				"Application/ScientificParameter/Controller/IndexController.class.php"
+			],
+			[
+				"scientif/inde.html",
+				"Application/ScientificParameter/View/Index/index.html"
+			],
+			[
+				"debug",
+				"Application/Common/Conf/debug.php"
+			],
+			[
+				"projectcategorymodel",
+				"Application/ProjectCategory/Model/ProjectCategoryModel.class.php"
+			],
+			[
+				"addjs.htm",
+				"Application/ScientificParameter/View/Index/addJs.html"
+			],
+			[
+				"scien/add.html",
+				"Application/ScientificParameter/View/Index/add.html"
+			],
+			[
+				"add.html",
+				"Application/AcademicPerformance/View/Index/add.html"
+			],
+			[
+				"scien/indexcon",
+				"Application/ScientificParameter/Controller/IndexController.class.php"
+			],
+			[
+				"logincon",
+				"Application/Login/Controller/IndexController.class.php"
+			],
+			[
+				"admincontroller.class.php",
+				"Application/Admin/Controller/AdminController.class.php"
+			],
+			[
+				"496b",
+				"Runtime/Cache/AcademicPerformance/429b7a63a6d8fac2616c5784b8064891.php"
+			],
+			[
+				"sci/indexcon",
+				"Application/ScientificParameter/Controller/IndexController.class.php"
+			],
+			[
+				"sci/add.hmtl",
+				"Application/ScientificParameter/View/Index/add.html"
+			],
+			[
+				"scip/index.html",
+				"Application/ScientificParameter/View/Index/index.html"
+			],
+			[
+				"unfi",
+				"Application/Myjob/View/Index/unfinished.html"
+			],
+			[
+				"taskd",
+				"Application/Myjob/View/Index/taskdetail.html"
+			],
+			[
+				"myjob/indecco",
+				"Application/Myjob/Controller/IndexController.class.php"
+			],
+			[
+				"artic",
+				"ThinkPHP/Library/OT/TagLib/Article.class.php"
+			],
+			[
+				"cx.cl",
+				"ThinkPHP/Library/Think/Template/TagLib/Cx.class.php"
+			],
+			[
+				"cx.cla",
+				"ThinkPHP/Library/Think/Template/TagLib/Cx.class.php"
+			],
+			[
+				"examine/con",
+				"Application/Examine/Controller/IndexController.class.php"
+			],
+			[
+				"scient/add",
+				"Application/ScientificResearch/View/Index/add.html"
+			],
+			[
+				"scie/add",
+				"Application/ScientificParameter/View/Index/add.html"
+			],
+			[
+				"scires/index",
+				"Application/ScientificResearch/Controller/IndexController.class.php"
+			],
+			[
+				"exam/index",
+				"Application/Examine/Controller/IndexController.class.php"
+			],
+			[
+				"scieres/add",
+				"Application/ScientificResearch/View/Index/add.html"
+			],
+			[
+				"examinm",
+				"Application/Examine/Model/ExamineModel.class.php"
+			],
+			[
+				"userpe",
+				"Application/UserDepartmentPost/Model/UserDepartmentPostModel.class.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"xdebug":
+		{
+			"hide_conflict": false,
+			"restore_index":
+			{
+				"15":
+				{
+					"group": 0,
+					"index": 0
+				},
+				"16":
+				{
+					"group": 0,
+					"index": 1
+				},
+				"18":
+				{
+					"group": 0,
+					"index": 3
+				},
+				"19":
+				{
+					"group": 0,
+					"index": 2
+				}
+			},
+			"restore_layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			}
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 417.0,
+	"status_bar_visible": false,
+	"template_settings":
+	{
+	}
+}
