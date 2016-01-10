@@ -135,19 +135,100 @@ class Html extends TagLib{
 
     public function _uploader($tag, $content = null)
     {
-        $name       = isset($tag['name']) ? $tag['name'] : 'file';          //生成input中id namew值
-        $class      = isset($tag['class']) ? $tag['class'] : 'uploader';    //样式表
-        $value      = isset($tag['value']) ? $tag['value'] : '';            //要显示的以,分隔的字符串值
-        $debug      = isset($tag['debug']) ? $tag['debug'] : 'false';       //是否启用debug
-        $btnClass   = isset($tag['btnclass']) ? $tag['btnclass'] : 'btn btn-primary';   //按钮class
-        $type       = ($tag['type'] == "file") ? "file" : "image";             //附件上传类型，默认为image
-        $content    = isset($content) ? $content : "上传图片";  //按钮显示字样
+        $name           = isset($tag['name']) ? $tag['name'] : 'file';          //生成input中id namew值
+        $class          = isset($tag['class']) ? $tag['class'] : '';    //样式表
+        $value          = isset($tag['value']) ? $tag['value'] : '';            //要显示的以,分隔的字符串值
+        $debug          = isset($tag['debug']) ? $tag['debug'] : 'false';       //是否启用debug
+        $btnClass       = isset($tag['btnclass']) ? $tag['btnclass'] : 'btn btn-primary';   //按钮class
+        $type           = ($tag['type'] == "file") ? "file" : "image";             //附件上传类型，默认为image
+        $uploadLimit    = $tag['uploadLimit'];         //TODO:最大上传数
+        $queueSizeLimit = $tag['queueSizeLimit'];   //TODO:最大队列数
+        $content        = isset($content) ? $content : "上传图片";  //按钮显示字样
 
+
+        //获取配置信息
+        $configFile = APP_PATH . "Yunzhi/Conf/ueditor.json";
+        $config = json_decode(preg_replace("/\/\*[\s\S]+?\*\//", "", file_get_contents($configFile)), true);
+        
+        //获取提交的表单名称
+        if (isset($config['filename']))
+        {
+            $fileObjName = $config['filename'];
+        }
+        else
+        {
+            $fileObjName = "yunzhifile";
+        }
+
+        //获取允许上传的扩展名信息
+        if (isset($config[$type . "AllowFiles"]))
+        {
+            $i = 0;
+            $fileTypeExts = "";
+            foreach ($config[$type . "AllowFiles"] as $k => $v)
+            {
+                if (!$i)
+                {
+                    $i++;
+                    $fileTypeExts .= "*" . "$v";
+                }
+                else
+                {
+                    $fileTypeExts .= "; *" . "$v";
+                }
+            }  
+        }
+        else 
+        {
+            $fileTypeExts = "*.*";
+        }
+        
+        //获取上传附件类型描述
+        if (isset($config[$type . "TypeDesc"]))
+        {
+            $fileTypeDesc = $config[$type . "TypeDesc"];
+        }
+        else
+        {
+            $fileTypeDesc = "上传附件类型";
+        }
+
+        //设置上传附件大小
+        if (isset($config[$type . "MaxSize"]))
+        {
+            $fileSizeLimit = $config[$type . "MaxSize"] . 'B';
+        }
+        else
+        {
+            $fileSizeLimit = '2048000B'; //未设置则默认给2MB
+        }
+
+        //设置单次上传的最大附件数
+        if (isset($config[$type . "UploadLimit"]))
+        {
+            $uploadLimit = $config[$type . "UploadLimit"];
+        }
+        else
+        {
+            $uploadLimit = 20; //未设置则默认给20个.
+        }
+
+        //设置单次添加的队列数
+        if (isset($config[$type . "QueueSizeLimit"]))
+        {
+            $queueSizeLimit = $config[$type . "QueueSizeLimit"];
+        }
+        else
+        {
+            $queueSizeLimit = 20; //未设置则默认给20个.
+        }
+
+        //拼接字符串
         $parseStr = '<input type="hidden" id="' . $name . '" name="' . $name . '" value="<?php echo $' . $value . '; ?>" />';
         
         if ($type == "image")
         {
-            $parseStr .= '<div class="' . $class . '" id="' . $name .'_img"><ul>';
+            $parseStr .= '<div class="uploader" id="' . $name .'_img"><ul>';
             $parseStr .= '<?php if($' . $value .' !== "" && isset($' . $value . ')) : $lists = explode(",", $' . $value . '); foreach($lists as $key =>$value) : ?>' ;
             $parseStr .=  "<li>";          
             $parseStr .=  '<a href="<?php echo $value; ?>" target="_blank"><img src="<?php echo $value; ?>" class="img-rounded" /></a>';
@@ -158,14 +239,24 @@ class Html extends TagLib{
         }
         else
         {
-            //如果类型不是图片，就是文件。
+            //TODO:如果类型不是图片，就是文件。
             //那么进行table的接拼
+            $parseStr .=   '<div class="row uploaderTables">
+                                <div class="' . $class . '">
+                                    <table id="filetest_table" class="table table-striped table-bordered table-hover">
+                                        <tr>
+                                            <th width="80%">附件</th>
+                                            <th width="20%">大小</th>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>';
         }
 
         $parseStr .='<div class="uploadify"><div id="queue"></div><input id="' . $name . '_upload" name="' . $name . '_upload" type="file" multiple="true"><div class="error"></div></div>';
         $parseStr .='<script type="text/javascript">
                         $(function(){
-                            uploader("__ROOT__","' . $name . '","' . $btnClass . '", "' . $content. '",' . $debug . ', "' . $type .'");
+                            uploader("__ROOT__","' . $name . '", "' . $fileObjName. '", "' . $btnClass . '", "' . $content. '",' . $debug . ', "' . $type .'", "' . $fileTypeDesc . '", "' . $fileTypeExts . '", "' . $fileSizeLimit . '", ' . $queueSizeLimit . ', ' . $uploadLimit . ');
                         }); 
                     </script>';
         return $parseStr;

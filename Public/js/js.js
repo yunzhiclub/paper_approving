@@ -99,13 +99,19 @@ var dataInit = function(){
  * uploaer 实例化
  * @param  {string} ROOT     调用uploader根路径
  * @param  {string} id       操作的DOM关键字
+ * @param {string} fileObjName 表单值
  * @param  {sting} btnClass 按钮额外的CLASS
  * @param  {string} btnText  按钮显示文字
  * @param  bool debug 是否启用debug调试
  * @param  string type 附件上传类型（file 或 image）
- * @return {void}          [description]
+ * @param { } fileTypeDesc 上传附件格式描述
+ * @param {string} fileTypeExts 上传附件扩展名
+ * @param {int} fileSizeLimit 附件大小限制
+ * @param {int} queueSizeLimit 附件队列限制
+ * @param {int} uploadlimit 附件上传最大数
+ * @return {object}          [uploadify]
  */
- var uploader = function(ROOT, id, btnClass, btnText, debug, type) {
+ var uploader = function(ROOT, id, fileObjName, btnClass, btnText, debug, type, fileTypeDesc, fileTypeExts, fileSizeLimit, queueSizeLimit, uploadLimit) {
      if (id === undefined) {
          id = "file";
      }
@@ -122,7 +128,12 @@ var dataInit = function(){
          'removeTimeout': 3,
          'buttonText': btnText,
          'buttonClass': btnClass,
-         'fileObjName': 'yunzhifile',
+         'fileObjName': fileObjName,
+         'fileTypeExts': fileTypeExts,
+         'fileTypeDesc': fileTypeDesc,
+         'fileSizeLimit': fileSizeLimit,
+         'queueSizeLimit': queueSizeLimit,
+         'uploadLimit': uploadLimit,
          'debug': debug,
          'swf': ROOT + '/lib/uploadify/uploadify.swf',
          'uploader': ROOT + '/yunzhi.php/Attachment/upload?action=upload' + type,
@@ -130,6 +141,7 @@ var dataInit = function(){
              alert('The file ' + file.name + ' could not be uploaded: ' + errorString);
          },
          'onUploadSuccess': function(file, data, response) {
+            console.log(data);
              addHtml(file, data, response, id, type);
          },
      });
