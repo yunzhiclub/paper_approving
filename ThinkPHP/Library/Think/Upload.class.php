@@ -9,6 +9,9 @@
 // | Author: 麦当苗儿 <zuojiazi@vip.qq.com> <http://www.zjzit.cn>
 // +----------------------------------------------------------------------
 namespace Think;
+
+use Yunzhi\Logic\AttachMentLogic;   //附件
+
 class Upload {
     /**
      * 默认上传配置
@@ -145,6 +148,27 @@ class Upload {
         // 对上传文件数组信息处理
         $files   =  $this->dealFiles($files);    
         foreach ($files as $key => $file) {
+
+            /* 获取文件hash */
+            if($this->hash){
+                $file['md5']  = md5_file($file['tmp_name']);
+                $file['sha1'] = sha1_file($file['tmp_name']);
+
+                 /* 判断文件是否已经存在 */
+                if (class_exists(AttachmentLogic::class))
+                {
+                    //查找关联记录,如果存在，则取出关联ID的信息, 并返回
+                    $AttachmentL = new AttachmentLogic;
+                    if ($attachment = $AttachmentL->getListBySha1Md5RecoredId($file['sha1'], $file['md5'], 0))
+                    {
+                        //重新置为新的文件名
+                        $attachment['name'] = strip_tags($file['name']);
+                        $info[$key] = $attachment;
+                        continue;
+                    }
+                }
+            }
+
             $file['name']  = strip_tags($file['name']);
             if(!isset($file['key']))   $file['key']    =   $key;
             /* 通过扩展获取文件类型，可解决FLASH上传$FILES数组返回文件类型错误的问题 */
@@ -160,11 +184,7 @@ class Upload {
                 continue;
             }
 
-            /* 获取文件hash */
-            if($this->hash){
-                $file['md5']  = md5_file($file['tmp_name']);
-                $file['sha1'] = sha1_file($file['tmp_name']);
-            }
+
 
             /* 调用回调函数检测文件是否存在 */
             $data = call_user_func($this->callback, $file);
@@ -181,7 +201,7 @@ class Upload {
             $savename = $this->getSaveName($file);
             if(false == $savename){
                 continue;
-            } else {
+            } else  {
                 $file['savename'] = $savename;
             }
 
@@ -203,7 +223,9 @@ class Upload {
                 }
             }
 
-            /* 保存文件 并记录保存成功的文件 */
+           
+
+            /* 保存文件 如果不存在关联记录，则直接保存文件，否则直接跳过。 */
             if ($this->uploader->save($file,$this->replace)) {
                 unset($file['error'], $file['tmp_name']);
                 $info[$key] = $file;
@@ -211,6 +233,7 @@ class Upload {
                 $this->error = $this->uploader->getError();
             }
         }
+
         if(isset($finfo)){
             finfo_close($finfo);
         }

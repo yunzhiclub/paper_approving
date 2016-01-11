@@ -28,11 +28,24 @@ $(function(){
  */
  var uploaderDeleteClick = function() {
      $(".uploaderDelete").each(function() {
-         this.addEventListener("click", function() {
-             $(this).parent().remove();
-             var file = $("#" + $(this).attr("data-file"));
-             var url = $(this).attr("data-url");
-             file.val(file.val().split(",").remove(url).join(","));
+         this.addEventListener("click", function() {           
+             var file = $("#" + $(this).attr("data-file"));         //对应表单值
+             var type = $(this).attr("data-type");                 //类型image或file
+             var id = $(this).attr("data-id");                      //附件ID
+             file.val(file.val().split(",").remove(id).join(","));  //unset相关数据
+
+             //根据不同的type值，决定去除HTML信息
+             if (type == 'image')
+             {
+                $(this).parent().remove();
+             }
+             else
+             {
+                $(this).parent().parent().remove();
+             }
+
+             //记录当前附件ID值
+             console.log(file.val());
          })
      });
  }
@@ -61,7 +74,7 @@ var dataInit = function(){
   * @param {[string]} fileId 用以存附件的字符串   
   * @param {string}  dom DOM的追加位置
   */
- var addHtml = function(file, data, response, fileId) {
+ var addHtml = function(file, data, response, fileId, type) {
      if (fileId === undefined) {
          fileId = "file";
      }
@@ -71,27 +84,54 @@ var dataInit = function(){
          fileArray = fileValue.split(",");
      }
      var jsonData = JSON.parse(data);
+     //返回数据成功,则按上传类型追加。
+     //失败。则提示失败原因
      if (jsonData.state === 'SUCCESS') {
-         $("#" + fileId + "_img ul").append('<li><a href="'+jsonData.url+'" target="_blank"><img src="' + jsonData.url + '" class="img-rounded" /></a><button type="button" data-url="' + jsonData.url + '" data-file="' + fileId + '" class="uploaderDelete btn btn-danger btn-xs"><i class="fa fa-times"></i></button></li>');
+        if (type == "image")
+        {
+            $("#" + fileId + "_img ul").append('<li><a href="'+jsonData.url+'" target="_blank"><img src="' + jsonData.url + '" class="img-rounded" /></a><button type="button" data-id="' + jsonData.id+ '" data-url="' + jsonData.url + '" data-type="' + type + '" data-file="' + fileId + '" class="uploaderDelete btn btn-danger btn-xs"><i class="fa fa-times"></i></button></li>');
+        }
+        else
+        {
+            console.log(jsonData);
+            $("#" + fileId + "_table").append('<tr><td><a target="_blank" href="' + jsonData.url + '">' + jsonData.name + '</a>&nbsp;&nbsp;<a href="javascript:void(0);" data-id="' + jsonData.id+ '" data-url="' + jsonData.url + '" data-type="' + type + '" data-file="' + fileId + '" class="uploaderDelete text-danger"><i class="glyphicon glyphicon-trash"></i></a></td><td>' + jsonData.size/1000 + 'KB</td></tr>');
+        }
+        fileArray.push(jsonData.id);
+        $("#" + fileId).val(fileArray.join(","));
+        uploaderDeleteClick();
+     }
+     else
+     {
+        alert(jsonData.state);
      }
 
-     fileArray.push(jsonData.url);
-     $("#" + fileId).val(fileArray.join(","));
-     uploaderDeleteClick();
+
  }
 
 /**
  * uploaer 实例化
  * @param  {string} ROOT     调用uploader根路径
  * @param  {string} id       操作的DOM关键字
+ * @param {string} fileObjName 表单值
  * @param  {sting} btnClass 按钮额外的CLASS
  * @param  {string} btnText  按钮显示文字
- * @return {void}          [description]
+ * @param  bool debug 是否启用debug调试
+ * @param  string type 附件上传类型（file 或 image）
+ * @param { } fileTypeDesc 上传附件格式描述
+ * @param {string} fileTypeExts 上传附件扩展名
+ * @param {int} fileSizeLimit 附件大小限制
+ * @param {int} queueSizeLimit 附件队列限制
+ * @param {int} uploadlimit 附件上传最大数
+ * @param { sting} value 表单初始值
+ * @return {object}          [uploadify]
  */
- var uploader = function(ROOT, id, btnClass, btnText) {
+ var uploader = function(ROOT, id, fileObjName, btnClass, btnText, debug, type, fileTypeDesc, fileTypeExts, fileSizeLimit, queueSizeLimit, uploadLimit, value) {
      if (id === undefined) {
          id = "file";
      }
+
+     //赋值
+     $("#"+ id).val(value);
 
      var fileId = id + '_upload';
      if (btnClass === undefined) {
@@ -105,15 +145,21 @@ var dataInit = function(){
          'removeTimeout': 3,
          'buttonText': btnText,
          'buttonClass': btnClass,
-         'fileObjName': 'yunzhifile',
+         'fileObjName': fileObjName,
+         'fileTypeExts': fileTypeExts,
+         'fileTypeDesc': fileTypeDesc,
+         'fileSizeLimit': fileSizeLimit,
+         'queueSizeLimit': queueSizeLimit,
+         'uploadLimit': uploadLimit,
+         'debug': debug,
          'swf': ROOT + '/lib/uploadify/uploadify.swf',
-         'uploader': ROOT + '/yunzhi.php/ueditor/index?action=uploadimage',
-         'debug': false,
+         'uploader': ROOT + '/yunzhi.php/Attachment/upload?action=upload' + type,
          'onUploadError': function(file, errorCode, errorMsg, errorString) {
              alert('The file ' + file.name + ' could not be uploaded: ' + errorString);
          },
          'onUploadSuccess': function(file, data, response) {
-             addHtml(file, data, response, id);
+            console.log(data);
+             addHtml(file, data, response, id, type);
          },
      });
  };
