@@ -28,11 +28,24 @@ $(function(){
  */
  var uploaderDeleteClick = function() {
      $(".uploaderDelete").each(function() {
-         this.addEventListener("click", function() {
-             $(this).parent().remove();
-             var file = $("#" + $(this).attr("data-file"));
-             var url = $(this).attr("data-url");
-             file.val(file.val().split(",").remove(url).join(","));
+         this.addEventListener("click", function() {           
+             var file = $("#" + $(this).attr("data-file"));         //对应表单值
+             var type = $(this).attr("data-type");                 //类型image或file
+             var id = $(this).attr("data-id");                      //附件ID
+             file.val(file.val().split(",").remove(id).join(","));  //unset相关数据
+
+             //根据不同的type值，决定去除HTML信息
+             if (type == 'image')
+             {
+                $(this).parent().remove();
+             }
+             else
+             {
+                $(this).parent().parent().remove();
+             }
+
+             //记录当前附件ID值
+             console.log(file.val());
          })
      });
  }
@@ -76,14 +89,14 @@ var dataInit = function(){
      if (jsonData.state === 'SUCCESS') {
         if (type == "image")
         {
-            $("#" + fileId + "_img ul").append('<li><a href="'+jsonData.url+'" target="_blank"><img src="' + jsonData.url + '" class="img-rounded" /></a><button type="button" data-url="' + jsonData.url + '" data-file="' + fileId + '" class="uploaderDelete btn btn-danger btn-xs"><i class="fa fa-times"></i></button></li>');
+            $("#" + fileId + "_img ul").append('<li><a href="'+jsonData.url+'" target="_blank"><img src="' + jsonData.url + '" class="img-rounded" /></a><button type="button" data-id="' + jsonData.id+ '" data-url="' + jsonData.url + '" data-type="' + type + '" data-file="' + fileId + '" class="uploaderDelete btn btn-danger btn-xs"><i class="fa fa-times"></i></button></li>');
         }
         else
         {
             console.log(jsonData);
-            $("#" + fileId + "_table").append('<tr><td><a target="_blank" href="' + jsonData.url + '">' + jsonData.name + '</a></td><td>' + jsonData.size/1000 + 'KB</td></tr>');
+            $("#" + fileId + "_table").append('<tr><td><a target="_blank" href="' + jsonData.url + '">' + jsonData.name + '</a>&nbsp;&nbsp;<a href="javascript:void(0);" data-id="' + jsonData.id+ '" data-url="' + jsonData.url + '" data-type="' + type + '" data-file="' + fileId + '" class="uploaderDelete text-danger"><i class="glyphicon glyphicon-trash"></i></a></td><td>' + jsonData.size/1000 + 'KB</td></tr>');
         }
-        fileArray.push(jsonData.url);
+        fileArray.push(jsonData.id);
         $("#" + fileId).val(fileArray.join(","));
         uploaderDeleteClick();
      }
@@ -109,12 +122,16 @@ var dataInit = function(){
  * @param {int} fileSizeLimit 附件大小限制
  * @param {int} queueSizeLimit 附件队列限制
  * @param {int} uploadlimit 附件上传最大数
+ * @param { sting} value 表单初始值
  * @return {object}          [uploadify]
  */
- var uploader = function(ROOT, id, fileObjName, btnClass, btnText, debug, type, fileTypeDesc, fileTypeExts, fileSizeLimit, queueSizeLimit, uploadLimit) {
+ var uploader = function(ROOT, id, fileObjName, btnClass, btnText, debug, type, fileTypeDesc, fileTypeExts, fileSizeLimit, queueSizeLimit, uploadLimit, value) {
      if (id === undefined) {
          id = "file";
      }
+
+     //赋值
+     $("#"+ id).val(value);
 
      var fileId = id + '_upload';
      if (btnClass === undefined) {

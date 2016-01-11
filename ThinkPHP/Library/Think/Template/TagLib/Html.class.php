@@ -10,6 +10,7 @@
 // +----------------------------------------------------------------------
 namespace Think\Template\TagLib;
 use Think\Template\TagLib;
+use Yunzhi\Logic\AttachmentLogic;   //附件表
 use Think\Page;
 /**
  * Html标签库驱动
@@ -136,7 +137,7 @@ class Html extends TagLib{
     public function _uploader($tag, $content = null)
     {
         $name           = isset($tag['name']) ? $tag['name'] : 'file';          //生成input中id namew值
-        $class          = isset($tag['class']) ? $tag['class'] : '';    //样式表
+        $class          = isset($tag['class']) ? $tag['class'] : 'col-xs-12';    //样式表
         $value          = isset($tag['value']) ? $tag['value'] : '';            //要显示的以,分隔的字符串值
         $debug          = isset($tag['debug']) ? $tag['debug'] : 'false';       //是否启用debug
         $btnClass       = isset($tag['btnclass']) ? $tag['btnclass'] : 'btn btn-primary';   //按钮class
@@ -224,17 +225,24 @@ class Html extends TagLib{
         }
 
         //拼接字符串
-        $parseStr = '<input type="hidden" id="' . $name . '" name="' . $name . '" value="<?php echo $' . $value . '; ?>" />';
+        //通过字符串的数组获取数据具体的
+        $parseStr = '<?php $AttachmentL = new Yunzhi\Logic\AttachmentLogic();
+                    $attachemnts = $AttachmentL->getListsByStringIds("$' . $value . '");?>';
+
+
+        
+        $parseStr .= '<input type="hidden" id="' . $name . '" name="' . $name . '" />';
         
         if ($type == "image")
         {
             $parseStr .= '<div class="uploader" id="' . $name .'_img"><ul>';
-            $parseStr .= '<?php if($' . $value .' !== "" && isset($' . $value . ')) : $lists = explode(",", $' . $value . '); foreach($lists as $key =>$value) : ?>' ;
+            //$parseStr .= '<?php if($' . $value .' !== "" && isset($' . $value . ')) : $lists = explode(",", $' . $value . '); foreach($lists as $key =>$value) : ?/>' ;
+            $parseStr .= '<?php if (!empty($attachemnts)) : foreach($attachemnts as $key => $v) : ?>';
             $parseStr .=  "<li>";          
-            $parseStr .=  '<a href="<?php echo $value; ?>" target="_blank"><img src="<?php echo $value; ?>" class="img-rounded" /></a>';
-            $parseStr .=  '<button type="button" data-url="<?php echo $value; ?>" data-file="'. $name .'" class="uploaderDelete btn btn-danger btn-xs"><i class="fa fa-times"></i></button>';
+            $parseStr .=  '<a href="<?php echo $v["url"]; ?>" target="_blank"><img src="<?php echo $v["url"]; ?>" class="img-rounded" /></a>';
+            $parseStr .=  '<button type="button" data-id="<?php echo $v["id"]; ?>" data-type="' . $type . '" data-url="<?php echo $v["url"]; ?>" data-file="'. $name .'" class="uploaderDelete btn btn-danger btn-xs"><i class="fa fa-times"></i></button>';
             $parseStr .= '</li>';
-            $parseStr .= "<?php endforeach; endif;?>";
+            $parseStr .= "<?php endforeach; endif; ?>";
             $parseStr .= "</ul></div>";
         }
         else
@@ -247,16 +255,19 @@ class Html extends TagLib{
                                         <tr>
                                             <th width="80%">附件</th>
                                             <th width="20%">大小</th>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>';
+                                        </tr>';
+            $parseStr .= '<?php if (!empty($attachemnts)) : foreach($attachemnts as $key => $v) : ?>';
+            $parseStr .= '<tr><td><a target="_blank" href="{$v["url"]}">{$v["name"]}</a>&nbsp;&nbsp;<a href="javascript:void(0);" data-type="' . $type . '" data-id="<?php echo $v["id"]; ?>" data-file="'. $name .'" class="uploaderDelete text-danger"><i class="glyphicon glyphicon-trash"></i></a></td><td>{$v["size"]/1000}KB</td></tr>';
+            $parseStr .= '<?php endforeach; endif; ?>';
+            $parseStr .= '</table>
+                        </div>
+                    </div>';
         }
 
         $parseStr .='<div class="uploadify"><div id="queue"></div><input id="' . $name . '_upload" name="' . $name . '_upload" type="file" multiple="true"><div class="error"></div></div>';
         $parseStr .='<script type="text/javascript">
                         $(function(){
-                            uploader("__ROOT__","' . $name . '", "' . $fileObjName. '", "' . $btnClass . '", "' . $content. '",' . $debug . ', "' . $type .'", "' . $fileTypeDesc . '", "' . $fileTypeExts . '", "' . $fileSizeLimit . '", ' . $queueSizeLimit . ', ' . $uploadLimit . ');
+                            uploader("__ROOT__","' . $name . '", "' . $fileObjName. '", "' . $btnClass . '", "' . $content. '",' . $debug . ', "' . $type .'", "' . $fileTypeDesc . '", "' . $fileTypeExts . '", "' . $fileSizeLimit . '", ' . $queueSizeLimit . ', ' . $uploadLimit . ', "<?php echo $'. $value. '?>");
                         }); 
                     </script>';
         return $parseStr;

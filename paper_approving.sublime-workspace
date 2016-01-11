@@ -4,6 +4,78 @@
 		"selected_items":
 		[
 			[
+				"fileTyp",
+				"fileTypeExts"
+			],
+			[
+				"fil",
+				"fileTypeDesc"
+			],
+			[
+				"fileType",
+				"fileTypeDesc"
+			],
+			[
+				"file",
+				"fileTypeExts"
+			],
+			[
+				"filet",
+				"fileTypeDesc"
+			],
+			[
+				"con",
+				"config"
+			],
+			[
+				"at",
+				"attachment"
+			],
+			[
+				"has",
+				"hasRecoredId"
+			],
+			[
+				"ha",
+				"hasRecoredId"
+			],
+			[
+				"At",
+				"AttachmentLogic"
+			],
+			[
+				"Attache",
+				"AttachmentLogic"
+			],
+			[
+				"Attach",
+				"AttachmentLogic"
+			],
+			[
+				"att",
+				"AttachmentL"
+			],
+			[
+				"Attahc",
+				"AttachmentLogic"
+			],
+			[
+				"Atta",
+				"AttachmentModel"
+			],
+			[
+				"cl",
+				"class_exists"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"js",
+				"json_encode"
+			],
+			[
 				"Cu",
 				"CustomerL"
 			],
@@ -70,10 +142,6 @@
 			[
 				"ac",
 				"activity"
-			],
-			[
-				"fil",
-				"fileds"
 			],
 			[
 				"field",
@@ -152,16 +220,8 @@
 				"parseStr"
 			],
 			[
-				"con",
-				"content"
-			],
-			[
 				"pa",
 				"param	@param"
-			],
-			[
-				"file",
-				"fileId"
 			],
 			[
 				"pro",
@@ -206,10 +266,6 @@
 			[
 				"ued",
 				"ueditor"
-			],
-			[
-				"json",
-				"json_decode"
 			],
 			[
 				"res",
@@ -458,72 +514,16 @@
 			[
 				"fie",
 				"field()"
-			],
-			[
-				"Cyc",
-				"$CycleL〔variable〕"
-			],
-			[
-				"thin",
-				"Think\\Think〔class〕"
-			],
-			[
-				"Cycl",
-				"CycleL"
-			],
-			[
-				"Data",
-				"DataModel"
-			],
-			[
-				"dataModel",
-				"dataModelDetailRoots"
-			],
-			[
-				"datam",
-				"$dataModelId〔variable〕"
-			],
-			[
-				"Dat",
-				"$DataModelL〔variable〕"
-			],
-			[
-				"data",
-				"$dataModelDetail〔variable〕"
-			],
-			[
-				"DataModel",
-				"DataModelDetail"
-			],
-			[
-				"projectId",
-				"$projectId〔variable〕"
-			],
-			[
-				"ProjectDetai",
-				"ProjectDetailLogic"
-			],
-			[
-				"Porj",
-				"ProjectCategoryLogic〔namespace〕"
-			],
-			[
-				"getListbyp",
-				"getListsByProjectCategoryId"
-			],
-			[
-				"Por",
-				"ProjectCategoryRatioLogic〔namespace〕"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "Application/Home/Controller/IndexController.class.php",
+			"file": "ThinkPHP/Library/Think/Template/TagLib/Html.class.php",
 			"settings":
 			{
-				"buffer_size": 799,
+				"buffer_size": 32760,
 				"line_ending": "Unix"
 			}
 		},
@@ -531,15 +531,7 @@
 			"file": "Application/Admin/View/Index/index.tpl",
 			"settings":
 			{
-				"buffer_size": 393,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Application/Yunzhi/Controller/WebuploaderController.class.php",
-			"settings":
-			{
-				"buffer_size": 448,
+				"buffer_size": 405,
 				"line_ending": "Unix"
 			}
 		},
@@ -547,52 +539,8 @@
 			"file": "Public/js/js.js",
 			"settings":
 			{
-				"buffer_size": 8129,
+				"buffer_size": 9172,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix",
-				"name": "Xdebug Context",
-				"read_only": true,
-				"scratch": true
-			}
-		},
-		{
-			"contents": "",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix",
-				"name": "Xdebug Watch",
-				"read_only": true,
-				"scratch": true
-			}
-		},
-		{
-			"contents": "",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix",
-				"name": "Xdebug Stack",
-				"read_only": true,
-				"scratch": true
-			}
-		},
-		{
-			"contents": "=> /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Sale/Logic/SaleLogic.class.php\n	|+| 21\n=> /Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Model/YunzhiModel.class.php\n	|+| 157\n=> /Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Yunzhi/Controller/WebuploaderController.class.php\n	|+| 16\n",
-			"settings":
-			{
-				"buffer_size": 342,
-				"line_ending": "Unix",
-				"name": "Xdebug Breakpoint",
-				"read_only": true,
-				"scratch": true
 			}
 		}
 	],
@@ -603,8 +551,8 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 347.0,
-		"last_filter": "inst",
+		"height": 27.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -824,7 +772,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 575.0
+		"width": 449.0
 	},
 	"console":
 	{
@@ -848,22 +796,53 @@
 		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving",
 		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application",
 		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Admin",
-		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Admin/Controller",
 		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Admin/View",
 		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Admin/View/Index",
 		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Config",
 		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Config/Logic",
 		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Home",
 		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Yunzhi",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Yunzhi/Conf",
 		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Yunzhi/Controller",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Yunzhi/Function",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Yunzhi/Model",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Yunzhi/View",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Yunzhi/View/Webuploader",
 		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Public",
 		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Public/uploads",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Public/uploads/image",
 		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Public/uploads/ueditor",
 		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Public/uploads/ueditor/file"
 	],
 	"file_history":
 	[
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Yunzhi/Conf/ueditor.json",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Runtime/Cache/Admin/17095ad3c583a6e7b9e3d14df62ee45b.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Yunzhi/Controller/AttachmentController.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Yunzhi/Controller/WebuploaderController.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/ThinkPHP/Library/Org/Util/Ueditor.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/ThinkPHP/Library/Think/App.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Yunzhi/Logic/AttachmentLogic.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/ThinkPHP/Library/Think/Upload.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Yunzhi/Model/YunzhiModel.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Public/js/js.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/ThinkPHP/Library/Think/Template/TagLib/Html.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/.gitignore",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Admin/View/Index/index.tpl",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Yunzhi/Model/AttachmentModel.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Yunzhi/Controller/UeditorController.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Public/lib/ueditor/php/Uploader.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Common/Common/function.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Home/Controller/IndexController.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Admin/Controller/AdminController.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Model/YunzhiModel.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Sale/Logic/SaleLogic.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/public/yunzhi.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/ThinkPHP/ThinkPHP.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/ThinkPHP/Library/Think/Think.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/ThinkPHP/Library/Think/Hook.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Public/admin.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/paper_approving.sublime-project",
 		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Common/Conf/config.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/Controller/AdminController.class.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/Model/Order/DetailModel.class.php",
@@ -872,12 +851,10 @@
 		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Customer/Model/CustomerModel.class.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/Controller/CustomerController.class.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Order/detail.tpl",
-		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Model/YunzhiModel.class.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/Controller/OrderController.class.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/User/Logic/UserLogic.class.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/Controller/UserController.class.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/Controller/SaleController.class.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Sale/Logic/SaleLogic.class.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Common/Common/function.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Order/index.tpl",
 		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/CustomMenu/Logic/CustomMenuLogic.class.php",
@@ -966,35 +943,11 @@
 		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Common/Conf/admin.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Template/tables.tpl",
 		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Base/header.tpl",
-		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Base/nav.tpl",
-		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Menu/add.tpl",
-		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Public/Admin/font/fontawesome-webfont-0.eot",
-		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Admin/left.tpl",
-		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Template/left.tpl",
-		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Base/left.tpl",
-		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/Controller/CustomMenuController.class.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/chuhang/1/caikaihui/3-2.html",
-		"/Applications/XAMPP/xamppfiles/htdocs/webuploader/examples/image-upload/index.html",
-		"/Applications/XAMPP/xamppfiles/htdocs/webuploader/examples/image-upload/index.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/webuploader/server/fileupload.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Public/lib/ueditor/ueditor.function.js",
-		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Conf/ueditor.json",
-		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Common/Conf/yunzhi.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Common/Conf/home.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/View/Ueditor/config.tpl",
-		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Common/Conf/api.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Ueditor",
-		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/View",
-		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Yunzhi/Conf/config.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Public/yunzhi.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Git/index.tpl",
-		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Public/admin.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/Controller/GitController.class.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Public/api.php"
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Base/nav.tpl"
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 43.0
 	},
 	"find_in_files":
 	{
@@ -1012,6 +965,33 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"catcher",
+			"scrawl",
+			"file",
+			"UploadLimit",
+			"uploadLimit",
+			"UploadLimit",
+			"image",
+			"savename",
+			"}\n",
+			"hasRecoredId",
+			"if($hasRecoredId == false)",
+			"'];\n",
+			"'';\n",
+			"AttachmentLogic",
+			"json_encode",
+			"uploaderDeleteClick",
+			"td",
+			"type",
+			"config",
+			"Config",
+			"config",
+			"Config",
+			"config",
+			"Config",
+			"config",
+			"$this->exts",
+			"=>",
 			"button",
 			"parameter",
 			">\n",
@@ -1112,34 +1092,7 @@
 			"SlideShow",
 			"slideshow",
 			"SlideShow",
-			"  // $parseStr = '<input type=\"text\" id=\"file\" name=\"file\" value=\"' . $value . '\" />';\n        // $parseStr .= '<ul class=\"' . $class . '\" id=\"' . $name .'_img\">';\n\n        // $parseStr .= '<?php $lists = explode(\",\", $' . $value . '); foreach($lists as $key =>$value) : ' ;\n        // $parseStr .=  \"<li>\";          \n        // $parseStr .=  \"<img src='$value' class='img-rounded' />\";\n        // $parseStr .=  '<button type=\"button\" class=\"uploaderDelete btn btn-danger btn-xs\">删除</button>';\n        // $parseStr .= '</li>';\n        // $parseStr .= \"<?php endforeach; ?>\";\n        // $parseStr .='<div class=",
-			" \n",
-			"fileId",
-			"p",
-			"delAttachment",
-			"jsonData",
-			"j.height",
-			"uploadify-button",
-			"uploadify-button-text",
-			"height",
-			"height: ",
-			"height:50",
-			"height",
-			"50",
-			"30",
-			"height",
-			"style=",
-			"style",
-			"stle",
-			">\n",
-			"yunzhi",
-			"filePicker2",
-			"webuploader-pick",
-			"webuploader-pick\\",
-			"$upload",
-			"filePicker2",
-			"选择图片",
-			"开始上传"
+			"  // $parseStr = '<input type=\"text\" id=\"file\" name=\"file\" value=\"' . $value . '\" />';\n        // $parseStr .= '<ul class=\"' . $class . '\" id=\"' . $name .'_img\">';\n\n        // $parseStr .= '<?php $lists = explode(\",\", $' . $value . '); foreach($lists as $key =>$value) : ' ;\n        // $parseStr .=  \"<li>\";          \n        // $parseStr .=  \"<img src='$value' class='img-rounded' />\";\n        // $parseStr .=  '<button type=\"button\" class=\"uploaderDelete btn btn-danger btn-xs\">删除</button>';\n        // $parseStr .= '</li>';\n        // $parseStr .= \"<?php endforeach; ?>\";\n        // $parseStr .='<div class="
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -1162,75 +1115,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "Application/Home/Controller/IndexController.class.php",
+					"file": "ThinkPHP/Library/Think/Template/TagLib/Html.class.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 799,
+						"buffer_size": 32760,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								129,
-								129
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Application/Admin/View/Index/index.tpl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 393,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								393,
-								393
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Application/Yunzhi/Controller/WebuploaderController.class.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 448,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								330,
-								330
+								13596,
+								13596
 							]
 						],
 						"settings":
@@ -1239,33 +1136,33 @@
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.x": 2571.0,
+						"translation.y": 6839.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "Public/js/js.js",
+					"buffer": 1,
+					"file": "Application/Admin/View/Index/index.tpl",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8129,
+						"buffer_size": 405,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								548,
-								548
+								293,
+								293
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
@@ -1273,135 +1170,38 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 4,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"default_dir": "/Applications/XAMPP/xamppfiles/htdocs/paper_approving",
-							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
-							"word_wrap": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"default_dir": "/Applications/XAMPP/xamppfiles/htdocs/paper_approving",
-							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
-							"word_wrap": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 2,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 6,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"default_dir": "/Applications/XAMPP/xamppfiles/htdocs/paper_approving",
-							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
-							"word_wrap": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 2,
+					"file": "Public/js/js.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 342,
+						"buffer_size": 9172,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								342,
-								342
+								4566,
+								4566
 							]
 						],
 						"settings":
 						{
-							"default_dir": "/Applications/XAMPP/xamppfiles/htdocs/paper_approving",
-							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
-							"word_wrap": false
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3728.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1422,32 +1222,18 @@
 			[
 				0,
 				0,
-				2,
+				1,
 				1
-			],
-			[
-				0,
-				1,
-				1,
-				2
-			],
-			[
-				1,
-				1,
-				2,
-				2
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
 		[
 			0.0,
-			0.7,
 			1.0
 		]
 	},
@@ -1478,12 +1264,48 @@
 		"selected_items":
 		[
 			[
+				"17095ad3c583a6e7b9e3d14df62ee45b.php",
+				"Runtime/Cache/Admin/17095ad3c583a6e7b9e3d14df62ee45b.php"
+			],
+			[
 				"js.js",
 				"Public/js/js.js"
 			],
 			[
 				"html.cl",
 				"ThinkPHP/Library/Think/Template/TagLib/Html.class.php"
+			],
+			[
+				"upload",
+				"ThinkPHP/Library/Think/Upload.class.php"
+			],
+			[
+				"yunzm",
+				"Application/Yunzhi/Model/YunzhiModel.class.php"
+			],
+			[
+				"yunzhim",
+				"Application/Yunzhi/Model/YunzhiModel.class.php"
+			],
+			[
+				"html.",
+				"ThinkPHP/Library/Think/Template/TagLib/Html.class.php"
+			],
+			[
+				"admp",
+				"Public/admin.php"
+			],
+			[
+				"func",
+				"Application/Common/Common/function.php"
+			],
+			[
+				"ued",
+				"Application/Yunzhi/Controller/UeditorController.class.php"
+			],
+			[
+				"funct",
+				"Application/Common/Common/function.php"
 			],
 			[
 				"config",
@@ -1506,10 +1328,6 @@
 				"Application/Yunzhi/Model/YunzhiModel.class.php"
 			],
 			[
-				"func",
-				"Application/Common/Common/function.php"
-			],
-			[
 				"yuhzhim",
 				"Application/Yunzhi/Model/YunzhiModel.class.php"
 			],
@@ -1520,10 +1338,6 @@
 			[
 				"9f59059f085c157c968074f47f7c816f.php",
 				"Runtime/Cache/Admin/9f59059f085c157c968074f47f7c816f.php"
-			],
-			[
-				"yunzhim",
-				"Application/Yunzhi/Model/YunzhiModel.class.php"
 			],
 			[
 				"yunzhm",
@@ -1588,10 +1402,6 @@
 			[
 				"yunzh",
 				"Application/Yunzhi/Model/YunzhiModel.class.php"
-			],
-			[
-				"html.",
-				"ThinkPHP/Library/Think/Template/TagLib/Html.class.php"
 			],
 			[
 				"html",
@@ -1964,30 +1774,6 @@
 			[
 				"scient/add",
 				"Application/ScientificResearch/View/Index/add.html"
-			],
-			[
-				"scie/add",
-				"Application/ScientificParameter/View/Index/add.html"
-			],
-			[
-				"scires/index",
-				"Application/ScientificResearch/Controller/IndexController.class.php"
-			],
-			[
-				"exam/index",
-				"Application/Examine/Controller/IndexController.class.php"
-			],
-			[
-				"scieres/add",
-				"Application/ScientificResearch/View/Index/add.html"
-			],
-			[
-				"examinm",
-				"Application/Examine/Model/ExamineModel.class.php"
-			],
-			[
-				"userpe",
-				"Application/UserDepartmentPost/Model/UserDepartmentPostModel.class.php"
 			]
 		],
 		"width": 0.0
@@ -2028,6 +1814,11 @@
 					"group": 0,
 					"index": 1
 				},
+				"17":
+				{
+					"group": 0,
+					"index": 2
+				},
 				"18":
 				{
 					"group": 0,
@@ -2036,7 +1827,22 @@
 				"19":
 				{
 					"group": 0,
-					"index": 2
+					"index": 4
+				},
+				"20":
+				{
+					"group": 0,
+					"index": 5
+				},
+				"21":
+				{
+					"group": 0,
+					"index": 6
+				},
+				"22":
+				{
+					"group": 0,
+					"index": 7
 				}
 			},
 			"restore_layout":
@@ -2066,8 +1872,8 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
-	"side_bar_width": 417.0,
+	"side_bar_visible": false,
+	"side_bar_width": 265.0,
 	"status_bar_visible": false,
 	"template_settings":
 	{

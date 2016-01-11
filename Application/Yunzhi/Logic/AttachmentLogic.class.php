@@ -45,4 +45,39 @@ class AttachmentLogic extends AttachmentModel
 		$data['ext'] 		= $list['ext'];			//扩展名
 		return parent::saveList($data);
 	}
+
+	/**
+	 * 通过附件IDS，返回附件的URL信息
+	 * @param  string $idsString 字符串 "1,2,3,4"
+	 * @return lists               二维数组
+	 */
+	public function getListsByStringIds($idsString , $delimiter = ",")
+	{
+		$datas = array();
+		$ids = explode($delimiter, $idsString);
+		foreach ($ids as $id)
+		{
+			$datas["$id"] = $this->getListById($id);
+		}
+		return $datas;
+	}
+
+	/**
+	 * 通过附件ID,返回附件信息
+	 * @param  int $attachmentId 附件ID
+	 * @return list               一组数组，其中附件的URL，用绝对地址进行了拼接
+	 */
+	public function getListById($id)
+	{
+		$data = parent::getListById($id);
+		if ($data)
+		{
+			$data['url'] = __ROOT__ . "/uploads" . $data['savepath'] . $data['savename'];
+			return $data;
+		}
+		else
+		{
+			return array();
+		}
+	}
 }
