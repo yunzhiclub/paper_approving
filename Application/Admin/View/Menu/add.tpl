@@ -111,6 +111,49 @@
                             </div>
                         </div>
                         <div class="form-group">
+                            <label for="remarks" class="col-sm-2 control-label">功能简介</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" rows="10" name="abstract">{$data.abstract}</textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="action" class="col-sm-2 control-label">开发日期</label>
+                            <div class="col-sm-4">
+                                <input class="form-control" name="dev_time" value="{$data.dev_time }">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="action" class="col-sm-2 control-label">开发分支</label>
+                            <div class="col-sm-4">
+                                <input class="form-control" name="parameter" value="{$data.parameter}">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="remarks" class="col-sm-2 control-label">关联数据表</label>
+                            <div class="col-sm-4">
+                                <textarea class="form-control" rows="3" name="tables">{$data.tables}</textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="action" class="col-sm-2 control-label">开发工程师</label>
+                            <div class="col-sm-4">
+                                <input class="form-control" name="dev_user" value="{$data.dev_user}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="remarks" class="col-sm-2 control-label">测试工程师</label>
+                            <div class="col-sm-4">
+                                <input class="form-control" name="test_user" value="{$data.test_user}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="action" class="col-sm-2 control-label">验收工程师</label>
+                            <div class="col-sm-4">
+                                <input class="form-control" name="check_user" value="{$data.check_user}">
+                            </div>
+                        </div>
+                        <div class="form-group">
                             <label for="remarks" class="col-sm-2 control-label">备注</label>
                             <div class="col-sm-4">
                                 <textarea class="form-control" rows="3" name="remarks" >{$data.remark}</textarea>
