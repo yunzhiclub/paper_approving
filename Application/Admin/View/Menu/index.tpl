@@ -17,7 +17,7 @@
                     </form>
                 </div>
                 <div class="col-md-3">
-                    <a href="{$url}" class="btn btn-info">添加一级菜单</a>
+                    <a href="{:U('add?id=', I('get.'))}" class="btn btn-info">添加一级菜单</a>
                 </div>
             </div>
             <div class="box">
