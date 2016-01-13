@@ -2,6 +2,7 @@
 namespace Admin\Controller;
 use Admin\Controller;
 class IndexController extends AdminController {
+    
     public function indexAction(){
         $this->display();
     }
