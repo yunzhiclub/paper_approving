@@ -223,9 +223,36 @@
         <div class="sidebar-nav navbar-collapse">
             <ul class="nav" id="side-menu">
                 <foreach name="YunzhiMenuM:getMenuLists()" item="list">
+                <eq name="list['module']" value="Admin">
+                <php>
+                    if (isset($list['_son']))
+                    {
+                </php>
+                    <li class="<eq name="YunzhiMenuM:checkIsCurrent($list)" value="1">active</eq>">
+                        <a href="javascript:void(0);"><i class="{$list['icon']}"></i> {$list['title']}<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level <eq name="YunzhiMenuM:checkIsCurrent($list)" value="1">collapse in<else />collapse</eq>">
+                            <foreach name="list['_son']" item="son">
+                            <li>
+                                <a class="<eq name="YunzhiMenuM:checkIsCurrent($son)" value="1">active</eq>"href="{:U($son['module'] . '/' . $son['controller'] . '/' . $son['action'])}"><i class="{$son['icon']}"></i> {$son['title']}</a>
+                            </li>
+                            </foreach>
+                        </ul>
+                    </li>
+                <php>
+                    }
+                    else
+                    {
+                </php>
                     <li>
                         <a class="<eq name="YunzhiMenuM:checkIsCurrent($list)" value="1">active</eq>"href="{:U($list['module'] . '/' . $list['controller'] . '/' . $list['action'])}"><i class="{$list['icon']}"></i> {$list['title']}</a>
                     </li>
+
+                <php>
+                    }
+                </php>
+                    
+                   
+                </eq>
                 </foreach>
             </ul>
         </div>
