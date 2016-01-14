@@ -28,7 +28,20 @@ class PaperDistributionController extends AdminController {
 
 		$value = I("post.value");
 		$SettingL->setSettingName($name);
-		echo $SettingL->saveValue($value);
+		$result = $SettingL->saveValue($value);
+
+		if(count($errors = $SettingL->getErrors())!==0)
+        {
+            //数组变字符串
+            $error = implode('<br/>',$errors);
+
+            //显示错误
+            $this -> error("更新失败失败，原因：".$error,U('edit'));
+        }
+        else
+        {
+            $this -> success("操作成功",U('edit'));
+        }
 	}
 }
     

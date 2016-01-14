@@ -10,6 +10,12 @@ use SystemSettings\Model\SystemSettingsModel;
 class SystemSettingsLogic extends SystemSettingsModel
 {
 	protected $name = null;
+	protected  $errors = array();
+
+    public function getErrors()
+	{
+		return $this->errors;
+	}
 
 	//设置系统设置名称
 	public function setSettingName($name){
@@ -31,12 +37,25 @@ class SystemSettingsLogic extends SystemSettingsModel
 	 * @return array array($status,$msg)
 	 */
 	public function saveValue($value){
-		$map = array();
-		$map['name'] = $this->name;
+		try{
+			$map = array();
+			$map['name'] = $this->name;
 
-		$data = array();
-		$data['value'] = $value;
+			$data = array();
+			$data['value'] = $value;
 
-		return $this->where($map)->save($data);
+			$return = $this->where($map)->save($data);
+			if ($return === false) {
+    			$this->errors[] = $this->getError();
+    			return false;
+			}else{
+				return $return;
+			}
+		}
+		catch(\Think\Exception $e)
+    	{
+    		$this->errors[] = $e->getMessage();
+    		return false;
+    	}
 	}
 }
