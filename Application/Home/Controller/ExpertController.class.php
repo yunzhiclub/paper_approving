@@ -11,6 +11,7 @@ class ExpertController extends Controller
 		//实例化对象调信息
 		$ExpertL = new ExpertLogic();
 		$expert=$ExpertL->getlists();
+
 		//向V层赋值
 		$this->assign('expert',$expert[0]);
 		$this->display();
@@ -23,6 +24,7 @@ class ExpertController extends Controller
 		//保存专家个人信息
 		$ExpertL = new ExpertLogic();
 		$ExpertL->addList($expert);
+		
 		//判断
 		if(count($errors=$ExpertL->getErrors())!==0)
         {

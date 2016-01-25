@@ -7,7 +7,7 @@ class ExpertLogic extends ExpertModel
 {
 	protected $errors = array();   			//错误信息
 
-	public function addList($list)			//添加活动
+	public function addList($list)			//添加信息
 	{
 		try{
 			if($this->create($list))
