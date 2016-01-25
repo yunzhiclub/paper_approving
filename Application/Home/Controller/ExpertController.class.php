@@ -6,9 +6,9 @@ use Expert\Logic\ExpertLogic;
 
 class ExpertController extends Controller
 {
-	public function editAction()
+	public function editAction()                //编辑专家信息
 	{
-		//实例化对象调信息
+		//取专家信息
 		$ExpertL = new ExpertLogic();
 		$expert=$ExpertL->getlists();
 
@@ -16,7 +16,7 @@ class ExpertController extends Controller
 		$this->assign('expert',$expert[0]);
 		$this->display();
 	}
-	public function saveAction()
+	public function saveAction()               //保存专家信息
 	{
 		//获取专家个人信息
 		$expert=I('post.');
@@ -33,10 +33,10 @@ class ExpertController extends Controller
             
             
             //显示错误
-             $this->error("添加失败，原因：".$error,U('Home/Expert/edit?p='.I('get.p')));
+             $this->error("添加失败，原因：".$error,U('Home/Expert/edit'));
             
         }
-        $this->success("操作成功" , U('Home/Expert/edit?p='.I('get.p'))); 
+        $this->success("操作成功" , U('Home/Expert/edit')); 
 	}
 	
 }
