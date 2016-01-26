@@ -22,9 +22,9 @@ class ExpertController extends AdminController
 
 	public function resetAction()				//重置密码
 	{
-		$ReviewL=new ExpertLogic();
+		$ReviewL=new ReviewLogic();
 
-		$id=I('get.expert_id')					//取对应专家id
+		$id=I('get.expert_id');					//取对应专家id
 
 		$review=$ReviewL->resetPasswordByExpert_id($id);	//重置该专家密码
 
@@ -32,15 +32,14 @@ class ExpertController extends AdminController
 		{
             //数组变字符串
 			$error =implode('<br/>', $errors);
-			
-			
+
+
             //显示错误
 			$this->error("添加失败，原因：".$error,U('index?id=', I('get')));
 
 			return false;
-			
+
 		}
 		$this->success("操作成功" , U('index?id=', I('get')));
 	}
-}
 }

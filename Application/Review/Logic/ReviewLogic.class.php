@@ -10,15 +10,16 @@ class ReviewLogic extends ReviewModel
 
 	public function resetPasswordByExpert_id($id)
 	{
-		$expertL = new $expertLogic();
-		$expert = $expertL->getListById($id);					//取对应专家信息
+		$ExpertL = new ExpertLogic();
+		$expert = $ExpertL->getListById($id);					//取对应专家信息
+		dump($this->create($expert));
 		$expert['userpassword'] = 123456;						//重置对应专家密码
 		//存储
 		try
 		{
-			if($this->create($expert))
+			if($ExpertL->create($expert))
 			{
-				$id = $this->save();
+				$id = $ExpertL->save();
 				return $id; 
 			}
 			else
