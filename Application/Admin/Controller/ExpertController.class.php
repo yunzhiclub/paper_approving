@@ -33,13 +33,17 @@ class ExpertController extends AdminController
             //数组变字符串
 			$error =implode('<br/>', $errors);
 
-
             //显示错误
-			$this->error("添加失败，原因：".$error,U('index?id=', I('get')));
+			$this->error("重置密码失败，原因：".$error,U('index?id=', I('get')));
 
 			return false;
 
 		}
-		$this->success("操作成功" , U('index?id=', I('get')));
+		$this->success("重置密码成功" , U('index?id=', I('get')));
+	}
+
+	public function downloadAction()			//下载附件
+	{
+		
 	}
 }

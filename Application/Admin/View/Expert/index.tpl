@@ -3,6 +3,7 @@
 	<table class="table table-bordered table-striped table-hover">
 		<thead>
 			<tr>
+				<th><input type="checkbox" id="ckAll" />全选</th>
 				<th>序号</th>
 				<th>专家id</th>
 				<th>论文名称</th>
@@ -17,6 +18,7 @@
 		<tbody>
 			<foreach name="reviews" item="review" key="k">
 				<tr>
+					<td><input type="checkbox" name="sub" /></td>
 					<td>{$k+1}</td>
 					<td>{$review['expert_id']}</td>
 					<td>{$review['title']}</td>
@@ -34,5 +36,18 @@
 			</foreach>
 		</tbody>
 	</table>
+
+	<script>
+
+  $("#ckAll").click(function() {
+    $("input[name='sub']").prop("checked", this.checked);
+  });
+  
+  $("input[name='sub']").click(function() {
+    var $subs = $("input[name='sub']");
+    $("#ckAll").prop("checked" , $subs.length == $subs.filter(":checked").length ? true :false);
+  });
+
+</script>
 </block>	
 
