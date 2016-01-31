@@ -1,6 +1,8 @@
 <extend name="Base:index" />
 <block name="body">
-<a href="{:U(resetSome)}" class="button btn btn-sm btn-primary" id="reset_select">重置所选专家的密码</a>
+<form action="{:U('resetSome?p=')}" method="post">
+<button class="button btn btn-sm btn-primary" type="submit">重置所选专家的密码</button>
+
 	<table class="table table-bordered table-striped table-hover">
 		<thead>
 			<tr>
@@ -38,6 +40,7 @@
 			</foreach>
 		</tbody>
 	</table>
+	</form>
 
 	<script>
 

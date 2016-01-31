@@ -39,9 +39,10 @@ class ExpertController extends AdminController
     {
         $expertId=array();
         $expertId=I('post.sub');
+        dump($expertId);
         //传入id数组重置密码
         $ReviewL=new ReviewLogic();
-        $ReviewL->resetSomePasswordByIds($userId);
+        $ReviewL->resetSomePasswordByIds($expertId);
         $this->success("重置密码成功", U('Expert/Index/index?',I('get.p')));
         
     }

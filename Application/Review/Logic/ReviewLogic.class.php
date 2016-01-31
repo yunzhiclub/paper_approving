@@ -38,23 +38,26 @@ class ReviewLogic extends ReviewModel
 	public function resetSomePasswordByIds($ids)
 	{
 		$out=array();
+		$i=0;
 		foreach ($ids as $key => $value) {
 			# code...
 			if(!in_array($value,$out))
 			{
-				$out[$key]=$value;
+				$out[$i]=$value;
+				$i++;
 			}
 		}
 		$length=count($out);
-		dump($length);
+		print_r($length);
 
 		for($i=0;$i<$length;$i++)
 		{
-			$map['id']=$ids[$i];
-			$user=$this->where($map)->find();
-			dump($user);
-			$user['password']=C(DEFAULT_PASSWORD);
-			$this->save($user);
+			$map['id']=$out[$i];
+			$ExpertL=new ExpertLogic();
+			$expert=$ExpertL->where($map)->find();
+			dump($expert);
+			$expert['userpassword']=C(DEFAULT_PASSWORD);
+			$ExpertL->save($expert);
 		}
 		return true;
 	}
