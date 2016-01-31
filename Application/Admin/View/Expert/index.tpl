@@ -1,5 +1,6 @@
 <extend name="Base:index" />
 <block name="body">
+<a href="{:U(resetSome)}" class="button btn btn-sm btn-primary" id="reset_select">重置所选专家的密码</a>
 	<table class="table table-bordered table-striped table-hover">
 		<thead>
 			<tr>
@@ -13,12 +14,13 @@
 				<th>是否答辩</th>	
 				<th>是否是优秀论文</th>
 				<th>对论文熟悉程度</th>
+				<td>操作</td>
 			</tr>
 		</thead>
 		<tbody>
 			<foreach name="reviews" item="review" key="k">
 				<tr>
-					<td><input type="checkbox" name="sub" /></td>
+					<td><input type="checkbox" name="sub[]" value="{$review['expert_id']}" /></td>
 					<td>{$k+1}</td>
 					<td>{$review['expert_id']}</td>
 					<td>{$review['title']}</td>
@@ -39,15 +41,16 @@
 
 	<script>
 
-  $("#ckAll").click(function() {
-    $("input[name='sub']").prop("checked", this.checked);
-  });
-  
-  $("input[name='sub']").click(function() {
-    var $subs = $("input[name='sub']");
-    $("#ckAll").prop("checked" , $subs.length == $subs.filter(":checked").length ? true :false);
-  });
+		$("#ckAll").click(function() {
+			$("input[name='sub[]']").prop("checked", this.checked);
+		});
 
-</script>
+		$("input[name='sub']").click(function() {
+			var $subs = $("input[name='sub']");
+			$("#ckAll").prop("checked" , $subs.length == $subs.filter(":checked").length ? true :false);
+		});
+
+
+	</script>
 </block>	
 

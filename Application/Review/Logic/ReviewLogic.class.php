@@ -35,6 +35,30 @@ class ReviewLogic extends ReviewModel
 		}
 	}
 
+	public function resetSomePasswordByIds($ids)
+	{
+		$out=array();
+		foreach ($ids as $key => $value) {
+			# code...
+			if(!in_array($value,$out))
+			{
+				$out[$key]=$value;
+			}
+		}
+		$length=count($out);
+		dump($length);
+
+		for($i=0;$i<$length;$i++)
+		{
+			$map['id']=$ids[$i];
+			$user=$this->where($map)->find();
+			dump($user);
+			$user['password']=C(DEFAULT_PASSWORD);
+			$this->save($user);
+		}
+		return true;
+	}
+
 	/**
  * 下载文件
  * @param string $file
