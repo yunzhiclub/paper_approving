@@ -11,6 +11,7 @@ class ExpertController extends AdminController
 	{
 		$ReviewL=new ReviewLogic();				
 		$reviews=$ReviewL->getlists();			//取评阅信息
+		
 		$this->assign('reviews',$reviews);		//向V层赋值
 		$this->display();
 		
