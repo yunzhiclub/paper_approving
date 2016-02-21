@@ -16,7 +16,7 @@
 			</form>
 		</div>
 		<div class="col-md-3">
-			<a href="{:U('add?id=', I('get.'))}" class="btn btn-info">添加评阅项目</a>
+			<a href="{:U('edit?id=', I('get.'))}" class="btn btn-info">添加评阅项目</a>
 		</div>
 	</div>
 	<div class="panel-body">
@@ -31,7 +31,7 @@
 				<th>比重</th>
 				<th>权重</th>
 				<th>状态</th>
-				
+				<th>操作</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -42,10 +42,11 @@
 					<td>{$review['factor']}</td>
 					<td>{$review['proportion']}</td>
 					<td>{$review['weight']}</td>
-					<td><eq name="review['status']" value="0">正常<else/>不正常</eq></td>
+					
+					<td><eq name="review['status']" value="0">正常<else/><span class="badge">冻结</span></eq></td>
 					<td>
 						<a class="button btn btn-sm btn-primary" href="{:U('edit?id='.$review['id'],I('get.'))}"><i class="fa fa-pencil"></i>&nbsp;编辑</a>
-						<a class="button btn btn-sm btn-success" href="{:U('delete?id='.$review['id'],I('get.'))}">删除</a>
+						<a class="button btn btn-sm btn-success" href="{:U('delete?id='.$review['id'],I('get.'))}"><i class="fa fa-trash-o "></i>&nbsp;删除</a>
 					</td>
 				</tr>
 			</foreach>
