@@ -36,13 +36,11 @@ public function indexAction()				//初始页面
 
     public function saveAction()
     {
-        // dump(I('post.'));
-        // exit();
+        
         //取用户信息
         $review = I('post.');
-        dump($review);
 
-        //添加add()
+        //保存
         $ReviewL = new ReviewLogic();
         $ReviewL -> saveList($review);
         //echo $this->getlastsql();
@@ -50,8 +48,7 @@ public function indexAction()				//初始页面
         //判断异常
         if(count($errors = $ReviewL->getErrors())!==0)
         {
-            //dump($errors);
-            //exit();
+            
             //数组变字符串
             $error = implode('<br/>',$errors);
 
@@ -64,16 +61,12 @@ public function indexAction()				//初始页面
         }
     }
 
-
-
-
-
     public function deleteAction()
     {
         //取id
         $reviewId= I('get.id');
 
-        //删除deleteInfo($Id)
+        //删除
         $ReviewL = new ReviewLogic();
         $status = $ReviewL->deleteList($reviewId);
 
