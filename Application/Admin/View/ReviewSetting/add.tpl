@@ -4,7 +4,7 @@
 	<input type="hidden" name="id" value="{$review['id']}"></input>
  
 	<div class="form-group">
-		<label for="title" class="col-xs-2 control-label">评阅项目</label>
+		<label for="title" class="col-xs-2 control-label">评阅项目名称</label>
 		<div class="col-xs-4">
 			<input id="title" type ="text" name="title" value="{$review['title']}" class="form-control">
 
@@ -12,9 +12,10 @@
 	</div>
 
 	<div class="form-group">
-		<label for="title" class="col-xs-2 control-label">评阅要素</label>
+		<label for="factor" class="col-xs-2 control-label">评阅要素</label>
 		<div class="col-xs-4">
-			<input id="title" type ="text" name="factor" value="{$review['factor']}" class="form-control">
+			
+			<textarea id="factor" type="text" placeholder="请输入新的评阅要素的详情" name="factor" cols="100" rows="5">{$review['factor']}</textarea>
 
 		</div>
 	</div>
@@ -52,4 +53,6 @@
 	
 
 </form>
+
+
 </block>

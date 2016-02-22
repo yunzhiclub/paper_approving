@@ -26,10 +26,13 @@
 		<thead>
 			<tr>
 				<th>序号</th>
-				<th>项目名称</th>
+				<?php $order = I('get.order') ?>
+				<th><a href="<eq name='order' value="desc">{:U('index?by=title&order=asc', I('get.'))}<else/> {:U('index?by=title&order=desc', I('get.'))}</eq>">评阅项目名称</a></th>
 				<th>评阅要素</th>
 				<th>比重</th>
-				<th>权重</th>
+				
+				<th><a href="<eq name='order' value="desc">{:U('index?by=weight&order=asc', I('get.'))}  
+			<else/> {:U('index?by=weight&order=desc', I('get.'))} </eq>">权重</a></th>
 				<th>状态</th>
 				<th>操作</th>
 			</tr>
