@@ -7,7 +7,7 @@ class IndexController extends AdminController {
     public function indexAction(){
         
         $this->display();
-        $filePath = "/Applications/XAMPP/htdocs/paper_approving/Public/uploads/test/yunzhi.xls";
+        $filePath = "/Applications/XAMPP/htdocs/paper_approving/Application/Test/yunzhi.xlsx";
         $ReadL = new PHPExcelLogic;
         if (!$data = $ReadL->ReadFile($filePath))
         {
