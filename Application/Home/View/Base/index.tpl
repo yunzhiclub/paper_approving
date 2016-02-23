@@ -6,9 +6,10 @@
 </head>
 
 <body>
+<div class="container-fluid">
 <include file="Base/header" />
 <include file="Base/body" />
- 
+</div>
 </body>
 
 </html>
