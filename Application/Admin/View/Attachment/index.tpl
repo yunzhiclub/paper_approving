@@ -2,8 +2,6 @@
 <block name="body">
     <div class="row-fluid">
         <div class="col-xs-12">
-        <div class="row">
-        </div>
             <div class="row">
                 <div class="col-md-3">
                     <form action="{:U('index?keywords=')}" method="get">
@@ -57,7 +55,7 @@
                                     </td>
                             </tr>
                         </tbody>
-	                    <!-- <tbody>
+<!-- 	                    <tbody>
 		                    <foreach name="Attachments" item="Attachment" key="k">
 			                    <tr>
 				                    <td>{$k+1}</td>
@@ -73,9 +71,9 @@
 				                    </td>
                                 </tr>
 		                    </foreach>	
-	                    </tbody>
+	                    </tbody> -->
                     </table>
- -->
+
                 </div>
                 <nav>
                     <Yunzhi:page />
