@@ -19,6 +19,7 @@ return array(
     'DB_PORT'               =>  '3633',             // 端口
     'DB_PREFIX'             =>  'paper_',           // 数据库表前缀
 
+
     'URL_MODEL'             =>  1, // URL访问模式,可选参数0、1、2、3,代表以下四种模式：
 
     //开启令牌验证
@@ -26,5 +27,8 @@ return array(
     'TOKEN_NAME'            =>    '__hash__',    // 令牌验证的表单隐藏字段名称，默认为__hash__
     'TOKEN_TYPE'            =>    'md5',  //令牌哈希验证规则 默认为MD5
     'TOKEN_RESET'           =>    true,  //令牌验证出错后是否重置令牌 默认为true
+
+
+    'DEFAULT_PASSWORD'      => 'mengyunzhi', //默认密码
 
 );
