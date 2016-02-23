@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>论文审批系统</title>
+    <title>河北工业大学论文审批系统</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="{:add_root_path("/SBAdmin2/css/bootstrap.min.css")}" rel="stylesheet">
