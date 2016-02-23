@@ -27,14 +27,14 @@
               <div class="form-group">
                 <label for="starttime" class="col-sm-2 control-label">开始日期</label>
                   <div class="col-sm-4">
-                    <input name="starttime" size="16" type="date" value="<php>echo isset($cycle['starttime']) ? date('Y-m-d',$cycle['starttime']) : date('Y-m-d');</php>" class="form-control date" ng-model="starttime"/>
+                    <input name="starttime" type="date" value="{$cycle['starttime']}" class="form-control date" ng-model="starttime" required/>
                   </div>
               </div>
 
               <div class="form-group">
                 <label for="endtime" class="col-sm-2 control-label">结束日期</label>
                   <div class="col-sm-4">
-                    <input name="endtime" type="date" value="{$cycle['endtime']|date_to_string}" class="form-control date" ng-model="endtime"/>
+                    <input name="endtime" type="date" value="{$cycle['endtime']}" class="form-control date" ng-model="endtime" required/>
                   </div>
               </div>
 
@@ -54,8 +54,7 @@
   app.controller('cycleAdd',function($scope){
     
     $scope.name = '{:$cycle['name']}';
-      $scope.starttime ='{:$cycle['starttime']}';
-      $scope.endtime ='{:$cycle['endtime']}';
+    
   });
 
  </script>
