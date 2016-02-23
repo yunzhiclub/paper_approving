@@ -49,4 +49,14 @@ class CycleLogic extends CycleModel
 		return $datas;
 	}
 
+    public function deleteCurrent()
+    {
+        $map = array();
+        $map['is_current'] = 1;
+        $data = array();
+        $data['is_current'] = 0;
+        $this->where($map)->save($data);
+        return;
+    }
+
 }

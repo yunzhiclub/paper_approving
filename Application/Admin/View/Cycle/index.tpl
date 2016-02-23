@@ -19,7 +19,7 @@
 			                    <th>名称</th>
                                 <th>开始日期</th>
                                 <th>结束日期</th>
-                                <th>当前日期</th>
+                                <th>当前周期</th>
 			                    <th>操作</th>
 		                    </tr>
 	                    </thead>
@@ -30,11 +30,11 @@
 				                    <td>{$cycle['name']}</td>
                                     <td>{$cycle['starttime']}</td>
                                     <td>{$cycle['endtime']}</td>
-                                    <td><eq name="cycle['is_current']" value="0"><span class="badge">否</span><else/>是</eq></td>
+                                    <td><eq name="cycle['is_current']" value="1">是<else/><span class="badge">否</span></eq></td>
 				                    <td>
 				                    <a class="btn btn-sm btn-primary" href="{:U('edit?id='.$cycle['id'])}"><i class="fa fa-pencil"></i>&nbsp;编辑</a>
 				                    <a class="btn btn-sm btn-danger" href="{:U('delete?id='.$cycle['id'])}"><i class="fa fa-trash-o "></i>&nbsp;删除</a>
-				                    <a class="btn btn-sm btn-warning delete" href="{:U('setCurrent?id='.$cycle['id'])}"><i class="fa fa-sun-o"></i>&nbsp;设置当前周期</a>
+				                    <eq name="cycle['is_current']" value="0"><a class="btn btn-sm btn-warning delete" href="{:U('setCurrent?id='.$cycle['id'])}"><i class="fa fa-sun-o"></i>&nbsp;设置当前周期</a></eq>
 				                    </td>
                                 </tr>
 		                    </foreach>	

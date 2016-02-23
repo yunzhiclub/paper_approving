@@ -88,6 +88,7 @@ class CycleController extends AdminController
         $cycleId=I('get.id');
 
         $CycleL=new CycleLogic();
+        $CycleL->deleteCurrent();
         $cycle=$CycleL->getListById($cycleId);
 
         $cycle['is_current']=1;
