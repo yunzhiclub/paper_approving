@@ -50,7 +50,7 @@
 		                    <foreach name="students" item="student" key="k">
 			                    <tr>
 				                    <td>{$k+1}</td>
-                                    <td>{$student['studentID']}</td>
+                                    <td>{$student['studentid']}</td>
 				                    <td>{$student['name']}</td>
 				                    <td>{$student['admission_date']}</td>
 				                    <td>{$student['subject_major']}</td>

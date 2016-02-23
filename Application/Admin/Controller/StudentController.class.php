@@ -11,7 +11,6 @@ class StudentController extends AdminController
         //获取列表
         $StudentL = new StudentLogic();
         $students = $StudentL->getLists();
-        //dump($users);
 
         //传入列表
         $this -> assign('students',$students);
@@ -20,85 +19,69 @@ class StudentController extends AdminController
         $this -> display();
     }
 
+    public function editAction()
+    {
+        //获取用户ID
+        $studentId = I('get.id');
 
-//     public function saveAction()
-//     {
-//         // dump(I('post.'));
-//         // exit();
-//         //取用户信息
-//         $user = I('post.');
+        //取用户信息getListById()
+        $StudentL = new StudentLogic();
+        $student = $StudentL->getListById($studentId);
 
-//         //添加add()
-//         $UserL = new UserLogic();
-//         $UserL -> saveList($user);
-//         //echo $this->getlastsql();
+        //传给前台
+        $this -> assign('student',$student);
 
-//         //判断异常
-//         if(count($errors = $UserL->getErrors())!==0)
-//         {
-//             //dump($errors);
-//             //exit();
-//             //数组变字符串
-//             $error = implode('<br/>',$errors);
+        //显示display('add')
+        $this -> display();
+    }
 
-//             //显示错误
-//             $this -> error("添加失败，原因：".$error,U('Admin/User/index?p ='.I('get.p')));
-//         }
-//         else
-//         {
-//             $this -> success("操作成功",U('Admin/User/index?p ='.I('get.p')));
-//         }
-//     }
+    public function saveAction()
+    {
+        //取用户信息
+        $student = I('post.');
 
-//     public function editAction()
-//     {
-//         //获取用户ID
-//         $userId = I('get.id');
+        //添加add()
+        $StudentL = new StudentLogic();
+        $StudentL -> saveList($student);
+        //echo $this->getlastsql();
 
-//         //取用户信息getListById()
-//         $UserL = new UserLogic();
-//         $user = $UserL->getListById($userId);
+        //判断异常
+        if(count($errors = $StudentL->getErrors())!==0)
+        {
+            //dump($errors);
+            //exit();
+            //数组变字符串
+            $error = implode('<br/>',$errors);
 
-//         //传给前台
-//         $this -> assign('user',$user);
+            //显示错误
+            $this -> error("添加失败，原因：".$error,U('Admin/Student/index?p ='.I('get.p')));
+        }
+        else
+        {
+            $this -> success("操作成功",U('Admin/Student/index?p ='.I('get.p')));
+        }
+    }
 
-//         //显示display('add')
-//         $this -> display('add');
-//     }
+    
 
-//     public function deleteAction()
-//     {
-//         //取id
-//         $userId= I('get.id');
+    public function deleteAction()
+    {
+        //取id
+        $studentId= I('get.id');
 
-//         //删除deleteInfo($Id)
-//         $UserL = new UserLogic();
-//         $status = $UserL->deleteInfo($userId);
+        //删除deleteInfo($Id)
+        $StudentL = new StudentLogic();
+        $status = $StudentL->deleteInfo($studentId);
 
-//         //判断是否删除成功
-//         if($status!==false)
-//         {
-//             $this -> success("删除成功",U('Admin/User/index?p='.I('get.p')));
-//         }
-//         else
-//         {
-//             $this -> error("删除失败",U('Admin/User/index?p='.I('get.p')));
-//         }
-//     }
-
-//     public function resetPasswordAction()
-//     {
-//         $userId = I('get.id');
-//         $userL = new UserLogic();
-//         $status = $userL -> resetPassword($userId);
-//         if($status!==false)
-//         {
-//             $this ->success('您的密码已重置，新密码为:'.C(DEFAULT_PASSWORD),U('Admin/User/index?p='.I('get.p')));
-//         }
-//         else
-//         {
-//             $this -> error("重置失败",U('Admin/User/index?p='.I('get.p')));
-//         }
-//     }
- }
+        //判断是否删除成功
+        if($status!==false)
+        {
+            $this -> success("删除成功",U('Admin/Student/index?p='.I('get.p')));
+        }
+        else
+        {
+            $this -> error("删除失败",U('Admin/Student/index?p='.I('get.p')));
+        }
+    }
+}
 
