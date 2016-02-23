@@ -1,4 +1,3 @@
-<block name="nav">
 
 <div class="row-fluid">
 		<div class="span12">
@@ -6,15 +5,15 @@
 				河北工业大学论文盲审系统
 			</h3>
 		</div>
-	</div>
-<div class="row-fluid">
-		<div class="span12">
-			<div class="navbar">
-				<div class="navbar-inner">
-					<div class="container-fluid">
-						<div class="nav-collapse collapse navbar-responsive-collapse">
-							<ul class="nav">
-								<li class="active">
+</div>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active">
 									<a href="#">修改密码</a>
 								</li>
 								<li>
@@ -29,13 +28,9 @@
 								<li>
 									<a href="#">技术支持</a>
 								</li>
-							</ul>
-						</div>
-						
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</div>
-	</block>
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+

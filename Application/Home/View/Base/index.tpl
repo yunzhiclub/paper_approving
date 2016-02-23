@@ -4,7 +4,6 @@
 <head>
     <include file="Base/head" />
 </head>
-
 <body>
 <div class="container-fluid">
 <include file="Base/header" />
