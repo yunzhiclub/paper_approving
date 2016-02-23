@@ -17,7 +17,7 @@
 			<a href="http://127.0.0.1/paper_approving/Public/index.php/Home/ChangePassword/index.html">修改密码</a>
 		</li>
 		<li>
-			<a href="http://127.0.0.1/paper_approving/Public/index.php/Home/Personal/index.html">填写个人信息</a>
+			<a href="http://127.0.0.1/paper_approving/Public/index.php/Home/Expert/index.html">填写个人信息</a>
 		</li>
 		<li>
 			<a href="http://127.0.0.1/paper_approving/Public/index.php/Home/Reviews/index.html">查阅评分标准</a>

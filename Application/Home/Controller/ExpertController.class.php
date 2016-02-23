@@ -1,9 +1,9 @@
 <?php
 namespace Home\Controller;
 
-use Personal\Logic\PersonalLogic;
+use Expert\Logic\ExpertLogic;
 
-class PersonalController extends HomeController
+class ExpertController extends HomeController
 {
     //用户列表显示
     public function indexAction()
