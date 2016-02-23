@@ -8,6 +8,13 @@ use Yunzhi\Model\AttachmentModel;
 
 class AttachmentLogic extends AttachmentModel
 {
+	/**
+	 * 返回以SHA1 MD5 RECORDID查询返回的记录
+	 * @param  [string] $sha1    
+	 * @param  [string] $md5     
+	 * @param  [int] $recordId 记录ID
+	 * @return [list]    成功则返回一维数据 ， 不存在数据，则返回NULL
+	 */
 	public function getListBySha1Md5RecoredId($sha1, $md5, $recordId = null)
 	{
 		if (strlen($sha1) != 40 || strlen($md5) != 32)
