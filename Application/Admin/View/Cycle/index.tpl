@@ -16,13 +16,10 @@
 	                    <thead>
 	                        <tr>
                                 <th>序号</th>
-                                <?php $order=I('get.order') ?>
-                                <th>
-                                <a href="<eq name='order' value="desc"> {:U('index?by=name&order=asc', I('get.'))}  
-                                <else/> {:U('index?by=name&order=desc', I('get.'))} </eq>">名称</a>
-                                </th>
+			                    <th>名称</th>
                                 <th>开始日期</th>
                                 <th>结束日期</th>
+                                <th>当前日期</th>
 			                    <th>操作</th>
 		                    </tr>
 	                    </thead>
@@ -31,8 +28,9 @@
 			                    <tr>
 				                    <td>{$k+1}</td>
 				                    <td>{$cycle['name']}</td>
-                                    <td>{$cycle['starttime']|date="Y/m/d",###}</td>
-                                    <td>{$cycle['endtime']|date="Y/m/d",###}</td>
+                                    <td>{$cycle['starttime']}</td>
+                                    <td>{$cycle['endtime']}</td>
+                                    <td><eq name="cycle['is_current']" value="0"><span class="badge">否</span><else/>是</eq></td>
 				                    <td>
 				                    <a class="btn btn-sm btn-primary" href="{:U('edit?id='.$cycle['id'])}"><i class="fa fa-pencil"></i>&nbsp;编辑</a>
 				                    <a class="btn btn-sm btn-danger" href="{:U('delete?id='.$cycle['id'])}"><i class="fa fa-trash-o "></i>&nbsp;删除</a>

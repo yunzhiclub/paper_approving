@@ -18,7 +18,7 @@
               <div class="form-group">
                 <label for="cyclename" class="col-sm-2 control-label">名称</label>
                   <div class="col-sm-4">
-                    <input id="cyclename" name="cyclename" class="form-control" ng-model="cyclename" required/>
+                    <input id="cyclename" name="name" class="form-control" ng-model="name" required/>
 
                     <p class="text-danger" ng-show="form.cyclename.$dirty && form.cyclename.$invalid"> <span ng-show="form.cyclename.$error.required">名称不能为空</span></p>
                   </div>
@@ -27,14 +27,14 @@
               <div class="form-group">
                 <label for="starttime" class="col-sm-2 control-label">开始日期</label>
                   <div class="col-sm-4">
-                    <input name="starttime" size="16" type="text" value="{$cycle['starttime']|date_to_string}" class="form-control date" readonly />
+                    <input name="starttime" size="16" type="date" value="<php>echo isset($cycle['starttime']) ? date('Y-m-d',$cycle['starttime']) : date('Y-m-d');</php>" class="form-control date" ng-model="starttime"/>
                   </div>
               </div>
 
               <div class="form-group">
                 <label for="endtime" class="col-sm-2 control-label">结束日期</label>
                   <div class="col-sm-4">
-                    <input name="endtime" type="date" value="{$cycle['endtime']|date_to_string}" class="form-control date" />
+                    <input name="endtime" type="date" value="{$cycle['endtime']|date_to_string}" class="form-control date" ng-model="endtime"/>
                   </div>
               </div>
 
@@ -49,6 +49,14 @@
       </div> 
     </div>
   </div>
- <include file="add.js"/>
+<script type="text/javascript">
+  var app=angular.module('cycle',[]);
+  app.controller('cycleAdd',function($scope){
+    
+    $scope.name = '{:$cycle['name']}';
+      $scope.starttime ='{:$cycle['starttime']}';
+      $scope.endtime ='{:$cycle['endtime']}';
+  });
 
+ </script>
 </block>

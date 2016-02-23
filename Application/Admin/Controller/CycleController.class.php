@@ -11,7 +11,6 @@ class CycleController extends AdminController
         //获取列表
         $CycleL = new CycleLogic();
         $cycles = $CycleL->getLists();
-        //dump($cycles);
 
         //传入列表
         $this -> assign('cycles',$cycles);
@@ -23,8 +22,6 @@ class CycleController extends AdminController
 
     public function saveAction()
     {
-        // dump(I('post.'));
-        // exit();
         //取用户信息
         $cycle = I('post.');
 
@@ -83,6 +80,31 @@ class CycleController extends AdminController
         else
         {
             $this -> error("删除失败",U('Admin/Cycle/index?p='.I('get.p')));
+        }
+    }
+
+    public function setCurrentAction()
+    {
+        $cycleId=I('get.id');
+
+        $CycleL=new CycleLogic();
+        $cycle=$CycleL->getListById($cycleId);
+
+        $cycle['is_current']=1;
+
+        $CycleL->saveList($cycle);
+
+        if(count($errors = $CycleL->getErrors())!==0)
+        {
+            //数组变字符串
+            $error = implode('<br/>',$errors);
+
+            //显示错误
+            $this -> error("添加失败，原因：".$error,U('Admin/Cycle/index?p ='.I('get.p')));
+        }
+        else
+        {
+            $this -> success("操作成功",U('Admin/Cycle/index?p ='.I('get.p')));
         }
     }
 
