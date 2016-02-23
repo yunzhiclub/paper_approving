@@ -3,9 +3,6 @@
     <div class="row-fluid">
         <div class="col-xs-12">
         <div class="row">
-            <div class="col-md-3">
-                    <a class="button btn btn-info"  href="{:U('edit')}" ><i class="glyphicon glyphicon-plus"></i> 批量上传学生</a>
-                </div>
         </div>
             <div class="row">
                 <div class="col-md-3">
@@ -20,8 +17,11 @@
                         </div>
                     </form>
                 </div>
+                <div class="col-md-5">
+                    <a class="button btn btn-info"  href="#" ><i class="glyphicon glyphicon-plus"></i> 添加学生</a>
+                </div>
                 <div class="col-md-3">
-                    <a class="button btn btn-info"  href="{:U('edit')}" ><i class="glyphicon glyphicon-plus"></i> 添加学生</a>
+                    <a class="button btn btn-info"  href="#" ><i class="glyphicon glyphicon-plus"></i> 批量上传学生</a>
                 </div>
             </div>
             <div class="box">
@@ -59,7 +59,7 @@
 				                    <td>
 				                    <a class="btn btn-sm btn-primary" href="{:U('edit?id='.$student['id'])}"><i class="fa fa-pencil"></i>&nbsp;编辑</a>
 				                    <a class="btn btn-sm btn-danger" href="{:U('delete?id='.$student['id'])}"><i class="fa fa-trash-o "></i>&nbsp;删除</a>
-				                    <a class="btn btn-sm btn-warning delete" href="{:U('resetPassword?id='.$student['id'])}"><i class="fa fa-repeat"></i>&nbsp;查看</a>
+				                    <a class="btn btn-sm btn-warning delete" href="{:U('detail?id='.$student['id'])}"><i class="fa fa-repeat"></i>&nbsp;查看</a>
 				                    </td>
                                 </tr>
 		                    </foreach>	

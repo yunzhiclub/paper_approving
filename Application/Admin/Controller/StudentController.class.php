@@ -83,5 +83,15 @@ class StudentController extends AdminController
             $this -> error("删除失败",U('Admin/Student/index?p='.I('get.p')));
         }
     }
+
+    public function detailAction()
+    {
+        $studentId= I('get.id');
+        $StudentL = new StudentLogic();
+        $student = $StudentL->getListById($studentId);
+        $this -> assign('student',$student);
+        $this->display();
+
+    }
 }
 
