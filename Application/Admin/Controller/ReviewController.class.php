@@ -7,7 +7,7 @@ use Review\Logic\ReviewLogic;
 /**
 * 
 */
-class ReviewSettingController extends AdminController
+class ReviewController extends AdminController
 {
 	
 public function indexAction()				//初始页面
