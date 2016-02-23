@@ -8,6 +8,7 @@
 <div class="container-fluid">
 <include file="Base/header" />
 <include file="Base/body" />
+<include file="Base/footer" />
 </div>
 </body>
 

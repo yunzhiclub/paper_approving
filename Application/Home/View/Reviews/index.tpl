@@ -2,8 +2,12 @@
 <block name="wrapper">
 	<div class="row-fluid">
 		<div class="span12">
-
-				评分标准
+            <div class="page-header">
+				<h4>
+					评分标准
+				</h4>
+			</div>
+				
 
 			<table class="table table-bordered table-condensed">
 				<thead>

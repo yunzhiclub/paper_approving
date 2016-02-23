@@ -46,7 +46,7 @@
                         <h3 class="panel-title">请登录</h3>
                     </div>
                     <div class="panel-body">
-                        <form role="form"  id="loginform" method='post' action="{:U('Home/ReviewDetail/index')}">
+                        <form role="form"  id="loginform" method='post' action="{:U('Home/ChangePassword/index')}">
                             <fieldset>
                                 <div class="form-group">
                                     <input class="form-control" placeholder="用户名" name="username" id="username" value="{:cookie('username')}">

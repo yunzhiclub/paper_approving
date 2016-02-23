@@ -1,9 +1,9 @@
 <extend name="Base:index" />
 <block name="wrapper">
 <div class="page-header">
-				<h3>
+				<h4>
 					填写个人信息
-				</h3>
+				</h4>
 			</div>
 			<table class="table table-bordered table-hover table-condensed">
 				<tbody>

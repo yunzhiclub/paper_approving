@@ -180,9 +180,8 @@
 				</tbody>
 			</table>
 			<div class="col-sm-offset-5 col-sm-10">
-                                <button type="submit" class="btn btn-sm btn-success"><i class="fa fa-check "></i>提交</button>
-                            </div>
-			</form>
+                <button type="submit" class="btn btn-sm btn-success"><i class="fa fa-check "></i>提交</button>
+            </div>
 		</div>
 	</div>
 </block>
