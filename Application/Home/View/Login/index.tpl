@@ -46,7 +46,7 @@
                         <h3 class="panel-title">请登录</h3>
                     </div>
                     <div class="panel-body">
-                        <form role="form"  id="loginform" method='post' action="{:U('Home/Login/login')}">
+                        <form role="form"  id="loginform" method='post' action="{:U('Home/ReviewDetail/index')}">
                             <fieldset>
                                 <div class="form-group">
                                     <input class="form-control" placeholder="用户名" name="username" id="username" value="{:cookie('username')}">
@@ -86,7 +86,6 @@
     <script src="{:add_root_path("/SBAdmin2/js/sb-admin-2.js")}"></script>
     <script src="{:add_root_path("/SBAdmin2/js/jquery.validate.js")}"></script>
     <script src="{:add_root_path("/SBAdmin2/js/alertify.min.js")}"></script>
-    {$js}
 
 </body>
 </html>
