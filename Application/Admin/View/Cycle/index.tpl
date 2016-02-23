@@ -16,7 +16,11 @@
 	                    <thead>
 	                        <tr>
                                 <th>序号</th>
-			                    <th>名称</th>
+                                <?php $order=I('get.order') ?>
+                                <th>
+                                <a href="<eq name='order' value="desc"> {:U('index?by=name&order=asc', I('get.'))}  
+                                <else/> {:U('index?by=name&order=desc', I('get.'))} </eq>">名称</a>
+                                </th>
                                 <th>开始日期</th>
                                 <th>结束日期</th>
 			                    <th>操作</th>
