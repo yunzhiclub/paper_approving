@@ -47,4 +47,16 @@ class ExpertController extends AdminController
         $this->success("重置密码成功", U('Expert/Index/index?',I('get.p')));
         
     }
+
+    public function detailAction()
+    {
+    	$expertId=I('get.id');
+
+    	$ExpertL=new ExpertLogic();
+    	$expert=$ExpertL->getListById($expertId);
+
+    	$this->assign('expert',$expert);
+
+    	$this->display();
+    }
 }

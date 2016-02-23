@@ -44,6 +44,7 @@
 						<td>
 							<a class="button btn btn-sm btn-primary" href="{:U('reset?id='.$expert['id'],I('get.'))}"><i class="fa fa-pencil"></i>&nbsp;重置密码</a>
 							<a class="button btn btn-sm btn-success" href="">下载评阅表</a>
+							<a class="btn btn-sm btn-warning delete" href="{:U('detail?id='.$expert['id'])}"><i class="fa fa-repeat"></i>&nbsp;查看</a>
 						</td>
 					</tr>
 				</foreach>
