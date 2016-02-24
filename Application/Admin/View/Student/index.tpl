@@ -17,9 +17,6 @@
                         </div>
                     </form>
                 </div>
-                <div class="col-md-5">
-                    <a class="button btn btn-info"  href="#" ><i class="glyphicon glyphicon-plus"></i> 添加学生</a>
-                </div>
                 <div class="col-md-3">
                     <a class="button btn btn-info"  href="#" ><i class="glyphicon glyphicon-plus"></i> 批量上传学生</a>
                 </div>
