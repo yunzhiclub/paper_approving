@@ -7,7 +7,6 @@
 					评分标准
 				</h4>
 			</div>
-				
 
 			<table class="table table-bordered table-condensed">
 				<thead>
@@ -26,6 +25,7 @@
 							权重
 						</td>
 						<td>
+						    评分细则
 						</td>
 					</tr>
 					<tr>
