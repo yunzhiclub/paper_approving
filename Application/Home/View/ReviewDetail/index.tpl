@@ -23,7 +23,7 @@
 							论文题目
 						</td>
 						<td>
-							某某硕士学位论文
+							微型框架的设计与实现
 						</td>
 					</tr>
 					<tr>
@@ -55,9 +55,13 @@
 							<tr>
 							<td>1、论文选题(A)</td>
 							<td>12%</td>
-							<td><select class="selectpicker form-control">
-                                        <option>90</option>
-                                        <option>80</option>
+							<td>
+							<select class="selectpicker form-control">
+							<?php 
+							for ($x=1; $x<=100; $x++) {
+							  echo "<option>$x</option>";
+							} 
+							?>
                                     </select>
                             </td>
                             <td>
@@ -68,8 +72,11 @@
 							<td>2、文献综述(B)</td>
 							<td>16%</td>
 							<td><select class="selectpicker form-control">
-                                        <option>90</option>
-                                        <option>80</option>
+                                        <?php 
+							for ($x=1; $x<=100; $x++) {
+							  echo "<option>$x</option>";
+							} 
+							?>
                                     </select>
                             </td>
                             <td>
@@ -80,8 +87,11 @@
 							<td>3、基础理论知识与专业知识（C）</td>
 							<td>15%</td>
 							<td><select class="selectpicker form-control">
-                                        <option>90</option>
-                                        <option>80</option>
+                                        <?php 
+							for ($x=1; $x<=100; $x++) {
+							  echo "<option>$x</option>";
+							} 
+							?>
                                     </select>
                             </td>
                             <td>
@@ -92,8 +102,11 @@
 							<td>4、工作难度与工作量（D）</td>
 							<td>12%</td>
 							<td><select class="selectpicker form-control">
-                                        <option>90</option>
-                                        <option>80</option>
+                                        <?php 
+							for ($x=1; $x<=100; $x++) {
+							  echo "<option>$x</option>";
+							} 
+							?>
                                     </select>
                             </td>
                             <td>
@@ -104,8 +117,11 @@
 							<td>5、解决实际问题的能力（E）</td>
 							<td>20%</td>
 							<td><select class="selectpicker form-control">
-                                        <option>90</option>
-                                        <option>80</option>
+                                        <?php 
+							for ($x=1; $x<=100; $x++) {
+							  echo "<option>$x</option>";
+							} 
+							?>
                                     </select>
                             </td>
                             <td>
@@ -116,8 +132,11 @@
 							<td>6、论文成果与新见解（E）</td>
 							<td>15%</td>
 							<td><select class="selectpicker form-control">
-                                        <option>90</option>
-                                        <option>80</option>
+                                        <?php 
+							for ($x=1; $x<=100; $x++) {
+							  echo "<option>$x</option>";
+							} 
+							?>
                                     </select>
                             </td>
                             <td>
@@ -128,8 +147,11 @@
 							<td>7、论文写作能力（G）</td>
 							<td>10%</td>
 							<td><select class="selectpicker form-control">
-                                        <option>90</option>
-                                        <option>80</option>
+                                        <?php 
+							for ($x=1; $x<=100; $x++) {
+							  echo "<option>$x</option>";
+							} 
+							?>
                                     </select>
                             </td>
                             <td>
@@ -145,37 +167,34 @@
 					</td>
 					</tr>
 					<tr>
-						<td>论文是否达到全日制专业学位硕士研究生学位学术水平
+						<td>是否同意答辩
 						</td>
 						<td>
-							<select class="selectpicker form-control">
-                                <option>是</option>
-                                <option>否</option>
-                            </select>
-						</td>
-					</tr>
-					<tr>
-						<td>是否同意举行论文答辩意见
-						</td>
-						<td>
-							<input type="checkbox" checked="checked" /> 同意答辩<br>
+							<input type="checkbox" /> 同意答辩<br>
 							<input type="checkbox"/> 同意经过小的修改后答辩（可不再送审）<br>
 							<input type="checkbox"/> 需要进行较大的修改后答辩（修改后送原专家送审）<br>
 							<input type="checkbox"/> 未达到学位论文要求，不同意答辩
 						</td>
 					</tr>
 					<tr>
-						<td>是否推荐为河北工业大学优秀论文</td>
+						<td>是否推荐评选优秀论文</td>
 						<td>
-							<select class="selectpicker form-control">
-                                <option>是</option>
-                                <option>否</option>
-                            </select>
+							<input type="checkbox" /> 省级<br>
+							<input type="checkbox"/> 校级<br>
+							<input type="checkbox"/> 不推荐
 						</td>
 					</tr>
 					<tr>
-						<td>学术论文综合评语</td>
-						<td><textarea></textarea></td>
+						<td>对论文内容的熟悉程度</td>
+						<td>
+							<input type="checkbox" /> 很熟悉<br>
+							<input type="checkbox"/> 熟悉<br>
+							<input type="checkbox"/> 一般了解
+						</td>
+					</tr>
+					<tr>
+						<td>评阅意见<br>(请结合以上各评阅项目进行简要评价并提出论文存在的问题、不足以及修改建议)</td>
+						<td><div class="col-md-3"><textarea></textarea></div><td>
 					</tr>
 				</tbody>
 			</table>
