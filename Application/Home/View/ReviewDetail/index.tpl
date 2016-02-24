@@ -159,9 +159,9 @@
 						</td>
 						<td>
 							<input type="checkbox" checked="checked" /> 同意答辩<br>
-							<input type="checkbox" checked="checked" /> 同意经过小的修改后答辩（可不再送审）<br>
-							<input type="checkbox" checked="checked" /> 需要进行较大的修改后答辩（修改后送原专家送审）<br>
-							<input type="checkbox" checked="checked" /> 未达到学位论文要求，不同意答辩
+							<input type="checkbox"/> 同意经过小的修改后答辩（可不再送审）<br>
+							<input type="checkbox"/> 需要进行较大的修改后答辩（修改后送原专家送审）<br>
+							<input type="checkbox"/> 未达到学位论文要求，不同意答辩
 						</td>
 					</tr>
 					<tr>
