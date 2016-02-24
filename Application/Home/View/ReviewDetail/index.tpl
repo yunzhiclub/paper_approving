@@ -54,7 +54,7 @@
 							<tbody>
 							<tr>
 							<td>1、论文选题(A)</td>
-							<td>10%</td>
+							<td>12%</td>
 							<td><select class="selectpicker form-control">
                                         <option>90</option>
                                         <option>80</option>
@@ -66,7 +66,7 @@
 							</tr>
 							<tr>
 							<td>2、文献综述(B)</td>
-							<td>10%</td>
+							<td>16%</td>
 							<td><select class="selectpicker form-control">
                                         <option>90</option>
                                         <option>80</option>
@@ -78,7 +78,7 @@
 							</tr>
 							<tr>
 							<td>3、基础理论知识与专业知识（C）</td>
-							<td>10%</td>
+							<td>15%</td>
 							<td><select class="selectpicker form-control">
                                         <option>90</option>
                                         <option>80</option>
@@ -90,7 +90,7 @@
 							</tr>
 							<tr>
 							<td>4、工作难度与工作量（D）</td>
-							<td>10%</td>
+							<td>12%</td>
 							<td><select class="selectpicker form-control">
                                         <option>90</option>
                                         <option>80</option>
@@ -102,7 +102,7 @@
 							</tr>
 							<tr>
 							<td>5、解决实际问题的能力（E）</td>
-							<td>10%</td>
+							<td>20%</td>
 							<td><select class="selectpicker form-control">
                                         <option>90</option>
                                         <option>80</option>
@@ -114,7 +114,7 @@
 							</tr>
 							<tr>
 							<td>6、论文成果与新见解（E）</td>
-							<td>10%</td>
+							<td>15%</td>
 							<td><select class="selectpicker form-control">
                                         <option>90</option>
                                         <option>80</option>
@@ -137,7 +137,7 @@
                             </td>
 							</tr>
 							<tr>
-								<td>总得分：10%*A+10%*B+10%*C+10%*D+10%*E+10%*F+10%*G=82分
+								<td>总得分：12%*A+16%*B+15%*C+12%*D+20%*E+15%*F+10%*G=82分
 								</td>
 							</tr>
 							</tbody>
