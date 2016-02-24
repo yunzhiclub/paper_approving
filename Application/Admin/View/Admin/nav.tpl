@@ -11,11 +11,11 @@
     </div>
     <!-- /.navbar-header -->
     <ul class="nav navbar-top-links navbar-right">
-        <li class="dropdown">
+       <!--  <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                 <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
-            </a>
-            <ul class="dropdown-menu dropdown-messages">
+            </a> -->
+            <!-- <ul class="dropdown-menu dropdown-messages">
                 <li>
                     <a href="#">
                         <div>
@@ -58,11 +58,11 @@
                         <i class="fa fa-angle-right"></i>
                     </a>
                 </li>
-            </ul>
+            </ul> -->
             <!-- /.dropdown-messages -->
-        </li>
+        <!-- </li> -->
         <!-- /.dropdown -->
-        <li class="dropdown">
+    <!--     <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                 <i class="fa fa-tasks fa-fw"></i> <i class="fa fa-caret-down"></i>
             </a>
@@ -139,9 +139,9 @@
                 </li>
             </ul>
             <!-- /.dropdown-tasks -->
-        </li>
+      <!--   </li> -->
         <!-- /.dropdown -->
-        <li class="dropdown">
+<!--         <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                 <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
             </a>
@@ -197,21 +197,21 @@
                         <i class="fa fa-angle-right"></i>
                     </a>
                 </li>
-            </ul>
+            </ul> -->
             <!-- /.dropdown-alerts -->
-        </li>
+        <!-- </li> -->
         <!-- /.dropdown -->
         <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                 <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
             </a>
             <ul class="dropdown-menu dropdown-user">
-                <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                <!-- <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
                 </li>
                 <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
                 </li>
-                <li class="divider"></li>
-                <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                <li class="divider"></li> -->
+                <li><a href="http://127.0.0.1/paper_approving/Public/admin.php/login/index.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                 </li>
             </ul>
             <!-- /.dropdown-user -->
