@@ -20,7 +20,7 @@
 		<div class="form-group">
 			<label for="admission_date" class="col-xs-2 control-label">入学年月</label>
 			<div class="col-xs-4">
-				<input id="admission_date" type ="date" name="admission_date" value="{$student['admission_date']}" class="form-control">
+				<input id="admission_date" type ="text" name="admission_date" value="{$student['admission_date']}" class="form-control date">
 			</div>
 		</div>
 
@@ -70,7 +70,7 @@
 	<div class="form-group">
 			<label for="create_time" class="col-xs-2 control-label">学生创建时间</label>
 			<div class="col-xs-4">
-				<input id="create_time" type ="date" name="create_time" value="{$student['create_time']}" class="form-control">
+				<input id="create_time" type ="text" name="create_time" value="{$student['create_time']}" class="form-control date">
 			</div>
 		</div>
 

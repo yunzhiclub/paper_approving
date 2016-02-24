@@ -26,11 +26,11 @@
 				<?php $order = I('get.order') ?>
 				<th><a href="<eq name='order' value="desc">{:U('index?by=title&order=asc', I('get.'))}<else/> {:U('index?by=title&order=desc', I('get.'))}</eq>">评阅项目名称</a></th>
 				<th>评阅要素</th>
-				<th>比重</th>
+				<th>权重</th>
 				<th><a href="<eq name='order' value="desc">{:U('index?by=weight&order=asc', I('get.'))}  
-					<else/> {:U('index?by=weight&order=desc', I('get.'))} </eq>">权重</a></th>
-					<th>状态</th>
-					<th>操作</th>
+					<else/> {:U('index?by=weight&order=desc', I('get.'))} </eq>">排序</a></th>
+					<!-- <th>状态</th> -->
+					<!-- <th>操作</th> -->
 				</tr>
 			</thead>
 			<tbody>
@@ -41,11 +41,11 @@
 						<td>{$review['factor']}</td>
 						<td>{$review['proportion']}%</td>
 						<td>{$review['weight']}</td>
-						<td><eq name="review['status']" value="0">正常<else/><span class="badge">冻结</span></eq></td>
-						<td>
+						<!-- <td><eq name="review['status']" value="0">正常<else/><span class="badge">冻结</span></eq></td> -->
+				<!-- 		<td>
 							<a class="button btn btn-sm btn-primary" href="{:U('edit?id='.$review['id'],I('get.'))}"><i class="fa fa-pencil"></i>&nbsp;编辑</a>
 							<a class="button btn btn-sm btn-success" href="{:U('delete?id='.$review['id'],I('get.'))}"><i class="fa fa-trash-o "></i>&nbsp;删除</a>
-						</td>
+						</td> -->
 					</tr>
 				</foreach>
 			</tbody>
