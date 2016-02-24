@@ -12,11 +12,14 @@
                             <form class="form-horizontal" action="{:U('save')}" method="post" name="form">
                                 <input type="hidden" name="id" value="{$user.id}" />
                                 <div class="form-group row">
-                                    <label for="username" class="col-xs-2 text-right">姓名：</label>{$user["name"]}
+                                    <label for="username" class="col-xs-2 text-right">姓名:</label>{$user["name"]}
                                 </div>
                                 <div class="form-group row">
                                     <label for="email" class="col-xs-2 text-right">邮箱:</label><input type="email" name="email" ng-model="email" required/>
                                     <span class="text-danger" ng-show="form.email.$error.email">*邮箱格式错误</span>
+                                </div>
+                                 <div class="form-group row">
+                                    <label for="phonenumber" class="col-xs-2 text-right">手机号:</label><input type="text" name="phonenumber" value="{$user['phonenumber']}" />
                                 </div>
                                 <div class="form-group row">
                                   	<label for="password" class="col-xs-2 text-right">原密码:</label><input type="password" name="password" ng-model="password" required />

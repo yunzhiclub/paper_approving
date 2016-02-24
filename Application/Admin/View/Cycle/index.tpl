@@ -33,7 +33,7 @@
                                     <td><eq name="cycle['is_current']" value="1">是<else/><span class="badge">否</span></eq></td>
 				                    <td>
 				                    <a class="btn btn-sm btn-primary" href="{:U('edit?id='.$cycle['id'])}"><i class="fa fa-pencil"></i>&nbsp;编辑</a>
-				                    <a class="btn btn-sm btn-danger" href="{:U('delete?id='.$cycle['id'])}"><i class="fa fa-trash-o "></i>&nbsp;删除</a>
+				                    <eq name="cycle['is_current']" value="1"><else/><a class="btn btn-sm btn-danger" href="{:U('delete?id='.$cycle['id'])}"><i class="fa fa-trash-o "></i>&nbsp;删除</a></eq>
 				                    <eq name="cycle['is_current']" value="0"><a class="btn btn-sm btn-warning delete" href="{:U('setCurrent?id='.$cycle['id'])}"><i class="fa fa-sun-o"></i>&nbsp;设置当前周期</a></eq>
 				                    </td>
                                 </tr>

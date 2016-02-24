@@ -29,7 +29,7 @@
 
 		<div class="form-group">
 			<label for="name" class="col-xs-1 control-label">论文密级</label>
-			<div class="col-xs-4"><p>{$student['secret']}</p>
+			<div class="col-xs-4"><p><eq name="student['secret']" value="0">公开<else/>内部保存</eq></p>
 			</div>
 		</div>
 
@@ -52,8 +52,8 @@
 		</div>
 
 		<div class="form-group">
-			<label for="name" class="col-xs-1 control-label">周期id</label>
-			<div class="col-xs-4"><p>{$student['cyle_id']}</p>
+			<label for="name" class="col-xs-1 control-label">周期</label>
+			<div class="col-xs-4"><p>{$cycleName['name']}</p>
 			</div>
 		</div>
 
@@ -63,11 +63,7 @@
 			</div>
 		</div>
 
-		<div class="form-group">
-			<label for="name" class="col-xs-1 control-label">附件id</label>
-			<div class="col-xs-4"><p>{$student['attachment_id']}</p>
-			</div>
-		</div>
+		
 
 
 

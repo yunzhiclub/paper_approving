@@ -2,6 +2,7 @@
 namespace Admin\Controller;
 
 use Student\Logic\StudentLogic;
+use Cycle\Logic\CycleLogic;
 
 class StudentController extends AdminController
 {
@@ -27,9 +28,14 @@ class StudentController extends AdminController
         //取用户信息getListById()
         $StudentL = new StudentLogic();
         $student = $StudentL->getListById($studentId);
+        dump($student);
 
+        $CycleL=new CycleLogic();
+        $cycleName=$CycleL->getListById($student['cyle_id']);
+        dump($cycleName);
         //传给前台
         $this -> assign('student',$student);
+        $this->assign('cycleName',$cycleName);
 
         //显示display('add')
         $this -> display();
@@ -89,7 +95,11 @@ class StudentController extends AdminController
         $studentId= I('get.id');
         $StudentL = new StudentLogic();
         $student = $StudentL->getListById($studentId);
+        $CycleL=new CycleLogic();
+        $cycleName=$CycleL->getListById($student['cyle_id']);
+        dump($cycleName);
         $this -> assign('student',$student);
+         $this->assign('cycleName',$cycleName);
         $this->display();
 
     }
