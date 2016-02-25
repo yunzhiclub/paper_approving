@@ -7,8 +7,9 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
+      <li><a href="http://127.0.0.1/paper_approving/Public/index.php/Home/Expert/index.html"><i class="fa fa-user fa-fw"></i>安强 欢迎您</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">欢迎您 <span class="caret"></span></a>
+          <a href="http://127.0.0.1/paper_approving/Public/index.php/Home/login/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">登出<!-- <span class="caret"></span> --></a>
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>

@@ -10,6 +10,7 @@
 <include file="Base/body" />
 <include file="Base/footer" />
 </div>
+<script src="__JS__/bootstrap.min.js"></script>
 </body>
 
 </html>
