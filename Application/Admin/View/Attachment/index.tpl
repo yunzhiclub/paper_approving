@@ -93,7 +93,7 @@
 
                 </div>
                 <nav>
-                    <Yunzhi:page />
+                   第1页/共1页/共2条记录
                 </nav>
         </div>
     </div>
