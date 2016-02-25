@@ -8,3 +8,4 @@
 <!-- Bootstrap Core CSS -->
 <link href="__BOW__/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 <script src="__BOW__/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="__SELECT2__/select2.min.js"></script>

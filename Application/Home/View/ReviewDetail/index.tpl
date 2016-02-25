@@ -42,10 +42,13 @@
 				<td>1、论文选题(A)</td>
 				<td>12%</td>
 				<td>
-					<select class="selectpicker form-control">
+					<select class="js-example-basic-single selectpicker form-control">
 						<?php 
 						for ($x=1; $x<=100; $x++) {
-							echo "<option>$x</option>";
+							
+						     	echo "<option>$x</option>";
+						     
+							
 						} 
 						?>
 					</select>
@@ -196,3 +199,8 @@
 </div>
 </form>
 </block>
+<script type="text/javascript">
+$(document).ready(function() {
+  $(".js-example-basic-single").select2();
+});
+</script>
