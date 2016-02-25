@@ -7,3 +7,4 @@
 <title>梦云智--河北工业大学材料科学与工程学院论文送审系统</title>
 <!-- Bootstrap Core CSS -->
 <link href="__BOW__/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="__BOW__/bootstrap/dist/js/bootstrap.min.js"></script>
