@@ -1,17 +1,26 @@
-<nav class="navbar navbar-default avbar-static-top">
-<div class="row-fluid" >
-    <div class="span12">
-	    <h2>
-			河北工业大学论文盲审系统
-		</h2>
-	</div>
-</div>
-    <ul class="nav navbar-top-links navbar-right">
-        <li>
-        <a href="http://127.0.0.1/paper_approving/Public/index.php/Home/login/index.html">Logout</a>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">河北工业大学论文盲审系统</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">欢迎您 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="http://127.0.0.1/paper_approving/Public/index.php/Home/login/index.html">logout</a></li>
+          </ul>
         </li>
-    </ul>
- </nav>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -35,4 +44,9 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
+
+
+
+
 
