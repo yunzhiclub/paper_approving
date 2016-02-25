@@ -94,7 +94,7 @@
 
 					</tbody>
 					</table>
-					<div class="col-sm-offset-5 col-sm-10">
+					<div class="col-sm-offset-5">
                         <button type="submit" class="btn btn-sm btn-success"><i class="fa fa-check "></i>提交</button>
                     </div>
                 </tbody>
