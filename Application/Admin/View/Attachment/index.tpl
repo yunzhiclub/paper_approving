@@ -16,10 +16,19 @@
                     </form>
                 </div>
                 <div class="col-md-2">
-                    <a class="button btn btn-info"  href="#" ><i class="glyphicon glyphicon-plus"></i> 批量上传并匹配</a>
+                    <a class="button btn btn-info"  href="#" ><i class="glyphicon glyphicon-plus"></i>批量下载评阅表</a>
                 </div>
                 <div class="col-md-2">
-                    <a class="button btn btn-info"  href="#" ><i class="glyphicon glyphicon-plus"></i> 批量生成用户名和密码</a>
+                    <a class="button btn btn-info"  href="#" ><i class="glyphicon glyphicon-plus"></i>下载评阅统计表</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <select class="selectpicker form-control" name="show">
+                                        <option>未匹配成功</option>
+                                        <option>已评阅完成</option>
+                                        <option>未评阅完成</option>
+                                    </select>
                 </div>
                 <div class="col-md-2">
                     <a class="button btn btn-info"  href="#" ><i class="glyphicon glyphicon-plus"></i>批量下载评阅表</a>
@@ -45,9 +54,8 @@
 			                    <th>学生姓名</th>
                                 <th>论文名称</th>
                                 <th>用户名1</th>
-                                <th>密码1</th>
+                                <th>是否评阅</th>
                                 <th>用户名2</th>
-                                <th>密码2</th>
                                 <th>是否评阅</th>
 			                    <th>操作</th>
 		                    </tr>
@@ -58,16 +66,13 @@
                                 <td>111111</td>
                                 <td>张三</td>
                                 <td>微型框架的研究与设计</td>
-                                <td>zhangsan</td>
-                                <td>mengyunzhi</td>
-                                <td>lisi</td>
-                                <td>callme119</td>
+                                <td>ksdfji</td>
                                 <td><eq name="cycle['is_current']" value="1">否<else/><span class="badge">是</span></eq></td>
+                                <td>dkfgvt</td>
+                                <td><eq name="cycle['is_current']" value="1">否<else/><span class="badge">否</span></eq></td>
                                 <td>
-                                    <a class="btn btn-sm btn-primary" href="{:U('edit?id='.$Attachment['id'])}"><i class="fa fa-pencil"></i>&nbsp;单独下载评阅表</a>
                                     <a class="btn btn-sm btn-danger" href="{:U('delete?id='.$Attachment['id'])}"><i class="fa fa-trash-o "></i>&nbsp;删除</a>
-                                    <a class="btn btn-sm btn-warning delete" href="{:U('detail?id='.$Attachment['id'])}"><i class="fa fa-repeat"></i>&nbsp;编辑</a>
-                                    </td>
+                                </td>
                             </tr>
                             <tr>
                                 <td>2</td>
@@ -77,33 +82,12 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td></td>
                                 <td><eq name="cycle['is_current']" value="1">是<else/><span class="badge">否</span></eq></td>
                                 <td>
-                                    <a class="btn btn-sm btn-primary" href="{:U('edit?id='.$Attachment['id'])}"><i class="fa fa-pencil"></i>&nbsp;单独生成用户名密码</a>
-                                    <a class="btn btn-sm btn-primary" href="{:U('edit?id='.$Attachment['id'])}"><i class="fa fa-pencil"></i>&nbsp;单独上传不匹配</a>
                                     <a class="btn btn-sm btn-danger" href="{:U('delete?id='.$Attachment['id'])}"><i class="fa fa-trash-o "></i>&nbsp;删除</a>
-                                    <a class="btn btn-sm btn-warning delete" href="{:U('detail?id='.$Attachment['id'])}"><i class="fa fa-repeat"></i>&nbsp;编辑</a>
                                     </td>
                             </tr>
                         </tbody>
-<!-- 	                    <tbody>
-		                    <foreach name="Attachments" item="Attachment" key="k">
-			                    <tr>
-				                    <td>{$k+1}</td>
-                                    <td>{$Attachment['studentID']}</td>
-				                    <td>{$Attachment['savename']}</td>
-				                    <td>{$Attachment['type']}</td>
-				                    <td>{$Attachment['savepath']}</td>
-                                    <td>{$Attachment['create_time']}</td>
-				                    <td>
-				                    <a class="btn btn-sm btn-primary" href="{:U('edit?id='.$Attachment['id'])}"><i class="fa fa-pencil"></i>&nbsp;单独上传不匹配</a>
-				                    <a class="btn btn-sm btn-danger" href="{:U('delete?id='.$Attachment['id'])}"><i class="fa fa-trash-o "></i>&nbsp;删除</a>
-				                    <a class="btn btn-sm btn-warning delete" href="{:U('detail?id='.$Attachment['id'])}"><i class="fa fa-repeat"></i>&nbsp;查看</a>
-				                    </td>
-                                </tr>
-		                    </foreach>	
-	                    </tbody> -->
                     </table>
 
                 </div>
