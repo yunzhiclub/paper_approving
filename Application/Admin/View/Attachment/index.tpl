@@ -66,10 +66,14 @@
                                 <td>1</td>
                                 <td>111111</td>
                                 <td>张三</td>
-                                <td>微型框架的研究与设计</td>
-                                <td>ksdfji</td>
+                                <td><a href="javascript:void(0);" data-trigger="focus" data-container="body" data-toggle="popover" data-title="" data-placement="right" data-content="下载论文">微型框架的设计与实现
+                                        </a>
+                                </td>
+                                <td><a href="javascript:void(0);" data-trigger="focus" data-container="body" data-toggle="popover" data-title="" data-placement="right" data-content="下载论文">ksdfji
+                                        </a></td>
                                 <td><eq name="cycle['is_current']" value="1">否<else/><span class="badge">是</span></eq></td>
-                                <td>dkfgvt</td>
+                                <td><a href="javascript:void(0);" data-trigger="focus" data-container="body" data-toggle="popover" data-title="" data-placement="right" data-content="下载论文">nsdfss
+                                        </a></td>
                                 <td><eq name="cycle['is_current']" value="1">否<else/><span class="badge">否</span></eq></td>
                                 <td>
                                     <a class="btn btn-sm btn-danger" href="{:U('delete?id='.$Attachment['id'])}"><i class="fa fa-trash-o "></i>&nbsp;删除</a>
