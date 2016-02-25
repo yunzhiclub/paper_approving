@@ -147,8 +147,9 @@
 </td>
 </tr>
 
-<tr><td>
-	总得分：12%*A+16%*B+15%*C+12%*D+20%*E+15%*F+10%*G=82分
+<tr>
+<td>
+	总得分：12%*A+16%*B+15%*C+12%*D+20%*E+15%*F+10%*G=82
 </td>
 </tr>
 <tr>
@@ -178,8 +179,16 @@
 	</td>
 </tr>
 <tr>
+	<td>对论文内容的熟悉程度</td>
+	<td>
+		<input type="radio" name="hi" /> 很熟悉<br>
+		<input type="radio" name="hi" /> 熟悉<br>
+		<input type="radio" name="hi" /> 一般了解
+	</td>
+</tr>
+<tr>
 	<td>评阅意见<br>(请结合以上各评阅项目进行简要评价并提出论文存在的问题、不足以及修改建议)</td>
-	<td><textarea cols="100" rows="10"></textarea><td>
+	<td><textarea cols="100" rows="10"></textarea></td>
 	</tr>
 </table>
 <div class="col-sm-offset-5">
