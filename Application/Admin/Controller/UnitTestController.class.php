@@ -3,7 +3,7 @@ namespace Admin\Controller;
 use Think\Controller;
 use Yunzhi\Logic\PHPExcelLogic;     //phpexcel
 use Yunzhi\Logic\ZipLogic;          //zip打包
-
+use PhpOffice\PhpWord\PhpWord;      //phpword
 class UnitTestController extends Controller {
     
     public function __construct()
@@ -63,5 +63,11 @@ class UnitTestController extends Controller {
         $ZipL->zip("/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Public/uploads/image",
             "/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Public/uploads/image.zip"
             );
+    }
+
+    public function phpWordAction()
+    {
+        $phpWord = new PhpWord();
+        dump($phpWord);
     }
 }
