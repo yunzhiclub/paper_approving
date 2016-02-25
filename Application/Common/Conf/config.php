@@ -1,4 +1,5 @@
 <?php
+require_once VENDOR_PATH . '/autoload.php';
 return array(
 
     'YUNZHI_PAGE_SIZE'      => 10,          //默认分页大小
