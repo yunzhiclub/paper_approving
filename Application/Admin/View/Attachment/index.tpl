@@ -1,7 +1,6 @@
 <extend name="Base:index" />
 <block name="body">
-    <div class="row-fluid">
-        <div class="col-xs-12">
+    <div class="row">
             <div class="row">
                 <div class="col-md-3">
                     <form action="{:U('index?keywords=')}" method="get">
@@ -22,6 +21,8 @@
                     <a class="button btn btn-info"  href="#" ><i class="glyphicon glyphicon-plus"></i>下载评阅统计表</a>
                 </div>
             </div>
+            <div class="panel-body">
+                    </div>
             <div class="row">
                 <div class="col-md-3">
                     <select class="selectpicker form-control" name="show">
@@ -94,8 +95,6 @@
                 <nav>
                     <Yunzhi:page />
                 </nav>
-
-            </div>
         </div>
     </div>
 
