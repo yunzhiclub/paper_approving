@@ -14,11 +14,11 @@
                         </div>
                     </form>
                 </div>
-                <div class="col-md-2">
-                    <a class="button btn btn-info"  href="#" ><i class="glyphicon glyphicon-plus"></i>批量下载评阅表</a>
+                <div class="col-md-3">
+                    <a class="button btn btn-info"  href="#" ><i class="glyphicon glyphicon-plus"></i>批量生成用户名和密码</a>
                 </div>
                 <div class="col-md-2">
-                    <a class="button btn btn-info"  href="#" ><i class="glyphicon glyphicon-plus"></i>下载评阅统计表</a>
+                    <a class="button btn btn-info"  href="#" ><i class="glyphicon glyphicon-plus"></i>批量上传论文</a>
                 </div>
             </div>
             <div class="panel-body">
@@ -31,11 +31,11 @@
                                         <option>未评阅完成</option>
                                     </select>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-3">
                     <a class="button btn btn-info"  href="#" ><i class="glyphicon glyphicon-plus"></i>批量下载评阅表</a>
                 </div>
                 <div class="col-md-2">
-                    <a class="button btn btn-info"  href="#" ><i class="glyphicon glyphicon-plus"></i>下载评阅统计表</a>
+                    <a class="button btn btn-info"  href="#" ><i class="glyphicon glyphicon-plus"></i>批量下载评阅统计表</a>
                 </div>
             </div>
             <div class="box">

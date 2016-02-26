@@ -32,8 +32,8 @@
                                 <th>序号</th>
                                 <?php $order=I('get.order') ?>
 			                    <th>
-			                    <a href="<eq name='order' value="desc"> {:U('index?by=studentID&order=asc', I('get.'))}  
-			                    <else/> {:U('index?by=studentID&order=desc', I('get.'))} </eq>">学号</a>
+			                    <a href="<eq name='order' value="desc"> {:U('index?by=student_no&order=asc', I('get.'))}  
+			                    <else/> {:U('index?by=student_no&order=desc', I('get.'))} </eq>">学号</a>
 			                    </th>
 			                    <th>姓名</th>
                                 <th>论文题目</th>
@@ -45,7 +45,7 @@
 		                    <foreach name="students" item="student" key="k">
 			                    <tr>
 				                    <td>{$k+1}</td>
-                                    <td>{$student['studentid']}</td>
+                                    <td>{$student['student_no']}</td>
 				                    <td>{$student['name']}</td>
                                     <td>{$student['title']}</td>
                                     <td>{$student['research_direction']}</td>
