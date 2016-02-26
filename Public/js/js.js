@@ -22,33 +22,7 @@ $(function(){
  };
 
 
-/**
- * uploaderDelete监听点击事件
- * @return {[type]} [description]
- */
- var uploaderDeleteClick = function() {
-     $(".uploaderDelete").each(function() {
-         this.addEventListener("click", function() {           
-             var file = $("#" + $(this).attr("data-file"));         //对应表单值
-             var type = $(this).attr("data-type");                 //类型image或file
-             var id = $(this).attr("data-id");                      //附件ID
-             file.val(file.val().split(",").remove(id).join(","));  //unset相关数据
 
-             //根据不同的type值，决定去除HTML信息
-             if (type == 'image')
-             {
-                $(this).parent().remove();
-             }
-             else
-             {
-                $(this).parent().parent().remove();
-             }
-
-             //记录当前附件ID值
-             console.log(file.val());
-         })
-     });
- }
 
 //日期插件
 var dataInit = function(){
@@ -111,7 +85,7 @@ var dataInit = function(){
 /**
  * uploaer 实例化
  * @param  {string} ROOT     调用uploader根路径
- * @param  {string} id       操作的DOM关键字
+ * @param  {string} name       操作的DOM关键字
  * @param {string} fileObjName 表单值
  * @param  {sting} btnClass 按钮额外的CLASS
  * @param  {string} btnText  按钮显示文字
@@ -125,15 +99,15 @@ var dataInit = function(){
  * @param { sting} value 表单初始值
  * @return {object}          [uploadify]
  */
- var uploader = function(ROOT, id, fileObjName, btnClass, btnText, debug, type, fileTypeDesc, fileTypeExts, fileSizeLimit, queueSizeLimit, uploadLimit, value) {
-     if (id === undefined) {
-         id = "file";
+ var uploader = function(ROOT, name, fileObjName, btnClass, btnText, debug, type, fileTypeDesc, fileTypeExts, fileSizeLimit, queueSizeLimit, uploadLimit, value, callback) {
+     if (name === undefined) {
+         name = "file";
      }
 
      //赋值
-     $("#"+ id).val(value);
+     // $("#"+ name).val(value);
 
-     var fileId = id + '_upload';
+     var fileId = name + '_upload';
      if (btnClass === undefined) {
          btnClass = "btn btn-primary";
      }
@@ -158,8 +132,16 @@ var dataInit = function(){
              alert('The file ' + file.name + ' could not be uploaded: ' + errorString);
          },
          'onUploadSuccess': function(file, data, response) {
-            console.log(data);
-             addHtml(file, data, response, id, type);
+            var dataObject = JSON.parse(data);
+             // addHtml(file, data, response, id, type);
+            if (typeof(callback) === 'function')
+            {
+                callback(file, dataObject, response);
+            }
+            else
+            {
+                console.log("error:未传入回调函数，或传入的回调类型不正确");
+            }
          },
      });
  };
