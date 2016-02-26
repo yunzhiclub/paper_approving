@@ -4,3 +4,5 @@ Runtime/
 .phpintel/
 Application/Common/Conf/config.php
 Public/uploads/
+
+ThinkPHP/Library/Vendor/phpoffice/phpword/
