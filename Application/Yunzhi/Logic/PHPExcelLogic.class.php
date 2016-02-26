@@ -1,6 +1,11 @@
 <?php
 /**
- * 直接引用PHPExcel.
+ * 引用PHPExcel库.
+ * 
+ * phpexcle由于未采用命名空间，为了避免在全名上产生的冲突。
+ * 放弃使用composer进行安装，而采用thinkphp内置的vendor方法进行引入。
+ *
+ * Vendor方法简介如下：
  * thinkphp导入外置非namespace包时
  * 先将需要导入的库放至Thinkphp\Library\Vendor下。
  * 然后：直接用Vendor()方法进行引用。
