@@ -20,7 +20,7 @@
 		<div class="form-group">
 			<label for="admission_date" class="col-xs-2 control-label">入学年月</label>
 			<div class="col-xs-4">
-				<input id="admission_date" type ="date" name="admission_date" value="{$student['admission_date']}" class="form-control">
+				<input id="admission_date" type ="text" name="admission_date" value="{$student['admission_date']}" class="form-control date">
 			</div>
 		</div>
 
@@ -60,9 +60,9 @@
 		</div>
 
 		<div class="form-group">
-			<label for="cyle_id" class="col-xs-2 control-label">周期id</label>
+			<label for="cyle_id" class="col-xs-2 control-label">周期</label>
 			<div class="col-xs-4">
-				<input id="cyle_id" type ="text" name="cyle_id" value="{$student['cyle_id']}" class="form-control">
+				<input id="cyle_id" type ="text" name="cyle_id" value="{$cycleName['name']}" class="form-control">
 			</div>
 		</div>
 
@@ -70,19 +70,9 @@
 	<div class="form-group">
 			<label for="create_time" class="col-xs-2 control-label">学生创建时间</label>
 			<div class="col-xs-4">
-				<input id="create_time" type ="date" name="create_time" value="{$student['create_time']}" class="form-control">
+				<input id="create_time" type ="text" name="create_time" value="{$student['create_time']}" class="form-control date">
 			</div>
 		</div>
-
-
-<div class="form-group">
-			<label for="attachment_id" class="col-xs-2 control-label">附件id</label>
-			<div class="col-xs-4">
-				<input id="attachment_id" type ="text" name="attachment_id" value="{$student['attachment_id']}" class="form-control">
-			</div>
-		</div>
-
-
 
 		<div class="col-xs-offset-2 col-xs-10">
 			<button type="submit" class="btn btn-sm btn-success" ><i class="fa fa-check "></i>保存</button>

@@ -17,9 +17,6 @@
                         </div>
                     </form>
                 </div>
-                <div class="col-md-5">
-                    <a class="button btn btn-info"  href="#" ><i class="glyphicon glyphicon-plus"></i> 添加学生</a>
-                </div>
                 <div class="col-md-3">
                     <a class="button btn btn-info"  href="#" ><i class="glyphicon glyphicon-plus"></i> 批量上传学生</a>
                 </div>
@@ -39,8 +36,6 @@
 			                    <else/> {:U('index?by=studentID&order=desc', I('get.'))} </eq>">学号</a>
 			                    </th>
 			                    <th>姓名</th>
-                                <th>入学年月</th>
-                                <th>专业</th>
                                 <th>论文题目</th>
                                 <th>研究方向</th>
 			                    <th>操作</th>
@@ -52,12 +47,9 @@
 				                    <td>{$k+1}</td>
                                     <td>{$student['studentid']}</td>
 				                    <td>{$student['name']}</td>
-				                    <td>{$student['admission_date']}</td>
-				                    <td>{$student['subject_major']}</td>
                                     <td>{$student['title']}</td>
                                     <td>{$student['research_direction']}</td>
 				                    <td>
-				                    <a class="btn btn-sm btn-primary" href="{:U('edit?id='.$student['id'])}"><i class="fa fa-pencil"></i>&nbsp;编辑</a>
 				                    <a class="btn btn-sm btn-danger" href="{:U('delete?id='.$student['id'])}"><i class="fa fa-trash-o "></i>&nbsp;删除</a>
 				                    <a class="btn btn-sm btn-warning delete" href="{:U('detail?id='.$student['id'])}"><i class="fa fa-repeat"></i>&nbsp;查看</a>
 				                    </td>

@@ -4,3 +4,13 @@ Runtime/
 .phpintel/
 Application/Common/Conf/config.php
 Public/uploads/
+
+ThinkPHP/Library/Vendor/phpoffice/phpword/
+
+ThinkPHP/Library/Vendor/composer/
+
+ThinkPHP/Library/composer.lock
+
+ThinkPHP/Library/Vendor/autoload.php
+
+Application/Common/Conf/debug.php
