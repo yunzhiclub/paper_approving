@@ -114,7 +114,6 @@ class StudentController extends AdminController
      */
     public function readExcelAjaxAction()
     {
-        header("Content-type: text/html; charset=utf-8");
         //定义返回值
         $return = array("status"=>"ERROR");
 

@@ -118,6 +118,7 @@ class StudentLogic extends StudentModel
 
         return $return;
     }
+
     /**
      * 删除 某周期ID 下的所有数据
      * @param $cycleId 周期ID
@@ -130,5 +131,30 @@ class StudentLogic extends StudentModel
         $map = array();
         $map['cycle_id'] = (int)$cycleId;
         return $this->where($map)->delete();
+    }
+
+    /**
+     * 更新论文信息
+     * @param  int $studentNo    学号
+     * @param  int $cycleId      周期ID
+     * @param  int $attachmentId 附件ID
+     * @return 失败 false
+     * panjie
+     * 2016.02
+     */
+    public function updateAttachmentId($studentNo, $cycleId, $attachmentId)
+    {
+        $map['student_no'] = $studentNo;
+        $map['cycle_id'] = $cycleId;
+        $data['attachment_id'] = $attachmentId;
+        try
+        {
+            $this->where($map)->save($data);
+        }
+        catch(\Think\Exception $e)
+        {
+            $this->setError($e->getMessage());
+            return false;
+        }
     }
 }

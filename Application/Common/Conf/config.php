@@ -1,6 +1,10 @@
 <?php
 // require_once VENDOR_PATH . '/autoload.php';
 return array(
+    /* 模板相关配置 */
+    'TMPL_PARSE_STRING' => array(
+        '__UPLOADS__'    => __ROOT__ . '/uploads'
+    ),
 
     'YUNZHI_PAGE_SIZE'      => 10,          //默认分页大小
 

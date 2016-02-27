@@ -6,6 +6,7 @@ return array(
         '__DIST__'      => __ROOT__ . '/Admin/dist',
         '__CSS__'    	=> __ROOT__ . '/Admin/css',
         '__JS__'     	=> __ROOT__ . '/Admin/js',
+        '__UPLOADS__'   => __ROOT__ . '/uploads'
     ),
 
 	'DATA_CACHE_PREFIX'    => 	'yunzhi_ethan_admin', 	// 缓存前缀
