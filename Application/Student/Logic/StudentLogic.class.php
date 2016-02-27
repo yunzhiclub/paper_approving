@@ -157,4 +157,27 @@ class StudentLogic extends StudentModel
             return false;
         }
     }
+
+    /**
+     * 获取某个周期ID下的所有数据
+     * @param  int $cycleId 周期ID
+     * @return 二维数组          
+     * panjie
+     * 2016.02
+     */
+    public function getAllListsByCycleId($cycleId)
+    {
+        $map = array();
+        $map['cycle_id'] = (int)$cycleId;
+        try
+        {
+            return $this->where($map)->select();
+        }
+        catch(\Think\Exception $e)
+        {
+            $this->setError("StudentL getAllListsByCycleId error: " . $e->getMessage());
+            return false;
+        }
+    }
+
 }
