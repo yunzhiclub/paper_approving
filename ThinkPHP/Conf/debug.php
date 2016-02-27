@@ -24,4 +24,13 @@ return  array(
     'TMPL_STRIP_SPACE'      =>  false,       // 是否去除模板文件里面的html空格与换行
     'SHOW_ERROR_MSG'        =>  true,    // 显示错误信息
     'URL_CASE_INSENSITIVE'  =>  false,  // URL区分大小写
+
+    'DB_TYPE'               =>  'mysqli',     // 数据库类型
+    'DB_HOST'               =>  'callme119.mysql.rds.aliyuncs.com', // 服务器地址
+    'DB_NAME'               =>  'paper_approving',          // 数据库名
+    'DB_USER'               =>  'paper_approving',      // 用户名
+    'DB_PWD'                =>  'HKDLr9hcFYZaXe3AUyILizr5cSfCX2',    // 密码
+    'DB_PORT'               =>  '3633',             // 端口
+    'DB_PREFIX'             =>  'paper_',           // 数据库表前缀
+
 );
