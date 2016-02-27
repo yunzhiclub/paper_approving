@@ -2,7 +2,8 @@
 namespace Admin\Controller;
 
 use Student\Logic\StudentLogic;
-use Cycle\Logic\CycleLogic;
+use Yunzhi\Logic\PHPExcelLogic;  //phpexcel
+use Cycle\Logic\CycleLogic;         //周期信息
 
 class StudentController extends AdminController
 {
@@ -102,6 +103,64 @@ class StudentController extends AdminController
          $this->assign('cycleName',$cycleName);
         $this->display();
 
+    }
+
+    /**
+     * 读取excel并将学生信息存入数据库
+     * @param $url 文件相对于站点根目录的位置
+     * @return json 成功：status = "SUCCESS" , 失败： status="ERROR" message="错误信息"
+     * panjie
+     * 2016.02
+     */
+    public function readExcelAjaxAction()
+    {
+        header("Content-type: text/html; charset=utf-8");
+        //定义返回值
+        $return = array("status"=>"ERROR");
+
+        //接收路径并接拼为实际的路径
+        $url = I('get.url');
+        $filePath = I('server.DOCUMENT_ROOT') . $url;
+
+        //读取EXCEL数据
+        $PHPExcel = new PHPExcelLogic();
+        $students = $PHPExcel -> ReadFile($filePath);
+        if ($students === false)
+        {
+            $return['message'] = "读取Excel文件发生错误，信息:" . $PHPExcel->getError();
+            echo json_encode($return);
+            return;
+        }
+        
+        //读取当前周期
+        $CycleL = new CycleLogic();
+        $currentCycle = $CycleL->getCurrentList();
+        if ($currentCycle === null)
+        {
+            $return['message'] = "未获取到当前周期信息";
+            echo json_encode($return);
+            return;
+        }
+
+        //清空当前周期原有学生数据
+        $StudentL = new StudentLogic();
+        $return['data']['deleteCount'] = $StudentL->deleteListsByCycleId($currentCycle['id']);
+
+        //添加新学生数据
+        $saveReturn = $StudentL->saveListsByCycleId($students, $currentCycle['id']);
+        if ( $saveReturn === false)
+        {
+            dump($StudentL->getError());
+            $return['message'] = "数据添加错误:" . $StudentL->getError();
+            echo json_encode($return);
+            return;
+        }
+
+        $return['data']['successCount'] = $saveReturn['successCount'];
+        $return['data']['repeatCount'] = $saveReturn['repeatCount'];
+        $return['status'] = "success";
+        echo json_encode($return);
+        return;
     }
 }
 

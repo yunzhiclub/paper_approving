@@ -68,21 +68,21 @@ class PHPExcelLogic
             $highestColumnNum = \PHPExcel_Cell::columnIndexFromString($highestColumn);
              
             //取得字段，第一行 为数据的字段，因此先取出用来作后面数组的键名
-            $filed = array();
-            for($i=0; $i<$highestColumnNum; $i++){
-                $cellName = \PHPExcel_Cell::stringFromColumnIndex($i).'1';
-                $cellVal = $sheet->getCell($cellName)->getValue();//取得列内容
-                $filed []= $cellVal;
-            }
+            // $filed = array();
+            // for($i=0; $i<$highestColumnNum; $i++){
+            //     $cellName = \PHPExcel_Cell::stringFromColumnIndex($i).'1';
+            //     $cellVal = $sheet->getCell($cellName)->getValue();//取得列内容
+            //     $filed []= $cellVal;
+            // }
              
             //开始从第二行开始取出数据并存入数组
             $data = array();
-            for ($i = 2; $i <= $highestRowNum; $i++){
+            for ($i = 1; $i <= $highestRowNum; $i++){
                 $row = array();
                 for ($j = 0; $j < $highestColumnNum; $j++){
                   $cellName = \PHPExcel_Cell::stringFromColumnIndex($j).$i;
                   $cellVal = $sheet->getCell($cellName)->getValue();
-                  $row[ $filed[$j] ] = $cellVal;
+                  $row[] = $cellVal;
                 }
                 $data []= $row;
             }

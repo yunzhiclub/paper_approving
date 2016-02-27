@@ -18,7 +18,9 @@
                     </form>
                 </div>
                 <div class="col-md-3">
-                    <a class="button btn btn-info"  href="#" ><i class="glyphicon glyphicon-plus"></i> 批量上传学生</a>
+                    <html:uploader value="value" filetypeexts="*.xls;*.xlsx" name="filetest" debug="false" type="file" callback="callBack">
+                            请选择附件
+                    </html:uploader>
                 </div>
             </div>
             <div class="box">
@@ -38,21 +40,17 @@
 			                    <th>姓名</th>
                                 <th>论文题目</th>
                                 <th>研究方向</th>
-			                    <th>操作</th>
 		                    </tr>
 	                    </thead>
 	                    <tbody>
 		                    <foreach name="students" item="student" key="k">
 			                    <tr>
 				                    <td>{$k+1}</td>
-                                    <td>{$student['student_no']}</td>
+                                    <td><a href="{:U('detail?id=' . $student['id'])}">{$student['student_no']}</a></td>
 				                    <td>{$student['name']}</td>
                                     <td>{$student['title']}</td>
                                     <td>{$student['research_direction']}</td>
-				                    <td>
-				                    <a class="btn btn-sm btn-danger" href="{:U('delete?id='.$student['id'])}"><i class="fa fa-trash-o "></i>&nbsp;删除</a>
-				                    <a class="btn btn-sm btn-warning delete" href="{:U('detail?id='.$student['id'])}"><i class="fa fa-repeat"></i>&nbsp;查看</a>
-				                    </td>
+				                    
                                 </tr>
 		                    </foreach>	
 	                    </tbody>
@@ -66,5 +64,5 @@
             </div>
         </div>
     </div>
-
+    <include file="index.js" />
 </block>

@@ -74,4 +74,10 @@ class UnitTestController extends Controller {
         $phpWord = new PhpWord();
         dump($phpWord);
     }
+
+    public function uploadifyAction()
+    {
+        dump($_POST);
+        $this->display();
+    }
 }

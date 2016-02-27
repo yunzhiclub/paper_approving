@@ -8,6 +8,18 @@ class StudentLogic extends StudentModel
 {
 	protected  $errors = array();
 
+    //标准的上传学生表格数据
+    private $headers = array(
+        "name"                  =>  "姓名",
+        "student_no"            =>  "学号",
+        "admission_date"        =>  "入学年月",
+        "subject_major"         =>  "专业",
+        "secret"                =>  "论文密级",
+        "research_direction"    =>  "研究方向",
+        "title"                 =>  "论文题目",
+        "innovation_point"      =>  "创新点",
+    );
+
     public function getErrors()
 	{
 		return $this->errors;
@@ -49,4 +61,74 @@ class StudentLogic extends StudentModel
 		return $datas;
 	}
 
+    /**
+     * 保存传入的包括excel表头的数据
+     * @param  list $lists 包括表头的数据
+     * @return 成功 true 失败：false
+     */
+    public function saveListsByCycleId($lists, $cycleId)
+    {   
+
+        //取表头信息进行匹配
+        $headers = $lists[0];
+        $keys = array();
+        foreach($headers as $header )
+        {
+            $keys[] = array_search($header, $this->headers);
+        }
+
+        //将EXCEL中的信息对应好数据库的字段
+        $length = count($lists);
+        $data = array();
+        for($i = 1; $i < $length; $i++)//跳过表头，开始读取行信息
+        {
+            $student = $lists[$i];//取出当前学生信息
+            $j = 0;
+            $data[$i-1]['cycle_id'] = $cycleId;
+            foreach($student as $key => $value)
+            {
+                //如果表头信息为可识别信息，则传值。否则，跳过
+                if ($keys[$j] !== false)
+                {
+                    $data[$i-1][$keys[$j]] = $value;
+                }
+                $j++;
+            }
+        }
+
+        //去除重复的数据项
+        change_key($data, "student_no");
+        $datas = array();
+        foreach($data as $value)
+        {
+            $datas[] = $value;
+        }
+        $return['successCount'] = count($data);
+        $return['repeatCount'] = $length - 1 - $return['successCount'];
+
+        try
+        {  
+            $this->addAll($datas);
+        }
+        catch(\Think\Exception $e)
+        {
+            $this->setError("StudentL error:" . $e->getMessage);
+            return false;
+        }
+
+        return $return;
+    }
+    /**
+     * 删除 某周期ID 下的所有数据
+     * @param $cycleId 周期ID
+     * 最后删除的记录ID
+     * panjie
+     * 2016.02
+     */
+    public function DeleteListsByCycleId($cycleId)
+    {
+        $map = array();
+        $map['cycle_id'] = (int)$cycleId;
+        return $this->where($map)->delete();
+    }
 }

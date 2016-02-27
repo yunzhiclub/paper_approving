@@ -91,12 +91,13 @@ class Page{
     private function _styleSbadmin2()
     {
         $this->config = array(
-            'header' => '<span class="rows">共 %TOTAL_ROW% 条记录</span>',
+            'header' => '<span class="rows">共%TOTAL_ROW%条</span>',
             'prev'   => '上一页',
             'next'   => '下一页',
             'first'  => '1..',
             'last'   => '..%TOTAL_PAGE%',
-            'theme'  => '%FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END%',
+            'theme'  => '%HEADER% %FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END%',
+            'theme'  => '<div class="col-sm-4"><div class="dataTables_info pagination" id="dataTables-example_info" role="status" aria-live="polite">第%NOW_PAGE%页/共%TOTAL_PAGE%页 %HEADER%</div></div><div class="col-sm-6 text-right"><div class="dataTables_paginate paging_simple_numbers" id="dataTables-example_paginate"><ul class="pagination">%LINK_PAGE%</ul></div></div>',
         );
 
         /* 生成URL */
@@ -176,16 +177,14 @@ class Page{
 
         //替换分页内容
         $page_str = str_replace(
-            array('%HEADER%', '%NOW_PAGE%', '%UP_PAGE%', '%DOWN_PAGE%', '%FIRST%', '%LINK_PAGE%', '%END%', '%TOTAL_ROW%', '%TOTAL_PAGE%'),
-            array($this->config['header'], $this->nowPage, $up_page, $down_page, $the_first, $link_page, $the_end, $this->totalRows, $this->totalPages),
+            array('%HEADER%', '%NOW_PAGE%', '%UP_PAGE%', '%DOWN_PAGE%', '%FIRST%', '%LINK_PAGE%', '%END%', '%TOTAL_ROW%', '%TOTAL_PAGE%', '%PREV%'),
+            array($this->config['header'], $this->nowPage, $up_page, $down_page, $the_first, $link_page, $the_end, $this->totalRows, $this->totalPages, $this->config['prev']),
             $this->config['theme']);
-        $page_str = '<div class="row"><div class="col-sm-2"><div class="dataTables_info pagination" id="dataTables-example_info" role="status" aria-live="polite">第'. $this->nowPage . '页/共' . $this->totalPages . '页</div></div><div class="col-sm-10"><div class="dataTables_paginate paging_simple_numbers" id="dataTables-example_paginate"><ul class="pagination">'.$page_str.'</ul></div></div></div>';
         return "<div class='row'>{$page_str}</div>";
     }
 
     private function _styleDefault()
     {
-        
         /* 生成URL */
         $this->parameter[$this->p] = '[PAGE]';
         $this->url = U(ACTION_NAME, $this->parameter);

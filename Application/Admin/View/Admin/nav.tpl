@@ -54,7 +54,7 @@
                     {
                 </php>
                     <li>
-                        <a class="<eq name="YunzhiMenuM:checkIsCurrent($list)" value="1">active</eq>"href="{:U($list['module'] . '/' . $list['controller'] . '/' . $list['action'])}"><i class="{$list['icon']}"></i> {$list['title']}</a>
+                        <a class="<eq name="YunzhiMenuM:checkIsCurrent($list)" value="1">active</eq>" href="{:U($list['module'] . '/' . $list['controller'] . '/' . $list['action'])}"><i class="{$list['icon']}"></i> {$list['title']}</a>
                     </li>
 
                 <php>

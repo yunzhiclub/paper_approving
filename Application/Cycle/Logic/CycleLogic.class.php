@@ -59,4 +59,16 @@ class CycleLogic extends CycleModel
         return;
     }
 
+    /**
+     * 获取当前周期信息
+     * @return 正常 list 一组数组  无数据，返回null
+     * panjie
+     * 2016.02
+     */
+    public function getCurrentList()
+    {
+        $map = array();
+        $map['is_current'] = 1;
+        return $this->where($map)->find();
+    }
 }
