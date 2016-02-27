@@ -1103,3 +1103,28 @@ function union_array($arr1,$arr2){
     $res_array = array_merge($arr2,$intersection);
     return $res_array;
 }
+
+/**
+ * 
+ * 产生随机字符串，不长于32位
+ * @param int $length
+ * @param bool $includeNum 是否包括数字
+ * @return 产生的随机字符串
+ */
+function get_rand_str($length = 32, $includeNum = true) 
+{
+    if ($includeNum === true)
+    {
+        $chars = "abcdefghijklmnopqrstuvwxyz0123456789"; 
+    }
+    else
+    {
+        $chars = "abcdefghijklmnopqrstuvwxyz";
+    }
+
+    $str = "";
+    for ( $i = 0; $i < $length; $i++ )  {  
+        $str .= substr($chars, mt_rand(0, strlen($chars)-1), 1);  
+    } 
+    return $str;
+}
