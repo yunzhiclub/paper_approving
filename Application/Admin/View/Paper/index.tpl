@@ -14,12 +14,14 @@
                         </div>
                     </form>
                 </div>
-                <div class="col-md-3">
-                    <a class="button btn btn-info"  href="#" ><i class="glyphicon glyphicon-plus"></i>批量生成用户名和密码</a>
+                <div class="col-md-6">
+                    <a class="button btn btn-info"  href="{:U('createUserName')}" ><i class="glyphicon glyphicon-plus"></i>生成用户名</a>
+                    &nbsp;&nbsp;
+                    <a target="_blank" class="button btn btn-info"  href="{:U('exportUserName')}" ><i class="glyphicon glyphicon-plus"></i>导出用户名</a>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-3">
                     <html:uploader value="value" filetypeexts="*.pdf;*.doc;*.docx" name="filetest" debug="false" type="file" callback="callBack">
-                            请选择附件
+                            上传论文
                     </html:uploader>
                 </div>
             </div>
@@ -67,7 +69,7 @@
                             <foreach name="papers" item="paper" key="k">
                                 <tr>
                                     <td>{$k+1}</td>
-                                    <td><a href="{:U('detail?id=' . $student['id'])}">{$paper['student_no']}</a></td>
+                                    <td><a href="{:U('detail?id=' . $paper['id'])}">{$paper['student_no']}</a></td>
                                     <td>{$paper['name']}</td>
                                     <td>
                                         {$paper['title']}
@@ -79,10 +81,13 @@
                                             endif;
                                         ?>
                                     </td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                    <php>
+                                    $experts = $M->getExpertsByStudentId($paper['id']);
+                                    </php>
+                                    <foreach name="experts" item="expert">
+                                        <td>{$expert['username']}</td>
+                                        <td><eq name="expert['is_reviewed']" value="0">否<else />是</eq></td>
+                                    </foreach>
                                 </tr>
                             </foreach>  
                         </tbody>
