@@ -29,11 +29,10 @@ class StudentController extends AdminController
         //取用户信息getListById()
         $StudentL = new StudentLogic();
         $student = $StudentL->getListById($studentId);
-        dump($student);
 
         $CycleL=new CycleLogic();
         $cycleName=$CycleL->getListById($student['cyle_id']);
-        dump($cycleName);
+
         //传给前台
         $this -> assign('student',$student);
         $this->assign('cycleName',$cycleName);
@@ -42,6 +41,10 @@ class StudentController extends AdminController
         $this -> display();
     }
 
+    public function addAction()
+    {
+         $this -> display('edit');
+    }
     public function saveAction()
     {
         //取用户信息

@@ -11,9 +11,9 @@
 		</div>
 
 		<div class="form-group">
-			<label for="name" class="col-xs-2 control-label">姓名</label>
+			<label for="name" class="col-xs-2 control-label">学号</label>
 			<div class="col-xs-4">
-				<input id="studentid" type ="text" name="studentid" value="{$student['studentid']}" class="form-control">
+				<input id="student_no" type ="text" name="student_no" value="{$student['student_no']}" class="form-control">
 			</div>
 		</div>
 		
@@ -34,8 +34,10 @@
 		<div class="form-group">
 			<label for="secret" class="col-xs-2 control-label">论文密级</label>
 			<div class="col-xs-4">
-				<input id="secret" type ="text" name="secret" value="{$student['secret']}" class="form-control">
-
+				<select name="secret">
+                                <option value="0" <eq name="$student['secret']" value="1">selected="selected"</eq>>公开</option>
+                                <option value="1" <eq name="$student['secret']" value="1">selected="selected"</eq>>内部保存</option>
+                            </select>
 			</div>
 		</div>
 		<div class="form-group">
@@ -54,23 +56,15 @@
 
 		<div class="form-group">
 			<label for="innovation_point" class="col-xs-2 control-label">论文创新点</label>
-			<div class="col-xs-4">
-				<input id="innovation_point" type ="text" name="innovation_point" value="{$student['innovation_point']}" class="form-control">
+			<div class="col-xs-8">
+				<textarea class="form-control" rows="20" name="abstract">{$student['innovation_point']}</textarea>
 			</div>
 		</div>
 
 		<div class="form-group">
 			<label for="cyle_id" class="col-xs-2 control-label">周期</label>
 			<div class="col-xs-4">
-				<input id="cyle_id" type ="text" name="cyle_id" value="{$cycleName['name']}" class="form-control">
-			</div>
-		</div>
-
-
-	<div class="form-group">
-			<label for="create_time" class="col-xs-2 control-label">学生创建时间</label>
-			<div class="col-xs-4">
-				<input id="create_time" type ="text" name="create_time" value="{$student['create_time']}" class="form-control date">
+				<input id="cyle_id" type ="text" name="cyle_id" value="{$student['cycle_id']}" class="form-control">  
 			</div>
 		</div>
 

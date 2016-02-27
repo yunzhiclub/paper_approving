@@ -22,6 +22,9 @@
                             请选择附件
                     </html:uploader>
                 </div>
+                <div class="col-md-3">
+                    <a class="button btn btn-info"  href="{:U('edit')}" ><i class="glyphicon glyphicon-plus"></i> 添加学生</a>
+                </div>
             </div>
             <div class="box">
                 <div class="box-body table-responsive">
@@ -40,6 +43,7 @@
 			                    <th>姓名</th>
                                 <th>论文题目</th>
                                 <th>研究方向</th>
+                                <th>操作</th> 
 		                    </tr>
 	                    </thead>
 	                    <tbody>
@@ -50,7 +54,10 @@
 				                    <td>{$student['name']}</td>
                                     <td>{$student['title']}</td>
                                     <td>{$student['research_direction']}</td>
-				                    
+				                    <td>
+                                    <a class="btn btn-sm btn-primary" href="{:U('edit?id='.$student['id'])}"><i class="fa fa-pencil"></i>&nbsp;编辑</a>
+                                    <a class="btn btn-sm btn-danger" href="{:U('delete?id='.$student['id'])}"><i class="fa fa-trash-o "></i>&nbsp;删除</a></eq>
+                                    </td>
                                 </tr>
 		                    </foreach>	
 	                    </tbody>
