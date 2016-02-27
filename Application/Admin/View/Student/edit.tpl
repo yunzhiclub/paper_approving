@@ -34,10 +34,7 @@
 		<div class="form-group">
 			<label for="secret" class="col-xs-2 control-label">论文密级</label>
 			<div class="col-xs-4">
-				<select name="secret">
-                                <option value="0" <eq name="$student['secret']" value="1">selected="selected"</eq>>公开</option>
-                                <option value="1" <eq name="$student['secret']" value="1">selected="selected"</eq>>内部保存</option>
-                            </select>
+				<input id="secret" type ="text" name="secret" value="{$student['secret']}" class="form-control">
 			</div>
 		</div>
 		<div class="form-group">

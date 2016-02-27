@@ -29,7 +29,7 @@ class StudentController extends AdminController
         //取用户信息getListById()
         $StudentL = new StudentLogic();
         $student = $StudentL->getListById($studentId);
-
+       
         $CycleL=new CycleLogic();
         $cycleName=$CycleL->getListById($student['cyle_id']);
 
