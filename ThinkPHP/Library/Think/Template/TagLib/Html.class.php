@@ -143,6 +143,7 @@ class Html extends TagLib{
         $btnClass       = isset($tag['btnclass']) ? $tag['btnclass'] : 'btn btn-primary';   //按钮class
         $callback       = isset($tag['callback']) ? $tag['callback'] : 'undefined';
         $callback       = ($callback === "") ? 'undefined' : $callback;
+        $fileTypeExts   = isset($tag['filetypeexts']) ? $tag['filetypeexts'] : "";
         $type           = ($tag['type'] == "file") ? "file" : "image";             //附件上传类型，默认为image
         $uploadLimit    = $tag['uploadLimit'];         //TODO:最大上传数
         $queueSizeLimit = $tag['queueSizeLimit'];   //TODO:最大队列数
@@ -163,28 +164,32 @@ class Html extends TagLib{
             $fileObjName = "yunzhifile";
         }
 
-        //获取允许上传的扩展名信息
-        if (isset($config[$type . "AllowFiles"]))
+        if ($fileTypeExts === "")
         {
-            $i = 0;
-            $fileTypeExts = "";
-            foreach ($config[$type . "AllowFiles"] as $k => $v)
+            //获取允许上传的扩展名信息
+            if (isset($config[$type . "AllowFiles"]))
             {
-                if (!$i)
+                $i = 0;
+                $fileTypeExts = "";
+                foreach ($config[$type . "AllowFiles"] as $k => $v)
                 {
-                    $i++;
-                    $fileTypeExts .= "*" . "$v";
-                }
-                else
-                {
-                    $fileTypeExts .= "; *" . "$v";
-                }
-            }  
+                    if (!$i)
+                    {
+                        $i++;
+                        $fileTypeExts .= "*" . "$v";
+                    }
+                    else
+                    {
+                        $fileTypeExts .= "; *" . "$v";
+                    }
+                }  
+            }
+            else 
+            {
+                $fileTypeExts = "*.*";
+            }
         }
-        else 
-        {
-            $fileTypeExts = "*.*";
-        }
+        
         
         //获取上传附件类型描述
         if (isset($config[$type . "TypeDesc"]))
