@@ -18,7 +18,9 @@
                     <a class="button btn btn-info"  href="#" ><i class="glyphicon glyphicon-plus"></i>批量生成用户名和密码</a>
                 </div>
                 <div class="col-md-2">
-                    <a class="button btn btn-info"  href="#" ><i class="glyphicon glyphicon-plus"></i>批量上传论文</a>
+                    <html:uploader value="value" filetypeexts="*.pdf;*.doc;*.docx" name="filetest" debug="false" type="file" callback="callBack">
+                            请选择附件
+                    </html:uploader>
                 </div>
             </div>
             <div class="panel-body">
@@ -26,6 +28,7 @@
             <div class="row">
                 <div class="col-md-3">
                     <select class="selectpicker form-control" name="show">
+                        <option>全部</option>
                                         <option>未匹配成功</option>
                                         <option>已评阅完成</option>
                                         <option>未评阅完成</option>
@@ -58,48 +61,38 @@
                                 <th>是否评阅</th>
                                 <th>用户名2</th>
                                 <th>是否评阅</th>
-			                    <th>操作</th>
 		                    </tr>
 	                    </thead>
                         <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>111111</td>
-                                <td>张三</td>
-                                <td><a href="javascript:void(0);" data-trigger="focus" data-container="body" data-toggle="popover" data-title="" data-placement="right" data-content="下载论文">微型框架的设计与实现
-                                        </a>
-                                </td>
-                                <td><a href="javascript:void(0);" data-trigger="focus" data-container="body" data-toggle="popover" data-title="" data-placement="right" data-content="下载论文">ksdfji
-                                        </a></td>
-                                <td><eq name="cycle['is_current']" value="1">否<else/><span class="badge">是</span></eq></td>
-                                <td><a href="javascript:void(0);" data-trigger="focus" data-container="body" data-toggle="popover" data-title="" data-placement="right" data-content="下载论文">nsdfss
-                                        </a></td>
-                                <td><eq name="cycle['is_current']" value="1">否<else/><span class="badge">否</span></eq></td>
-                                <td>
-                                    <a class="btn btn-sm btn-danger" href="{:U('delete?id='.$Attachment['id'])}"><i class="fa fa-trash-o "></i>&nbsp;删除</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>132839</td>
-                                <td>安强</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><eq name="cycle['is_current']" value="1">是<else/><span class="badge">否</span></eq></td>
-                                <td>
-                                    <a class="btn btn-sm btn-danger" href="{:U('delete?id='.$Attachment['id'])}"><i class="fa fa-trash-o "></i>&nbsp;删除</a>
+                            <foreach name="papers" item="paper" key="k">
+                                <tr>
+                                    <td>{$k+1}</td>
+                                    <td><a href="{:U('detail?id=' . $student['id'])}">{$paper['student_no']}</a></td>
+                                    <td>{$paper['name']}</td>
+                                    <td>
+                                        {$paper['title']}
+                                        <?php 
+                                            if ($paper['savepath'] !== null) :
+                                        ?>
+                                                <a target="_blank" href="__UPLOADS__/{$paper["savepath"]}{$paper["savename"]}">点击下载</a> 
+                                        <?php
+                                            endif;
+                                        ?>
                                     </td>
-                            </tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </foreach>  
                         </tbody>
                     </table>
 
                 </div>
                 <nav>
-                   第1页/共1页/共2条记录
+                    <Yunzhi:page />
                 </nav>
         </div>
     </div>
-
+    <include file="index.js" />
 </block>
