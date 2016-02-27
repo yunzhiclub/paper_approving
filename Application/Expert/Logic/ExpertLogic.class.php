@@ -81,5 +81,27 @@ class ExpertLogic extends ExpertModel
 		}
 		return true;
 	}
+
+	/**
+	 * 获取某学生ID的所有记录
+	 * @param  int $studentId 学生id
+	 * @return lists            二维数据 
+	 * panjie
+	 * 2016.02
+	 */
+	public function getListsByStudentId($studentId)
+	{
+		$map = array();
+		$map['student_id'] = (int)$studentId;
+		try
+		{
+			return $this->where($map)->select();
+		}
+		catch(\Think\Exception $e)
+		{
+			$this->setError("ExpertL error: data select error . " . $e->getMessage());
+			return false;
+		}
+	}	
 }
 
