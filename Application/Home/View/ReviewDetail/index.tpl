@@ -43,7 +43,6 @@
 				<td>12%</td>
 				<td>
 					<select class="js-example-basic-single selectpicker form-control">
-					<option></option>
 						<?php 
 						for ($x=1; $x<=100; $x++) {
 							
@@ -61,8 +60,7 @@
 			<tr>
 				<td>2、文献综述(B)</td>
 				<td>16%</td>
-				<td><select class="js-example-basic-single selectpicker form-control">
-					<option></option>
+				<td><select class="selectpicker form-control">
 					<?php 
 					for ($x=1; $x<=100; $x++) {
 						echo "<option>$x</option>";
@@ -77,8 +75,7 @@
 		<tr>
 			<td>3、基础理论知识与专业知识（C）</td>
 			<td>15%</td>
-			<td><select class="js-example-basic-single selectpicker form-control">
-				<option></option>
+			<td><select class="selectpicker form-control">
 				<?php 
 				for ($x=1; $x<=100; $x++) {
 					echo "<option>$x</option>";
@@ -93,8 +90,7 @@
 	<tr>
 		<td>4、工作难度与工作量（D）</td>
 		<td>12%</td>
-		<td><select class="js-example-basic-single selectpicker form-control">
-		    <option></option>
+		<td><select class="selectpicker form-control">
 			<?php 
 			for ($x=1; $x<=100; $x++) {
 				echo "<option>$x</option>";
@@ -109,8 +105,7 @@
 <tr>
 	<td>5、解决实际问题的能力（E）</td>
 	<td>20%</td>
-	<td><select class="js-example-basic-single selectpicker form-control">
-		<option></option>
+	<td><select class="selectpicker form-control">
 		<?php 
 		for ($x=1; $x<=100; $x++) {
 			echo "<option>$x</option>";
@@ -126,8 +121,7 @@
 <tr>
 	<td>6、论文成果与新见解（E）</td>
 	<td>15%</td>
-	<td><select class="js-example-basic-single selectpicker form-control">
-		<option></option>
+	<td><select class="selectpicker form-control">
 		<?php 
 		for ($x=1; $x<=100; $x++) {
 			echo "<option>$x</option>";
@@ -143,8 +137,7 @@
 <tr>
 	<td>7、论文写作能力（G）</td>
 	<td>10%</td>
-	<td><select class="js-example-basic-single selectpicker form-control">
-		<option></option>
+	<td><select class="selectpicker form-control">
 		<?php 
 		for ($x=1; $x<=100; $x++) {
 			echo "<option>$x</option>";
