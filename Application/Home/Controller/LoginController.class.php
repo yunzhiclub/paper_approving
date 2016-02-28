@@ -1,9 +1,10 @@
 <?php
 namespace Home\Controller;
 
-use User\Logic\UserLogic;
+use ExpertView\Logic\ExpertViewLogic;   //专家视图
+use Think\Controller;
 
-class LoginController extends HomeController 
+class LoginController extends Controller
 {
     //用户列表显示
     public function indexAction()
@@ -11,7 +12,6 @@ class LoginController extends HomeController
         $this->assign('remember',cookie('remember'));
         $this->assign('psw',cookie('password'));
         $this->assign('username',cookie('username'));
-
         $this->display();
 
     }
@@ -20,51 +20,39 @@ class LoginController extends HomeController
     public function loginAction()
     {
     	//检测是否勾选记住密码，传入cookie信息
-        $data = cookie('remember');
-    	if(empty($data))
+    	if(I('post.remember') == 'on')
     	{
-	    	if(I('post.remember') == 'on')
-	    	{
-	    		cookie('password',I('post.password'),30*24*60*60);
-	    		cookie('username',I('post.username'),30*24*60*60);
-	    		cookie('remember','checked',30*24*60*60);
-	    	}
+    		cookie('password',I('post.password'),30*24*60*60);
+    		cookie('username',I('post.username'),30*24*60*60);
+    		cookie('remember',I('post.remember'),30*24*60*60);
     	}
-    	else
-    	{
-            if(I('post.remember') != 'checked')
-            {
-                cookie('password',null);
-                cookie('username',null);
-                cookie('remember',null);
-            }
+        else
+        {
+            cookie('password',null);
+            cookie('username',null);
+            cookie('remember',null);
         }
+
+        $username = I('post.username');
+        $password = I('post.password');
+
         //验证用户名密码
-    	$UserL = new UserLogic;
-    	switch ($UserL->checkUser()) 
-    	{
-            case '1':
-                //根据post的用户名取出用户信息，再将id与name存入session
-                $list = $UserL->getUserInfoByName(I('post.username'));
-                session('user_id',$list['id']);
-                session('user_name',$list['uname']);
-                //登录成功后跳转
-                redirect_url(U('Home/Index/index'));
-                break;
-            case '0':
-                $this->error('用户名密码错误',U('Home/Login/index'));
-                break;
-            case '2':
-                $this->error('无此用户名',U('Home/Login/index'));
-        }       
+    	$ExpertViewL = new ExpertViewLogic;
+        if ($ExpertViewL->validate($username, $password, true))
+        {
+            redirect_url(U('Home/index'));
+        }
+        else
+        {
+            redirect_url(U('Index/index/', array("error"=>"用户名或密码错误")));
+        }  
     }
 
     //注销功能
-    public function cancelAction()
+    public function logoutAction()
     {
-        session('user_id',null);
-        session('user_name',null);
-        $this->success('注销成功',U('Home/Login/index'));
+        session('expert',null);
+        $this->success('注销成功', U('Index/index'));
     }
 
     public function checkAjaxAction()
