@@ -50,8 +50,13 @@
                                         <input type="checkbox" name="remember" <eq name="isRemember" value="on">checked="checked"</eq>>记住密码
                                     </label>
                                 </div>
+                                <eq name="isOpen" value="1">
+                                    <button type="submit" class="btn btn-lg btn-success btn-block" id="login">登录</button>
+                                    
+                                </eq>
+                                <p>系统开放时间:{$currentCycle["starttime"]}&nbsp;至&nbsp;{$currentCycle["endtime"]}</p>
                                 <!-- Change this to a button or input when using this as a form -->
-                                <button type="submit" class="btn btn-lg btn-success btn-block" id="login">登录</button>
+                                
                             </fieldset>
                         </form>
                     </div>

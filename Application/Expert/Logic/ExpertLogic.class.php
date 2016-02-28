@@ -103,5 +103,30 @@ class ExpertLogic extends ExpertModel
 			return false;
 		}
 	}	
+
+	/**
+	 * 更新专家评阅状态为 已评阅
+	 * @param int $id 专家ID
+	 */
+	public function setIsReviewedById($id)
+	{
+		$id = (int)$id;
+		$map = array();
+		$map['id'] = $id;
+
+		$data = array();
+		$data['is_reviewed'] = "1";
+
+		try 
+		{
+			$this->where($map)->save($data);
+		} 
+		catch (\Think\Exception $e) 
+		{
+			$this->setError("ExpertL error:" . $e->getMessage());
+			return false;
+		} 
+		return true;
+	}
 }
 

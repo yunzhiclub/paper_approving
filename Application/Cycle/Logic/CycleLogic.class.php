@@ -71,4 +71,42 @@ class CycleLogic extends CycleModel
         $map['is_current'] = 1;
         return $this->where($map)->find();
     }
+
+    /**
+     * 较验当前时间是否为开放时间
+     * @param  int $time 当前时间戳
+     * @return true or false       
+     * 2016.02
+     * panjie
+     */
+    public function validateTime($time = null)
+    {
+        if ($time === null)
+        {
+            $time = time();
+        }
+
+        //取当前周期
+        $currentCycle = $this->getCurrentList();
+        if ($currentCycle === false)
+        {
+            return false;
+        }
+        
+        //是否小开始日期
+        if ($time < strtotime($currentCycle['starttime']))
+        {
+            $this->setError("The system is not open");
+            return false;
+        }
+    
+        //是否大于结束日期
+        if ($time > strtotime('+1 day', strtotime($currentCycle['endtime'])))
+        {
+            $this->setError("The system is closed");
+            return false;
+        }
+
+        return true;
+    }
 }
