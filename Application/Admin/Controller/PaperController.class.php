@@ -1,7 +1,16 @@
 <?php
+/**
+ * 论文管理
+ * todo:前台生成评阅信息后。
+ * 点击是否评阅 是 下载单个专家的评阅表
+ * 批量下载评阅表
+ * 下载评阅统计表
+ * panjie
+ * 2016.02
+ */
 namespace Admin\Controller;
 
-use Cycle\Logic\CycleLogic;                 //周期
+use Cycle\Logic\CycleLogic;             //周期
 use StudentView\Logic\StudentViewLogic; //学生视图
 use Student\Logic\StudentLogic;         //学生
 use Expert\Logic\ExpertLogic;           //专家信息
