@@ -6,16 +6,6 @@ use Think\Controller;
 
 class LoginController extends Controller
 {
-    //用户列表显示
-    public function indexAction()
-    {
-        $this->assign('remember',cookie('remember'));
-        $this->assign('psw',cookie('password'));
-        $this->assign('username',cookie('username'));
-        $this->display();
-
-    }
-
     //对用户名密码进行判断
     public function loginAction()
     {
