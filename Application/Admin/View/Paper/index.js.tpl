@@ -8,5 +8,8 @@
                 console.log(data);
             }
             );
-    }
+    }  
+    $(function(){
+         $('[data-toggle="popover"]').popover();
+    });  
 </script>
