@@ -35,8 +35,92 @@ class PaperController extends AdminController
 
         //取当前周期学生信息
         $StudentViewL = new StudentViewLogic();
-        $StudentViewL->setMaps(array("cycle_id"=>$currentCycle['id']));
-        $papers = $StudentViewL->getLists();
+        $StudentViewL->addMaps(array("cycle_id"=>$currentCycle['id']));
+
+        //根据查看数据类型定制查询条件
+        $type = I("get.type");
+        if ( !($type === "" || $type === "all") )
+        {
+            if ($type === "uploaded")
+            {
+                $StudentViewL->addMaps(array('attachment_id'=>array('neq', '0')));
+            }
+            else if ( $type === "toupload" )
+            {
+                $StudentViewL->addMaps(array("attachment_id"=>"0"));
+            }
+        }
+
+        //查询记录
+        $students = $StudentViewL->getLists();
+
+        //按是否评阅进行筛选
+        if ($type === "reviewed" || $type === "reviewing")
+        {
+            //取出全部当前周期及关键字数据
+            $students = $StudentViewL->getAllLists();
+            $revieweds   = array();    //已评阅
+            $reviewings  = array();   //未评阅
+
+            //查看是否已评阅
+            //两个专家有任一专家未评阅，设置论文为 评阅中
+            $ExpertL     = new ExpertLogic();
+            foreach($students as $student)
+            {
+                $experts = $ExpertL->getListsByStudentId($student['id']);
+                if ($experts === false)
+                {
+                    array_push($reviewing, $student);
+                    continue;
+                }
+                else
+                {
+                    //是否全部评阅
+                    $isReviewed = true;
+                    foreach ($experts as $expert)
+                    {
+                        if ($expert['is_reviewed'] === "1")
+                        {
+                            $isReviewed = true && $isReviewed;
+                        }
+                        else
+                        {
+                            $isReviewed = false && $isReviewed;
+                        }
+                    }
+
+                    //按是否评阅进行分组
+                    if ($isReviewed === true)
+                    {
+                        array_push($revieweds, $student);
+                    }
+                    else
+                    {
+                        array_push($reviewings, $student);
+                    }
+                }
+            }
+
+            //依据用户的筛选内容，设定返回值
+            if ($type === "reviewed")
+            {
+                $papers = $revieweds;
+            }
+            else
+            {
+                $papers = $reviewings;
+            }
+
+            //显示当前页数据
+            C("yunzhi_total_count", count($papers));
+            $page = ((int)I('get.p') > 0) ? (int)I('get.p') : 1;
+            $papers = array_slice($papers, ($page - 1) * C('YUNZHI_PAGE_SIZE'), C('YUNZHI_PAGE_SIZE'));
+        }
+        else
+        {
+            $papers = $students;
+        }
+        
         
         //引入模型
         $M = new indexModel();
