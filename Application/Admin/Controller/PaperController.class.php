@@ -51,9 +51,6 @@ class PaperController extends AdminController
             }
         }
 
-        //查询记录
-        $students = $StudentViewL->getLists();
-
         //按是否评阅进行筛选
         if ($type === "reviewed" || $type === "reviewing")
         {
@@ -118,7 +115,8 @@ class PaperController extends AdminController
         }
         else
         {
-            $papers = $students;
+            //查询记录
+            $papers = $StudentViewL->getLists();
         }
         
         
