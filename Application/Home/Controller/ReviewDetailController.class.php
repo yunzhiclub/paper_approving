@@ -1,6 +1,7 @@
 <?php
 namespace Home\Controller;
 
+use Review\Logic\ReviewLogic;
 use ReviewDetail\Logic\ReviewDetailLogic;
 
 class ReviewDetailController extends HomeController
@@ -8,14 +9,11 @@ class ReviewDetailController extends HomeController
     //用户列表显示
     public function indexAction()
     {
-        // //获取列表
-        // $ReviewDetailL = new ReviewDetailLogic();
-        // $ReviewDetails = $ReviewDetailL->getLists();
+        $ReviewL = new ReviewLogic();
+        $reviews = $ReviewL->getAllLists();
 
-        // //传入列表
-        // $this -> assign('ReviewDetails',$ReviewDetails);
-
-        // //调用v层ss
+        //调用v层
+        $this->assign("reviews", $reviews);
         $this -> display();
     }
 }
