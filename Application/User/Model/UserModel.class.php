@@ -35,22 +35,43 @@ class UserModel extends YunzhiModel
         }
     }
 
-    //检查用户名与密码的正确性
-    public function checkUser($username,$password)
+    /**
+     * 检查用户名与密码的正确性
+     * @param  string  $username 用户名
+     * @param  string  $password 密码
+     * @param  boolean $useSha1  是否使用sha1加密
+     * @return true flase           
+     */
+    public function checkUser($username, $password, $useSha1 = true)
     {
         //根据用户名获取用户密码与用户信息
         $user = array();
         $user = $this->getUserInfoByName($username);
-        if($user == null)
+        if($user === null)
         {
-            return 2;//代表无此用户名
+            return false;
         }
-        else if($user['password'] == sha1($password))
+        else if($useSha1 === true)
         {
-            return 1;//代表验证成功
-        }else
+            if ($user['password'] == sha1($password))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        else
         {
-            return 0;//代表验证失败
+            if ($user['password'] === $password)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 

@@ -5,7 +5,9 @@
 		<div class="span12">
 		    <div class="page-header">
 				<h4>
+                {:dump($expert)};
 					填写个人信息
+                }
 				</h4>
 			</div>
 
@@ -17,7 +19,7 @@
 						</td>
 						<td>
 						    <div class="col-sm-3">
-							    qazwsx
+							    {$expert['username']}
 						    </div>
 						</td>
 					</tr>

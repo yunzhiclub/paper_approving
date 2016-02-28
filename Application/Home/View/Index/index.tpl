@@ -1,19 +1,64 @@
-<extend name="Base:index" />
+<!DOCTYPE html>
+<html>
 
-<block name="wrapper">
-<div class="container-fluid">
-	<div class="row-fluid">
-		<div class="span12">
-			<h3>
-				本论文送审系统的使用流程
-			</h3>
-			<p>
-				1.校外通过所给的用户名，密码专家登录本系统。<br/>
-                2.个人信息：校外专家填写自己的技术职称，导师类别，还可以修改密码。<br/>
-                3.评分标准：校外专家依靠评分标准来给学生论文评分。<br/>
-                4.评阅论文：校外专家通过查看评分标准，给出具体的得分户，系统算出加权得分及总得分，并且给出是否同意答辩，是否推荐评选优秀论文，给出学生对论文的熟悉程度，及其评阅意见。
-			</p>
-		</div>
-	</div>
-</div>
-</block>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>河北工业大学论文审批系统</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="{:add_root_path("/SBAdmin2/css/bootstrap.min.css ")}" rel="stylesheet">
+    <!-- MetisMenu CSS -->
+    <link href="{:add_root_path("/SBAdmin2/css/metisMenu.min.css ")}" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="{:add_root_path("/SBAdmin2/css/sb-admin-2.css ")}" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="{:add_root_path("/SBAdmin2/css/font-awesome.min.css ")}" rel="stylesheet" type="text/css">
+    <link href="{:add_root_path("/SBAdmin2/css/errorClass.css ")}" rel="stylesheet" type="text/css">
+    <link href="{:add_root_path("/SBAdmin2/css/alertify.core.css ")}" rel="stylesheet" type="text/css">
+    <link href="{:add_root_path("/SBAdmin2/css/alertify.default.css ")}" rel="stylesheet" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="login-panel panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">请登录&nbsp;&nbsp;<span class="error">{:I('get.error')}</span></h3>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form" id="loginform" method="post" action="{:U('Login/login')}">
+                            <fieldset>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="用户名" name="username" id="username" value="{:cookie('username')}">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="密码" name="password" id="password" type="password" value="{:cookie('password')}">
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <php>$isRemember = cookie('remember');</php>
+                                        <input type="checkbox" name="remember" <eq name="isRemember" value="on">checked="checked"</eq>>记住密码
+                                    </label>
+                                </div>
+                                <!-- Change this to a button or input when using this as a form -->
+                                <button type="submit" class="btn btn-lg btn-success btn-block" id="login">登录</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
