@@ -9,7 +9,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="http://127.0.0.1/paper_approving/Public/index.php/Home/Expert/index.html"><i class="fa fa-user fa-fw"></i>安强 欢迎您</a></li>
                 <li class="dropdown">
-                    <a href="{:U('Login/logout')}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">注销</a>
+                    <a href="{:U('Login/logout')}">注销</a>
                 </li>
             </ul>
         </div>
