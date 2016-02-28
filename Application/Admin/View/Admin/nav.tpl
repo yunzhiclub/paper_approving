@@ -21,7 +21,7 @@
                 <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
                 </li>
                 <li class="divider"></li> -->
-                <li><a href="http://127.0.0.1/paper_approving/Public/admin.php/login/index.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                <li><a href="{:U('Login/cancel')}"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                 </li>
             </ul>
             <!-- /.dropdown-user -->

@@ -58,13 +58,6 @@
 			</div>
 		</div>
 
-		<div class="form-group">
-			<label for="cyle_id" class="col-xs-2 control-label">周期</label>
-			<div class="col-xs-4">
-				<input id="cyle_id" type ="text" name="cyle_id" value="{$student['cycle_id']}" class="form-control">  
-			</div>
-		</div>
-
 		<div class="col-xs-offset-2 col-xs-10">
 			<button type="submit" class="btn btn-sm btn-success" ><i class="fa fa-check "></i>保存</button>
 		</div>

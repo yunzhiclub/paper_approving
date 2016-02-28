@@ -10,9 +10,13 @@ class StudentController extends AdminController
     //用户列表显示
     public function indexAction()
     {
+        //取当前周期
+        $CycleL = new CycleLogic();
+        $currentCycle = $CycleL->getCurrentList();
+
         //获取列表
         $StudentL = new StudentLogic();
-        $students = $StudentL->getLists();
+        $students = $StudentL->getAllListsByCycleId($currentCycle['id']);
 
         //传入列表
         $this -> assign('students',$students);
@@ -29,13 +33,9 @@ class StudentController extends AdminController
         //取用户信息getListById()
         $StudentL = new StudentLogic();
         $student = $StudentL->getListById($studentId);
-       
-        $CycleL=new CycleLogic();
-        $cycleName=$CycleL->getListById($student['cyle_id']);
-
+ 
         //传给前台
         $this -> assign('student',$student);
-        $this->assign('cycleName',$cycleName);
 
         //显示display('add')
         $this -> display();
@@ -52,6 +52,9 @@ class StudentController extends AdminController
 
         //添加add()
         $StudentL = new StudentLogic();
+        $Cycle= new CycleLogic();
+        $cycle=$Cycle->getCurrentList();
+        $student['cycle_id']=$cycle['id'];
         $StudentL -> saveList($student);
         //echo $this->getlastsql();
 
@@ -92,20 +95,6 @@ class StudentController extends AdminController
         {
             $this -> error("删除失败",U('Admin/Student/index?p='.I('get.p')));
         }
-    }
-
-    public function detailAction()
-    {
-        $studentId= I('get.id');
-        $StudentL = new StudentLogic();
-        $student = $StudentL->getListById($studentId);
-        $CycleL=new CycleLogic();
-        $cycleName=$CycleL->getListById($student['cyle_id']);
-        dump($cycleName);
-        $this -> assign('student',$student);
-         $this->assign('cycleName',$cycleName);
-        $this->display();
-
     }
 
     /**
