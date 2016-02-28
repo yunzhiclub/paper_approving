@@ -294,6 +294,7 @@ class YunzhiModel extends Model
     {
         $lists =    $this->
                     _getLists($backFields, $maps, 1)->
+                    order($this->orderBys)->
                     select();
         return $lists;
     }
