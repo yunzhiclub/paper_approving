@@ -10,7 +10,7 @@
                 }
 				</h4>
 			</div>
-
+			<form class="form-horizontal" name="form" action="{:U('save')}" method='post'>
 			<table class="table table-bordered table-condensed">
 				<tbody>
 				    <tr>
@@ -60,36 +60,44 @@
                                 </form>
 							</div>
 						</td>
-					</tr>
-					<tr>
+				</tr>
+				<tr>
 						<td class="success">
-							原密码
+							<label for="password">密码</label>
 						</td>
 						<td>
                             <div class="col-sm-3">
-                                <input type="password" class="form-control" id="inputPassword" placeholder="oldPassword">
+                                <input id="password" name="password" class="form-control" ng-model="password" required/>
+                                <p class="text-danger" ng-show="form.password.$dirty && form.password.$invalid"> <span ng-show="form.password.$error.required">用户名不能为空</span></p>
+                            </div>
+						</td>
+					</tr>
+					<tr>
+						<td class="success">
+							<label for="userPassword">新密码</label>
+						</td>
+						<td>
+                            <div class="col-sm-3">
+                            <input type="password" class="form-control" id="password" name="password" placeholder="请输入密码" ng-model="password">
                             </div>
 						</td>
 					</tr>
 
-					<tr>
+					<tr ng-class="{'has-success' : !form.confirmPassword.$pristine && form.confirmPassword.$valid,'has-error' : !form.confirmPassword.$pristine && form.confirmPassword.$invalid }">
 						<td class="success">
-							新密码
+							<label for="confirmPassword">确认密码</label>
 						</td>
 						<td>
                             <div class="col-sm-3">
-                                <input type="password" class="form-control" id="inputPassword3" placeholder="newPassword">
-                            </div>
-						</td>
-					</tr>
+                                <input type="password" class="form-control" id="confirmPassword" name="confirmPassword"          placeholder="请再次输入密码" ng-model="selectedUser.confirmPassword" pw-check="userPassword">
 
-					<tr>
-						<td class="success">
-							确认密码
-						</td>
-						<td>
-                            <div class="col-sm-3">
-                                <input type="password" class="form-control" id="inputPassword3" placeholder="newPassword">
+                                <div ng-show="!form.confirmPassword.$pristine && tagName.confirmPassword.$valid">         
+                                	<span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                                </div>
+
+                                <div ng-show="!form.confirmPassword.$pristine && form.confirmPassword.$invalid">
+                                	<span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                                </div>
                             </div>
 						</td>
 					</tr>
@@ -101,6 +109,8 @@
                     </div>
                 </tbody>
 			</table>
+        </form>
         </div>
     </div>
+     <include file="index.js" />
 </block>
