@@ -1,40 +1,95 @@
-<extend name="Base:index" />
-<block name="body">
-  <!--   <form id="form" action="{:U('save')}" method="post">
-        <html:editor id="ueditor" type="Ueditor">
-            <H1>HEELO</H1>
-        </html:editor>
-        
-        <?php $value="8,9" ?>
-        <html:uploader value="value" name="filetest" debug="true" type="file">
-            请选择附件
-        </html:uploader>
-        <button type="submit">submit</button>
-    </form> -->
-    
 
-<h2><b>本论文送审系统的使用流程</b></h2>
+<!DOCTYPE html>
+<html>
 
-<p>1.后台管理人员登陆本系统后进入“用户管理”菜单点击“添加用户”创建其他后台管理人员的账号密码。<br />2.查看“评阅设置”里各评阅项目。<br />3.进入“周期管理”为本阶段论文送审添加并设置相应的周期。<br />4.进入“学生管理”，点击“批量上传”按钮将具有本周期内所有学生信息的Excel文档进行上传。<br />5.进入“论文管理”，点击“批量上传并匹配”按钮上传本周期内所有学生的论文，点击“批量生成用户名和密码”按钮用以生成评阅专家登陆前台评阅系统的账号密码，然后将这些账号密码分发给各专家，待评阅时间结束后，后台管理员可点击“批量下载评阅表”以及“下载评阅统计表”按钮，分别对应下载所有论文的评阅表以及具有评阅统计信息的Excel文档</p>
+<head>
 
-<h2><b>注意事项</b></h2>
-<p>1.在专家进行评审前，需要注意“评阅设置”里面各评阅项目是否正确。<br />2.每当开始新一周期论文评审，需要在“周期设置”中“添加周期”并“设置当前周期”。<br />3.先在学生管理里面上传具有所有学生信息的Excel文档（要求Excel必须是所有学生的信息），再去论文管理中上传学生的论文。<br />4.删除按钮慎用</p>
-<h2><b>左侧菜单功能介绍</b></h2>
-<p>首页>>>></p>
-<p>论文送审系统的使用说明，包括各菜单的功能以及使用流程</p>
-<p>用户管理>>>></p>
-<p>后台管理人员账号密码管理，功能有添加后台管理人员账号密码，可编辑后台管理人员的个人信息，可重置后台管理人员密码</p>
-<p>评阅设置>>>></p>
-<p>展示专家评阅论文时的各评阅项目及其要素、权重以及评分细则</p>
-<p>周期管理>>>></p>
-<p>展示本论文送审系统各周期，可添加编辑周期，可设置系统当前所处的周期</p>
-<p>学生管理>>>></p>
-<p>用于后台管理人员将学生信息上传，展示本周期的学生及其论文信息，具有查看各学生的具体信息的功能</p>
-<p>论文管理>>>></p>
-<p>展示各学生论文生成的专家的账号密码及评审状态，具有批量上传学生论文，为每篇论文批量生成两个评阅专家的账号和密码，可以批量下载评阅表，下载评阅统计表，搜索未上传论文以及未评审论文信息，可单独下载学生的论文>>>></p>
-<p>个人信息管理>>>></p>
-<p>用于修改后台管理人员本人的邮箱、手机号、密码信息</p>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
+    <title>论文审批系统</title>
 
+    <!-- Bootstrap Core CSS -->
+    <link href="{:add_root_path("/SBAdmin2/css/bootstrap.min.css")}" rel="stylesheet">
 
-</block>
+    <!-- MetisMenu CSS -->
+    <link href="{:add_root_path("/SBAdmin2/css/metisMenu.min.css")}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{:add_root_path("/SBAdmin2/css/sb-admin-2.css")}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="{:add_root_path("/SBAdmin2/css/font-awesome.min.css")}" rel="stylesheet" type="text/css">
+    <link href="{:add_root_path("/SBAdmin2/css/errorClass.css")}" rel="stylesheet" type="text/css">
+    <link href="{:add_root_path("/SBAdmin2/css/alertify.core.css")}" rel="stylesheet" type="text/css">
+    <link href="{:add_root_path("/SBAdmin2/css/alertify.default.css")}" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="login-panel panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">请登录</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form"  id="loginform" method = 'post' action="{:U('Admin/Login/login')}">
+                            <fieldset>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="用户名" name="username" id="username" value="{:cookie('username')}">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="密码" name="password" id="password" type="password" value="{:cookie('password')}">
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                    <php>$isRemember = cookie('remember');</php>
+                                        <input type="checkbox" id="remember" <eq name="isRemember" value="1">checked="checked"</eq>>记住密码
+                                    </label>
+                                </div>
+                                <!-- Change this to a button or input when using this as a form -->
+                                <button class="btn btn-lg btn-success btn-block" id="login">登录</button>
+                                <php>if (APP_DEBUG==true): </php>
+                                <a href="{:U('Admin/Login/loginDirect')}"  class="btn btn-lg btn-success btn-block">直接登录</a>
+                                <php>endif</php>
+                            </fieldset>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="error">
+    </div>
+
+    <!-- jQuery -->
+    <script src="{:add_root_path("/SBAdmin2/js/jquery.min.js")}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{:add_root_path("/SBAdmin2/js/bootstrap.min.js")}"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="{:add_root_path("/SBAdmin2/js/metisMenu.min.js")}"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="{:add_root_path("/SBAdmin2/js/sb-admin-2.js")}"></script>
+    <script src="{:add_root_path("/SBAdmin2/js/jquery.validate.js")}"></script>
+    <script src="{:add_root_path("/SBAdmin2/js/alertify.min.js")}"></script>
+    {$js}
+
+</body>
+</html>
