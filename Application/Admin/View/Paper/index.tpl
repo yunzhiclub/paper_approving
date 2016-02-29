@@ -71,7 +71,7 @@
                                 <?php 
                                             if ($paper['savepath'] !== null) :
                                         ?>
-                                <a target="_blank" href="__UPLOADS__/{$paper[" savepath "]}{$paper["savename "]}">点击下载</a>
+                                <a target="_blank" href="__UPLOADS__/{$paper["savepath"]}{$paper["savename"]}">点击下载</a>
                                 <?php
                                             endif;
                                         ?>
