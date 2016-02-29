@@ -5,6 +5,7 @@ require_once VENDOR_PATH . '/autoload.php';
 
 use Review\Logic\ReviewLogic;
 use ExpertView\Logic\ExpertViewLogic;                   //专家视图信息
+use Expert\Logic\ExpertLogic;                           //专家
 use ReviewDetailView\Logic\ReviewDetailViewLogic;       //评阅详情
 use ReviewDetailOther\Logic\ReviewDetailOtherLogic;     //评阅详情其它信息
 use PhpOffice\PhpWord\Settings;                         //phpword设置
@@ -101,8 +102,16 @@ class ReviewController extends AdminController
         $ReviewL = new ReviewLogic();
         $saveInfo = $ReviewL->makeWordByExpertId($expertId);
         
+        if ($saveInfo === false)
+        {
+            die($ReviewL->getError());
+        }
+
+        $ExpertL = new ExpertLogic();
+        $expert = $ExpertL->getListById($expertId);
+
         $saveFile = $saveInfo['saveFile'];
-        $fileName = "评阅表-" . $saveInfo['fileName'] . '.doc';
+        $fileName = "评阅表-" . $saveInfo['fileName'] . '-' . $expert['name']. '.doc';
 
         //指引用户下载
         header('Content-type: application/msword'); 
