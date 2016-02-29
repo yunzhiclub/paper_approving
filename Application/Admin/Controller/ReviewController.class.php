@@ -11,6 +11,7 @@ use ReviewDetailOther\Logic\ReviewDetailOtherLogic;     //评阅详情其它信�
 use PhpOffice\PhpWord\Settings;                         //phpword设置
 use PhpOffice\PhpWord\TemplateProcessor;                //phpword模板
 use Cycle\Logic\CycleLogic;                             //周期
+use Yunzhi\Logic\ZipLogic;                              //ZIP
 /**
 * 
 */
@@ -111,7 +112,7 @@ class ReviewController extends AdminController
         $expert = $ExpertL->getListById($expertId);
 
         $saveFile = $saveInfo['saveFile'];
-        $fileName = "评阅表-" . $saveInfo['fileName'] . '-' . $expert['name']. '.doc';
+        $fileName = $saveInfo['fileName'] . '.doc';
 
         //指引用户下载
         header('Content-type: application/msword'); 
@@ -119,4 +120,57 @@ class ReviewController extends AdminController
         readfile($saveFile);        
     }
 
+    /**
+     * 打包下载评阅表
+     * @return  zip file
+     * panjie
+     * 2016.02
+     */
+    public function downLoadZipAction()
+    {
+        //取出当前周期信息
+        $CycleL = new CycleLogic();
+        $currentCycle = $CycleL->getCurrentList();
+        if ($currentCycle === false)
+        {
+            die($CycleL->getError());
+        }
+
+        //取出所有的当前周期下专家信息
+        $ExpertViewL = new ExpertViewLogic();
+        $experts = $ExpertViewL->getReviewdListsByCycleId($currentCycle['id']);
+        if ($experts === false)
+        {
+            die($ExpertViewL->getError());
+        }
+
+        //依次生成 评阅表
+        $ReviewL = new ReviewLogic();
+        foreach ($experts as $expert)
+        {
+            $ReviewL->makeWordByExpertId($expert['id']);
+        }
+
+        //打包
+        $ZipL = new ZipLogic();
+        $saveDir = I('server.DOCUMENT_ROOT') . __ROOT__ . '/download/review/' . $currentCycle['id'];
+
+        $saveZip = $saveDir . '.zip';
+
+        if( $ZipL->zip($saveDir, $saveZip) === false)
+        {
+            die($ZipL->getError());
+        }
+
+        $downLoadUrl = __ROOT__ . '/download/review/' . $currentCycle['id'] . '.zip';
+        echo '<a href="' . $downLoadUrl . '">download</a>';
+
+        // header($_SERVER['SERVER_PROTOCOL'].' 200 OK');
+        // header("Content-Type: application/zip");
+        // header("Content-Transfer-Encoding: Binary");
+        // header("Content-Length: " . filesize($saveZip));
+        // header("Content-Disposition: attachment; filename=\"".basename($saveZip)."\"");
+        // readfile($saveZip);
+        exit; 
+    }
 }

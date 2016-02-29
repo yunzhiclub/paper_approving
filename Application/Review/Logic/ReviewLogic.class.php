@@ -32,7 +32,7 @@ class ReviewLogic extends ReviewModel
         parent::__construct();
     }
 
-    public function getSaveNameByExpertId($expertId)
+    public function getSavePathByExpertId($expertId)
     {
         $ExpertViewL = new ExpertViewLogic();
         $expertView = $ExpertViewL->getListById($expertId);
@@ -44,9 +44,6 @@ class ReviewLogic extends ReviewModel
 
         //取出周期值
         $cycleId = $expertView['cycle_id'];
-
-        //取出对应的附件的原文件名
-        $originName = substr($expertView['attachment__name'], 0, strpos($expertView['attachment__name'], "."));
 
         //拼接文件夹
         $saveName = __ROOT__ . '/download/review/' . $cycleId;
@@ -63,7 +60,7 @@ class ReviewLogic extends ReviewModel
         }
         
         //拼接后返回
-        return $saveName . '/' . $originName . '.doc';
+        return $saveName . '/';
     }
 
     /**
@@ -144,8 +141,9 @@ class ReviewLogic extends ReviewModel
         //将数据传入word模板，指引用户下载
         Settings::loadConfig();
 
-        $saveName = $this->getSaveNameByExpertId($expertId);
-        $saveFile = I('server.DOCUMENT_ROOT') . $saveName;
+        $savePath = $this->getSavePathByExpertId($expertId);
+        $saveName = substr($expertView['attachment__name'], 0, strpos($expertView['attachment__name'], ".")) . '-' . $expertView['id'] . $expertView['name'];
+        $saveFile = I('server.DOCUMENT_ROOT') . $savePath . $saveName . '.doc';
 
         //实例化PHPWORD
         $templateProcessor = new TemplateProcessor($this->template);
@@ -262,7 +260,7 @@ class ReviewLogic extends ReviewModel
 
         //返回文件路径及文件名
         $return['saveFile'] = $saveFile;
-        $return['fileName'] = substr($expertView['attachment__name'], 0, strpos($expertView['attachment__name'], "."));
+        $return['fileName'] = $saveName;
         return $return;
     }
 }

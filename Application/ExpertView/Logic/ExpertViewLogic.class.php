@@ -49,4 +49,28 @@ class ExpertViewLogic extends ExpertViewModel
             return false;
         }
     }
+
+    /**
+     * 获取所有当前周期下已评阅完毕的数据
+     * @param  int $cycleId 周期id
+     * @return 二维数组          lists
+     * panjie
+     * 2016.02
+     */
+    public function getReviewdListsByCycleId($cycleId)
+    {
+        $map = array();
+        $map['cycle_id'] = (int)$cycleId;
+        $map['is_reviewed'] = '1';
+
+        try
+        {
+            return $this->where($map)->select();
+        }
+        catch(\Think\Exception $e)
+        {
+            $this->setError("Database error" . $e->getMessage());
+            return false;
+        }
+    }
 }
