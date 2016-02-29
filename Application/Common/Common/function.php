@@ -1,4 +1,5 @@
 <?php
+
 /*
  * 微信不接收\u***格式的json内容需要对json字符串处理
  * 仅支持发送text消息，其他类型消息自己添加代码
@@ -1127,4 +1128,45 @@ function get_rand_str($length = 32, $includeNum = true)
         $str .= substr($chars, mt_rand(0, strlen($chars)-1), 1);  
     } 
     return $str;
+}
+
+/**
+ * sample code: http://www.oschina.net/code/snippet_862384_25404
+ * 汉字转Unicode编码
+ * @param string $str 原始汉字的字符串
+ * @param string $encoding 原始汉字的编码
+ * @param boot $ishex 是否为十六进制表示（支持十六进制和十进制）
+ * @param string $prefix 编码后的前缀
+ * @param string $postfix 编码后的后缀
+ */
+function unicode_encode($str, $encoding = 'UTF-8', $ishex = false, $prefix = '&#', $postfix = ';') {
+    $str = iconv($encoding, 'UCS-2', $str);
+    $arrstr = str_split($str, 2);
+    $unistr = '';
+    for($i = 0, $len = count($arrstr); $i < $len; $i++) {
+        $dec = $ishex ? bin2hex($arrstr[$i]) : hexdec(bin2hex($arrstr[$i]));
+        $unistr .= $prefix . $dec . $postfix;
+    }
+    return $unistr;
+}
+ 
+/**
+ * Unicode编码转汉字
+ * @param string $str Unicode编码的字符串
+ * @param string $decoding 原始汉字的编码
+ * @param boot $ishex 是否为十六进制表示（支持十六进制和十进制）
+ * @param string $prefix 编码后的前缀
+ * @param string $postfix 编码后的后缀
+ */
+function unicode_decode($unistr, $encoding = 'UTF-8', $ishex = false, $prefix = '&#', $postfix = ';') {
+    $arruni = explode($prefix, $unistr);
+    $unistr = '';
+    for($i = 1, $len = count($arruni); $i < $len; $i++) {
+        if (strlen($postfix) > 0) {
+            $arruni[$i] = substr($arruni[$i], 0, strlen($arruni[$i]) - strlen($postfix));
+        }
+        $temp = $ishex ? hexdec($arruni[$i]) : intval($arruni[$i]);
+        $unistr .= ($temp < 256) ? chr(0) . chr($temp) : chr($temp / 256) . chr($temp % 256);
+    }
+    return iconv('UCS-2', $encoding, $unistr);
 }

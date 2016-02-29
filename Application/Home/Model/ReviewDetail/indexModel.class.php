@@ -25,7 +25,7 @@ class indexModel
     public function getReviewsJson()
     {
         $ReviewDetailViewL = new ReviewDetailViewLogic();
-        $reviewDetails = $ReviewDetailViewL->getListByExpertId($this->expert['id']);
+        $reviewDetails = $ReviewDetailViewL->getListsByExpertId($this->expert['id']);
         change_key($reviewDetails, 'review_id');
 
         foreach($this->reviews as $key => $review)

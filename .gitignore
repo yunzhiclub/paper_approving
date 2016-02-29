@@ -14,3 +14,5 @@ ThinkPHP/Library/composer.lock
 ThinkPHP/Library/Vendor/autoload.php
 
 Application/Common/Conf/debug.php
+
+Public/download/

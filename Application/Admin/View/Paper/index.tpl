@@ -85,7 +85,7 @@
                                 </td>
                                 <td>
                                     <eq name="expert['is_reviewed']" value="0">否
-                                        <else /><span class="badge">是</span></eq>
+                                        <else /><span class="badge">是</span><a href="{:U('review/downLoadTable?expert_id=' . $expert['id'])}">下载</a></eq>
                                 </td>
                             </foreach>
                         </tr>

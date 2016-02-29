@@ -13,13 +13,13 @@ class ReviewDetailViewLogic extends ReviewDetailViewModel
      * @param  int $expertId 专家id
      * @return lists           
      */
-    public function getListByExpertId($expertId)
+    public function getListsByExpertId($expertId)
     {
         $map = array();
         $map['expert_id'] = (int)$expertId;
         try
         {
-            return $this->where($map)->select();
+            return $this->where($map)->order($this->orderBys)->select();
         }
         catch(\Think\Exception $e)
         {
