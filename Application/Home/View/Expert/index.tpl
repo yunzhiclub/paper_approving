@@ -1,7 +1,7 @@
 <extend name="Base:index" />
 <block name="wrapper">
 
-   <div class="row-fluid">
+   <div class="row-fluid" ng-app="user" ng-controller="userAdd">
 		<div class="span12">
 		    <div class="page-header">
 				<h4>
@@ -66,38 +66,30 @@
 							<label for="password">密码</label>
 						</td>
 						<td>
+
                             <div class="col-sm-3">
-                                <input id="password" name="password" class="form-control" ng-model="password" required/>
-                                <p class="text-danger" ng-show="form.password.$dirty && form.password.$invalid"> <span ng-show="form.password.$error.required">用户名不能为空</span></p>
+                             {{password}}
                             </div>
 						</td>
 					</tr>
 					<tr>
 						<td class="success">
-							<label for="userPassword">新密码</label>
+							<label for="password">新密码</label>
 						</td>
 						<td>
                             <div class="col-sm-3">
-                            <input type="password" class="form-control" id="password" name="password" placeholder="请输入密码" ng-model="password">
+                            <input type="password" class="form-control" name="password" ng-model="password1" ng-change="changePassword1(password1)" placeholder="请输入密码">
                             </div>
 						</td>
 					</tr>
-
-					<tr ng-class="{'has-success' : !form.confirmPassword.$pristine && form.confirmPassword.$valid,'has-error' : !form.confirmPassword.$pristine && form.confirmPassword.$invalid }">
 						<td class="success">
-							<label for="confirmPassword">确认密码</label>
+							<label>确认密码</label>
 						</td>
 						<td>
                             <div class="col-sm-3">
-                                <input type="password" class="form-control" id="confirmPassword" name="confirmPassword"          placeholder="请再次输入密码" ng-model="selectedUser.confirmPassword" pw-check="userPassword">
-
-                                <div ng-show="!form.confirmPassword.$pristine && tagName.confirmPassword.$valid">         
-                                	<span class="glyphicon glyphicon-ok form-control-feedback"></span>
-                                </div>
-
-                                <div ng-show="!form.confirmPassword.$pristine && form.confirmPassword.$invalid">
-                                	<span class="glyphicon glyphicon-remove form-control-feedback"></span>
-                                </div>
+                                <input type="password" class="form-control" 
+                               name="password"  ng-model="password2" ng-change="changePassword2(password2)" placeholder="请再次输入密码">
+                               <span class="text-danger" ng-show="different"> 请输入相同的密码</span>
                             </div>
 						</td>
 					</tr>
