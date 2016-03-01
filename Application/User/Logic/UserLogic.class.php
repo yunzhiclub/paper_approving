@@ -74,6 +74,7 @@ class UserLogic extends UserModel
             return $this;
         }
 
+        $repassword = sha1($list['repassword']);
         //如果传入的新密码为空，则不重置密码;非空，则重置密码
         $repassword = isset($list['repassword']) ? trim($list['repassword']) : '';
         if ($repassword !== "")
