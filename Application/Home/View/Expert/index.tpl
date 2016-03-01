@@ -5,12 +5,11 @@
 		<div class="span12">
 		    <div class="page-header">
 				<h4>
-                {:dump($expert)};
 					填写个人信息
-                }
 				</h4>
 			</div>
 			<form class="form-horizontal" name="form" action="{:U('save')}" method='post'>
+			<input type="hidden" name="id" value="{$expert.id}"/>
 			<table class="table table-bordered table-condensed">
 				<tbody>
 				    <tr>
@@ -40,10 +39,10 @@
 						</td>
 						<td>
 						<div class="col-sm-3">
-						    <form>
-                                <input type="radio" name="senior" value="senior" />正高级
-                                <input type="radio" name="senior" value="sub-senior" />副高级
-                            </form>
+						    
+                                <input type="radio" checked="checked" name="job_title" value="0" />正高级
+                                <input type="radio" name="job_title" value="1" />副高级
+                  
                             </div>
 						</td>
 					</tr>
@@ -54,31 +53,31 @@
 						</td>
 						<td>
 						    <div class="col-sm-3">
-							    <form>
-                                    <input type="radio" name="tutor" value="doctor tutor" />博导
-                                    <input type="radio" name="tutor" value="master tutor" />硕导
-                                </form>
+							  
+                                    <input type="radio" checked="checked" name="tutor_class" value="0" />博导
+                                    <input type="radio" name="tutor_class" value="1" />硕导
+                                
 							</div>
 						</td>
 				</tr>
 				<tr>
 						<td class="success">
-							<label for="password">密码</label>
+							<label for="userpassword">密码</label>
 						</td>
 						<td>
 
                             <div class="col-sm-3">
-                             {{password}}
+                            {$expert['userpassword']}
                             </div>
 						</td>
 					</tr>
 					<tr>
 						<td class="success">
-							<label for="password">新密码</label>
+							<label for="userpassword">新密码</label>
 						</td>
 						<td>
                             <div class="col-sm-3">
-                            <input type="password" class="form-control" name="password" ng-model="password1" ng-change="changePassword1(password1)" placeholder="请输入密码">
+                            <input type="password" class="form-control" name="userpassword" ng-model="password1" ng-change="changePassword1(password1)" placeholder="请输入密码">
                             </div>
 						</td>
 					</tr>
@@ -88,7 +87,7 @@
 						<td>
                             <div class="col-sm-3">
                                 <input type="password" class="form-control" 
-                               name="password"  ng-model="password2" ng-change="changePassword2(password2)" placeholder="请再次输入密码">
+                               name="userpassword"  ng-model="password2" ng-change="changePassword2(password2)" placeholder="请再次输入密码">
                                <span class="text-danger" ng-show="different"> 请输入相同的密码</span>
                             </div>
 						</td>
@@ -97,7 +96,7 @@
 					</tbody>
 					</table>
 					<div class="col-sm-offset-5">
-                        <button type="submit" class="btn btn-sm btn-success"><i class="fa fa-check "></i>提交</button>
+                        <button type="submit" ng-disabled="different" class="btn btn-sm btn-success"><i class="fa fa-check "></i>提交</button>
                     </div>
                 </tbody>
 			</table>
