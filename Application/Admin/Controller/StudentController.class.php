@@ -97,6 +97,22 @@ class StudentController extends AdminController
         }
     }
 
+    public function detailAction()
+    {
+        $studentId=I('get.id');
+
+        $StudentL = new StudentLogic();
+        $student=$StudentL->getListById($studentId);
+
+        $CycleL= new CycleLogic();
+        $cycle=$CycleL->getListById($student['cycle_id']);
+
+        $this->assign('student',$student);
+        $this->assign('cycle',$cycle);
+
+        $this->display();
+    }
+
     /**
      * 读取excel并将学生信息存入数据库
      * @param $url 文件相对于站点根目录的位置

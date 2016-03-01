@@ -11,7 +11,7 @@
 
 		<div class="form-group">
 			<label for="name" class="col-xs-1 control-label">学号</label>
-			<div class="col-xs-4"><p>{$student['studentid']}</p>
+			<div class="col-xs-4"><p>{$student['student_no']}</p>
 			</div>
 		</div>
 
@@ -53,7 +53,7 @@
 
 		<div class="form-group">
 			<label for="name" class="col-xs-1 control-label">周期</label>
-			<div class="col-xs-4"><p>{$cycleName['name']}</p>
+			<div class="col-xs-4"><p>{$cycle['name']}</p>
 			</div>
 		</div>
 
