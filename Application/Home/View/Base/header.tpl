@@ -11,9 +11,6 @@
             <p><a href="{:U('Login/logout')}">注销 <span class="glyphicon glyphicon-log-out"></span></a>　　　</p>
         </div>
     </div>
-        
-
-    
 </div>
 <nav class="navbar navbar-default">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -27,14 +24,12 @@
                 <a href="{:U('Expert/index')}">个人信息</a>
             </li>
             <php>$expert = session('expert');</php>
-            <eq name="expert['is_normal']" value="1">
-                <li <eq name="Think.CONTROLLER_NAME" value="Reviews">class="active"</eq>>
-            <a href="{:U('Reviews/index')}">查阅评分标准</a>
+            <li <eq name="Think.CONTROLLER_NAME" value="Reviews">class="active"</eq>>
+                <a href="{:U('Reviews/index')}">查阅评分标准</a>
             </li>
             <li <eq name="Think.CONTROLLER_NAME" value="ReviewDetail">class="active"</eq>>
                 <a href="{:U('ReviewDetail/index')}">评阅论文</a>
             </li>
-            </eq>
         </ul>
     </div>
     <!-- /.navbar-collapse -->

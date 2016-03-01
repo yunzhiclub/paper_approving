@@ -11,9 +11,16 @@ use ExpertView\Logic\ExpertViewLogic;
 
 class ReviewDetailController extends HomeController
 {
-    //用户列表显示
     public function indexAction()
     {
+        //权限判断
+        $expert = session('expert');
+        if ($expert['is_normal'] !== '1')
+        {
+            $this->error("请完善个人信息", U('Expert/index'));
+            return;
+        }
+
         $ReviewL = new ReviewLogic();
         $reviews = $ReviewL->getAllLists();
 
