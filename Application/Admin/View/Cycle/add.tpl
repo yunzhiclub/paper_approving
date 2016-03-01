@@ -27,14 +27,14 @@
               <div class="form-group">
                 <label for="starttime" class="col-sm-2 control-label">开始日期</label>
                   <div class="col-sm-4">
-                    <input name="starttime" type="text" value="{$cycle['starttime']}" class="form-control date" ng-model="starttime" required/>
+                    <input name="starttime" type="text" value="{$cycle['starttime']}" class="form-control date datepicker" ng-model="starttime" required/>
                   </div>
               </div>
 
               <div class="form-group">
                 <label for="endtime" class="col-sm-2 control-label">结束日期</label>
                   <div class="col-sm-4">
-                    <input name="endtime" type="text" value="{$cycle['endtime']}" class="form-control date" ng-model="endtime" required/>
+                    <input name="endtime" type="text" value="{$cycle['endtime']}" class="form-control date datepicker" ng-model="endtime" required/>
                   </div>
               </div>
 
@@ -49,15 +49,5 @@
       </div> 
     </div>
   </div>
-<script type="text/javascript">
-  var app=angular.module('cycle',[]);
-  app.controller('cycleAdd',function($scope){
-    
-    $scope.name = '{:$cycle['name']}';
-    $scope.starttime ='{:$cycle['starttime']}';
-      $scope.endtime ='{:$cycle['endtime']}';
-    
-  });
-
- </script>
+<include file="add.js" />
 </block>
