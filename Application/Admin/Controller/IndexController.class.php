@@ -8,7 +8,7 @@ class IndexController extends AdminController {
     
     //登陆页
     public function indexAction(){
-        
+        echo sha1("admin");
         $this->display();
     }
 
