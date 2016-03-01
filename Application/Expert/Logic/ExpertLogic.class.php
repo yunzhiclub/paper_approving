@@ -128,5 +128,59 @@ class ExpertLogic extends ExpertModel
 		} 
 		return true;
 	}
+
+	/**
+	 * 更新专家信息
+	 * 传入原密码，则检验，更新原密码
+	 * 未传入原密码，则只更新基本信息
+	 * @param  array $list 专家信息
+	 * @return bool       
+	 */
+	public function updateList($list)
+	{
+		try
+		{
+			$data = array();
+
+			//判断是否传入了原密码
+			if ($list['password'] !== "" && $list['password'] !== null)
+			{
+				$map = array();
+				$map['id'] = (int)$list['id'];
+				$expert = $this->where($map)->find();
+
+				//判断原密码是否正确
+				if ($expert['userpassword'] !== trim($list['password']))
+				{
+					$this->setError("Old password not correct!");
+					return false;
+				}
+				$data['userpassword'] = trim($list['newpassword']);
+			}
+
+			//更新其它信息
+			$data['id'] 			= $list['id'];
+			$data['name'] 			= $list['name'];
+			$data['job_title'] 		= $list['job_title'];
+			$data['tutor_class'] 	= $list['tutor_class'];
+			$data['is_normal'] 		= "1";
+			
+			if ($this->create($data))
+			{
+				$this->save();
+			}
+			else
+			{
+				$this->setError("Data create error." . $this->getLastSql());
+				return false;
+			}
+			return true;
+		}
+		catch(\Think\Exception $e)
+		{
+			$this->setError("Database Error:" . $e->getMessage());
+			return false;
+		}
+	}
 }
 

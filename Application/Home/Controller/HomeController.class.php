@@ -29,7 +29,6 @@ class HomeController extends Controller
             session('expert', session('expert'));
         }
         parent::__construct();
-        $this->assign("yunzhi_expert", session('expert'));
     }
 
 	public function indexAction()

@@ -73,4 +73,35 @@ class ExpertViewLogic extends ExpertViewModel
             return false;
         }
     }
+
+    /**
+     * 更新某位专家信息至session
+     * @param  int $id 专家ID
+     * @return true or false     
+     * panjie 
+     * 2016.03
+     */
+    public function updateSessionExpertById($id)
+    {
+        $map = array();
+        $map['id'] = $id;
+        try
+        {
+            $expert = $this->where($map)->find();
+            if ($expert === null)
+            {
+                $this->setError("Can not find id of $id record");
+                return false;
+            }
+
+            session("expert", $expert);
+            return true;
+        }
+        catch(\Think\Exception $e)
+        {
+            $this->setError("Database Error:" . $e->getMessage());
+            return false;
+        }
+        
+    }
 }

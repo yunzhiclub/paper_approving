@@ -7,7 +7,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="http://127.0.0.1/paper_approving/Public/index.php/Home/Expert/index.html"><i class="fa fa-user fa-fw"></i>{$expert['name']} 欢迎您</a></li>
+                <li><a href="http://127.0.0.1/paper_approving/Public/index.php/Home/Expert/index.html"><i class="fa fa-user fa-fw"></i><php>$expert = session('expert');</php><b>{:$expert['name']}</b> 欢迎您</a></li>
                 <li class="dropdown">
                     <a href="{:U('Login/logout')}">注销</a>
                 </li>

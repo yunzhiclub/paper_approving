@@ -2,22 +2,25 @@
 var app = angular.module('user', []);
 app.controller('userAdd', function($scope)
 {
-	var password1 = "";
-	var password2 = "";
-    var password = $scope.password = "{$expert.userpassword}";
+  $scope.expert = {:json_encode(session('expert'))};
+  $scope.hasError = "";
+  $scope.newpassword = "";
+  $scope.repassword = "";
+  $scope.submitDisable = 0;
 
-    $scope.changePassword1 = function(value){
-    	 password1 = value;
-   }
-
-   $scope.changePassword2 = function(value){
-   		if (value == password1) {
-   			$scope.different = 0;
-   		}
-   		if(value !== password1){
-   			$scope.different = 1;
-   		}
-   }
+  $scope.submit = function(){};
+  $scope.$watchGroup(["newpassword","repassword"], function(){
+    if ($scope.newpassword !== $scope.repassword)
+    {
+        $scope.hasError = "两次密码不一致";
+        $scope.submitDisable  = 1;
+    }
+    else
+    {
+        $scope.hasError = "";
+        $scope.submitDisable  = 0;
+    }
+  });
+  
 });
-
 </script>
