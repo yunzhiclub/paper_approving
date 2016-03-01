@@ -89,11 +89,11 @@ class StudentController extends AdminController
         //判断是否删除成功
         if($status!==false)
         {
-            $this -> success("删除成功",U('Admin/Student/index?p='.I('get.p')));
+            $this -> success("删除成功",U('Admin/Student/index?id=', I('get.')));
         }
         else
         {
-            $this -> error("删除失败",U('Admin/Student/index?p='.I('get.p')));
+            $this -> error("删除失败",U('Admin/Student/index?id=', I('get')));
         }
     }
 
