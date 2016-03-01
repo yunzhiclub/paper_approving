@@ -11,6 +11,18 @@ class AdminController extends Controller
 	{
 		parent::__construct();
 
+		//判断登陆状态
+		$userId = session("userId");
+		if ($userId === null)
+		{
+			redirect_url(U('Index/index'));
+			return;
+		}
+		else
+		{
+			session("userId", session("userId"));
+		}
+
 		//取当前ACTION，判断是否存在于菜单表中，不存在，开发模式时，直接跳转到菜单管理的添加
 		//非开发模式时，直接跳转到报错界面
 		$MenuL = new MenuLogic();
@@ -38,7 +50,5 @@ class AdminController extends Controller
 		$YZ_TEMPLATE_NAV = $this->fetch($tpl);
 		$this->assign("YZ_TEMPLATE_NAV", $YZ_TEMPLATE_NAV);
 
-		//存用户信息
-		session('userId', 3);
 	}
 }
