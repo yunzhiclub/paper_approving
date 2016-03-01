@@ -15,7 +15,7 @@ class ReviewLogic extends ReviewModel
     private $template = ''; //模板目录
 
     //评阅等级设置
-    private $levels = array(array("score" => 59, "detail" => "不合格", "level"=>"\u2163"), array("score" => 79, "detail" => "合格", "level"=>'\u2162'), array("score" => 89, "detail" => "良好", "level"=>'\u2161'), array("score" => 100, "detail" => "优秀", "level"=>'\u2160'));
+    private $levels = array(array("key"=>0, "score" => 59, "detail" => "不合格", "level"=>"\u2163"), array("key"=>1, "score" => 79, "detail" => "合格", "level"=>'\u2162'), array("key"=>2, "score" => 89, "detail" => "良好", "level"=>'\u2161'), array("key"=>3, "score" => 100, "detail" => "优秀", "level"=>'\u2160'));
 
     //答辩意见配置
     private $defenseConfigs = array(0=>"同意答辩（达到学位论文要求", 1=>"同意修改后答辩（修改后经导师同意可以答辩）", 2=>"较大重大修改（与学位论文要求有一定差距），需进行较大或重大修改，修改后重新送审）", 3=>"不同意答辩（未达到学位论文要求");
@@ -69,20 +69,38 @@ class ReviewLogic extends ReviewModel
      */
     public function getLevelByScore($score)
     {
-        
+        $level = $this->getLevelInfoByScore($score);
+        if ($level === false)
+        {
+            return false;
+        }
+        else
+        {
+            return $level['key'];
+        }      
+    }
+
+    /**
+     * 通过分值，获取等级信息
+     * @param  int $score 分值
+     * @return list   
+     * panjie
+     * 2016.03
+     */
+    public function getLevelInfoByScore($score)
+    {
         $score = (int)$score;
         foreach($this->levels as $key => $level)
         {
             if ($score <= $level['score'])
             {
-                return $key;
+                return $level;
             }
         }
 
         $this->setError("Score can't more than 100");
         return false;
     }
-
     /**
      * 获取相应等的罗马值
      * @param  int $score 分值
@@ -90,18 +108,15 @@ class ReviewLogic extends ReviewModel
      */
     public function getLevelNumByScore($score)
     {
-        
-        $score = (int)$score;
-        foreach($this->levels as $key => $level)
+        $level = $this->getLevelInfoByScore($score);
+        if ($level === false)
         {
-            if ($score <= $level['score'])
-            {
-                return unicode_decode($this->levels[$key]['level'], 'UTF-8', true, '\u', '');
-            }
+            return false;
         }
-
-        $this->setError("Score can't more than 100");
-        return false;
+        else
+        {
+            return unicode_decode($level['level'], 'UTF-8', true, '\u', '');
+        }
     }
 
     /**
@@ -262,5 +277,88 @@ class ReviewLogic extends ReviewModel
         $return['saveFile'] = $saveFile;
         $return['fileName'] = $saveName;
         return $return;
+    }
+
+    /**
+     * 生成传入周期ID的评阅表excel数据。
+     * @return lists 带有表头的数据
+     * panjie
+     * 2016.03
+     */
+    public function createExcelDatas($cycleId)
+    {
+        //取当前周期专家信息
+        $ExpertViewL = new ExpertViewLogic();
+        $experts = $ExpertViewL->getReviewdListsByCycleId($cycleId);
+        if ($experts === false)
+        {
+            $this->setError("ExpertViewL error:" . $ExpertViewL->getError());
+            return false;
+        }
+
+        //取出评阅设置信息
+        $ReviewL = new ReviewLogic();
+        $reviews = $ReviewL->getAllLists();
+
+        $datas = array();
+        $i = 0;
+
+        //拼接header头信息(前)
+        $datas[$i] = array(
+                "作者",
+                "学号",
+                "论文题目",
+                "评审专家"
+                    );
+
+        //拼接header头信息(中)
+        foreach($reviews as $key => $review)
+        {
+            array_push($datas[$i], $review['title'] . '(' . $review['proportion'] . '%)');
+        }
+
+        //拼接header头信息(后)
+        $datas[$i][] = "综合分";
+        $datas[$i][] = "评审结果";
+        $datas[$i][] = "答辩意见";
+
+        //依次取出当前专家评阅详情信息，并进行拼接。
+        $ReviewDetailViewL = new ReviewDetailViewLogic();
+        $ReviewDetailOtherLogic = new ReviewDetailOtherLogic();
+        $defenseConfigs = $this->getDefenseConfigs();   //答辩配置
+        foreach($experts as $key => $expert)
+        {
+            $i ++;
+
+            //计算前置数据
+            $datas[$i][] = $expert['student__name'];
+            $datas[$i][] = $expert['student_no'];
+            $datas[$i][] = $expert['title'];
+            $datas[$i][] = $expert['name'];
+            $reviewDetails = $ReviewDetailViewL->getListsByExpertId($expert['id']);
+            $sumScore = 0.0;                            //设置总分
+            change_key($reviewDetails, 'review__id');
+
+            //依次按评阅设置取出相应的分值,添加到数据中部
+            //优点：当前评阅设置下取值，不会发生数据为空的错误
+            //缺点：当评阅项目改变后，不能取出正确的数值。即：无法查看历史论文评论信息
+            foreach($reviews as $review)
+            {
+                $score = (int)$reviewDetails[$review['id']]['score'];
+                $datas[$i][] =  (string)$score;
+                $sumScore += $score * (int)$review['proportion'];
+            }
+            $sumScore = (int)floor($sumScore / 100 + 0.5);
+            $datas[$i][] = (string)$sumScore;
+
+            //取论文等级
+            $level = $this->getLevelInfoByScore($sumScore);
+            $datas[$i][] = $level['detail'];
+
+            //取答辩意见
+            $reviewDetailOther = $ReviewDetailOtherLogic->getListByExpertId($expert['id']);
+            $datas[$i][] = $defenseConfigs[$reviewDetailOther['defense']] === null ? "数据异常" : $defenseConfigs[$reviewDetailOther['defense']];
+        }
+        return $datas;
     }
 }
