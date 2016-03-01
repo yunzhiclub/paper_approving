@@ -101,7 +101,7 @@
                     </tbody>
                 </table>
                 <div class="col-sm-offset-5">
-                    <button type="submit" ng-disabled="submitDisable" class="btn btn-success"><i class="fa fa-check "></i>保存</button>
+                    <button type="submit" ng-disabled="submitDisable" class="btn btn-success"><span class="glyphicon glyphicon-ok"></span> 保存</button>
                 </div>
                 </tbody>
                 </table>

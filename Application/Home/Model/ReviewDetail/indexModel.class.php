@@ -26,7 +26,7 @@ class indexModel
     {
         $ReviewDetailViewL = new ReviewDetailViewLogic();
         $reviewDetails = $ReviewDetailViewL->getListsByExpertId($this->expert['id']);
-        change_key($reviewDetails, 'review_id');
+        change_key($reviewDetails, 'review__id');
 
         foreach($this->reviews as $key => $review)
         {

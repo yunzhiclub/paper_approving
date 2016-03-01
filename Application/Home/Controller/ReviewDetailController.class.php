@@ -7,6 +7,7 @@ use ReviewDetailOther\Logic\ReviewDetailOtherLogic; //评阅详情其它
 use Expert\Logic\ExpertLogic;                       //专家
 use Home\Model\ReviewDetail\indexModel;     
 use Cycle\Logic\CycleLogic;                 //周期  
+use ExpertView\Logic\ExpertViewLogic;
 
 class ReviewDetailController extends HomeController
 {
@@ -21,6 +22,8 @@ class ReviewDetailController extends HomeController
         $M->setExpert(session('expert'));
 
         $this->assign("M", $M);
+
+        $M->getReviewsJson();
         //调用v层
         $this->assign("reviews", $reviews);
         $this -> display();
@@ -36,7 +39,7 @@ class ReviewDetailController extends HomeController
     {
         $data = I('post.');
         $expert = session('expert');
-
+        
         //更新评阅详情信息
         $reviewDetails = $data['score'];
         $ReviewDetailL = new ReviewDetailLogic();
@@ -49,7 +52,7 @@ class ReviewDetailController extends HomeController
         //更新评阅详情其它信息
         unset($data['score']);
         $ReviewDetailOtherL = new ReviewDetailOtherLogic();
-        if ($ReviewDetailOtherL->saveList($data) === false)
+        if ($ReviewDetailOtherL->updateList($data) === false)
         {
             $this->error("评阅信息存入错误" . $ReviewDetailOtherL->getError(), U('index'));
             return;
@@ -63,6 +66,13 @@ class ReviewDetailController extends HomeController
             return;
         }
 
+        //重新获取专家视图数据，并session
+        $ExpertViewL = new ExpertViewLogic();
+        if ($ExpertViewL->updateSessionExpertById($expert['id']) === false)
+        {
+            $this->error("更新专家信息发生错误：updateSessionExpertById" . $ExpertL->getError(), U('index'));
+            return;
+        }
         $this->success("操作成功", U("index"));
     }
 }

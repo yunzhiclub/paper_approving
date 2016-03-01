@@ -44,4 +44,52 @@ class ReviewDetailOtherLogic extends ReviewDetailOtherModel
             "familiar"  => array("对论文内容的熟悉程度", array("很熟悉", "熟悉", "一般了解"))
             );
     }
+
+    /**
+     * 通过 专家ID存数据
+     * @param  一维数据 $list 包含有expert_id字段的数组
+     * @return true or false       
+     * panjie
+     * 2016.03
+     */
+    public function updateList($list)
+    {
+        $map = array();
+        $map['expert_id'] = $list['expert_id'];
+        try
+        {
+            $data = $this->where($map)->find();
+            if ($data === null)
+            {
+                if ($this->create($list))
+                {
+                    $this->add();
+                    return true;
+                }
+                else
+                {
+                    $this->setError("Data Create Error " . $this->getLastSql());
+                    return false;
+                }
+            }
+            else
+            {
+                $list['id'] = $data['id'];
+                if ($this->create($list))
+                {
+                    $this->save();
+                }
+                else
+                {
+                    $this->setError("Data Create Error " . $this->getLastSql());
+                    return false;
+                }
+            }
+        }
+        catch(\Think\Exception $e)
+        {
+            $this->setError("Database Error:" . $e->getMessage());
+            return false;
+        }
+    }
 }

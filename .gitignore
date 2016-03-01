@@ -16,3 +16,5 @@ ThinkPHP/Library/Vendor/autoload.php
 Application/Common/Conf/debug.php
 
 Public/download/
+/nbproject/private/
+nbproject/

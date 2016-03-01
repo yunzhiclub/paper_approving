@@ -2,8 +2,9 @@
 <block name="wrapper">
     <form ng-app="ReviewDetail" ng-controller="index" method="post" action="{:U('save')}">
         <table class="table table-bordered table-hover table-condensed">
-            <php>$expert = $yunzhi_expert;</php>
+            <php>$expert = session('expert');</php>
             <tr>
+
                 <td class="success">
                     论文类型
                 </td>
@@ -62,8 +63,8 @@
                     <td>是否同意答辩 
                     </td>
                     <td colspan="3">
-                        <input type="hidden" name="id" value="{{reviewDetailOther.id}}" />
-                        <input id="defense0" type="radio" ng-model="reviewDetailOther.defense" name="defense" value="0" /> <label for="defense0">同意答辩</label>
+                        <input type="hidden" name="expert_id" value="{$expert['id']}" />
+                        <input id="defense0" type="radio" ng-model="reviewDetailOther.defense" name="defense" value="0" required /> <label for="defense0">同意答辩</label>
                         <br>
                         <input id="defense1" type="radio" ng-model="reviewDetailOther.defense" name="defense" value="1" /> <label for="defense1">同意经过小的修改后答辩（可不再送审）</label>
                         <br>
@@ -75,7 +76,7 @@
                 <tr>
                     <td>是否推荐评选优秀论文</td>
                     <td colspan="3">
-                        <input type="radio" ng-model="reviewDetailOther.excellent" name="excellent" value="0" id="excellent0" /> <label for="excellent0">省级</label>
+                        <input type="radio" ng-model="reviewDetailOther.excellent" name="excellent" value="0" id="excellent0" required /> <label for="excellent0">省级</label>
                         <br>
                         <input type="radio" ng-model="reviewDetailOther.excellent" name="excellent" value="1" id="excellent1" /> <label for="excellent1">校级</label>
                         <br>
@@ -85,7 +86,7 @@
                 <tr>
                     <td>对论文内容的熟悉程度</td>
                     <td colspan="3">
-                        <input type="radio" name="familiar" ng-model="reviewDetailOther.familiar" value="0" id="familiar0" /> <label for="familiar0">很熟悉</label>
+                        <input type="radio" name="familiar" ng-model="reviewDetailOther.familiar" value="0" id="familiar0" required /> <label for="familiar0">很熟悉</label>
                         <br>
                         <input type="radio" name="familiar" ng-model="reviewDetailOther.familiar" value="1" id="familiar1" /> <label for="familiar1">熟悉</label>
                         <br>
@@ -103,7 +104,7 @@
                 </tr>
         </table>
         <div class="col-sm-offset-5">
-            <button type="submit" class="btn btn-sm btn-success"><i class="fa fa-check "></i>提交</button>
+            <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-ok"></span> 提交</button>
         </div>
     </form>
     <include file="index.js" />

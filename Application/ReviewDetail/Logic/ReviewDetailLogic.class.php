@@ -37,6 +37,7 @@ class ReviewDetailLogic extends ReviewDetailModel
             $this->setError("ReviewDetailL Error:expertId not int.专家ID非INT类型");
             return false;
         }
+
         //取出评阅设置
         $ReviewL = new ReviewLogic();
         $reviews = $ReviewL->getAllLists();
