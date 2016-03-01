@@ -14,11 +14,20 @@ class StudentController extends AdminController
         $CycleL = new CycleLogic();
         $currentCycle = $CycleL->getCurrentList();
 
+        //判断系统是否处理准备阶段
+        $unStart = 1;
+        $beginTime = strtotime($currentCycle['starttime']);
+        if ($beginTime < time())
+        {
+            $unStart = 0;
+        }
+
         //获取列表
         $StudentL = new StudentLogic();
         $students=$StudentL->getLists(array("student_no","name","title","research_direction"),array("cycle_id" => $currentCycle['id']));
 
         //传入列表
+        $this->assign('unStart', $unStart);
         $this -> assign('students',$students);
 
         //调用v层

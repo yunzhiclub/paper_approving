@@ -17,11 +17,13 @@
                         </div>
                     </form>
                 </div>
+                <eq name="unStart" value="1">
                 <div class="col-md-3">
                     <html:uploader value="value" filetypeexts="*.xls;*.xlsx" name="filetest" debug="false" type="file" callback="callBack">
                             请选择附件
                     </html:uploader>
                 </div>
+                </eq>
                 <div class="col-md-3">
                     <a class="button btn btn-info"  href="{:U('edit')}" ><i class="glyphicon glyphicon-plus"></i> 添加学生</a>
                 </div>
