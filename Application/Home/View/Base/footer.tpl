@@ -9,7 +9,9 @@
     <style type="text/css">
     #footer
     {
+        margin-top:20px;
         border-top:1px solid #ccc;
+        padding-top:5px;
     }
     </style>
 </div>
