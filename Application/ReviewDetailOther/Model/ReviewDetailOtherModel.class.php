@@ -8,5 +8,7 @@ use Yunzhi\Model\YunzhiModel;
 
 class ReviewDetailOtherModel extends YunzhiModel
 {
-    
+   protected $_auto = array(
+		array("time", "time", 3, "function"),
+		);
 }

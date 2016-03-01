@@ -14,8 +14,8 @@
                             <div class="col-md-9">
                                 <a class="button btn btn-info" href="{:U('createUserName')}"><i class="glyphicon glyphicon-plus"></i>生成用户名</a> &nbsp;&nbsp;
                                 <a target="_blank" class="button btn btn-info" href="{:U('exportUserName')}"><i class="glyphicon glyphicon-plus"></i>导出用户名</a>&nbsp;&nbsp;
-                                <a class="button btn btn-info" href="#"><i class="glyphicon glyphicon-plus"></i>下载评阅表</a>&nbsp;&nbsp;
-                                <a class="button btn btn-info" href="#"><i class="glyphicon glyphicon-plus"></i>下载评阅统计表</a>&nbsp;&nbsp;
+                                <a target="_blank" class="button btn btn-info" href="{:U('review/downLoadZip')}"><i class="glyphicon glyphicon-plus"></i>批量下载评阅表</a>&nbsp;&nbsp;
+                                <a class="button btn btn-info" href="{:U('review/downloadExcel')}" target="_blank"><i class="glyphicon glyphicon-plus"></i>下载评阅统计表</a>&nbsp;&nbsp;
                             </div>
                         </div>
                     </div>
@@ -71,7 +71,7 @@
                                 <?php 
                                             if ($paper['savepath'] !== null) :
                                         ?>
-                                <a target="_blank" href="__UPLOADS__/{$paper[" savepath "]}{$paper["savename "]}">点击下载</a>
+                                <a target="_blank" href="__UPLOADS__/{$paper["savepath"]}{$paper["savename"]}">点击下载</a>
                                 <?php
                                             endif;
                                         ?>
@@ -85,7 +85,7 @@
                                 </td>
                                 <td>
                                     <eq name="expert['is_reviewed']" value="0">否
-                                        <else /><span class="badge">是</span></eq>
+                                        <else /><span class="badge">是</span><a href="{:U('review/downLoadTable?expert_id=' . $expert['id'])}">下载</a></eq>
                                 </td>
                             </foreach>
                         </tr>
