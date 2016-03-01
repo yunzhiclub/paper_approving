@@ -16,7 +16,7 @@ class StudentController extends AdminController
 
         //获取列表
         $StudentL = new StudentLogic();
-        $students = $StudentL->getAllListsByCycleId($currentCycle['id']);
+        $students=$StudentL->getLists(array("student_no","name","title","research_direction"),array("cycle_id" => $currentCycle['id']));
 
         //传入列表
         $this -> assign('students',$students);
