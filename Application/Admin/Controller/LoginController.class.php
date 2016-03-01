@@ -1,10 +1,10 @@
 <?php
 namespace Admin\Controller;
 
-use Admin\Controller\AdminController;
+use Think\Controller;
 use User\Logic\UserLogic;
 
-class LoginController extends AdminController {
+class LoginController extends Controller{
     
     public function indexAction(){
         $this->assign('remember',cookie('remember'));
@@ -32,23 +32,22 @@ class LoginController extends AdminController {
                 cookie('remember',null);
             }
         }
+
+        $user = I('post.');
         //验证用户名密码
     	$UserL = new UserLogic;
-    	switch ($UserL->checkUser()) {
-            case '1':
-                //根据post的用户名取出用户信息，再将id与name存入session
-                $list = $UserL->getUserInfoByName(I('post.username'));
-                session('user_id',$list['id']);
-                session('user_name',$list['uname']);
-                //登录成功后跳转
-                redirect_url(U('Index/home'));
-                break;
-            case '0':
-                $this->error('用户名密码错误',U('Index/index'));
-                break;
-            case '2':
-                $this->error('无此用户名',U('Index/index'));
-        }       
+    	if ($UserL->checkUser($user['username'], $user['password']) === true) {
+            //根据post的用户名取出用户信息，再将id与name存入session
+            $list = $UserL->getUserInfoByName($user['username']);
+            session('userId',$list['id']);
+
+            //登录成功后跳转
+            redirect_url(U('Index/home'));
+        }
+        else 
+        {
+            $this->error('用户名密码错误',U('Index/index'));
+        }
     }
 
     //注销功能
@@ -63,13 +62,11 @@ class LoginController extends AdminController {
        //开发模式开启后直接跳转到后台首页 
         if(APP_DEBUG)
         {
-            session('user_id',1);
+            session('userId',C("yunzhi_user_id"));
             redirect_url(U('Index/home'));
         }else{
             exit();
         }
-
-
     }
 
     public function checkAjaxAction(){
