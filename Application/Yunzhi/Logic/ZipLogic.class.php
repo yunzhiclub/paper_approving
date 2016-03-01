@@ -21,7 +21,7 @@ class ZipLogic extends \ZipArchive
 
     public function getError()
     {
-        return $this->error();
+        return $this->error;
     }
 
     /**
