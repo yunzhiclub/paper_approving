@@ -56,6 +56,15 @@ class StudentLogic extends StudentModel
 
     public function deleteInfo($id)
 	{
+        //TODO：删除专家表中，该学生对应的专家信息.
+        //注意：由于专家表与评阅详情表，评阅详请其它数据表，也有关联。删除时应该考虑一并删除.
+        // $ExpertL = new ExpertLogic();
+        // if ($ExpertL->deleteListsByStudentId($id) === false)
+        // {
+        //     $this->error("删除学生对应的专家信息发生错误", U("index?id=", I("get.")));
+        //     return;
+        // }
+        
 		$map['id'] = $id;
 		$datas=$this->where($map)->delete();
 		return $datas;
