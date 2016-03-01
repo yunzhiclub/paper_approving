@@ -15,11 +15,17 @@
                                     <label for="username" class="col-xs-2 text-right">姓名:</label>{$user["name"]}
                                 </div>
                                 <div class="form-group row">
-                                    <label for="email" class="col-xs-2 text-right">邮箱:</label><input type="email" name="email" ng-model="email" required/>
+                                    <label for="email" class="col-xs-2 text-right">邮箱:</label>
+                                    <input type="email" name="email" ng-model="email" required/>
                                     <span class="text-danger" ng-show="form.email.$error.email">*邮箱格式错误</span>
                                 </div>
                                  <div class="form-group row">
-                                    <label for="phonenumber" class="col-xs-2 text-right">手机号:</label><input type="text" name="phonenumber" value="{$user['phonenumber']}" />
+                                    <label for="phonenumber" class="col-xs-2 text-right">手机号:</label>
+                                    <input type="text" name="phonenumber" ng-model="phonenumber" ng-pattern="regex" required/>
+                                     <p class="text-danger" ng-show="form.phonenumber.$dirty && form.phonenumber.$invalid">
+                                      <span ng-show="form.phonenumber.$error.required">
+                                      *手机号格式错误</span>
+                                      </p>
                                 </div>
                                 <div class="form-group row">
                                   	<label for="password" class="col-xs-2 text-right">原密码:</label><input type="password" name="password" ng-model="password" required />
@@ -30,7 +36,7 @@
                                 </div>
                                 <div class="form-group row">
                                 	<div class="col-xs-6 text-center">
-                                		<button type="submit" ng-disabled="form.password.$invalid || form.email.$error.email" class="btn btn-sm btn-success"><i class="fa fa-check "></i>保存</button>
+                                		<button type="submit" ng-disabled="form.password.$invalid || form.email.$error.email || form.phonenumber.$invalid" class="btn btn-sm btn-success"><i class="fa fa-check "></i>保存</button>
                                 	</div>
                                 </div>
                             </form>

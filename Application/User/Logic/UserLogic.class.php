@@ -83,6 +83,7 @@ class UserLogic extends UserModel
 
         //取其它更新的数据
         $user['email'] = $list['email'];
+        $user['phonenumber'] = $list['phonenumber'];
 
         //更新数据
         try
