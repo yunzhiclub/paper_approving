@@ -10,10 +10,13 @@ class AdminController extends Controller
 	public function __construct()
 	{
 		parent::__construct();
+
+		//如果是用户登陆，则不对权限及状态进行判断
 		if (CONTROLLER_NAME === 'Index' && ACTION_NAME === 'index')
 		{
 			return;
 		}
+
 		//判断登陆状态
 		$userId = session("userId");
 		if ($userId === null)
