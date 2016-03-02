@@ -52,9 +52,8 @@ class LoginController extends Controller{
 
     //注销功能
     public function cancelAction(){
-        session('user_id',null);
-        session('user_name',null);
-        $this->success('注销成功',U('Admin/index'));
+        session('userId',null);
+        $this->success('注销成功',U('Index/index'));
     }
 
     //直接登录
