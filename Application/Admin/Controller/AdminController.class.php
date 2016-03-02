@@ -10,7 +10,10 @@ class AdminController extends Controller
 	public function __construct()
 	{
 		parent::__construct();
-
+		if (CONTROLLER_NAME === 'Index' && ACTION_NAME === 'index')
+		{
+			return;
+		}
 		//判断登陆状态
 		$userId = session("userId");
 		if ($userId === null)
