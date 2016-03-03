@@ -6,8 +6,9 @@ return array(
         '__DIST__'      => __ROOT__ . '/Admin/dist',
         '__CSS__'    	=> __ROOT__ . '/Admin/css',
         '__JS__'     	=> __ROOT__ . '/Admin/js',
+        '__UPLOADS__'   => __ROOT__ . '/uploads'
     ),
-
+    'YUNZHI_USER_id'        => '1',                     //测试用户ID
 	'DATA_CACHE_PREFIX'    => 	'yunzhi_ethan_admin', 	// 缓存前缀
 	'MODULE_ALLOW_LIST'    =>  	array('Admin'),			//允许访问模块
 	'DEFAULT_MODULE'       =>   'Admin',  				// 默认模块

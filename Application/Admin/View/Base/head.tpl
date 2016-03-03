@@ -20,6 +20,8 @@
 <link href="__ROOT__/lib/webuploader/css/webuploader.css" rel="stylesheet" />
 
 <link href="__ROOT__/css/style.css" rel="stylesheet" />
+<link href="__ROOT__/jquery-ui-1.11.4.custom/jquery-ui-1.11.4.custom/jquery-ui.min.css" rel="stylesheet" />
+
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -29,5 +31,6 @@
 <!-- jQuery -->
 <script src="__BOW__/jquery/dist/jquery.min.js"></script>
 <script src="__ROOT__/js/angular.min.js"></script>
+<script src="__ROOT__/jquery-ui-1.11.4.custom/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
 <block name="headCssJs">
 </block>

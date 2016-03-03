@@ -36,6 +36,7 @@ class Yunzhi extends TagLib {
 
         $parseStr   =   "<?php ";
         $parseStr   .=  '$page = new Think\Page('. $totalCount .',' . $pageSize . ');';
+
         $parseStr   .=  'echo $page->show();';
         $parseStr   .=  " ?>";
         return  $parseStr;
