@@ -248,8 +248,7 @@ class PaperController extends AdminController
     public function exportUserNameAction()
     {
         //初始化excel表头
-        $data = array();
-        $data[0] = array("学号","姓名","论文名称","研究方向","专家1用户名", "专家一密码", "专家2用户名", "专家2密码");
+        $header = array("学号","姓名","论文名称","研究方向","专家用户名", "专家密码");
 
         //取出当前周期
         $CycleL = new CycleLogic();
@@ -270,28 +269,48 @@ class PaperController extends AdminController
         }
 
         //取论文对应的专家信息
+        $datas = array();
         $ExpertL = new ExpertLogic();
         foreach($students as $key => $student)
-        {
-            $data[$key+1] = array($student['student_no'], $student['name'], $student['title'], $student['research_direction']);
+        {    
             $experts = $ExpertL->getListsByStudentId($student['id']);
             {
                 if ($experts !== false)
                 {
-                    foreach($experts as $expert)
+                    //按专家数量，将信息加入待输出数组
+                    foreach($experts as $keyj => $expert)
                     {
-                        $data[$key+1][] = $expert['username'];
-                        $data[$key+1][] = $expert['userpassword'];
-                     }
+                        //如果为首次输出，则首先添加头信息
+                        if ($key == 0)
+                        {
+                            $datas[$keyj][0] = $header;
+                        }
+
+                        //添加其它数据
+                        $datas[$keyj][$key+1] = array($student['student_no'], $student['name'], $student['title'], $student['research_direction']);
+
+                        //添加专家用户名，密码
+                        $datas[$keyj][$key+1][] = $expert['username'];
+                        $datas[$keyj][$key+1][] = $expert['userpassword'];
+                    }
                 }
             }
         }
 
         //将数据输出至excel并指导用户下载
         $objPHPExcel = new \PHPExcel();
-        $objPHPExcel->getActiveSheet()->fromArray($data, null, 'A1');
-        $objPHPExcel->getActiveSheet()->setTitle('用户名');
-        $fileName = '云智-专家用户名密码信息' . date("Ymdhis") . '.xls';
+
+        //按生成的专家用户密码数据生成sheet
+        foreach($datas as $key => $data)
+        {
+            $objPHPExcel->createSheet();
+            $objPHPExcel->setActiveSheetIndex($key);
+            $objPHPExcel->getActiveSheet()->fromArray($data, null, 'A1');
+            $objPHPExcel->getActiveSheet()->setTitle('用户名密码' . ($key + 1));
+
+        }
+        
+        $fileName = '专家用户名密码信息' . date("Ymdhis") . '.xls';
         header('Content-Type: application/vnd.ms-excel');
         header('Content-Disposition: attachment;filename="'. $fileName . '"');
         header('Cache-Control: max-age=0');
