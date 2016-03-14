@@ -9,7 +9,15 @@
                     论文类型
                 </td>
                 <td>
-                    全日制专业学位硕士研究生毕业论文
+                    <eq name="expert['type']" value="专硕">
+                        全日制专业学位硕士研究生毕业论文
+                    </eq>
+                    <eq name="expert['type']" value="学硕">
+                        全日制学术型硕士研究生毕业论文
+                    </eq>
+                    <eq name="expert['type']" value="博士">
+                        博士研究生毕业论文
+                    </eq>
                 </td>
             </tr>
             <tr>
