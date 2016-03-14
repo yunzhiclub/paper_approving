@@ -162,14 +162,13 @@ class PaperController extends AdminController
         }
         
         //截取学号信息
-        $index = strpos($name, "-");
-        if ($index === false)
+        $studentNo = $this->_matchStudentNo($name);
+        if ($studentNo === false)
         {
             $return["message"] = "上传附件名:" . $name ."不符合规则";
             echo json_encode($return);
             return;
         }
-        $studentNo = substr($name, 0, $index);
     
         //将附件信息更新至学生表
         $StudentL = new StudentLogic();
@@ -298,5 +297,23 @@ class PaperController extends AdminController
         header('Cache-Control: max-age=0');
         $objWriter = \PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel5');
         $objWriter->save('php://output');
+    }
+
+    /**
+     * 在字符串出匹配出学号，并返回
+     * @param  string $string S_学号_姓名_专业_论文名称
+     * @return string         学号
+     * panjie
+     * 2016.03
+     */
+    private function _matchStudentNo($string)
+    {
+        $pattern = "/^S_\d+_/i";
+        if (preg_match_all( $pattern, $string, $matches ) === false)
+        {
+            return false;
+        }
+        $student = $matches[0][0];
+        return substr($student, 2, strlen($student) - 3);
     }
 }
