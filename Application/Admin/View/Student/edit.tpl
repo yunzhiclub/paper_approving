@@ -20,7 +20,7 @@
 		<div class="form-group">
 			<label for="admission_date" class="col-xs-2 control-label">入学年月</label>
 			<div class="col-xs-4">
-				<input id="admission_date" type ="text" name="admission_date" value="{$student['admission_date']}" class="form-control date">
+				<input id="admission_date" type ="text" name="admission_date" value="{$student['admission_date']}" class="form-control">
 			</div>
 		</div>
 
@@ -30,7 +30,12 @@
 				<input id="subject_major" type ="text" name="subject_major" value="{$student['subject_major']}" class="form-control">
 			</div>
 		</div>
-
+		<div class="form-group">
+			<label for="subject_major" class="col-xs-2 control-label">类型</label>
+			<div class="col-xs-4">
+				<input id="type" type ="text" name="type" value="{$student['type']}" class="form-control">
+			</div>
+		</div>
 		<div class="form-group">
 			<label for="secret" class="col-xs-2 control-label">论文密级</label>
 			<div class="col-xs-4">
