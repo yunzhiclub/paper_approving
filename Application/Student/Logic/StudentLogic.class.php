@@ -18,6 +18,7 @@ class StudentLogic extends StudentModel
         "research_direction"    =>  "研究方向",
         "title"                 =>  "论文题目",
         "innovation_point"      =>  "创新点",
+        "type"                  =>  "类型"
     );
 
     public function getErrors()
