@@ -164,6 +164,12 @@ class ExpertLogic extends ExpertModel
 			$data['job_title'] 		= $list['job_title'];
 			$data['tutor_class'] 	= $list['tutor_class'];
 			$data['is_normal'] 		= "1";
+			$data['email']			= $list['email'];
+			$data['phone']			= $list['phone'];
+			$data['specialty']		= $list['specialty'];
+			$data['subject']    	= $list['subject'];
+			$data['school']    		= $list['school'];
+			$data['address']    	= $list['address'];
 			
 			if ($this->create($data))
 			{
