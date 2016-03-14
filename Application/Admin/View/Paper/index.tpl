@@ -7,7 +7,7 @@
                     <div class="col-md-12">
                         <div class="row">
                             <div class="col-md-3">
-                                <html:uploader value="value" filetypeexts="*.pdf;*.doc;*.docx" name="filetest" debug="false" type="file" callback="callBack">
+                                <html:uploader value="value" filetypeexts="*.pdf" name="filetest" debug="false" type="file" callback="callBack">
                                     上传论文
                                 </html:uploader>
                             </div>
@@ -47,10 +47,9 @@
                 <thead>
                     <tr>
                         <th>序号</th>
-                        <?php $order=I('get.order') ?>
+                        <?php $order = (I('get.order') === "desc") ? "asc" : "desc"; ?>
                         <th>
-                            <a href="<eq name='order' value=" desc "> {:U('index?by=studentID&order=asc', I('get.'))}  
-                                <else/> {:U('index?by=studentID&order=desc', I('get.'))} </eq>">学号</a>
+                            <a href="{:U('index?by=student_no&order=' . $order, I('get.'))}">学号</a>
                         </th>
                         <th>学生姓名</th>
                         <th>论文名称</th>
