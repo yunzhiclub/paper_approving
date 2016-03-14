@@ -148,7 +148,7 @@ class ReviewLogic extends ReviewModel
         //查找专家对应的评阅详情信息
         $ReviewDetailViewL = new ReviewDetailViewLogic();
         $reviewDetailViews = $ReviewDetailViewL->getListsByExpertId($expertId);
-
+        
         //查找专家对应的评阅详情其它信息
         $ReviewDetailOtherL = new ReviewDetailOtherLogic();
         $reviewDetailOther = $ReviewDetailOtherL->getListByExpertId($expertId);
@@ -209,6 +209,7 @@ class ReviewLogic extends ReviewModel
         
         //写入详阅详情 评阅意见 评阅时间
         $templateProcessor->setValue("review_suggestion", $reviewDetailOther['suggestion']);
+        $templateProcessor->setValue("expert_name", $expertView['name']);
         $templateProcessor->setValue("date", date("Y年m月d日", $reviewDetailOther['time']));
 
         //写入 答辩 意见
@@ -308,7 +309,15 @@ class ReviewLogic extends ReviewModel
                 "作者",
                 "学号",
                 "论文题目",
-                "评审专家"
+                "评审专家",
+                "email",
+                "电话",
+                "职称",
+                "导师类别",
+                "专长",
+                "学科",
+                "联系地址",
+                "学校"
                     );
 
         //拼接header头信息(中)
@@ -335,6 +344,15 @@ class ReviewLogic extends ReviewModel
             $datas[$i][] = $expert['student_no'];
             $datas[$i][] = $expert['title'];
             $datas[$i][] = $expert['name'];
+            $datas[$i][] = $expert['email'];
+            $datas[$i][] = $expert['phone'];
+            $datas[$i][] = $expert['job_title'] == '0' ? "正高级" : "副高级";
+            $datas[$i][] = $expert['tutor_class'] == '0' ? "硕导" : "博导";
+            $datas[$i][] = $expert['specialty'];
+            $datas[$i][] = $expert['subject'];
+            $datas[$i][] = $expert['address'];
+            $datas[$i][] = $expert['school'];
+
             $reviewDetails = $ReviewDetailViewL->getListsByExpertId($expert['id']);
             $sumScore = 0.0;                            //设置总分
             change_key($reviewDetails, 'review__id');
