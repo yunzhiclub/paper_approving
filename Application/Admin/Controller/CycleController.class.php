@@ -66,10 +66,16 @@ class CycleController extends AdminController
     public function deleteAction()
     {
         //取id
-        $cycleId= I('get.id');
-
-        //删除deleteInfo($Id)
+        $cycleId= (int)I('get.id');
+        
         $CycleL = new CycleLogic();
+        //判断当前周期是否有学生
+        if ($CycleL->checkIsUsed($cycleId) === true)
+        {
+            $this->error("该周期已添加学生，请先删除学生信息后，再行删除");
+        }
+        
+        //删除deleteInfo($Id)
         $status = $CycleL->deleteInfo($cycleId);
 
         //判断是否删除成功
