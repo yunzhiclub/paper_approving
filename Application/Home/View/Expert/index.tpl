@@ -103,10 +103,10 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="success">学校</td>
+                            <td class="success">学校<code>*</code></td>
                             <td>
                                 <div class="col-md-6 col-sm-12">
-                                    <input type="text" class="form-control" ng-model="expert.school" name="school" placeholder="您的学校名称"/>
+                                    <input type="text" class="form-control" ng-model="expert.school" name="school" placeholder="您的学校名称" required />
                                 </div>
                             </td>
                         </tr>
