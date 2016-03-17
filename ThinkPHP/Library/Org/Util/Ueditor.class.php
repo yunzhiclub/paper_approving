@@ -16,7 +16,7 @@ class Ueditor{
 	private $st;
 	protected $result;	//附件上传的结果 
 	
-	private $rootpath = '/Uploads';
+	private $rootpath = '/uploads';
         //private $confPath = ;
 	
 	/**
