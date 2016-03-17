@@ -155,7 +155,8 @@ class Upload {
                 $file['sha1'] = sha1_file($file['tmp_name']);
 
                  /* 判断文件是否已经存在 */
-                if (class_exists(AttachmentLogic::class))
+                 
+                if (class_exists('Yunzhi\Logic\AttachmentLogic'))
                 {
                     //查找关联记录,如果存在，则取出关联ID的信息, 并返回
                     $AttachmentL = new AttachmentLogic;
