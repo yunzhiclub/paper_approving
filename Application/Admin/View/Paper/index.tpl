@@ -7,7 +7,7 @@
                     <div class="col-md-12">
                         <div class="row">
                             <div class="col-md-3">
-                                <html:uploader value="value" filetypeexts="*.pdf" name="filetest" debug="true" type="file" callback="callBack" >
+                                <html:uploader value="value" filetypeexts="*.pdf" name="filetest" debug="false" type="file" callback="callBack" >
                                     上传论文
                                 </html:uploader>
                             </div>
@@ -70,7 +70,7 @@
                                 <?php 
                                             if ($paper['savepath'] !== null) :
                                         ?>
-                                <a target="_blank" href="__UPLOADS__/{$paper["savepath"]}{$paper["savename"]}">点击下载</a>
+                                <a target="_blank" href="__UPLOADS__{$paper["savepath"]}{$paper["savename"]}">点击下载</a>
                                 <?php
                                             endif;
                                         ?>
