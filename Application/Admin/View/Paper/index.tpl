@@ -7,7 +7,7 @@
                     <div class="col-md-12">
                         <div class="row">
                             <div class="col-md-3">
-                                <html:uploader value="value" filetypeexts="*.pdf" name="filetest" debug="false" type="file" callback="callBack">
+                                <html:uploader value="value" filetypeexts="*.pdf" name="filetest" debug="true" type="file" callback="callBack" >
                                     上传论文
                                 </html:uploader>
                             </div>
