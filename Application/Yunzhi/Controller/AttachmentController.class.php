@@ -30,7 +30,7 @@ class AttachmentController extends Controller
 		{
 			//php5.5可以这样写 class_exists(AttachmentLogic::class)
 			//php版本小于5.5要这样写  if (class_exists('Yunzhi\Logic\AttachmentLogic'))
-			if (class_exists(AttachmentLogic::class))
+			if (class_exists('Yunzhi\Logic\AttachmentLogic'))
 			{
 				$AttachmentL = new AttachmentLogic();
 				if ($attachmentId = $AttachmentL->addRecordList($data))
