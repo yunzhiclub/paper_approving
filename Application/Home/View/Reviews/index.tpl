@@ -12,22 +12,18 @@
 				<thead>
 					<tr class="success">
 						<th>
-							全日制专业学位硕士研究生论文评阅
+							评阅项目
+						</th>
+						<th>
+							权重
+						</th>
+						<th>
+						    评分细则
 						</th>
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-						<td>
-							评阅项目
-						</td>
-						<td>
-							权重
-						</td>
-						<td>
-						    评分细则
-						</td>
-					</tr>
+					
 					<tr>
 						<td>
 							1、论文选题(A)

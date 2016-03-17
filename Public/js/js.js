@@ -1,6 +1,5 @@
 
 $(function(){
-    uploaderDeleteClick();      //实例化uplaoder
     dataInit();                 //实例化datePicker
 });
  /*从数组中移除元素

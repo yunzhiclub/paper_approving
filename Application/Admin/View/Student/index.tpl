@@ -18,14 +18,17 @@
                     </form>
                 </div>
                 <eq name="unStart" value="1">
-                <div class="col-md-3">
+                <div class="col-md-2">
                     <html:uploader value="value" filetypeexts="*.xls;*.xlsx" name="filetest" debug="false" type="file" callback="callBack">
-                            请选择附件
+                            <i class='glyphicon glyphicon-open'></i> 上传学生信息
                     </html:uploader>
                 </div>
                 </eq>
-                <div class="col-md-3">
-                    <a class="button btn btn-info"  href="{:U('edit')}" ><i class="glyphicon glyphicon-plus"></i> 添加学生</a>
+                <div class="col-md-2">
+                    <a class="button btn btn-info" target="_blank" href="__ROOT__/download/example/student.xlsx"><i class="glyphicon glyphicon-save"></i> 下载样表</a>
+                </div>
+                <div class="col-md-2">
+                    <a class="button btn btn-success"  href="{:U('edit')}" ><i class="glyphicon glyphicon-plus"></i> 添加学生</a>
                 </div>
             </div>
             <div class="box">

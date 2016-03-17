@@ -28,7 +28,7 @@ class ExpertController extends HomeController
         $ExpertL = new ExpertLogic();
         if ($ExpertL->updateList($expert) === false)
         {
-            $this->error("更新专家信息发生错误：updateList" . $ExpertL->getError(), U('index'));
+            $this->error("原密码错误或信息格式有误", U('index'));
             return;
         }
 

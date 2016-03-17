@@ -12,7 +12,6 @@ use Cycle\Logic\CycleLogic;                             //周期
 
 class ReviewLogic extends ReviewModel
 {
-    private $template = ''; //模板目录
 
     //评阅等级设置
     private $levels = array(array("key"=>0, "score" => 59, "detail" => "不合格", "level"=>"\u2163"), array("key"=>1, "score" => 79, "detail" => "合格", "level"=>'\u2162'), array("key"=>2, "score" => 89, "detail" => "良好", "level"=>'\u2161'), array("key"=>3, "score" => 100, "detail" => "优秀", "level"=>'\u2160'));
@@ -26,12 +25,7 @@ class ReviewLogic extends ReviewModel
         return $this->defenseConfigs;
     }
 
-    public function __construct()
-    {
-        $this->template = APP_PATH . 'Admin/View/Review/template.docx';
-        parent::__construct();
-    }
-
+   
     public function getSavePathByExpertId($expertId)
     {
         $ExpertViewL = new ExpertViewLogic();
@@ -148,7 +142,7 @@ class ReviewLogic extends ReviewModel
         //查找专家对应的评阅详情信息
         $ReviewDetailViewL = new ReviewDetailViewLogic();
         $reviewDetailViews = $ReviewDetailViewL->getListsByExpertId($expertId);
-
+        
         //查找专家对应的评阅详情其它信息
         $ReviewDetailOtherL = new ReviewDetailOtherLogic();
         $reviewDetailOther = $ReviewDetailOtherL->getListByExpertId($expertId);
@@ -158,10 +152,25 @@ class ReviewLogic extends ReviewModel
 
         $savePath = $this->getSavePathByExpertId($expertId);
         $saveName = substr($expertView['attachment__name'], 0, strpos($expertView['attachment__name'], ".")) . '-' . $expertView['id'] . $expertView['name'];
+
         $saveFile = I('server.DOCUMENT_ROOT') . $savePath . $saveName . '.doc';
 
+        //根据学生类型，对应不同的评阅模板
+        switch ($expertView['type']) {
+            case '专硕':
+                $ext = "zs";
+                break;
+            case '学硕':
+                $ext = "xs";
+                break;
+            default:
+                $ext = "bs";
+                break;
+        }
+        $template = APP_PATH . 'Admin/View/Review/template_' . $ext . '.docx';
+       
         //实例化PHPWORD
-        $templateProcessor = new TemplateProcessor($this->template);
+        $templateProcessor = new TemplateProcessor($template);
         $checked = unicode_decode('\u25a0', 'UTF-8', true, '\u', '');       //选中
         $unChecked = unicode_decode('\u25a1', 'UTF-8', true, '\u', '');     //未选中
 
@@ -209,6 +218,8 @@ class ReviewLogic extends ReviewModel
         
         //写入详阅详情 评阅意见 评阅时间
         $templateProcessor->setValue("review_suggestion", $reviewDetailOther['suggestion']);
+        $templateProcessor->setValue("expert_name", $expertView['name']);
+        $templateProcessor->setValue("expert_school", $expertView['school']);
         $templateProcessor->setValue("date", date("Y年m月d日", $reviewDetailOther['time']));
 
         //写入 答辩 意见
@@ -308,7 +319,15 @@ class ReviewLogic extends ReviewModel
                 "作者",
                 "学号",
                 "论文题目",
-                "评审专家"
+                "评审专家",
+                "email",
+                "电话",
+                "职称",
+                "导师类别",
+                "专长",
+                "学科",
+                "联系地址",
+                "学校"
                     );
 
         //拼接header头信息(中)
@@ -335,6 +354,15 @@ class ReviewLogic extends ReviewModel
             $datas[$i][] = $expert['student_no'];
             $datas[$i][] = $expert['title'];
             $datas[$i][] = $expert['name'];
+            $datas[$i][] = $expert['email'];
+            $datas[$i][] = $expert['phone'];
+            $datas[$i][] = $expert['job_title'] == '0' ? "正高级" : "副高级";
+            $datas[$i][] = $expert['tutor_class'] == '0' ? "硕导" : "博导";
+            $datas[$i][] = $expert['specialty'];
+            $datas[$i][] = $expert['subject'];
+            $datas[$i][] = $expert['address'];
+            $datas[$i][] = $expert['school'];
+
             $reviewDetails = $ReviewDetailViewL->getListsByExpertId($expert['id']);
             $sumScore = 0.0;                            //设置总分
             change_key($reviewDetails, 'review__id');

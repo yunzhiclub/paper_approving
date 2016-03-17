@@ -7,7 +7,4 @@ var app=angular.module('cycle',[]);
       $scope.endtime ='{:$cycle['endtime']}';
     
   });
-  $(function() {
-    $( ".datepicker" ).datepicker();
-  });
   </script>

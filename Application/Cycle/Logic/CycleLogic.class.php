@@ -3,6 +3,7 @@
 namespace Cycle\Logic;
 
 use Cycle\Model\CycleModel;
+use Student\Logic\StudentLogic;
 
 class CycleLogic extends CycleModel
 {
@@ -108,5 +109,31 @@ class CycleLogic extends CycleModel
         }
 
         return true;
+    }
+
+    /**
+     * 判断传入周期ID是否正在使用
+     * @param  int $id 周期id
+     * @return bool     
+     * panjie
+     * 2016.03
+     */
+    public function checkIsUsed($id)
+    {
+        $StudentL = new StudentLogic();
+        $map = array();
+        $map['cycle_id'] = $id;
+
+        $count = $StudentL->where($map)->count();
+
+        if ($count > 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+
     }
 }

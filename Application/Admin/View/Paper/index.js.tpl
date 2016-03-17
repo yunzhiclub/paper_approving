@@ -5,7 +5,12 @@
             "{:U('matchAjax')}",
             {id:data.id, name:data.name},
             function(data){
+                data = JSON.parse(data);
                 console.log(data);
+                if (data.status == 'ERROR')
+                {
+                    alert("发生错误:"+data.message);
+                }
             }
             );
     }  

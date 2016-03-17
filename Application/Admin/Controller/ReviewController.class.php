@@ -111,9 +111,6 @@ class ReviewController extends AdminController
             die($ReviewL->getError());
         }
 
-        $ExpertL = new ExpertLogic();
-        $expert = $ExpertL->getListById($expertId);
-
         $saveFile = $saveInfo['saveFile'];
         $fileName = $saveInfo['fileName'] . '.doc';
 
