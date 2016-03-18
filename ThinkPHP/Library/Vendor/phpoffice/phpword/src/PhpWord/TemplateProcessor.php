@@ -358,7 +358,11 @@ class TemplateProcessor
          *
          * @see https://github.com/PHPOffice/PHPWord/issues/532
          */
-        copy($tempFileName, $fileName);
+        if (copy($tempFileName, $fileName) === false)
+        {
+            throw new Exception("copy $tempFileName to $fileName failed", 1);
+            die();
+        }
         unlink($tempFileName);
     }
 
