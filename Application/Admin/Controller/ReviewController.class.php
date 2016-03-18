@@ -114,10 +114,17 @@ class ReviewController extends AdminController
         $saveFile = $saveInfo['saveFile'];
         $fileName = $saveInfo['fileName'] . '.doc';
 
+
         //指引用户下载
-        header('Content-type: application/msword'); 
-        header('Content-Disposition: attachment; filename="' . $fileName  . '"'); 
-        readfile($saveFile);        
+        if(file_exists($saveFile)) {
+            header('Content-type: application/msword'); 
+            header('Content-Disposition: attachment; filename="' . $fileName  . '"'); 
+            ob_clean(); //清空缓冲区
+            flush();    //刷新缓冲
+            readfile($saveFile);      
+        }
+
+        return;
     }
 
     /**
