@@ -152,6 +152,8 @@ class ReviewLogic extends ReviewModel
 
         $savePath = $this->getSavePathByExpertId($expertId);
         $saveName = substr($expertView['attachment__name'], 0, strpos($expertView['attachment__name'], ".")) . '-' . $expertView['id'] . $expertView['name'];
+        
+        $saveName = str_replace( " ", "",$saveName); //去空格
 
         $saveFile = I('server.DOCUMENT_ROOT') . $savePath . $saveName . '.doc';
 
