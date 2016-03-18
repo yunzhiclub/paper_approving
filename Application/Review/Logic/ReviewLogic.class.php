@@ -14,6 +14,7 @@ class ReviewLogic extends ReviewModel
 {
 
     //评阅等级设置
+    // private $levels = array(array("key"=>0, "score" => 59, "detail" => "不合格", "level"=>"\u2163"), array("key"=>1, "score" => 79, "detail" => "合格", "level"=>'\u2162'), array("key"=>2, "score" => 89, "detail" => "良好", "level"=>'\u2161'), array("key"=>3, "score" => 100, "detail" => "优秀", "level"=>'\u2160'));
     private $levels = array(array("key"=>0, "score" => 59, "detail" => "不合格", "level"=>"\u2163"), array("key"=>1, "score" => 79, "detail" => "合格", "level"=>'\u2162'), array("key"=>2, "score" => 89, "detail" => "良好", "level"=>'\u2161'), array("key"=>3, "score" => 100, "detail" => "优秀", "level"=>'\u2160'));
 
     //答辩意见配置
@@ -199,7 +200,8 @@ class ReviewLogic extends ReviewModel
             $templateProcessor->setValue('review_title#' . $num, $reviewDetailView['title']);
             $templateProcessor->setValue('review_factor#' . $num, $reviewDetailView['factor']);
             $scoreSum += $reviewDetailView['score'] * $reviewDetailView['proportion'] / 100;
-            $templateProcessor->setValue('review_level#' . $num, $this->getLevelNumByScore($reviewDetailView['score']));
+            $reviewLevel =  iconv("UTF-8", "GB2312//IGNORE", $this->getLevelNumByScore($reviewDetailView['score']));
+            $templateProcessor->setValue('review_level#' . $num, $reviewLevel);
         }
         
         //总分四舍五入
