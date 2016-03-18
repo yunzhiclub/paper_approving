@@ -175,7 +175,7 @@ class ReviewLogic extends ReviewModel
        
         //实例化PHPWORD
         $templateProcessor = new TemplateProcessor($template);
-        $checked = unicode_decode('\u25a9', 'UTF-8', true, '\u', '');       //选中
+        $checked = unicode_decode('\u25aa', 'UTF-8', true, '\u', '');       //选中
         $unChecked = unicode_decode('\u25a1', 'UTF-8', true, '\u', '');     //未选中
 
         //写入系统时间
@@ -188,11 +188,24 @@ class ReviewLogic extends ReviewModel
         $templateProcessor->setValue("subject_major", $expertView['subject_major']);
         $templateProcessor->setValue("secret", $expertView['secret']);
         $templateProcessor->setValue("research_direction", $expertView['research_direction']);
-        $templateProcessor->setValue("title", $expertView['title']);
+        // $templateProcessor->setValue("title", $expertView['title']);
         $templateProcessor->setValue("innovation_point", $expertView['innovation_point']);
 
-        //写入评阅详情信息
+
+        $templateProcessor->cloneRow('title',1000);
+
+        for($i = 1, $j = 0; $i < 1000; $i++, $j++)
+        {
+
+            $num = dechex($j);
+            $num = unicode_decode('\u' . $num, 'UTF-8', true, '\u', '');
+            $templateProcessor->setValue('title#' . $i, $num);
+        }
+        // 写入评阅详情信息
         $templateProcessor->cloneRow('num', count($reviewDetailViews));
+
+
+
         $scoreSum = 0;
         foreach($reviewDetailViews as $key => $reviewDetailView)
         {
