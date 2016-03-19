@@ -287,8 +287,6 @@ class TemplateProcessor
             $matches
         );
 
-
-
         if (isset($matches[3])) {
             $this->tempDocumentMainPart = str_replace(
                 $matches[2] . $matches[3] . $matches[4],
@@ -507,10 +505,5 @@ class TemplateProcessor
         }
 
         return substr($this->tempDocumentMainPart, $startPosition, ($endPosition - $startPosition));
-    }
-
-    public function getMainPart()
-    {
-        return $this->tempDocumentMainPart;
     }
 }
