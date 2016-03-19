@@ -179,11 +179,8 @@ class ReviewLogic extends ReviewModel
 
         //写入系统时间
         // $templateProcessor->setValue("time", date("Y-m-d H:i"));
-        dump($templateProcessor->getMainPart());
-        die();
-        // $templateProcessor->deleteBlock('ISBEST');
-        // $templateProcessor->cloneBlock('ISBEST');
-        // $templateProcessor->cloneBlock('DELETEME');
+        
+      
 
         // //写入学生信息
         // $templateProcessor->setValue("name", $expertView['student__name']);
