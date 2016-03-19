@@ -287,6 +287,8 @@ class TemplateProcessor
             $matches
         );
 
+
+
         if (isset($matches[3])) {
             $this->tempDocumentMainPart = str_replace(
                 $matches[2] . $matches[3] . $matches[4],
@@ -358,11 +360,7 @@ class TemplateProcessor
          *
          * @see https://github.com/PHPOffice/PHPWord/issues/532
          */
-        if (copy($tempFileName, $fileName) === false)
-        {
-            throw new Exception("copy $tempFileName to $fileName failed", 1);
-            die();
-        }
+        copy($tempFileName, $fileName);
         unlink($tempFileName);
     }
 
@@ -509,5 +507,10 @@ class TemplateProcessor
         }
 
         return substr($this->tempDocumentMainPart, $startPosition, ($endPosition - $startPosition));
+    }
+
+    public function getMainPart()
+    {
+        return $this->tempDocumentMainPart;
     }
 }

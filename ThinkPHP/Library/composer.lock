@@ -4,12 +4,12 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3578f9a2c6eadba2d77f0c48f03b70e5",
-    "content-hash": "a21ad3ab52b61f9dcd167d4ae45aa738",
+    "hash": "65b5e2652f15f12f0ec508998eb37b96",
+    "content-hash": "3bf9d5bcb643d5be49e1f55c64977a2a",
     "packages": [
         {
             "name": "phpoffice/phpword",
-            "version": "v0.12.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPOffice/PHPWord.git",
@@ -107,7 +107,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "phpoffice/phpword": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

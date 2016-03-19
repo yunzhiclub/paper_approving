@@ -1,5 +1,5 @@
 {
     "require": {
-       "phpoffice/phpword": "v0.12.*"
+       "phpoffice/phpword": "dev-master"
     }
 }
