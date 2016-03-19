@@ -7,7 +7,7 @@ use ExpertView\Logic\ExpertViewLogic;                   //专家视图信息
 use ReviewDetailView\Logic\ReviewDetailViewLogic;       //评阅详情
 use ReviewDetailOther\Logic\ReviewDetailOtherLogic;     //评阅详情其它信息
 use PhpOffice\PhpWord\Settings;                         //phpword设置
-use PhpOffice\PhpWord\TemplateProcessor;                //phpword模板
+use Yunzhi\Vendor\PhpWord\TemplateProcessor;                //phpword模板
 use Cycle\Logic\CycleLogic;                             //周期
 
 class ReviewLogic extends ReviewModel
@@ -179,9 +179,16 @@ class ReviewLogic extends ReviewModel
 
         //写入系统时间
         // $templateProcessor->setValue("time", date("Y-m-d H:i"));
-        
-      
-
+        $templateProcessor->setUnicodeValue('a', "F0FE");
+        $templateProcessor->setUnicodeValue('2', "F0FE");
+        $templateProcessor->setUnicodeValue('3', "F0A8");
+        // die();
+        // $string = $templateProcessor->getTempDocumentMainPart();
+        // $pattern = '/(<w:t>2<\/w:t>.*?:char=")(.*?)("\/>)/i';
+        // // $pattern = '/(<w:t>' . $index . '<\/w:t>.*w:char=")(.*?)")(' . $unicodeNum . ')/i';
+        // $replacement = '\1F067\3';
+        // $string = preg_replace($pattern, $replacement, $string);
+        // $templateProcessor->setTempDocumentMainPart($string);
         // //写入学生信息
         // $templateProcessor->setValue("name", $expertView['student__name']);
         // $templateProcessor->setValue("student_no", $expertView['student_no']);
