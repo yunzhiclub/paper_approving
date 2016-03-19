@@ -14,7 +14,8 @@ class ReviewLogic extends ReviewModel
 {
 
     //评阅等级设置
-    private $levels = array(array("key"=>0, "score" => 59, "detail" => "不合格", "level"=>"\u2163"), array("key"=>1, "score" => 79, "detail" => "合格", "level"=>'\u2162'), array("key"=>2, "score" => 89, "detail" => "良好", "level"=>'\u2161'), array("key"=>3, "score" => 100, "detail" => "优秀", "level"=>'\u2160'));
+    // private $levels = array(array("key"=>0, "score" => 59, "detail" => "不合格", "level"=>"IV"), array("key"=>1, "score" => 79, "detail" => "合格", "level"=>'III'), array("key"=>2, "score" => 89, "detail" => "良好", "level"=>'III'), array("key"=>3, "score" => 100, "detail" => "优秀", "level"=>'I'));
+    private $levels = array(array("key"=>3, "score" => 59, "detail" => "不合格", "level"=>"IV"), array("key"=>2, "score" => 79, "detail" => "合格", "level"=>'III'), array("key"=>1, "score" => 89, "detail" => "良好", "level"=>'III'), array("key"=>0, "score" => 100, "detail" => "优秀", "level"=>'I'));
 
     //答辩意见配置
     private $defenseConfigs = array(0=>"同意答辩（达到学位论文要求", 1=>"同意修改后答辩（修改后经导师同意可以答辩）", 2=>"较大重大修改（与学位论文要求有一定差距），需进行较大或重大修改，修改后重新送审）", 3=>"不同意答辩（未达到学位论文要求");
@@ -109,7 +110,8 @@ class ReviewLogic extends ReviewModel
         }
         else
         {
-            return unicode_decode($level['level'], 'UTF-8', true, '\u', '');
+            // return unicode_decode($level['level'], 'UTF-8', true, '\u', '');
+            return $level['level'];
         }
     }
 
@@ -174,124 +176,128 @@ class ReviewLogic extends ReviewModel
        
         //实例化PHPWORD
         $templateProcessor = new TemplateProcessor($template);
-        $checked = unicode_decode('\u25a0', 'UTF-8', true, '\u', '');       //选中
-        $unChecked = unicode_decode('\u25a1', 'UTF-8', true, '\u', '');     //未选中
 
-        //写入系统时间
-        // $templateProcessor->setValue("time", date("Y-m-d H:i"));
-        $templateProcessor->setUnicodeValue('a', "F0FE");
-        $templateProcessor->setUnicodeValue('2', "F0FE");
-        $templateProcessor->setUnicodeValue('3', "F0A8");
+        //写入学生信息
+        $templateProcessor->setValue("name", $expertView['student__name']);
+        $templateProcessor->setValue("student_no", $expertView['student_no']);
+        $templateProcessor->setValue("admission_date", $expertView['admission_date']);
+        $templateProcessor->setValue("subject_major", $expertView['subject_major']);
+        $templateProcessor->setValue("secret", $expertView['secret']);
+        $templateProcessor->setValue("research_direction", $expertView['research_direction']);
+        $templateProcessor->setValue("title", $expertView['title']);
+        $templateProcessor->setValue("innovation_point", $expertView['innovation_point']);
+
+        //写入评阅详情信息
+        $templateProcessor->cloneRow('num', count($reviewDetailViews));
+        $scoreSum = 0;
+        foreach($reviewDetailViews as $key => $reviewDetailView)
+        {
+            $num = (string)($key + 1);
+            $templateProcessor->setValue('num#' . $num, $num);
+            $templateProcessor->setValue('review_title#' . $num, $reviewDetailView['title']);
+            $templateProcessor->setValue('review_factor#' . $num, $reviewDetailView['factor']);
+            $scoreSum += $reviewDetailView['score'] * $reviewDetailView['proportion'] / 100;
+            $templateProcessor->setValue('review_level#' . $num, $this->getLevelNumByScore($reviewDetailView['score']));
+        }
+        
+        //总分四舍五入
+        $scoreSum = (int)floor($scoreSum + 0.5);
+        $levels = array("k", "j", "i", "m");
+        $scoreLevel = $this->getLevelbyScore($scoreSum);
+        // dump($templateProcessor->getTempDocumentMainPart());
         // die();
-        // $string = $templateProcessor->getTempDocumentMainPart();
-        // $pattern = '/(<w:t>2<\/w:t>.*?:char=")(.*?)("\/>)/i';
-        // // $pattern = '/(<w:t>' . $index . '<\/w:t>.*w:char=")(.*?)")(' . $unicodeNum . ')/i';
-        // $replacement = '\1F067\3';
-        // $string = preg_replace($pattern, $replacement, $string);
-        // $templateProcessor->setTempDocumentMainPart($string);
-        // //写入学生信息
-        // $templateProcessor->setValue("name", $expertView['student__name']);
-        // $templateProcessor->setValue("student_no", $expertView['student_no']);
-        // $templateProcessor->setValue("admission_date", $expertView['admission_date']);
-        // $templateProcessor->setValue("subject_major", $expertView['subject_major']);
-        // $templateProcessor->setValue("secret", $expertView['secret']);
-        // $templateProcessor->setValue("research_direction", $expertView['research_direction']);
-        // $templateProcessor->setValue("title", $expertView['title']);
-        // $templateProcessor->setValue("innovation_point", $expertView['innovation_point']);
-
-        // //写入评阅详情信息
-        // // $templateProcessor->cloneRow('num', count($reviewDetailViews));
-        // $scoreSum = 0;
-        // foreach($reviewDetailViews as $key => $reviewDetailView)
-        // {
-        //     $num = (string)($key + 1);
-        //     $templateProcessor->setValue('num#' . $num, $num);
-        //     $templateProcessor->setValue('review_title#' . $num, $reviewDetailView['title']);
-        //     $templateProcessor->setValue('review_factor#' . $num, $reviewDetailView['factor']);
-        //     $scoreSum += $reviewDetailView['score'] * $reviewDetailView['proportion'] / 100;
-        //     $templateProcessor->setValue('review_level#' . $num, $this->getLevelNumByScore($reviewDetailView['score']));
-        // }
+        //根据分数写入总等级
+        for($i = 0; $i < 4; $i++)
+        {
+            if ($i == $scoreLevel)
+            {
+                $templateProcessor->setChecked($levels[$i]);
+            }
+            else
+            {
+                $templateProcessor->setUnchecked($levels[$i]);
+            }
+        }
         
-        // //总分四舍五入
-        // $scoreSum = (int)floor($scoreSum + 0.5);
-        // $levels = array("bad", "good", "better", "best");
-        // $scoreLevel = $this->getLevelbyScore($scoreSum);
-        // foreach($levels as $key => $level)
-        // {
-        //     if ($key === $scoreLevel)
-        //     {
-        //         $templateProcessor->setValue($level,$checked);
-        //     }
-        //     else
-        //     {
-        //         $templateProcessor->setValue($level,$unChecked);
-        //     }
-        // }
+        //写入详阅详情 评阅意见 评阅时间
+        $templateProcessor->setValue("review_suggestion", $reviewDetailOther['suggestion']);
+        $templateProcessor->setValue("expert_name", $expertView['name']);
+        $templateProcessor->setValue("expert_school", $expertView['school']);
+        $templateProcessor->setValue("date", date("Y年m月d日", $reviewDetailOther['time']));
+
+        $levels = array("n", "o", "p", "q");
+
+        for ($i = 0; $i < 4; $i++)
+        {
+            if ($i == $reviewDetailOther['defense'])
+            {
+                
+                $templateProcessor->setChecked($levels[$i]);
+                // dump($templateProcessor->getTempDocumentMainPart());
+                // die();
+            }
+            else
+            {
+                $templateProcessor->setUnchecked($levels[$i]);
+            }
+        }
+
         
-        // //写入详阅详情 评阅意见 评阅时间
-        // $templateProcessor->setValue("review_suggestion", $reviewDetailOther['suggestion']);
-        // $templateProcessor->setValue("expert_name", $expertView['name']);
-        // $templateProcessor->setValue("expert_school", $expertView['school']);
-        // $templateProcessor->setValue("date", date("Y年m月d日", $reviewDetailOther['time']));
+        //写入熟悉程度
+        $levels = array("c", "d", "e");
+        for($i = 0; $i < 3; $i++)
+        {
+            if ($i == $reviewDetailOther['familiar'])
+            {
+                $templateProcessor->setChecked($levels[$i]);
+            }
+            else
+            {
+                $templateProcessor->setUnchecked($levels[$i]);
+            }
+        }
 
-        // //写入 答辩 意见
-        // $defenseConfigs = $this->getDefenseConfigs();
-        // foreach($defenseConfigs as $key => $defenseConfig)
-        // {
-        //     if ($key == $reviewDetailOther['defense'])
-        //     {
-        //         $templateProcessor->setValue("d" . $key, $checked);
-        //     }
-        //     else
-        //     {
-        //         $templateProcessor->setValue("d" . $key, $unChecked);
-        //     }
-        // }
+        //写入推荐意见
+        $levels = array("f", "g", "h");
+        for($i = 0; $i < 3; $i++)
+        {
+            if ($i == $reviewDetailOther['excellent'])
+            {
+                $templateProcessor->setChecked($levels[$i]);
+            }
+            else
+            {
+                $templateProcessor->setUnchecked($levels[$i]);
+            }
+        }
 
-        // //写入熟悉程度
-        // for($i = 0; $i < 3; $i++)
-        // {
-        //     $tag = $unChecked;
-        //     if ($i == $reviewDetailOther['familiar'])
-        //     {
-        //         $tag = $checked;
-        //     }
-        //     $templateProcessor->setValue("f" . $i, $tag);
-        // }
+        //写入 专家技术职称 信息
+        $levels = array("r", "s");
+        for($i = 0; $i < 2; $i++)
+        {
+            if ($i == $expertView['job_title'])
+            {
+                $templateProcessor->setChecked($levels[$i]);
+            }
+            else
+            {
+                $templateProcessor->setUnchecked($levels[$i]);
+            }
+        }
 
-        // //写入推荐意见
-        // for($i = 0; $i < 3; $i++)
-        // {
-        //     $tag = $unChecked;
-        //     if ($i == $reviewDetailOther['excellent'])
-        //     {
-        //         $tag = $checked;
-        //     }
-        //     $templateProcessor->setValue("e" . $i, $tag); 
-        // }
-
-        // //写入 专家技术职称 信息
-        // for($i = 0; $i < 2; $i++)
-        // {
-        //     $tag = $unChecked;
-        //     if ($i == $expertView['job_title'])
-        //     {
-        //         $tag = $checked;
-        //     }
-        //     $templateProcessor->setValue("j" . $i, $tag);
-        // }
-
-        // //写入 专家导师类别 信息
-        // for($i = 0; $i < 2; $i++)
-        // {
-        //     $tag = $unChecked;
-        //     if ($i == $expertView['tutor_class'])
-        //     {
-        //         $tag = $checked;
-        //     }
-        //     $templateProcessor->setValue("t" . $i, $tag);
-         
-        // }
+        //写入 专家导师类别 信息
+        $levels = array("a", "b");
+        for($i = 0; $i < 2; $i++)
+        {
+            if ($i == $expertView['tutor_class'])
+            {
+                $templateProcessor->setChecked($levels[$i]);
+            }
+            else
+            {
+                $templateProcessor->setUnchecked($levels[$i]);
+            }
+        }
 
         // 保存文件
         $templateProcessor->saveAs($saveFile);
