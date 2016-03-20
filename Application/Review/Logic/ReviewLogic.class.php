@@ -182,10 +182,22 @@ class ReviewLogic extends ReviewModel
         $templateProcessor->setValue("student_no", $expertView['student_no']);
         $templateProcessor->setValue("admission_date", $expertView['admission_date']);
         $templateProcessor->setValue("subject_major", $expertView['subject_major']);
-        $templateProcessor->setValue("secret", $expertView['secret']);
         $templateProcessor->setValue("research_direction", $expertView['research_direction']);
         $templateProcessor->setValue("title", $expertView['title']);
         $templateProcessor->setValue("innovation_point", $expertView['innovation_point']);
+
+      
+        if ($expertView['secret'] == "公开")
+        {
+            $templateProcessor->setChecked("w");
+            $templateProcessor->setUnchecked("v");
+        }
+        else
+        {
+            $templateProcessor->setChecked("v");
+            $templateProcessor->setUnchecked("w");
+            
+        }
 
         //写入评阅详情信息
         $templateProcessor->cloneRow('num', count($reviewDetailViews));
