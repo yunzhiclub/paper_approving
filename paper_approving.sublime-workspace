@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"def",
+				"getDefenseConfigs"
+			],
+			[
+				"sco",
+				"scoreLevel"
+			],
+			[
+				"tem",
+				"templateProcessor"
+			],
+			[
+				"temp",
+				"tempDocumentMainPart"
+			],
+			[
+				"tempDocu",
+				"tempDocumentMainPart"
+			],
+			[
+				"save",
+				"saveFile"
+			],
+			[
+				"file",
+				"fileName"
+			],
+			[
 				"fileTyp",
 				"fileTypeExts"
 			],
@@ -14,10 +42,6 @@
 			[
 				"fileType",
 				"fileTypeDesc"
-			],
-			[
-				"file",
-				"fileTypeExts"
 			],
 			[
 				"filet",
@@ -288,10 +312,6 @@
 				"factroyTest"
 			],
 			[
-				"temp",
-				"templates"
-			],
-			[
 				"template",
 				"templateUrl"
 			],
@@ -494,52 +514,59 @@
 			[
 				"proj",
 				"projectCategory"
-			],
-			[
-				"W",
-				"Widget"
-			],
-			[
-				"Pro",
-				"$ProjectL〔variable〕"
-			],
-			[
-				"cyc",
-				"cycleid"
-			],
-			[
-				"cycl",
-				"cycleId"
-			],
-			[
-				"fie",
-				"field()"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "ThinkPHP/Library/Think/Template/TagLib/Html.class.php",
+			"file": "Application/Review/Logic/ReviewLogic.class.php",
 			"settings":
 			{
-				"buffer_size": 32760,
+				"buffer_size": 13493,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Application/Admin/View/Index/index.tpl",
+			"file": "Application/Yunzhi/Vendor/PhpWord/TemplateProcessor.class.php",
 			"settings":
 			{
-				"buffer_size": 405,
+				"buffer_size": 1158,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Public/js/js.js",
+			"file": "ThinkPHP/Library/composer.json",
 			"settings":
 			{
-				"buffer_size": 9172,
+				"buffer_size": 67,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?php\n/**\n * This file is part of PHPWord - A pure PHP library for reading and writing\n * word processing documents.\n *\n * PHPWord is free software distributed under the terms of the GNU Lesser\n * General Public License version 3 as published by the Free Software Foundation.\n *\n * For the full copyright and license information, please read the LICENSE\n * file that was distributed with this source code. For the full list of\n * contributors, visit https://github.com/PHPOffice/PHPWord/contributors.\n *\n * @link        https://github.com/PHPOffice/PHPWord\n * @copyright   2010-2014 PHPWord contributors\n * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3\n */\n\nnamespace PhpOffice\\PhpWord;\n\nuse PhpOffice\\PhpWord\\Exception\\CopyFileException;\nuse PhpOffice\\PhpWord\\Exception\\CreateTemporaryFileException;\nuse PhpOffice\\PhpWord\\Exception\\Exception;\nuse PhpOffice\\PhpWord\\Shared\\String;\nuse PhpOffice\\PhpWord\\Shared\\ZipArchive;\n\nclass TemplateProcessor\n{\n    const MAXIMUM_REPLACEMENTS_DEFAULT = -1;\n\n    /**\n     * ZipArchive object.\n     *\n     * @var mixed\n     */\n    protected $zipClass;\n\n    /**\n     * @var string Temporary document filename (with path).\n     */\n    protected $tempDocumentFilename;\n\n    /**\n     * Content of main document part (in XML format) of the temporary document.\n     *\n     * @var string\n     */\n    protected $tempDocumentMainPart;\n\n    /**\n     * Content of headers (in XML format) of the temporary document.\n     *\n     * @var string[]\n     */\n    protected $tempDocumentHeaders = array();\n\n    /**\n     * Content of footers (in XML format) of the temporary document.\n     *\n     * @var string[]\n     */\n    protected $tempDocumentFooters = array();\n\n    /**\n     * @since 0.12.0 Throws CreateTemporaryFileException and CopyFileException instead of Exception.\n     *\n     * @param string $documentTemplate The fully qualified template filename.\n     *\n     * @throws \\PhpOffice\\PhpWord\\Exception\\CreateTemporaryFileException\n     * @throws \\PhpOffice\\PhpWord\\Exception\\CopyFileException\n     */\n    public function __construct($documentTemplate)\n    {\n        // Temporary document filename initialization\n        $this->tempDocumentFilename = tempnam(Settings::getTempDir(), 'PhpWord');\n        if (false === $this->tempDocumentFilename) {\n            throw new CreateTemporaryFileException();\n        }\n\n        // Template file cloning\n        if (false === copy($documentTemplate, $this->tempDocumentFilename)) {\n            throw new CopyFileException($documentTemplate, $this->tempDocumentFilename);\n        }\n\n        // Temporary document content extraction\n        $this->zipClass = new ZipArchive();\n        $this->zipClass->open($this->tempDocumentFilename);\n        $index = 1;\n        while (false !== $this->zipClass->locateName($this->getHeaderName($index))) {\n            $this->tempDocumentHeaders[$index] = $this->fixBrokenMacros(\n                $this->zipClass->getFromName($this->getHeaderName($index))\n            );\n            $index++;\n        }\n        $index = 1;\n        while (false !== $this->zipClass->locateName($this->getFooterName($index))) {\n            $this->tempDocumentFooters[$index] = $this->fixBrokenMacros(\n                $this->zipClass->getFromName($this->getFooterName($index))\n            );\n            $index++;\n        }\n        $this->tempDocumentMainPart = $this->fixBrokenMacros($this->zipClass->getFromName('word/document.xml'));\n    }\n\n    /**\n     * Applies XSL style sheet to template's parts.\n     *\n     * @param \\DOMDocument $xslDOMDocument\n     * @param array $xslOptions\n     * @param string $xslOptionsURI\n     *\n     * @return void\n     *\n     * @throws \\PhpOffice\\PhpWord\\Exception\\Exception\n     */\n    public function applyXslStyleSheet($xslDOMDocument, $xslOptions = array(), $xslOptionsURI = '')\n    {\n        $xsltProcessor = new \\XSLTProcessor();\n\n        $xsltProcessor->importStylesheet($xslDOMDocument);\n\n        if (false === $xsltProcessor->setParameter($xslOptionsURI, $xslOptions)) {\n            throw new Exception('Could not set values for the given XSL style sheet parameters.');\n        }\n\n        $xmlDOMDocument = new \\DOMDocument();\n        if (false === $xmlDOMDocument->loadXML($this->tempDocumentMainPart)) {\n            throw new Exception('Could not load XML from the given template.');\n        }\n\n        $xmlTransformed = $xsltProcessor->transformToXml($xmlDOMDocument);\n        if (false === $xmlTransformed) {\n            throw new Exception('Could not transform the given XML document.');\n        }\n\n        $this->tempDocumentMainPart = $xmlTransformed;\n    }\n\n    /**\n     * @param mixed $macro\n     * @param mixed $replace\n     * @param integer $limit\n     *\n     * @return void\n     */\n    public function setValue($macro, $replace, $limit = self::MAXIMUM_REPLACEMENTS_DEFAULT)\n    {\n        foreach ($this->tempDocumentHeaders as $index => $headerXML) {\n            $this->tempDocumentHeaders[$index] = $this->setValueForPart($this->tempDocumentHeaders[$index], $macro, $replace, $limit);\n        }\n\n        $this->tempDocumentMainPart = $this->setValueForPart($this->tempDocumentMainPart, $macro, $replace, $limit);\n\n        foreach ($this->tempDocumentFooters as $index => $headerXML) {\n            $this->tempDocumentFooters[$index] = $this->setValueForPart($this->tempDocumentFooters[$index], $macro, $replace, $limit);\n        }\n    }\n\n    /**\n     * Returns array of all variables in template.\n     *\n     * @return string[]\n     */\n    public function getVariables()\n    {\n        $variables = $this->getVariablesForPart($this->tempDocumentMainPart);\n\n        foreach ($this->tempDocumentHeaders as $headerXML) {\n            $variables = array_merge($variables, $this->getVariablesForPart($headerXML));\n        }\n\n        foreach ($this->tempDocumentFooters as $footerXML) {\n            $variables = array_merge($variables, $this->getVariablesForPart($footerXML));\n        }\n\n        return array_unique($variables);\n    }\n\n    /**\n     * Clone a table row in a template document.\n     *\n     * @param string $search\n     * @param integer $numberOfClones\n     *\n     * @return void\n     *\n     * @throws \\PhpOffice\\PhpWord\\Exception\\Exception\n     */\n    public function cloneRow($search, $numberOfClones)\n    {\n        if ('${' !== substr($search, 0, 2) && '}' !== substr($search, -1)) {\n            $search = '${' . $search . '}';\n        }\n\n        $tagPos = strpos($this->tempDocumentMainPart, $search);\n        if (!$tagPos) {\n            throw new Exception(\"Can not clone row, template variable not found or variable contains markup.\");\n        }\n\n        $rowStart = $this->findRowStart($tagPos);\n        $rowEnd = $this->findRowEnd($tagPos);\n        $xmlRow = $this->getSlice($rowStart, $rowEnd);\n\n        // Check if there's a cell spanning multiple rows.\n        if (preg_match('#<w:vMerge w:val=\"restart\"/>#', $xmlRow)) {\n            // $extraRowStart = $rowEnd;\n            $extraRowEnd = $rowEnd;\n            while (true) {\n                $extraRowStart = $this->findRowStart($extraRowEnd + 1);\n                $extraRowEnd = $this->findRowEnd($extraRowEnd + 1);\n\n                // If extraRowEnd is lower then 7, there was no next row found.\n                if ($extraRowEnd < 7) {\n                    break;\n                }\n\n                // If tmpXmlRow doesn't contain continue, this row is no longer part of the spanned row.\n                $tmpXmlRow = $this->getSlice($extraRowStart, $extraRowEnd);\n                if (!preg_match('#<w:vMerge/>#', $tmpXmlRow) &&\n                    !preg_match('#<w:vMerge w:val=\"continue\" />#', $tmpXmlRow)) {\n                    break;\n                }\n                // This row was a spanned row, update $rowEnd and search for the next row.\n                $rowEnd = $extraRowEnd;\n            }\n            $xmlRow = $this->getSlice($rowStart, $rowEnd);\n        }\n\n        $result = $this->getSlice(0, $rowStart);\n        for ($i = 1; $i <= $numberOfClones; $i++) {\n            $result .= preg_replace('/\\$\\{(.*?)\\}/', '\\${\\\\1#' . $i . '}', $xmlRow);\n        }\n        $result .= $this->getSlice($rowEnd);\n\n        $this->tempDocumentMainPart = $result;\n    }\n\n    /**\n     * Clone a block.\n     *\n     * @param string $blockname\n     * @param integer $clones\n     * @param boolean $replace\n     *\n     * @return string|null\n     */\n    public function cloneBlock($blockname, $clones = 1, $replace = true)\n    {\n        $xmlBlock = null;\n        preg_match(\n            '/(<\\?xml.*)(<w:p.*>\\${' . $blockname . '}<\\/w:.*?p>)(.*)(<w:p.*\\${\\/' . $blockname . '}<\\/w:.*?p>)/is',\n            $this->tempDocumentMainPart,\n            $matches\n        );\n\n        if (isset($matches[3])) {\n            $xmlBlock = $matches[3];\n            $cloned = array();\n            for ($i = 1; $i <= $clones; $i++) {\n                $cloned[] = $xmlBlock;\n            }\n\n            if ($replace) {\n                $this->tempDocumentMainPart = str_replace(\n                    $matches[2] . $matches[3] . $matches[4],\n                    implode('', $cloned),\n                    $this->tempDocumentMainPart\n                );\n            }\n        }\n\n        return $xmlBlock;\n    }\n\n    /**\n     * Replace a block.\n     *\n     * @param string $blockname\n     * @param string $replacement\n     *\n     * @return void\n     */\n    public function replaceBlock($blockname, $replacement)\n    {\n        preg_match(\n            '/(<\\?xml.*)(<w:p.*>\\${' . $blockname . '}<\\/w:.*?p>)(.*)(<w:p.*\\${\\/' . $blockname . '}<\\/w:.*?p>)/is',\n            $this->tempDocumentMainPart,\n            $matches\n        );\n\n        if (isset($matches[3])) {\n            $this->tempDocumentMainPart = str_replace(\n                $matches[2] . $matches[3] . $matches[4],\n                $replacement,\n                $this->tempDocumentMainPart\n            );\n        }\n    }\n\n    /**\n     * Delete a block of text.\n     *\n     * @param string $blockname\n     *\n     * @return void\n     */\n    public function deleteBlock($blockname)\n    {\n        $this->replaceBlock($blockname, '');\n    }\n\n    /**\n     * Saves the result document.\n     *\n     * @return string\n     *\n     * @throws \\PhpOffice\\PhpWord\\Exception\\Exception\n     */\n    public function save()\n    {\n        foreach ($this->tempDocumentHeaders as $index => $headerXML) {\n            $this->zipClass->addFromString($this->getHeaderName($index), $this->tempDocumentHeaders[$index]);\n        }\n\n        $this->zipClass->addFromString('word/document.xml', $this->tempDocumentMainPart);\n\n        foreach ($this->tempDocumentFooters as $index => $headerXML) {\n            $this->zipClass->addFromString($this->getFooterName($index), $this->tempDocumentFooters[$index]);\n        }\n\n        // Close zip file\n        if (false === $this->zipClass->close()) {\n            throw new Exception('Could not close zip file.');\n        }\n\n        return $this->tempDocumentFilename;\n    }\n\n    /**\n     * Saves the result document to the user defined file.\n     *\n     * @since 0.8.0\n     *\n     * @param string $fileName\n     *\n     * @return void\n     */\n    public function saveAs($fileName)\n    {\n        $tempFileName = $this->save();\n\n        if (file_exists($fileName)) {\n            unlink($fileName);\n        }\n\n        /*\n         * Note: we do not use ``rename`` function here, because it looses file ownership data on Windows platform.\n         * As a result, user cannot open the file directly getting \"Access denied\" message.\n         *\n         * @see https://github.com/PHPOffice/PHPWord/issues/532\n         */\n        copy($tempFileName, $fileName);\n        unlink($tempFileName);\n    }\n\n    /**\n     * Finds parts of broken macros and sticks them together.\n     * Macros, while being edited, could be implicitly broken by some of the word processors.\n     *\n     * @since 0.13.0\n     *\n     * @param string $documentPart The document part in XML representation.\n     *\n     * @return string\n     */\n    protected function fixBrokenMacros($documentPart)\n    {\n        $fixedDocumentPart = $documentPart;\n\n        $fixedDocumentPart = preg_replace_callback(\n            '|\\$\\{([^\\}]+)\\}|U',\n            function ($match) {\n                return strip_tags($match[0]);\n            },\n            $fixedDocumentPart\n        );\n\n        return $fixedDocumentPart;\n    }\n\n    /**\n     * Find and replace macros in the given XML section.\n     *\n     * @param string $documentPartXML\n     * @param string $search\n     * @param string $replace\n     * @param integer $limit\n     *\n     * @return string\n     */\n    protected function setValueForPart($documentPartXML, $search, $replace, $limit)\n    {\n        if (substr($search, 0, 2) !== '${' && substr($search, -1) !== '}') {\n            $search = '${' . $search . '}';\n        }\n\n        if (!String::isUTF8($replace)) {\n            $replace = utf8_encode($replace);\n        }\n\n        // Note: we can't use the same function for both cases here, because of performance considerations.\n        if (self::MAXIMUM_REPLACEMENTS_DEFAULT === $limit) {\n            return str_replace($search, $replace, $documentPartXML);\n        } else {\n            $regExpDelim = '/';\n            $escapedSearch = preg_quote($search, $regExpDelim);\n            return preg_replace(\"{$regExpDelim}{$escapedSearch}{$regExpDelim}u\", $replace, $documentPartXML, $limit);\n        }\n    }\n\n    /**\n     * Find all variables in $documentPartXML.\n     *\n     * @param string $documentPartXML\n     *\n     * @return string[]\n     */\n    protected function getVariablesForPart($documentPartXML)\n    {\n        preg_match_all('/\\$\\{(.*?)}/i', $documentPartXML, $matches);\n\n        return $matches[1];\n    }\n\n    /**\n     * Get the name of the footer file for $index.\n     *\n     * @param integer $index\n     *\n     * @return string\n     */\n    protected function getFooterName($index)\n    {\n        return sprintf('word/footer%d.xml', $index);\n    }\n\n    /**\n     * Get the name of the header file for $index.\n     *\n     * @param integer $index\n     *\n     * @return string\n     */\n    protected function getHeaderName($index)\n    {\n        return sprintf('word/header%d.xml', $index);\n    }\n\n    /**\n     * Find the start position of the nearest table row before $offset.\n     *\n     * @param integer $offset\n     *\n     * @return integer\n     *\n     * @throws \\PhpOffice\\PhpWord\\Exception\\Exception\n     */\n    protected function findRowStart($offset)\n    {\n        $rowStart = strrpos($this->tempDocumentMainPart, '<w:tr ', ((strlen($this->tempDocumentMainPart) - $offset) * -1));\n\n        if (!$rowStart) {\n            $rowStart = strrpos($this->tempDocumentMainPart, '<w:tr>', ((strlen($this->tempDocumentMainPart) - $offset) * -1));\n        }\n        if (!$rowStart) {\n            throw new Exception('Can not find the start position of the row to clone.');\n        }\n\n        return $rowStart;\n    }\n\n    /**\n     * Find the end position of the nearest table row after $offset.\n     *\n     * @param integer $offset\n     *\n     * @return integer\n     */\n    protected function findRowEnd($offset)\n    {\n        return strpos($this->tempDocumentMainPart, '</w:tr>', $offset) + 7;\n    }\n\n    /**\n     * Get a slice of a string.\n     *\n     * @param integer $startPosition\n     * @param integer $endPosition\n     *\n     * @return string\n     */\n    protected function getSlice($startPosition, $endPosition = 0)\n    {\n        if (!$endPosition) {\n            $endPosition = strlen($this->tempDocumentMainPart);\n        }\n\n        return substr($this->tempDocumentMainPart, $startPosition, ($endPosition - $startPosition));\n    }\n}\n",
+			"file": "ThinkPHP/Library/Vendor/phpoffice/phpword/src/PhpWord/TemplateProcessor.php",
+			"file_size": 15597,
+			"file_write_time": 130854186440000000,
+			"settings":
+			{
+				"buffer_size": 15597,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ThinkPHP/Library/Vendor/phpoffice/phpword/.gitignore",
+			"settings":
+			{
+				"buffer_size": 209,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Application/Admin/View/Review/template_zs.docx",
+			"settings":
+			{
+				"buffer_size": 205805,
 				"line_ending": "Unix"
 			}
 		}
@@ -551,10 +578,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 27.0,
-		"last_filter": "",
+		"height": 367.0,
+		"last_filter": "xml",
 		"selected_items":
 		[
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
 			[
 				"inst",
 				"Package Control: Install Package"
@@ -796,26 +827,37 @@
 		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving",
 		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application",
 		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Admin",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Admin/Controller",
 		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Admin/View",
-		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Admin/View/Index",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Admin/View/Review",
 		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Config",
-		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Config/Logic",
 		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Home",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Review",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Review/Logic",
 		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Yunzhi",
-		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Yunzhi/Conf",
-		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Yunzhi/Controller",
-		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Yunzhi/Function",
-		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Yunzhi/Model",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Yunzhi/Vendor",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Yunzhi/Vendor/PhpWord",
 		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Yunzhi/View",
 		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Yunzhi/View/Webuploader",
 		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Public",
 		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Public/uploads",
-		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Public/uploads/image",
-		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Public/uploads/ueditor",
-		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Public/uploads/ueditor/file"
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/ThinkPHP",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/ThinkPHP/Library",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/ThinkPHP/Library/Vendor",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/ThinkPHP/Library/Vendor/phpoffice"
 	],
 	"file_history":
 	[
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Review/Logic/PhpWord.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/.gitignore",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/ThinkPHP/Library/composer.json",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/ThinkPHP/Library/Vendor/autoload.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/ThinkPHP/Library/composer.lock",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Admin/Controller/ReviewController.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/ThinkPHP/Library/Vendor/phpoffice/phpword/src/PhpWord/TemplateProcessor.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/ThinkPHP/Library/Think/Template/TagLib/Html.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Admin/View/Index/index.tpl",
+		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Public/js/js.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Yunzhi/Conf/ueditor.json",
 		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Runtime/Cache/Admin/17095ad3c583a6e7b9e3d14df62ee45b.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Yunzhi/Controller/AttachmentController.class.php",
@@ -825,10 +867,6 @@
 		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Yunzhi/Logic/AttachmentLogic.class.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/ThinkPHP/Library/Think/Upload.class.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Yunzhi/Model/YunzhiModel.class.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Public/js/js.js",
-		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/ThinkPHP/Library/Think/Template/TagLib/Html.class.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/.gitignore",
-		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Admin/View/Index/index.tpl",
 		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Yunzhi/Model/AttachmentModel.class.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Application/Yunzhi/Controller/UeditorController.class.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/paper_approving/Public/lib/ueditor/php/Uploader.class.php",
@@ -937,13 +975,7 @@
 		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Public/Admin/css/css.css",
 		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/Model/Admin/ConstructModel.class.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Menu/Logic/MenuLogic.class.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Template/index.tpl",
-		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Template/nav.tpl",
-		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Template/table.tpl",
-		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Common/Conf/admin.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Template/tables.tpl",
-		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Base/header.tpl",
-		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Base/nav.tpl"
+		"/Applications/XAMPP/xamppfiles/htdocs/Ethan-Wechat/Application/Admin/View/Template/index.tpl"
 	],
 	"find":
 	{
@@ -965,6 +997,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"scri",
+			"setVal",
+			"setMainPart",
+			"cloner",
+			"cloneRo	",
 			"catcher",
 			"scrawl",
 			"file",
@@ -1087,12 +1124,7 @@
 			"slideshow",
 			"SlideShow",
 			"slideshow",
-			"SlideShow",
-			"slideshow",
-			"SlideShow",
-			"slideshow",
-			"SlideShow",
-			"  // $parseStr = '<input type=\"text\" id=\"file\" name=\"file\" value=\"' . $value . '\" />';\n        // $parseStr .= '<ul class=\"' . $class . '\" id=\"' . $name .'_img\">';\n\n        // $parseStr .= '<?php $lists = explode(\",\", $' . $value . '); foreach($lists as $key =>$value) : ' ;\n        // $parseStr .=  \"<li>\";          \n        // $parseStr .=  \"<img src='$value' class='img-rounded' />\";\n        // $parseStr .=  '<button type=\"button\" class=\"uploaderDelete btn btn-danger btn-xs\">删除</button>';\n        // $parseStr .= '</li>';\n        // $parseStr .= \"<?php endforeach; ?>\";\n        // $parseStr .='<div class="
+			"SlideShow"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -1110,34 +1142,34 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "ThinkPHP/Library/Think/Template/TagLib/Html.class.php",
+					"file": "Application/Review/Logic/ReviewLogic.class.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 32760,
+						"buffer_size": 13493,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								13596,
-								13596
+								6275,
+								6287
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 2571.0,
-						"translation.y": 6839.0,
+						"translation.x": 0.0,
+						"translation.y": 5865.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -1145,26 +1177,53 @@
 				},
 				{
 					"buffer": 1,
-					"file": "Application/Admin/View/Index/index.tpl",
+					"file": "Application/Yunzhi/Vendor/PhpWord/TemplateProcessor.class.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 405,
+						"buffer_size": 1158,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								293,
-								293
+								518,
+								518
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"open_with_edit": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 358.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "ThinkPHP/Library/composer.json",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 67,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1174,34 +1233,89 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "Public/js/js.js",
+					"buffer": 3,
+					"file": "ThinkPHP/Library/Vendor/phpoffice/phpword/src/PhpWord/TemplateProcessor.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9172,
+						"buffer_size": 15597,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4566,
-								4566
+								9589,
+								9596
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"word_wrap": true
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3728.0,
+						"translation.y": 15637.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "ThinkPHP/Library/Vendor/phpoffice/phpword/.gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 209,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								199,
+								199
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Application/Admin/View/Review/template_zs.docx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 205805,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -1263,6 +1377,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				".git",
+				".gitignore"
+			],
+			[
+				"gig",
+				".gitignore"
+			],
 			[
 				"17095ad3c583a6e7b9e3d14df62ee45b.php",
 				"Runtime/Cache/Admin/17095ad3c583a6e7b9e3d14df62ee45b.php"
@@ -1766,14 +1888,6 @@
 			[
 				"cx.cla",
 				"ThinkPHP/Library/Think/Template/TagLib/Cx.class.php"
-			],
-			[
-				"examine/con",
-				"Application/Examine/Controller/IndexController.class.php"
-			],
-			[
-				"scient/add",
-				"Application/ScientificResearch/View/Index/add.html"
 			]
 		],
 		"width": 0.0
@@ -1872,8 +1986,8 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
-	"side_bar_width": 265.0,
+	"side_bar_visible": true,
+	"side_bar_width": 312.0,
 	"status_bar_visible": false,
 	"template_settings":
 	{

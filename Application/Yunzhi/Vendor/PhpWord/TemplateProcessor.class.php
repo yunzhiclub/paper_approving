@@ -18,7 +18,7 @@ class TemplateProcessor extends TemplateP
     public function setUnicodeValue($index, $unicode)
     {
          // dump($this->tempDocumentMainPart);
-        $pattern = '/(<w:t>' . $index . '<\/w:t>)(.{0,100}?:char=")(.*?)("\/>)/i';
+        $pattern = '/(<w:t>' . $index . '<\/w:t>)(.{0,150}?:char=")(.*?)("\/>)/i';
         preg_match($pattern, $this->tempDocumentMainPart, $matchs);
         // $replacement = '\2' . $unicode . '\4' . $unicode;
         $replacement = '\2' . $unicode . '\4';
