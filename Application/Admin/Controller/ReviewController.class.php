@@ -159,6 +159,12 @@ class ReviewController extends AdminController
             die();
         }
 
+        $zipFileName = $saveDir . '.zip';
+        if (is_file($zipFileName) && unlink($zipFileName) === false)
+        {
+            echo $zipFileName . "Can't be removed.";
+            die();
+        }
         //依次生成 评阅表
         $ReviewL = new ReviewLogic();
         foreach ($experts as $expert)
