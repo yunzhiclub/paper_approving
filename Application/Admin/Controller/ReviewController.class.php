@@ -151,6 +151,14 @@ class ReviewController extends AdminController
             die($ExpertViewL->getError());
         }
 
+        //删除原文件夹
+        $saveDir = I('server.DOCUMENT_ROOT') . __ROOT__ . '/download/review/' . $currentCycle['id'];
+        if (is_dir($saveDir) && $this->delTree($saveDir) === false)
+        {
+            echo $saveDir . "Can't be removed.";
+            die();
+        }
+
         //依次生成 评阅表
         $ReviewL = new ReviewLogic();
         foreach ($experts as $expert)
@@ -160,7 +168,7 @@ class ReviewController extends AdminController
 
         //打包
         $ZipL = new ZipLogic();
-        $saveDir = I('server.DOCUMENT_ROOT') . __ROOT__ . '/download/review/' . $currentCycle['id'];
+        
 
         $saveZip = $saveDir . '.zip';
 
@@ -229,4 +237,12 @@ class ReviewController extends AdminController
         $objWriter->save('php://output');
 
     }
+
+    public static function delTree($dir) { 
+        $files = array_diff(scandir($dir), array('.','..')); 
+        foreach ($files as $file) { 
+            (is_dir("$dir/$file")) ? delTree("$dir/$file") : unlink("$dir/$file"); 
+        } 
+        return rmdir($dir); 
+    } 
 }
