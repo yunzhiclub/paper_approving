@@ -25,7 +25,7 @@
                 </div>
                 </eq>
                 <div class="col-md-2">
-                    <a class="button btn btn-info" target="_blank" href="__ROOT__/download/example/student.xlsx"><i class="glyphicon glyphicon-save"></i> 下载样表</a>
+                    <a class="button btn btn-info" target="_blank" href="__ROOT__/template/student.xlsx"><i class="glyphicon glyphicon-save"></i> 下载样表</a>
                 </div>
                 <div class="col-md-2">
                     <a class="button btn btn-success"  href="{:U('edit')}" ><i class="glyphicon glyphicon-plus"></i> 添加学生</a>
