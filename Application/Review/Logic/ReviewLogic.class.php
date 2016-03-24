@@ -15,7 +15,7 @@ class ReviewLogic extends ReviewModel
 
     //评阅等级设置
     // private $levels = array(array("key"=>0, "score" => 59, "detail" => "不合格", "level"=>"IV"), array("key"=>1, "score" => 79, "detail" => "合格", "level"=>'III'), array("key"=>2, "score" => 89, "detail" => "良好", "level"=>'III'), array("key"=>3, "score" => 100, "detail" => "优秀", "level"=>'I'));
-    private $levels = array(array("key"=>3, "score" => 59, "detail" => "不合格", "level"=>"IV"), array("key"=>2, "score" => 79, "detail" => "合格", "level"=>'III'), array("key"=>1, "score" => 89, "detail" => "良好", "level"=>'III'), array("key"=>0, "score" => 100, "detail" => "优秀", "level"=>'I'));
+    private $levels = array(array("key"=>3, "score" => 59, "detail" => "不合格", "level"=>"Ⅳ"), array("key"=>2, "score" => 79, "detail" => "合格", "level"=>'Ⅲ'), array("key"=>1, "score" => 89, "detail" => "良好", "level"=>'Ⅱ'), array("key"=>0, "score" => 100, "detail" => "优秀", "level"=>'Ⅰ'));
 
     //答辩意见配置
     private $defenseConfigs = array(0=>"同意答辩（达到学位论文要求", 1=>"同意修改后答辩（修改后经导师同意可以答辩）", 2=>"较大重大修改（与学位论文要求有一定差距），需进行较大或重大修改，修改后重新送审）", 3=>"不同意答辩（未达到学位论文要求");
@@ -171,11 +171,13 @@ class ReviewLogic extends ReviewModel
                 $ext = "bs";
                 break;
         }
-        // $template = APP_PATH . 'Admin/View/Review/template_' . $ext . '.docx';
-        $template = APP_PATH . 'Admin/View/Review/template.docx';
+        $template = APP_PATH . 'Admin/View/Review/template_' . $ext . '.docx';
+        // $template = APP_PATH . 'Admin/View/Review/template.docx';
        
         //实例化PHPWORD
         $templateProcessor = new TemplateProcessor($template);
+        $checked = '<w:sym w:font="Wingdings" w:char="F0FE"/>';
+        $unChecked = '<w:sym w:font="Wingdings" w:char="F0A8"/>';
 
         //写入学生信息
         $templateProcessor->setValue("name", $expertView['student__name']);
@@ -189,13 +191,13 @@ class ReviewLogic extends ReviewModel
       
         if ($expertView['secret'] == "公开")
         {
-            $templateProcessor->setChecked("w");
-            $templateProcessor->setUnchecked("v");
+            $templateProcessor->setValue("w", $checked);
+            $templateProcessor->setValue("v", $unChecked);
         }
         else
         {
-            $templateProcessor->setChecked("v");
-            $templateProcessor->setUnchecked("w");
+            $templateProcessor->setValue("v", $checked);
+            $templateProcessor->setValue("w", $unChecked);
             
         }
 
@@ -223,11 +225,11 @@ class ReviewLogic extends ReviewModel
         {
             if ($i == $scoreLevel)
             {
-                $templateProcessor->setChecked($levels[$i]);
+                $templateProcessor->setValue($levels[$i], $checked);
             }
             else
             {
-                $templateProcessor->setUnchecked($levels[$i]);
+                $templateProcessor->setValue($levels[$i], $unChecked);
             }
         }
         
@@ -244,13 +246,13 @@ class ReviewLogic extends ReviewModel
             if ($i == $reviewDetailOther['defense'])
             {
                 
-                $templateProcessor->setChecked($levels[$i]);
+                $templateProcessor->setValue($levels[$i], $checked);
                 // dump($templateProcessor->getTempDocumentMainPart());
                 // die();
             }
             else
             {
-                $templateProcessor->setUnchecked($levels[$i]);
+                $templateProcessor->setValue($levels[$i], $unChecked);
             }
         }
 
@@ -261,11 +263,11 @@ class ReviewLogic extends ReviewModel
         {
             if ($i == $reviewDetailOther['familiar'])
             {
-                $templateProcessor->setChecked($levels[$i]);
+                $templateProcessor->setValue($levels[$i], $checked);
             }
             else
             {
-                $templateProcessor->setUnchecked($levels[$i]);
+                $templateProcessor->setValue($levels[$i], $unChecked);
             }
         }
 
@@ -275,11 +277,11 @@ class ReviewLogic extends ReviewModel
         {
             if ($i == $reviewDetailOther['excellent'])
             {
-                $templateProcessor->setChecked($levels[$i]);
+                $templateProcessor->setValue($levels[$i], $checked);
             }
             else
             {
-                $templateProcessor->setUnchecked($levels[$i]);
+                $templateProcessor->setValue($levels[$i], $unChecked);
             }
         }
 
@@ -289,11 +291,11 @@ class ReviewLogic extends ReviewModel
         {
             if ($i == $expertView['job_title'])
             {
-                $templateProcessor->setChecked($levels[$i]);
+                $templateProcessor->setValue($levels[$i], $checked);
             }
             else
             {
-                $templateProcessor->setUnchecked($levels[$i]);
+                $templateProcessor->setValue($levels[$i], $unChecked);
             }
         }
 
@@ -303,11 +305,11 @@ class ReviewLogic extends ReviewModel
         {
             if ($i == $expertView['tutor_class'])
             {
-                $templateProcessor->setChecked($levels[$i]);
+                $templateProcessor->setValue($levels[$i], $checked);
             }
             else
             {
-                $templateProcessor->setUnchecked($levels[$i]);
+                $templateProcessor->setValue($levels[$i], $unChecked);
             }
         }
 
