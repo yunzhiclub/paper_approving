@@ -320,8 +320,6 @@ class ReviewLogic extends ReviewModel
         //返回文件路径及文件名
         $return['saveFile'] = $saveFile;
         $return['fileName'] = $saveName;
-        dump($return);
-        die();
         return $return;
     }
 
