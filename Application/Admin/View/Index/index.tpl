@@ -62,9 +62,6 @@
                                 </div>
                                 <!-- Change this to a button or input when using this as a form -->
                                 <button class="btn btn-lg btn-success btn-block" id="login">登录</button>
-                                <php>if (APP_DEBUG==true): </php>
-                                <a href="{:U('Admin/Login/loginDirect')}"  class="btn btn-lg btn-success btn-block">直接登录</a>
-                                <php>endif</php>
                             </fieldset>
                         </form>
 
