@@ -38,23 +38,28 @@
                     <div class="panel-body">
                         <form role="form" id="loginform" method="post" action="{:U('Login/login')}">
                             <fieldset>
-                                <div class="form-group">
-                                    <input class="form-control" placeholder="用户名" name="username" id="username" value="{:cookie('username')}">
-                                </div>
-                                <div class="form-group">
-                                    <input class="form-control" placeholder="密码" name="password" id="password" type="password" value="{:cookie('password')}">
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <php>$isRemember = cookie('remember');</php>
-                                        <input type="checkbox" name="remember" <eq name="isRemember" value="on">checked="checked"</eq>>记住密码
-                                    </label>
-                                </div>
                                 <eq name="isOpen" value="1">
-                                    <button type="submit" class="btn btn-lg btn-success btn-block" id="login">登录</button>
+                                    <div class="form-group">
+                                        <input class="form-control" placeholder="用户名" name="username" id="username" value="{:cookie('username')}">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" placeholder="密码" name="password" id="password" type="password" value="{:cookie('password')}">
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <php>$isRemember = cookie('remember');</php>
+                                            <input type="checkbox" name="remember" <eq name="isRemember" value="on">checked="checked" </eq> />记住密码
+                                        </label>
+                                    </div>
                                     
+                                        <button type="submit" class="btn btn-lg btn-success btn-block" id="login">登录</button>
+                                <else />
+                                <h1>系统已关闭。</h1>
                                 </eq>
-                                <p>系统开放时间:{$currentCycle["starttime"]}&nbsp;至&nbsp;{$currentCycle["endtime"]}</p>
+                                <br />
+                                <p>系统开放时间:<br />
+                                {$currentCycle["starttime"]}&nbsp;0:00&nbsp;至&nbsp;{$currentCycle["endtime"]}&nbsp;24:00</p>
+                                <p>当前时间:{:date("Y-m-d H:i")}</p>
                                 <!-- Change this to a button or input when using this as a form -->
                                 
                             </fieldset>
