@@ -156,7 +156,6 @@ class ReviewLogic extends ReviewModel
         $saveName = substr($expertView['attachment__name'], 0, strpos($expertView['attachment__name'], ".")) . '-' . $expertView['id'] . $expertView['name'];
         
         $saveName = str_replace( " ", "",$saveName); //去空格
-        $saveName = iconv("UTF-8","GBK//IGNORE",$saveName); //改文件名编码。防止下载时乱码
 
         $saveFile = I('server.DOCUMENT_ROOT') . $savePath . $saveName . '.doc';
 
@@ -320,8 +319,6 @@ class ReviewLogic extends ReviewModel
         //返回文件路径及文件名
         $return['saveFile'] = $saveFile;
         $return['fileName'] = $saveName;
-        dump($return);
-        die();
         return $return;
     }
 
