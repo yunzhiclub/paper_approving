@@ -40,19 +40,12 @@
                             <fieldset>
                                 <eq name="isOpen" value="1">
                                     <div class="form-group">
-                                        <input class="form-control" placeholder="用户名" name="username" id="username" value="{:cookie('username')}">
+                                        <input class="form-control" placeholder="用户名" name="username" id="username">
                                     </div>
                                     <div class="form-group">
-                                        <input class="form-control" placeholder="密码" name="password" id="password" type="password" value="{:cookie('password')}">
+                                        <input class="form-control" placeholder="密码" name="password" id="password" type="password">
                                     </div>
-                                    <div class="checkbox">
-                                        <label>
-                                            <php>$isRemember = cookie('remember');</php>
-                                            <input type="checkbox" name="remember" <eq name="isRemember" value="on">checked="checked" </eq> />记住密码
-                                        </label>
-                                    </div>
-                                    
-                                        <button type="submit" class="btn btn-lg btn-success btn-block" id="login">登录</button>
+                                    <button type="submit" class="btn btn-lg btn-success btn-block" id="login">登录</button>
                                 <else />
                                 <h1>系统已关闭。</h1>
                                 </eq>

@@ -49,17 +49,12 @@
                         <form role="form"  id="loginform" method = 'post' action="{:U('Admin/Login/login')}">
                             <fieldset>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="用户名" name="username" id="username" value="{:cookie('username')}">
+                                    <input class="form-control" placeholder="用户名" name="username" id="username">
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="密码" name="password" id="password" type="password" value="{:cookie('password')}">
+                                    <input class="form-control" placeholder="密码" name="password" id="password" type="password" >
                                 </div>
-                                <div class="checkbox">
-                                    <label>
-                                    <php>$isRemember = cookie('remember');</php>
-                                        <input type="checkbox" id="remember" <eq name="isRemember" value="1">checked="checked"</eq>>记住密码
-                                    </label>
-                                </div>
+                                
                                 <!-- Change this to a button or input when using this as a form -->
                                 <button class="btn btn-lg btn-success btn-block" id="login">登录</button>
                             </fieldset>

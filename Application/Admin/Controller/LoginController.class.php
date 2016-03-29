@@ -17,22 +17,6 @@ class LoginController extends Controller{
 
     //对用户名密码进行判断
     public function loginAction(){
-    	//检测是否勾选记住密码，传入cookie信息
-        $data = cookie('remember');
-    	if(empty($data)){
-	    	if(I('post.remember') == 'on'){
-	    		cookie('password',I('post.password'),30*24*60*60);
-	    		cookie('username',I('post.username'),30*24*60*60);
-	    		cookie('remember','checked',30*24*60*60);
-	    	}
-    	}else{
-            if(I('post.remember') != 'checked'){
-                cookie('password',null);
-                cookie('username',null);
-                cookie('remember',null);
-            }
-        }
-
         $user = I('post.');
         //验证用户名密码
     	$UserL = new UserLogic;
@@ -69,18 +53,6 @@ class LoginController extends Controller{
     }
 
     public function checkAjaxAction(){
-        //检测是否勾选记住密码，传入cookie信息
-        if(I('post.remember') == 'true'){
-            cookie('password',I('post.password'),30*24*60*60);
-            cookie('username',I('post.username'),30*24*60*60);
-            cookie('remember',true,30*24*60*60);
-        }
-        else{
-            cookie('password',null);
-            cookie('username',null);
-            cookie('remember',null);
-        }
-
         $return = array();
         $UserL = new UserModel();
         $username = trim(I('post.username'));

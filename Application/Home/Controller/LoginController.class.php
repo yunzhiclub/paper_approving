@@ -9,20 +9,6 @@ class LoginController extends Controller
     //对用户名密码进行判断
     public function loginAction()
     {
-    	//检测是否勾选记住密码，传入cookie信息
-    	if(I('post.remember') == 'on')
-    	{
-    		cookie('password',I('post.password'),30*24*60*60);
-    		cookie('username',I('post.username'),30*24*60*60);
-    		cookie('remember',I('post.remember'),30*24*60*60);
-    	}
-        else
-        {
-            cookie('password',null);
-            cookie('username',null);
-            cookie('remember',null);
-        }
-
         $username = I('post.username');
         $password = I('post.password');
 
@@ -47,19 +33,6 @@ class LoginController extends Controller
 
     public function checkAjaxAction()
     {
-        //检测是否勾选记住密码，传入cookie信息
-        if(I('post.remember') == 'true')
-        {
-            cookie('password',I('post.password'),30*24*60*60);
-            cookie('username',I('post.username'),30*24*60*60);
-            cookie('remember',true,30*24*60*60);
-        }
-        else
-        {
-            cookie('password',null);
-            cookie('username',null);
-            cookie('remember',null);
-        }
 
         $return = array();
         $UserL = new UserModel();
