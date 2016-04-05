@@ -116,13 +116,14 @@ class StudentLogic extends StudentModel
         $return['successCount'] = count($data);
         $return['repeatCount'] = $length - 1 - $return['successCount'];
 
+        
         try
         {  
             $this->addAll($datas);
         }
         catch(\Think\Exception $e)
         {
-            $this->setError("StudentL error:" . $e->getMessage);
+            $this->setError("StudentL error:" . $e->getMessage());
             return false;
         }
 
