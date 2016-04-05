@@ -93,7 +93,7 @@
             </table>
         </div>
         <nav>
-            <Yunzhi:page />
+            <Yunzhi:page totalCount="totalCount"/>
         </nav>
     </form>
     <include file="index.js" />

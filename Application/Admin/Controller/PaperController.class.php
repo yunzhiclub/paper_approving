@@ -118,7 +118,7 @@ class PaperController extends AdminController
             }
 
             //显示当前页数据
-            C("yunzhi_total_count", count($papers));
+            $totalCount = count($papers);
             $page = ((int)I('get.p') > 0) ? (int)I('get.p') : 1;
             $papers = array_slice($papers, ($page - 1) * C('YUNZHI_PAGE_SIZE'), C('YUNZHI_PAGE_SIZE'));
         }
@@ -126,12 +126,16 @@ class PaperController extends AdminController
         {
             //查询记录
             $papers = $StudentViewL->getLists();
+            $totalCount = $StudentViewL->getTotalCount();
         }
         
         
         //引入模型
         $M = new indexModel();
 
+
+        //传入列表
+        $this->assign("totalCount", $totalCount);
         $this->assign("M", $M);
         $this->assign("papers", $papers);
         $this -> display();

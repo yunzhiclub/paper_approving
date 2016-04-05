@@ -70,7 +70,7 @@
 
                 </div>
                 <nav>
-                    <Yunzhi:page />
+                    <Yunzhi:page totalCount="totalCount"/>
                 </nav>
 
             </div>

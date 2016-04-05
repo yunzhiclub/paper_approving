@@ -24,11 +24,13 @@ class StudentController extends AdminController
 
         //获取列表
         $StudentL = new StudentLogic();
-        $students=$StudentL->getLists(array(),array("cycle_id" => $currentCycle['id']));
+        $students = $StudentL->getLists(array(),array("cycle_id" => $currentCycle['id']));
+        $totalCount = $StudentL->getTotalCount();
 
         //传入列表
+        $this->assign("totalCount", $totalCount);
         $this->assign('unStart', $unStart);
-        $this -> assign('students',$students);
+        $this->assign('students',$students);
 
         //调用v层
         $this -> display();
@@ -166,7 +168,7 @@ class StudentController extends AdminController
         $saveReturn = $StudentL->saveListsByCycleId($students, $currentCycle['id']);
         if ( $saveReturn === false)
         {
-            dump($StudentL->getError());
+            
             $return['message'] = "数据添加错误:" . $StudentL->getError();
             echo json_encode($return);
             return;
