@@ -8,7 +8,7 @@ class YunzhiModel extends Model
     protected $p            = 1;                    //当前页
     protected $pageSize     = 20;                   //每页多少条记录
     protected $totalCount   = 0;                    //总条数
-    protected $errors       = array();              //错误信息
+    protected $error        = "";                   //错误信息
     protected $orderBys     = array("id"=>"desc");  //排序字段方式
     protected $maps         = array();              //查询条件
     protected $keywords     = "";                   //查询关键字
@@ -101,7 +101,7 @@ class YunzhiModel extends Model
     {
         if(!is_array($orderBys))
         {
-            $this->setError("yunzhimodel->setorderbys errors: orderbys must be array");
+            $this->setError("orderbys must be array");
             return false;
         }
         $this->orderBys = $orderBys;
@@ -111,13 +111,12 @@ class YunzhiModel extends Model
     public function setError($error)
     {
         $this->error = $error;
-        $this->errors[] = $error;
         return;
     }
 
-    public function getErrors()
+    public function getError()
     {
-        return $this->errors;
+        return $this->error;
     }
 
     public function setBackFields($backFields)
@@ -222,7 +221,7 @@ class YunzhiModel extends Model
         }
         catch (\Think\Exception $e)
         {
-            $this->setError = $e->getMessage();
+            $this->setError($e->getMessage());
             return false;
         }
     }
