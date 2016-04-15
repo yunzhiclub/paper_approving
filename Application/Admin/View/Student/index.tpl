@@ -60,8 +60,8 @@
                                     <td>{$student['title']}</td>
                                     <td>{$student['research_direction']}</td>
 				                    <td>
-                                    <a class="btn btn-sm btn-primary" href="{:U('edit?id='.$student['id'])}"><i class="fa fa-pencil"></i>&nbsp;编辑</a>
-                                    <a class="btn btn-sm btn-danger" href="{:U('delete?id='.$student['id'])}"><i class="fa fa-trash-o "></i>&nbsp;删除</a></eq>
+                                    <a class="btn btn-sm btn-primary" href="{:U('edit?id='.$student['id'], I('get.'))}"><i class="fa fa-pencil"></i>&nbsp;编辑</a>
+                                    <a class="btn btn-sm btn-danger" href="{:U('delete?id='.$student['id'], I('get.'))}"><i class="fa fa-trash-o "></i>&nbsp;删除</a></eq>
                                     </td>
                                 </tr>
 		                    </foreach>	

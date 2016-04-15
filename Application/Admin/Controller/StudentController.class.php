@@ -78,11 +78,11 @@ class StudentController extends AdminController
             $error = implode('<br/>',$errors);
 
             //显示错误
-            $this -> error("添加失败，原因：".$error,U('Admin/Student/index?p ='.I('get.p')));
+            $this -> error("添加失败，原因：".$error,U('Admin/Student/index?id=', I('get.')));
         }
         else
         {
-            $this -> success("操作成功",U('Admin/Student/index?p ='.I('get.p')));
+            $this -> success("操作成功",U('Admin/Student/index?id=', I('get.')));
         }
     }
 

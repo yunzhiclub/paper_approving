@@ -1,6 +1,6 @@
 <extend name="Base:index" />
 <block name="body">
-	<form class="form-horizontal" method="post" action="{:U('save')}">
+	<form class="form-horizontal" method="post" action="{:U('save', I('get.'))}">
 		<input type="hidden" name="id" value="{$student['id']}"></input>
 		
 		<div class="form-group">
