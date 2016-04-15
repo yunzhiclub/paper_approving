@@ -59,7 +59,7 @@
 		<div class="form-group">
 			<label for="innovation_point" class="col-xs-2 control-label">论文创新点</label>
 			<div class="col-xs-8">
-				<textarea class="form-control" rows="20" name="abstract">{$student['innovation_point']}</textarea>
+				<textarea class="form-control" rows="20" name="innovation_point">{$student['innovation_point']}</textarea>
 			</div>
 		</div>
 
