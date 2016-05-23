@@ -216,7 +216,7 @@ class ReviewLogic extends ReviewModel
         
         //总分四舍五入
         $scoreSum = (int)floor($scoreSum + 0.5);
-        $levels = array("k", "j", "i", "m");
+        $levels = array("m", "i", "j", "k");
         $scoreLevel = $this->getLevelbyScore($scoreSum);
         // dump($templateProcessor->getTempDocumentMainPart());
         // die();
