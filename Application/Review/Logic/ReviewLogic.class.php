@@ -208,8 +208,17 @@ class ReviewLogic extends ReviewModel
         {
             $num = (string)($key + 1);
             $templateProcessor->setValue('num#' . $num, $num);
-            $templateProcessor->setValue('review_title#' . $num, $reviewDetailView['title']);
+            if ($ext === 'zs')
+            {
+                $templateProcessor->setValue('review_title#' . $num, $reviewDetailView['title_zs']);
+            $templateProcessor->setValue('review_factor#' . $num, $reviewDetailView['factor_zs']);
+            }
+            else
+            {
+                $templateProcessor->setValue('review_title#' . $num, $reviewDetailView['title']);
             $templateProcessor->setValue('review_factor#' . $num, $reviewDetailView['factor']);
+            }
+            
             $scoreSum += $reviewDetailView['score'] * $reviewDetailView['proportion'] / 100;
             $templateProcessor->setValue('review_level#' . $num, $this->getLevelNumByScore($reviewDetailView['score']));
         }
