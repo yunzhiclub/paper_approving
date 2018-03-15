@@ -145,16 +145,6 @@ class ExpertLogic extends ExpertModel
 			//判断是否传入了原密码
 			if ($list['password'] !== "" && $list['password'] !== null)
 			{
-				$map = array();
-				$map['id'] = (int)$list['id'];
-				$expert = $this->where($map)->find();
-
-				//判断原密码是否正确
-				if ($expert['userpassword'] !== trim($list['password']))
-				{
-					$this->setError("Old password not correct!");
-					return false;
-				}
 				$data['userpassword'] = trim($list['newpassword']);
 			}
 
