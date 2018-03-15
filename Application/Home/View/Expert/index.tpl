@@ -112,17 +112,7 @@
                         </tr>
                         <tr>
                             <td class="success">
-                                <label for="userpassword">原密码</label>
-                            </td>
-                            <td>
-                                <div class="col-md-3 col-sm-6">
-                                    <input type="password" class="form-control" name="password" placeholder="请输入原密码" />
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="success">
-                                <label for="userpassword">新密码</label>
+                                <label for="userpassword">新密码（如需更改，请填写）</label>
                             </td>
                             <td>
                                 <div class="col-md-3 col-sm-6">
