@@ -3,6 +3,12 @@ namespace Admin\Controller;
 
 use Cycle\Logic\CycleLogic;
 
+/**
+ * Class CycleController
+ * @package Admin\Controller
+ * 周期管理
+ */
+
 class CycleController extends AdminController
 {
     //用户列表显示
