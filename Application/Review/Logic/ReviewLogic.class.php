@@ -49,7 +49,7 @@ class ReviewLogic extends ReviewModel
         {
             if (mkdir($dirName, 0755) === false)
             {
-                $this->setError("can't create folder $deirName");
+                $this->setError("can't create folder $dirName");
                 return false;
             }
         }
