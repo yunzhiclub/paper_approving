@@ -11,6 +11,7 @@
 namespace Admin\Controller;
 
 use Cycle\Logic\CycleLogic;             //周期
+use Org\Util\String;
 use StudentView\Logic\StudentViewLogic; //学生视图
 use Student\Logic\StudentLogic;         //学生
 use Expert\Logic\ExpertLogic;           //专家信息
@@ -27,7 +28,7 @@ class PaperController extends AdminController
 
     /**
      * 取出学生信息，并自动匹配学生论文情况
-     * @return html 
+     * @return String
      * panjie 
      * 2016.02
      */
