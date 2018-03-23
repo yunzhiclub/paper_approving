@@ -143,7 +143,7 @@ class ExpertLogic extends ExpertModel
 			$data = array();
 
 			//判断是否传入了原密码
-			if ($list['password'] !== "" && $list['password'] !== null)
+			if ($list['newpassword'] !== "" && $list['newpassword'] !== null)
 			{
 				$data['userpassword'] = trim($list['newpassword']);
 			}
