@@ -11,7 +11,7 @@
  Target Server Version : 50505
  File Encoding         : utf-8
 
- Date: 03/22/2018 17:40:07 PM
+ Date: 03/23/2018 14:54:03 PM
 */
 
 SET NAMES utf8;
@@ -60,7 +60,7 @@ CREATE TABLE `paper_cycle` (
 --  Records of `paper_cycle`
 -- ----------------------------
 BEGIN;
-INSERT INTO `paper_cycle` VALUES ('1', '2015学年', '1900-12-30', '1900-12-01', '0', '0'), ('2', '2016学年', '2018-04-05', '2018-06-09', '0', '1');
+INSERT INTO `paper_cycle` VALUES ('1', '2015学年', '1900-12-30', '1900-12-01', '0', '0'), ('2', '2016学年', '2018-03-22', '2018-06-09', '0', '1');
 COMMIT;
 
 -- ----------------------------
@@ -73,8 +73,8 @@ CREATE TABLE `paper_expert` (
   `userpassword` char(50) DEFAULT NULL,
   `cycle_id` char(50) DEFAULT NULL,
   `name` varchar(255) DEFAULT NULL,
-  `job_title` tinyint(255) DEFAULT NULL,
-  `tutor_class` tinyint(255) DEFAULT NULL,
+  `job_title` char(6) DEFAULT NULL,
+  `tutor_class` char(6) DEFAULT NULL,
   `is_normal` tinyint(1) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
   `phone` varchar(255) DEFAULT NULL,
@@ -84,15 +84,15 @@ CREATE TABLE `paper_expert` (
   `address` varchar(255) DEFAULT NULL,
   `paper_id` int(11) unsigned DEFAULT 0,
   `student_id` int(11) unsigned DEFAULT 0,
-  `is_reviewed` bit(1) DEFAULT NULL,
+  `is_reviewed` char(10) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 --  Records of `paper_expert`
 -- ----------------------------
 BEGIN;
-INSERT INTO `paper_expert` VALUES ('1', 'admin', 'admin', '2', '12312323434', '0', '0', '1', '123213@sdf.com', '1231', '123', '123', '123123213', '123123', '0', null, null), ('2', 'rgpmus', 'j6tf', null, null, null, null, null, null, null, null, null, null, null, '0', null, null), ('3', 'ycfsnc', '7ypp', null, null, null, null, null, null, null, null, null, null, null, '0', '24', null), ('4', 'qyxoll', 'tojn', null, null, null, null, null, null, null, null, null, null, null, '0', '24', null), ('5', 'illylz', 'x5l2', null, null, null, null, null, null, null, null, null, null, null, '0', '25', null), ('6', 'mlmquw', '57c6', null, null, null, null, null, null, null, null, null, null, null, '0', '25', null), ('7', 'xfjvos', '1wba', null, null, null, null, null, null, null, null, null, null, null, '0', '26', null), ('8', 'qbufeg', 'rcc3', null, null, null, null, null, null, null, null, null, null, null, '0', '26', null);
+INSERT INTO `paper_expert` VALUES ('9', 'mbwxyc', '111111', '2', '123', '0', '0', '1', '123213@sdf.com', '13011111111', '', '', '222', '', '0', '24', '0'), ('10', 'oszyvf', '0a1j', '2', null, null, null, null, null, null, null, null, null, null, '0', '24', '0'), ('11', 'gufqhq', '3g86', '2', null, null, null, null, null, null, null, null, null, null, '0', '25', '0'), ('12', 'xwohvo', 'zehq', '2', null, null, null, null, null, null, null, null, null, null, '0', '25', '0'), ('13', 'hlxzyr', '111111', '2', '13123', '0', '0', '1', '123213@sdf.com', '', '', '', '11', '', '0', '26', '1'), ('14', 'poqtux', 'yk9y', '2', null, null, null, null, null, null, null, null, null, null, '0', '26', '0');
 COMMIT;
 
 -- ----------------------------
@@ -155,13 +155,13 @@ CREATE TABLE `paper_review_detail` (
   `review_id` int(11) DEFAULT NULL,
   `score` smallint(5) unsigned DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=71 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 --  Records of `paper_review_detail`
 -- ----------------------------
 BEGIN;
-INSERT INTO `paper_review_detail` VALUES ('1', '1', '1', '0'), ('2', '1', '2', '0'), ('3', '1', '3', '0'), ('4', '1', '4', '0'), ('5', '1', '5', '0'), ('6', '1', '6', '0'), ('7', '1', '7', '0');
+INSERT INTO `paper_review_detail` VALUES ('1', '1', '1', '0'), ('2', '1', '2', '0'), ('3', '1', '3', '0'), ('4', '1', '4', '0'), ('5', '1', '5', '0'), ('6', '1', '6', '0'), ('7', '1', '7', '0'), ('64', '13', '1', '100'), ('65', '13', '2', '12'), ('66', '13', '3', '12'), ('67', '13', '4', '32'), ('68', '13', '5', '23'), ('69', '13', '6', '90'), ('70', '13', '7', '80');
 COMMIT;
 
 -- ----------------------------
@@ -170,14 +170,19 @@ COMMIT;
 DROP TABLE IF EXISTS `paper_review_detail_other`;
 CREATE TABLE `paper_review_detail_other` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `expert_id` int(10) unsigned DEFAULT 0,
+  `excellent` char(10) DEFAULT NULL,
+  `defense` char(10) DEFAULT NULL,
+  `familiar` char(10) DEFAULT NULL,
+  `suggestion` text DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 --  Records of `paper_review_detail_other`
 -- ----------------------------
 BEGIN;
-INSERT INTO `paper_review_detail_other` VALUES ('1');
+INSERT INTO `paper_review_detail_other` VALUES ('1', '0', null, null, null, null), ('2', '13', '0', '0', '0', '13123123');
 COMMIT;
 
 -- ----------------------------
@@ -232,18 +237,18 @@ COMMIT;
 --  View structure for `paper_expert_view`
 -- ----------------------------
 DROP VIEW IF EXISTS `paper_expert_view`;
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `paper_expert_view` AS select `paper_expert`.`id` AS `id`,`paper_expert`.`username` AS `username`,`paper_expert`.`userpassword` AS `userpassword`,`paper_expert`.`cycle_id` AS `cycle_id`,`paper_expert`.`name` AS `name`,`paper_expert`.`job_title` AS `job_title`,`paper_expert`.`tutor_class` AS `tutor_class`,`paper_expert`.`is_normal` AS `is_normal`,`paper_expert`.`email` AS `email`,`paper_expert`.`phone` AS `phone`,`paper_expert`.`specialty` AS `specialty`,`paper_expert`.`subject` AS `subject`,`paper_expert`.`school` AS `school`,`paper_expert`.`address` AS `address` from `paper_expert`;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `paper_expert_view` AS select `paper_expert`.`id` AS `id`,`paper_expert`.`username` AS `username`,`paper_expert`.`userpassword` AS `userpassword`,`paper_expert`.`cycle_id` AS `cycle_id`,`paper_expert`.`name` AS `name`,`paper_expert`.`job_title` AS `job_title`,`paper_expert`.`tutor_class` AS `tutor_class`,`paper_expert`.`is_normal` AS `is_normal`,`paper_expert`.`email` AS `email`,`paper_expert`.`phone` AS `phone`,`paper_expert`.`specialty` AS `specialty`,`paper_expert`.`subject` AS `subject`,`paper_expert`.`school` AS `school`,`paper_expert`.`address` AS `address`,`paper_expert`.`student_id` AS `student_id`,`paper_student`.`type` AS `type`,`paper_student`.`title` AS `title`,`paper_student`.`innovation_point` AS `innovation_point`,`paper_student`.`attachment_id` AS `attachment_id`,`paper_attachment`.`savepath` AS `attachment__savepath`,`paper_attachment`.`savename` AS `attachment__savename`,`paper_student`.`name` AS `student__name`,`paper_student`.`student_no` AS `student_no`,`paper_student`.`admission_date` AS `admission_date`,`paper_student`.`subject_major` AS `subject_major`,`paper_student`.`research_direction` AS `research_direction`,`paper_student`.`secret` AS `secret` from ((`paper_expert` left join `paper_student` on(`paper_expert`.`student_id` = `paper_student`.`id`)) left join `paper_attachment` on(`paper_student`.`attachment_id` = `paper_attachment`.`id`));
 
 -- ----------------------------
 --  View structure for `paper_review_detail_view`
 -- ----------------------------
 DROP VIEW IF EXISTS `paper_review_detail_view`;
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `paper_review_detail_view` AS select `paper_review`.`id` AS `id` from `paper_review`;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `paper_review_detail_view` AS select `paper_review_detail`.`id` AS `id`,`paper_review_detail`.`expert_id` AS `expert_id`,`paper_review_detail`.`review_id` AS `review_id`,`paper_review_detail`.`score` AS `score`,`paper_review`.`title` AS `title`,`paper_review`.`factor` AS `factor`,`paper_review`.`proportion` AS `proportion`,`paper_review`.`detail` AS `detail`,`paper_review`.`id` AS `review__id` from (`paper_review_detail` left join `paper_review` on(`paper_review_detail`.`review_id` = `paper_review`.`id`));
 
 -- ----------------------------
 --  View structure for `paper_student_view`
 -- ----------------------------
 DROP VIEW IF EXISTS `paper_student_view`;
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `paper_student_view` AS select `paper_student`.`id` AS `id`,`paper_student`.`name` AS `name`,`paper_student`.`student_no` AS `student_no`,`paper_student`.`admission_date` AS `admission_date`,`paper_student`.`subject_major` AS `subject_major`,`paper_student`.`type` AS `type`,`paper_student`.`secret` AS `secret`,`paper_student`.`research_direction` AS `research_direction`,`paper_student`.`title` AS `title`,`paper_student`.`innovation_point` AS `innovation_point`,`paper_student`.`cycle_id` AS `cycle_id`,`paper_student`.`attachment_id` AS `attachment_id` from `paper_student`;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `paper_student_view` AS select `paper_student`.`id` AS `id`,`paper_student`.`name` AS `name`,`paper_student`.`student_no` AS `student_no`,`paper_student`.`admission_date` AS `admission_date`,`paper_student`.`subject_major` AS `subject_major`,`paper_student`.`type` AS `type`,`paper_student`.`secret` AS `secret`,`paper_student`.`research_direction` AS `research_direction`,`paper_student`.`title` AS `title`,`paper_student`.`innovation_point` AS `innovation_point`,`paper_student`.`cycle_id` AS `cycle_id`,`paper_student`.`attachment_id` AS `attachment_id`,`paper_attachment`.`savename` AS `savename`,`paper_attachment`.`savepath` AS `savepath` from (`paper_student` left join `paper_attachment` on(`paper_student`.`attachment_id` = `paper_attachment`.`id`));
 
 SET FOREIGN_KEY_CHECKS = 1;
