@@ -230,6 +230,7 @@ class PaperController extends AdminController
                 $data['username'] = get_rand_str(6, false);
                 $data['userpassword'] = get_rand_str(4);
                 $data['student_id'] = $student['id'];
+                $data['cycle_id'] = $currentCycle['id'];
                 if ($ExpertL->saveList($data) === false)
                 {
                     $this->error("保存专家信息错误", U('index'));
