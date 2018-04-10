@@ -97,6 +97,11 @@ class StudentLogic extends StudentModel
             $data[$i-1]['cycle_id'] = $cycleId;
             foreach($student as $key => $value)
             {
+                // 增加对获取富文本时的判断
+                if ($value instanceof \PHPExcel_RichText) {
+                    $value = $value->getPlainText();
+                }
+
                 //如果表头信息为可识别信息，则传值。否则，跳过
                 if ($keys[$j] !== false)
                 {
