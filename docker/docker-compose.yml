@@ -1,0 +1,32 @@
+# 声明docker版本号
+version: '2'
+
+# 定义服务
+services:
+  # 定义第一个服务，名称为：webserver
+  httpServer:
+    build: ./httpServer  # 定义使用的构建配置文件位于：./httpServer。 将自动找./httpServer/Dockerfile做为配置文件
+    image: php56_apache # 自定义镜像名称(起自己容易记的)
+    ports:  # 定义端口映射
+      - "8088:80" # 使用8080端口来访问docker的80端口
+      - "443:443" # 使用443端口来访问docker中的443的端口
+    volumes:  # 加载卷
+      - ./../app:/var/app # 将./../app文件夹映身为docker中的/var/app文件夹
+    environment:  # 设置变量
+      APACHE_DOCUMENT_ROOT: /var/app/Public # 设置APACHE_DOCUMENT_ROOT的值为/var/app/Public（作用是设置apache的htdoc目录)
+      XDEBUG_CONFIG: "remote_host=192.168.48.1" # 设置XEDEBUG的本机IP地址，查找192.168.xx.1的IP地址
+    links: # 设置link的其它服务名称
+      - db
+
+  # 定义第二个服务，名称设置为 db
+  db:
+    image: mysql:5.7 # 定义使用远程镜像 https://hub.docker.com/_/mysql/
+    ports:
+      - "3307:3306"
+    volumes:
+      - ./db:/var/lib/mysql #  直接将docker中的数据文件映射为本地文件夹
+    environment:  #  设置环境变量 具体可以设置什么，需要参考官方文档
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=
+      - MYSQL_ALLOW_EMPTY_PASSWORD=true
+      - MYSQL_DATABASE=paper_approving
