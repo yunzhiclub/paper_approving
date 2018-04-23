@@ -1,0 +1,11 @@
+Runtime/
+*.log
+.phpintel/
+Application/Common/Conf/config.php
+Public/uploads/
+
+Application/Common/Conf/debug.php
+
+Public/download/review/
+/nbproject/private/
+nbproject/
