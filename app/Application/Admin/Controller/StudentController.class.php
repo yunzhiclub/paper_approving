@@ -1,4 +1,5 @@
 <?php
+
 namespace Admin\Controller;
 
 use Student\Logic\StudentLogic;
@@ -17,23 +18,22 @@ class StudentController extends AdminController
         //判断系统是否处理准备阶段
         $unStart = 1;
         $beginTime = strtotime($currentCycle['starttime']);
-        if ($beginTime < time())
-        {
+        if ($beginTime < time()) {
             $unStart = 0;
         }
 
         //获取列表
         $StudentL = new StudentLogic();
-        $students = $StudentL->getLists(array(),array("cycle_id" => $currentCycle['id']));
+        $students = $StudentL->getLists(array(), array("cycle_id" => $currentCycle['id']));
         $totalCount = $StudentL->getTotalCount();
 
         //传入列表
         $this->assign("totalCount", $totalCount);
         $this->assign('unStart', $unStart);
-        $this->assign('students',$students);
+        $this->assign('students', $students);
 
         //调用v层
-        $this -> display();
+        $this->display();
     }
 
     public function editAction()
@@ -44,18 +44,19 @@ class StudentController extends AdminController
         //取用户信息getListById()
         $StudentL = new StudentLogic();
         $student = $StudentL->getListById($studentId);
- 
+
         //传给前台
-        $this -> assign('student',$student);
+        $this->assign('student', $student);
 
         //显示display('add')
-        $this -> display();
+        $this->display();
     }
 
     public function addAction()
     {
-         $this -> display('edit');
+        $this->display('edit');
     }
+
     public function saveAction()
     {
         //取用户信息
@@ -63,63 +64,56 @@ class StudentController extends AdminController
 
         //添加add()
         $StudentL = new StudentLogic();
-        $Cycle= new CycleLogic();
-        $cycle=$Cycle->getCurrentList();
-        $student['cycle_id']=$cycle['id'];
-        $StudentL -> saveList($student);
+        $Cycle = new CycleLogic();
+        $cycle = $Cycle->getCurrentList();
+        $student['cycle_id'] = $cycle['id'];
+        $StudentL->saveList($student);
         //echo $this->getlastsql();
 
         //判断异常
-        if(count($errors = $StudentL->getErrors())!==0)
-        {
+        if (count($errors = $StudentL->getErrors()) !== 0) {
             //dump($errors);
             //exit();
             //数组变字符串
-            $error = implode('<br/>',$errors);
+            $error = implode('<br/>', $errors);
 
             //显示错误
-            $this -> error("添加失败，原因：".$error,U('Admin/Student/index?id=', I('get.')));
-        }
-        else
-        {
-            $this -> success("操作成功",U('Admin/Student/index?id=', I('get.')));
+            $this->error("添加失败，原因：" . $error, U('Admin/Student/index?id=', I('get.')));
+        } else {
+            $this->success("操作成功", U('Admin/Student/index?id=', I('get.')));
         }
     }
 
-    
 
     public function deleteAction()
     {
         //取id
-        $studentId= I('get.id');
+        $studentId = I('get.id');
 
         //删除deleteInfo($Id)
         $StudentL = new StudentLogic();
         $status = $StudentL->deleteInfo($studentId);
 
         //判断是否删除成功
-        if($status!==false)
-        {
-            $this -> success("删除成功",U('Admin/Student/index?id=', I('get.')));
-        }
-        else
-        {
-            $this -> error("删除失败",U('Admin/Student/index?id=', I('get')));
+        if ($status !== false) {
+            $this->success("删除成功", U('Admin/Student/index?id=', I('get.')));
+        } else {
+            $this->error("删除失败", U('Admin/Student/index?id=', I('get')));
         }
     }
 
     public function detailAction()
     {
-        $studentId=I('get.id');
+        $studentId = I('get.id');
 
         $StudentL = new StudentLogic();
-        $student=$StudentL->getListById($studentId);
+        $student = $StudentL->getListById($studentId);
 
-        $CycleL= new CycleLogic();
-        $cycle=$CycleL->getListById($student['cycle_id']);
+        $CycleL = new CycleLogic();
+        $cycle = $CycleL->getListById($student['cycle_id']);
 
-        $this->assign('student',$student);
-        $this->assign('cycle',$cycle);
+        $this->assign('student', $student);
+        $this->assign('cycle', $cycle);
 
         $this->display();
     }
@@ -134,7 +128,7 @@ class StudentController extends AdminController
     public function readExcelAjaxAction()
     {
         //定义返回值
-        $return = array("status"=>"ERROR");
+        $return = array("status" => "ERROR");
 
         //接收路径并接拼为实际的路径
         $url = I('get.url');
@@ -142,19 +136,19 @@ class StudentController extends AdminController
 
         //读取EXCEL数据
         $PHPExcel = new PHPExcelLogic();
+
         $students = $PHPExcel -> ReadFile($filePath);
         if ($students === false)
         {
-//            $return['message'] = "读取Excel文件发生错误，信息:" . $PHPExcel->getError();
+            $return['message'] = "读取Excel文件发生错误，信息:" . $PHPExcel->getError();
             echo json_encode($return);
             return;
         }
-        
+
         //读取当前周期
         $CycleL = new CycleLogic();
         $currentCycle = $CycleL->getCurrentList();
-        if ($currentCycle === null)
-        {
+        if ($currentCycle === null) {
             $return['message'] = "未获取到当前周期信息";
             echo json_encode($return);
             return;
@@ -166,9 +160,8 @@ class StudentController extends AdminController
 
         //添加新学生数据
         $saveReturn = $StudentL->saveListsByCycleId($students, $currentCycle['id']);
-        if ( $saveReturn === false)
-        {
-            
+        if ($saveReturn === false) {
+
             $return['message'] = "数据添加错误:" . $StudentL->getError();
             echo json_encode($return);
             return;

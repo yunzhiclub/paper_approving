@@ -6,7 +6,6 @@ use ReviewDetail\Logic\ReviewDetailLogic;           //评阅详情
 use ReviewDetailOther\Logic\ReviewDetailOtherLogic; //评阅详情其它
 use Expert\Logic\ExpertLogic;                       //专家
 use Home\Model\ReviewDetail\indexModel;     
-use Cycle\Logic\CycleLogic;                 //周期  
 use ExpertView\Logic\ExpertViewLogic;
 
 class ReviewDetailController extends HomeController
@@ -38,8 +37,7 @@ class ReviewDetailController extends HomeController
 
     /**
      * 保存评阅信息
-     * @return  
-     * panjie 
+     * @return void panjie * panjie
      * 2016.02
      */
     public function saveAction()
